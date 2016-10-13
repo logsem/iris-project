@@ -30,3 +30,14 @@ div.entry {
 div.buttons {
   margin-top: 5px;
 }
+
+img.card-img-top {
+  height: 125px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container-spacing {
+  margin-top: 1em;
+}
