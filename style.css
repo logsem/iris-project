@@ -1,6 +1,7 @@
 dl.ref {
   counter-reset: pub-counter-1 pub-counter-2;
   padding-left: 50px;
+  padding-top: 15px;
 }
 
 dl.ref > dt:before {
