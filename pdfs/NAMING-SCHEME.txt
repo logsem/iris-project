@@ -1,0 +1,2 @@
+Please follow the following naming scheme:
+<YEAR>-<CONFERENCE>-<SHORTNAME>-{submission,final}[-appendix].pdf
