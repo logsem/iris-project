@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>RustBelt: Securing the Foundations of the Rust Programming Language (POPL 2018)</title>
+    <title>MoSeL: A General, Extensible Modal Framework for Interactive Proofs in Separation Logic (ICFP 2018)</title>
 
     <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
 
@@ -19,16 +19,23 @@
   <body style="background-color: #eceeef">
     <section class="jumbotron text-xs-center">
       <div class="container">
-        <h1 class="jumbotron-heading display-1">RustBelt</h1>
-        <p class="lead">Securing the Foundations of the Rust Programming Language</p>
-        <p class="lead"><a href="https://people.mpi-sws.org/~jung/">Ralf Jung</a>, <a href="https://jhjourdan.mketjh.fr/">Jacques-Henri Jourdan</a>, <a href="https://robbertkrebbers.nl/">Robbert Krebbers</a>, <a href="https://www.mpi-sws.org/~dreyer/">Derek Dreyer</a>. POPL 2018.</p>
+        <h1 class="jumbotron-heading display-1">MoSeL</h1>
+        <p class="lead">A General, Extensible Modal Framework for Interactive Proofs in Separation Logic</p>
+        <p class="lead">
+          <a href="https://robbertkrebbers.nl/">Robbert Krebbers</a>,
+          <a href="https://jhjourdan.mketjh.fr/">Jacques-Henri Jourdan</a>,
+          <a href="https://people.mpi-sws.org/~jung/">Ralf Jung</a>,
+          <a href="http://www.cs.cmu.edu/~jtassaro/">Joseph Tassarotti</a>,
+          <a href="https://people.mpi-sws.org/~janno/">Jan-Oliver Kaiser</a>,
+          <a href="https://distrinet.cs.kuleuven.be/people/amin/">Amin Timany</a>,
+          <a href="http://chargueraud.org/">Arthur Charguéraud</a>,
+          <a href="https://www.mpi-sws.org/~dreyer/">Derek Dreyer</a>.
+          <br>
+          ICFP 2018.</p>
         <p>
-          <a href="https://plv.mpi-sws.org/rustbelt/popl18/paper.pdf" class="btn btn-primary">Paper</a>
-          <a href="https://www.youtube.com/watch?v=Cy9NUVaiYUg" class="btn btn-secondary">Talk (recording)</a>
-          <a href="https://plv.mpi-sws.org/rustbelt/popl18/talk.pdf" class="btn btn-secondary">Talk (slides)</a>
-          <a href="https://plv.mpi-sws.org/rustbelt/popl18/appendix.pdf" class="btn btn-secondary">Technical Appendix</a>
-          <a href="https://gitlab.mpi-sws.org/FP/LambdaRust-coq/tree/popl18" class="btn btn-secondary">Coq Formalization</a>
-          <a href="https://zenodo.org/record/1115560" class="btn btn-secondary">Artifact VM</a>
+          <a href="../pdfs/2018-icfp-mosel-final.pdf" class="btn btn-primary">Paper</a>
+          <a href="https://gitlab.mpi-sws.org/FP/iris-coq/tree/gen_proofmode" class="btn btn-secondary">Coq Formalization</a>
+          <a href="https://doi.org/10.5281/zenodo.1306029" class="btn btn-secondary">Artifact VM</a>
         </p>
       </div>
     </section>
@@ -38,24 +45,12 @@
 
       <div class="row">
         <p class="lead">
-	  Rust is a new systems programming language that promises to overcome
-	  the seemingly fundamental tradeoff between high-level safety
-	  guarantees and low-level control over resource management.
-	  Unfortunately, none of Rust's safety claims have been formally proven,
-	  and there is good reason to question whether they actually hold.
-	  Specifically, Rust employs a strong, ownership-based type system, but
-	  then extends the expressive power of this core type system through
-	  libraries that internally use unsafe features.  In this paper, we give
-	  the first formal (and machine-checked) safety proof for a language
-	  representing a realistic subset of Rust.  Our proof is extensible in
-	  the sense that, for each new Rust library that uses unsafe features,
-	  we can say what verification condition it must satisfy in order for it
-	  to be deemed a safe extension to the language.  We have carried out
-	  this verification for some of the most important libraries that are
-	  used throughout the Rust ecosystem.
+	  A number of tools have been developed for carrying out separation-logic proofs mechanically using an interactive proof assistant. One of the most advanced such tools is the Iris Proof Mode (IPM) for Coq, which offers a rich set of tactics for making separation-logic proofs look and feel like ordinary Coq proofs. However, IPM is tied to a particular separation logic (namely, Iris), thus limiting its applicability. <br><br>
+
+In this paper, we propose MoSeL, a general and extensible Coq framework that brings the benefits of IPM to a much larger class of separation logics. Unlike IPM, MoSeL is applicable to both affine and linear separation logics (and combinations thereof), and provides generic tactics that can be easily extended to account for the bespoke connectives of the logics with which it is instantiated. To demonstrate the effectiveness of MoSeL, we have instantiated it to provide effective tactical support for interactive and semi-automated proofs in six very different separation logics.
 	</p>
 	<div class="text-xs-center">
-	  <a href="https://plv.mpi-sws.org/rustbelt/popl18/paper.pdf" class="btn btn-primary">Read Paper</a>
+	  <a href="../pdfs/2018-icfp-mosel-final.pdf" class="btn btn-primary">Read Paper</a>
 	</div>
       </div>
 
@@ -66,7 +61,7 @@
       <div class="container">
 
 	<div class="row text-xs-center">
-	  This paper is part of the <a href="../">RustBelt</a> project and was realized using <a href="http://iris-project.org">Iris</a>.
+	  
 	</div>
 <!--	<div class="card-deck-wrapper">
 	  <div class="card-deck">
