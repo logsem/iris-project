@@ -1,0 +1,59 @@
+dl.ref {
+  counter-reset: pub-counter-1 pub-counter-2;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+dl.ref > dt:before {
+  content: "[" counter(pub-counter-1) "] ";
+  counter-increment: pub-counter-1;
+  position: relative;
+  left: -10px;
+}
+
+dl.ref > dd:before {
+  content: "[" counter(pub-counter-2) "] ";
+  counter-increment: pub-counter-2;
+  position: relative;
+  left: -10px;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+dl.ref > dd {
+  margin-bottom: 20px;
+}
+
+div.entry {
+  display: inline-block;
+}
+
+div.buttons {
+  margin-top: 5px;
+}
+
+img.card-img-top {
+  height: 75px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container-spacing {
+  margin-top: 1em;
+}
+
+.card-title {
+  font-size: 16pt;
+  text-align: center;
+}
+
+.grants img {
+  display: block;
+  margin: 0px auto;
+  height: 75px;
+}
+
+.card-subtitle {
+  text-align: center;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Iron: Managing Obligations in Higher-Order Concurrent Separation Logic (POPL 2019)</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body style="background-color: #eceeef">
+    <section class="jumbotron text-xs-center">
+      <div class="container">
+        <h1 class="jumbotron-heading display-1">Iron</h1>
+        <p class="lead">Managing Obligations in Higher-Order Concurrent Separation Logic</p>
+        <p class="lead">
+          <a href="http://www.cs.au.dk/~abizjak/">Aleš Bizjak</a>,
+          <a href="https://jozefg.bitbucket.io/">Daniel Gratzer</a>,
+          <a href="https://robbertkrebbers.nl/">Robbert Krebbers</a>,
+          <a href="http://cs.au.dk/~birke/">Lars Birkedal</a>.
+          <br>
+          POPL 2019.</p>
+        <p>
+          <a href="../pdfs/2019-popl-iron-final.pdf" class="btn btn-primary">Paper</a>
+          <!-- <a href="https://doi.org/10.5281/zenodo.1306029" class="btn btn-secondary">Archived Coq source (VM/zip)</a> -->
+          <a href="https://gitlab.mpi-sws.org/iris/iron" class="btn btn-secondary">Latest version of Iron</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="jumbotron" style="background-color: #fff">
+    <div class="container" style="margin-bottom: 20px">
+
+      <div class="row">
+        <p class="lead">
+	  Precise management of resources and the obligations they impose, such as the need to dispose of memory, close
+locks, and release file handles, is hard—especially in the presence of concurrency, when some resources are
+shared, and different threads operate on them concurrently. We present Iron, a novel higher-order concurrent
+separation logic that allows for precise reasoning about resources that are transferable among dynamically
+allocated threads. In particular, Iron can be used to show the correctness of challenging examples, where the
+reclamation of memory is delegated to a forked-off thread. We show soundness of Iron by means of a model of
+Iron, defined on top of the Iris base logic, and we use this model to prove that memory resources are accounted
+for precisely and not leaked. We have formalized all of the developments in the Coq proof assistant.
+	</p>
+	<div class="text-xs-center">
+	  <a href="../pdfs/2019-popl-iron-final.pdf" class="btn btn-primary">Read Paper</a>
+	</div>
+      </div>
+
+    </div>
+    </section>
+
+    <section class="jumbotron">
+      <div class="container">
+
+	<div class="row text-xs-center">
+	  
+	</div>
+<!--	<div class="card-deck-wrapper">
+	  <div class="card-deck">
+	    <div class="card">
+	      abc
+	    </div>
+	    <div class="card">
+	      a
+	    </div>
+	  </div>
+	</div>-->
+      </div>
+    </section>
+
+    <script src="bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+  </body>
+</html>
