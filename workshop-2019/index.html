@@ -112,7 +112,14 @@ We show that Actris provides a suitable level of abstraction by proving function
 execution of programs, as well as all examples in the paper, in the Coq proof assistant.
   </div>
   </li>
-  <li><a href="https://lepigre.fr/">Rodolphe Lepigre (MPI-SWS, Germany):</a> TBA</li>  
+  <li><a href="https://lepigre.fr/">Rodolphe Lepigre (MPI-SWS, Germany):</a> Extending Iris with Prophecy Variables
+  <a href="#rodolphe" data-toggle="collapse">[abstract]</a>
+  <div id="rodolphe" class="abstract collapse">
+  In this talk, I will present a recent addition to the Iris framework: prophecy variables. Prophecy variables can be used to predict what will happen later in the execution of a program, while reasoning about its current state. They were first introduced by Abadi and Lamport in the nineties, but were never formally integrated into a Hoare-style program logic before. Thanks to the addiction of prophecy variables we are now able to verify logical atomicity  (a relative of linearizability that will be presented by Ralf) for concurrent data structures like RDCSS or the Herlihy-Wing queue in Iris. These data structures are tricky because the linearization points of their operations (i.e.,  the precise point in their execution at which they appear to take effect) can sometimes only be identified after the fact (it may depend on future events). And as we will see that is the kind of situation where prophecy variables can help.
+
+  This is joint work with Ralf Jung,  Gaurav Parthasarathy,  Marianna Rapoport, Amin Timany, Derek Dreyer and Bart Jacobs.
+  </div>
+</li>  
   <li><a href="http://gallium.inria.fr/~gmevel/">Glen Mével (Inria, France):</a> Iris for Multicore OCaml
   <a href="#glen" data-toggle="collapse">[abstract]</a>
   <div id="glen" class="abstract collapse">
