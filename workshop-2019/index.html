@@ -16,7 +16,11 @@
   
   <link rel="stylesheet" href="../style.css" />
   <style>
-  
+  .abstract {
+    border : 1px solid #888888;
+    padding: 10px;
+    margin-bottom: 4px;
+  }
   </style>
 </head>
 
@@ -51,7 +55,7 @@ informal discussions and interaction.</p>
   <li><a href="http://cs.ru.nl/~dfrumin/">Dan Frumin (Radboud University, The Netherlands):</a>
     Compositional Non-Interference for Fine-Grained Concurrent Programs
     <a href="#dan" data-toggle="collapse">[abstract]</a>
-    <div id="dan" class="collapse">
+    <div id="dan" class="collapse abstract">
     We present SeLoC: a relational separation logic for verifying non-interference of fine-grained concurrent programs in a compositional way. SeLoC is more expressive than previous approaches, both in terms of the features of the target programming language, and in terms of the logic. The target programming language supports dynamically allocated references (pointers), higher-order functions, and fine-grained fork-based concurrency with low-level atomic operators like compare-and-set. The logic provides an invariant mechanism to establish protocols on data that is not protected by locks. This allows us to verify programs that were beyond the reach of previous approaches.<br> 
 
 A key technical innovation in SeLoC is a relational version of weakest preconditions to track information flow using separation logic resources. On top of these weakest preconditions we build a type system-like abstraction, using invariants and logical relations. SeLoC has been mechanized on top of the Iris framework in the Coq proof assistant.
@@ -59,7 +63,7 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
   <li><a href="https://people.cs.kuleuven.be/~bart.jacobs/">Bart Jacobs (KU Leuven, Belgium):</a>
     Specifying I/O using Abstract Nested Hoare Triples
     <a href="#bart" data-toggle="collapse">[abstract]</a>
-    <div id="bart" class="collapse">
+    <div id="bart" class="abstract collapse">
     We propose a separation logic-based approach for modular specification and verification of the I/O behavior of a program. The approach uses higher-order separation logic predicates to express "abstract nested Hoare triples" that abstractly associate a precondition and a postcondition with an I/O action. The approach supports verifying higher-level I/O actions built on top of lower-level ones, as well as "virtual I/O" actions that in fact just manipulate memory.
     </div>
     </li>
@@ -69,7 +73,7 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
   <li><a href="http://pauillac.inria.fr/~fpottier/">François Pottier (Inria, France):</a>
     Playing spy games in Iris
     <a href="#francois" data-toggle="collapse">[abstract]</a>
-    <div id="francois" class="collapse">
+    <div id="francois" class="abstract collapse">
     I will discuss the specification and proof in Iris of a "local generic solver",
     that is, an on-demand, incremental, memoizing least fixed point computation
     algorithm. Although the solver uses long-lived mutable internal state for
@@ -86,7 +90,7 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
   <li><a href="https://www.cs.princeton.edu/~appel/">Andrew Appel (Princeton, USA):</a> Recent developments in the Verified Software Toolchain</li>
   <li><a href="https://people.mpi-sws.org/~haidang/">Hai Dang (MPI-SWS, Germany):</a> RustBelt Relaxed
   <a href="#hai" data-toggle="collapse">[abstract]</a>
-  <div id="hai" class="collapse">
+  <div id="hai" class="abstract collapse">
   The original RustBelt made the significant simplifying assumption that the language is sequentially consistent. We adapt RustBelt to account for the relaxed-memory operations that concurrent Rust libraries actually use, in the process uncovering a data race in the Arc library. We will focus the discussion on how to reason about resource reclamation under relaxed memory, using variants of cancellable invariants that are improved with a logical construction we call synchronized ghost state.
   </div></li>
   <li><a href="https://www.doc.ic.ac.uk/~pg/">Philippa Gardner (Imperial College, UK):</a> Compositional Reasoning for the Termination of Fine-grained Concurrent Programs</li>
@@ -94,7 +98,7 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
   <li>Aina Linn Georges (Aarhus University, Denmark): Implementing a Capability Machine model into Iris</li>
   <li><a href="http://gallium.inria.fr/~agueneau/">Armaël Guéneau (Inria, France):</a> Formal verification of an incremental cycle detection algorithm
   <a href="#armael" data-toggle="collapse">[abstract]</a>
-  <div id="armael" class="collapse">
+  <div id="armael" class="abstract collapse">
   In this talk, I will present the analysis of a state-of-the-art incremental cycle detection algorithm due to Bender, Fineman, Gilbert, and Tarjan. The algorithm maintains subtle invariants, and features a non trivial asymptotic, amortized complexity bound. I will detail how we exploit Separation Logic with Time Credits to simultaneously verify the correctness and the worst-case amortized complexity of the modified algorithm.
 
   This is joint work with Arthur Charguéraud, Jacques-Henri Jourdan and François Pottier.
@@ -102,7 +106,7 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
 </li>
   <li><a href="http://itu.dk/people/jkas/">Jonas Kastberg Hinrichsen (ITU, Denmark):</a> Actris: Session-Type Based Reasoning in Separation Logic
   <a href="#jonas" data-toggle="collapse">[abstract]</a>
-  <div id="jonas" class="collapse">
+  <div id="jonas" class="abstract collapse">
   Message passing is a useful abstraction to implement concurrent programs. For real-world systems, however, it is often combined with other programming and concurrency paradigms, such as higher-order functions, mutable state, shared-memory concurrency, and locks. We present Actris: a logic for proving functional correctness of programs that use a combination of the aforementioned features. Actris combines the power of modern concurrent separation logics with a first-class protocol mechanism—based on session types—for reasoning about message passing in the presence of other concurrency paradigms.
 We show that Actris provides a suitable level of abstraction by proving functional correctness of a variety of examples, including a distributed merge sort, a distributed load-balancing mapper, and a variant of the map-reduce model, using relatively simple specifications. Soundness of Actris is shown using a continuation-passing style (CPS) interpretation of its protocol mechanism into the Iris framework. We mechanised the theory of Actris, together with tactics for symbolic
 execution of programs, as well as all examples in the paper, in the Coq proof assistant.
@@ -111,7 +115,7 @@ execution of programs, as well as all examples in the paper, in the Coq proof as
   <li><a href="https://lepigre.fr/">Rodolphe Lepigre (MPI-SWS, Germany):</a> TBA</li>  
   <li><a href="http://gallium.inria.fr/~gmevel/">Glen Mével (Inria, France):</a> Iris for Multicore OCaml
   <a href="#glen" data-toggle="collapse">[abstract]</a>
-  <div id="glen" class="collapse">
+  <div id="glen" class="abstract collapse">
   I will present some preliminary work on instantiating the Iris framework for the Multicore OCaml language.
   </div>
   </li>
