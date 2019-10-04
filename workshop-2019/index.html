@@ -69,7 +69,13 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
     </li>
   <li><a href="https://people.mpi-sws.org/~jung/">Ralf Jung (MPI-SWS, Germany):</a>
     Logical Atomicity in Iris: The Good, the Bad, and the Ugly</li>
-  <li><a href="http://gmalecha.github.io/">Gregory Malecha (Bedrock Systems, USA):</a> TBA</li>
+  <li><a href="http://gmalecha.github.io/">Gregory Malecha (Bedrock Systems, USA):</a>
+    Iris in Industry
+    <a href="#gregory" data-toggle="collapse">[abstract]</a>
+    <div id="gregory" class="abstract collapse">
+    BedRock Systems is developing a trustworthy software foundation for the connected world. To achieve this goal, we are applying formal methods pervasively across our stack ranging from a capability-based micro-hypervisor to a VMM and auxiliary components. Tackling software at this scale leads to interesting engineering difficulties. We have recently embraced Iris to serve as the foundation for our reasoning, but many challenges still remain. In this talk, I discuss some of those challenges. On the language side of things, BedRock Systems is using C++ and we have developed a tool (based on Clang) to convert C++ programs into abstract syntax trees which we ascribe semantics to axiomatically. To make reasoning about our programs more tractable, we have (and are) developing automation to improve the verification experience, especially for the non-concurrent portions of our code. At the system level, we are seeking to leverage Iris's logic to modularize the way that application programs reason about capabilities across the entire system. Doing this requires reasoning about multiple address and capability spaces as well as the interaction between trusted and untrusted code. Beyond the purely technical problems, BedRock's Systems' embrace of formal methods means that we have the opportunity, and the obligation, to train systems developers to write verifiable code and the specifications to go along with it. While we don't expect developers to immediately be able to verify sophisticated concurrent algorithms initially, we are working on representative examples to build a cookbook of verification recipes that can be more easily understood, applied, and automated.
+    </div>
+    </li>
   <li><a href="http://pauillac.inria.fr/~fpottier/">François Pottier (Inria, France):</a>
     Playing spy games in Iris
     <a href="#francois" data-toggle="collapse">[abstract]</a>
