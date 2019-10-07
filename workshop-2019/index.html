@@ -100,7 +100,12 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
   The original RustBelt made the significant simplifying assumption that the language is sequentially consistent. We adapt RustBelt to account for the relaxed-memory operations that concurrent Rust libraries actually use, in the process uncovering a data race in the Arc library. We will focus the discussion on how to reason about resource reclamation under relaxed memory, using variants of cancellable invariants that are improved with a logical construction we call synchronized ghost state.
   </div></li>
   <li><a href="https://www.doc.ic.ac.uk/~pg/">Philippa Gardner (Imperial College, UK):</a> Compositional Reasoning for the Termination of Fine-grained Concurrent Programs</li>
-  <li>Paolo Giarrusso (TUDelft, The Netherlands): Step-Indexed Logical Relations for (guarded) Dependent Object Types</li>
+  <li>Paolo Giarrusso (TUDelft, The Netherlands): Step-Indexed Logical Relations for (guarded) Dependent Object Types
+  <a href="#paolo" data-toggle="collapse">[abstract]</a>
+  <div id="paolo" class="abstract collapse">
+  The metatheory of the Scala core type system (DOT), first established recently, is still hard to extend, like other systems combining subtyping and forms of dependent types. Soundness of important Scala features remains an open problem in theory and in practice. To address some of these issues, we have mechanized in Coq a semantic soundness proof for a DOT variant called guarded DOT, and discuss both additional expressivity and additional restrictions. This is challenging, because in DOT variables can be in scope in their own type, objects can define mutually recursive and impredicative type members, and can contain evidence of subtyping relations that must be sound. We address these challenges by novel applications of step-indexing, as supported by the Iris program logic.
+  </div>
+  </li>
   <li>Aina Linn Georges (Aarhus University, Denmark): Implementing a Capability Machine model into Iris
   <a href="#aina" data-toggle="collapse">[abstract]</a>
   <div id="aina" class="abstract collapse">
