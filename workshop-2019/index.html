@@ -68,7 +68,16 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
     </div>
     </li>
   <li><a href="https://people.mpi-sws.org/~jung/">Ralf Jung (MPI-SWS, Germany):</a>
-    Logical Atomicity in Iris: The Good, the Bad, and the Ugly</li>
+    Logical Atomicity in Iris: The Good, the Bad, and the Ugly
+    <a href="#ralf" data-toggle="collapse">[abstract]</a>
+    <div id="ralf" class="abstract collapse">
+    One major use-case of Iris is giving modular specifications to concurrent data structures and algorithms. However, this begs the question: what is the right specification? For concurrent variants of established sequential data structures, one widely accepted specification is <strong>linearizability</strong>: the concurrent variant should behave as if each operation would take effect atomically. Unfortunately, linearizability is an <strong>extra-logical</strong> notion: when working inside the Iris program logic, there is no way to make use of the fact that some data structure is linearizable.<br>
+
+    To remedy this, the original Iris paper (based on prior work on TaDA) proposed a form of program specification dubbed "logically atomic Hoare triples". These triples provide a simple way to turn a specification of a sequential data structure (say, a stack) into a concurrent variant of the same specification, stipulating that each operation must "behave atomically". This enables clients of logically atomic triples to make use of the <strong>invariant rule</strong>, the key proof rule in Iris to reason about an atomic step of execution.<br>
+
+    Since then, we have managed to simplify the encoding of logical atomicity in Iris, and we have implemented that encoding in Coq to enable interactive machine-checked proofs of both logically atomic data structures and clients in the usual Iris style. In this talk, I will introduce logical atomicity and its encoding in Iris. I will talk about what works nicely (the "good"), what is not supported by the formalism (the "bad"), and what is still less ergonomic in Coq than we would like (the "ugly").
+    </div>
+    </li>
   <li><a href="http://gmalecha.github.io/">Gregory Malecha (Bedrock Systems, USA):</a>
     Iris in Industry
     <a href="#gregory" data-toggle="collapse">[abstract]</a>
