@@ -30,7 +30,8 @@
     <h1 class="jumbotron-heading display-1">Iris Workshop 2019</h1>
     <p class="lead">28 October – 1 November 2019, Aarhus University, Denmark</p>
     <p>
-      <a href="#speakers" class="btn btn-primary">Speakers</a>
+      <a href="#invited" class="btn btn-primary">Invited speakers</a>
+      <a href="#program" class="btn btn-primary">Program</a>
       <a href="#organizers" class="btn btn-primary">Organizers</a>
       <a href="#practical-information" class="btn btn-primary">Practical information</a>
       <a href="#about-aarhus" class="btn btn-primary">About Aarhus</a>
@@ -48,26 +49,29 @@ informal discussions and interaction.</p>
   </div>
 
   <div class="row" style="margin-bottom: 20px;">
-  <h2><a name="speakers"></a>Invited and contributed speakers</h2>
+  <h2><a name="invited"></a>Invited speakers</h2>
   <hr>
-  <p>The following speakers have confirmed to give an invited talk:</p>
   <ul>
   <li><a href="http://cs.ru.nl/~dfrumin/">Dan Frumin (Radboud University, The Netherlands):</a>
-    Compositional Non-Interference for Fine-Grained Concurrent Programs
-    <a href="#dan" data-toggle="collapse">[abstract]</a>
-    <div id="dan" class="collapse abstract">
-    We present SeLoC: a relational separation logic for verifying non-interference of fine-grained concurrent programs in a compositional way. SeLoC is more expressive than previous approaches, both in terms of the features of the target programming language, and in terms of the logic. The target programming language supports dynamically allocated references (pointers), higher-order functions, and fine-grained fork-based concurrency with low-level atomic operators like compare-and-set. The logic provides an invariant mechanism to establish protocols on data that is not protected by locks. This allows us to verify programs that were beyond the reach of previous approaches.<br> 
-
-A key technical innovation in SeLoC is a relational version of weakest preconditions to track information flow using separation logic resources. On top of these weakest preconditions we build a type system-like abstraction, using invariants and logical relations. SeLoC has been mechanized on top of the Iris framework in the Coq proof assistant.
-    </div></li>
+    Compositional Non-Interference for Fine-Grained Concurrent Programs</li>
   <li><a href="https://people.cs.kuleuven.be/~bart.jacobs/">Bart Jacobs (KU Leuven, Belgium):</a>
-    Specifying I/O using Abstract Nested Hoare Triples
-    <a href="#bart" data-toggle="collapse">[abstract]</a>
-    <div id="bart" class="abstract collapse">
-    We propose a separation logic-based approach for modular specification and verification of the I/O behavior of a program. The approach uses higher-order separation logic predicates to express "abstract nested Hoare triples" that abstractly associate a precondition and a postcondition with an I/O action. The approach supports verifying higher-level I/O actions built on top of lower-level ones, as well as "virtual I/O" actions that in fact just manipulate memory.
-    </div>
-    </li>
+    Specifying I/O using Abstract Nested Hoare Triples</li>
   <li><a href="https://people.mpi-sws.org/~jung/">Ralf Jung (MPI-SWS, Germany):</a>
+    Logical Atomicity in Iris: The Good, the Bad, and the Ugly</li>
+  <li><a href="http://gmalecha.github.io/">Gregory Malecha (Bedrock Systems, USA):</a>
+    Iris in Industry</li>
+  <li><a href="http://pauillac.inria.fr/~fpottier/">François Pottier (Inria, France):</a>
+    Playing spy games in Iris</li>
+  </ul>
+  </div>
+  
+  <div class="row" style="margin-bottom: 20px;">
+  <h2><a name="program"></a>Program</h2>
+  <hr>
+  <p>The workshop will take place at Department of Computer Science, Arhus University, Aabogade 40, Building 5794, 8200 Aarhus N.</p>
+  <h3>Monday 28 October</h3>
+  <ul>
+  <li>09:30 - 10:30: <a href="https://people.mpi-sws.org/~jung/">Ralf Jung (MPI-SWS, Germany):</a>
     Logical Atomicity in Iris: The Good, the Bad, and the Ugly
     <a href="#ralf" data-toggle="collapse">[abstract]</a>
     <div id="ralf" class="abstract collapse">
@@ -78,109 +82,131 @@ A key technical innovation in SeLoC is a relational version of weakest precondit
     Since then, we have managed to simplify the encoding of logical atomicity in Iris, and we have implemented that encoding in Coq to enable interactive machine-checked proofs of both logically atomic data structures and clients in the usual Iris style. In this talk, I will introduce logical atomicity and its encoding in Iris. I will talk about what works nicely (the "good"), what is not supported by the formalism (the "bad"), and what is still less ergonomic in Coq than we would like (the "ugly").
     </div>
     </li>
-  <li><a href="http://gmalecha.github.io/">Gregory Malecha (Bedrock Systems, USA):</a>
+  <li>10:30 - 11:00: <strong>Coffee break</strong></li>
+  <li>11:00 - 11:30: <a href="https://distrinet.cs.kuleuven.be/people/amin">Amin Timany (KU Leuven, Belgium):</a>
+    Aneris: A Logic for Node-Local, Modular Reasoning of Distributed Systems
+    <a href="#amin" data-toggle="collapse">[abstract]</a>
+    <div id="amin" class="abstract collapse">
+    Building network-connected programs and distributed systems is a powerful way to provide availability in a digital, always-connected era. However, with great power comes great complexity. Reasoning about distributed systems is well-known to be difficult.<br>
+
+  In this paper we present Aneris, a novel framework based on separation logic supporting modular, node-local reasoning about concurrent and distributed systems. The logic is higher-order, concurrent, with higher-order store and network sockets, and is fully mechanized in the Coq proof assistant. We use our framework to verify an implementation of a load balancer that uses multi-threading to distribute load amongst multiple servers and an implementation of the two-phase-commit protocol with a replicated logging service as a client. The two examples certify that Aneris is well-suited for both horizontal and vertical modular reasoning.
+    </div>
+    </li>
+  <li>11:30 - 12:00: <a href="http://itu.dk/people/jkas/">Jonas Kastberg Hinrichsen (ITU, Denmark):</a>
+    Actris: Session-Type Based Reasoning in Separation Logic
+    <a href="#jonas" data-toggle="collapse">[abstract]</a>
+    <div id="jonas" class="abstract collapse">
+    Message passing is a useful abstraction to implement concurrent programs. For real-world systems, however, it is often combined with other programming and concurrency paradigms, such as higher-order functions, mutable state, shared-memory concurrency, and locks. We present Actris: a logic for proving functional correctness of programs that use a combination of the aforementioned features. Actris combines the power of modern concurrent separation logics with a first-class protocol mechanism—based on session types—for reasoning about message passing in the presence of other concurrency paradigms.
+  We show that Actris provides a suitable level of abstraction by proving functional correctness of a variety of examples, including a distributed merge sort, a distributed load-balancing mapper, and a variant of the map-reduce model, using relatively simple specifications. Soundness of Actris is shown using a continuation-passing style (CPS) interpretation of its protocol mechanism into the Iris framework. We mechanised the theory of Actris, together with tactics for symbolic
+  execution of programs, as well as all examples in the paper, in the Coq proof assistant.
+    </div>
+    </li>
+  <li>12:00 - 12:30: <a href="https://lepigre.fr/">Rodolphe Lepigre (MPI-SWS, Germany):</a>
+    Extending Iris with Prophecy Variables
+    <a href="#rodolphe" data-toggle="collapse">[abstract]</a>
+    <div id="rodolphe" class="abstract collapse">
+    In this talk, I will present a recent addition to the Iris framework: prophecy variables. Prophecy variables can be used to predict what will happen later in the execution of a program, while reasoning about its current state. They were first introduced by Abadi and Lamport in the nineties, but were never formally integrated into a Hoare-style program logic before. Thanks to the addiction of prophecy variables we are now able to verify logical atomicity  (a relative of linearizability that will be presented by Ralf) for concurrent data structures like RDCSS or the Herlihy-Wing queue in Iris. These data structures are tricky because the linearization points of their operations (i.e.,  the precise point in their execution at which they appear to take effect) can sometimes only be identified after the fact (it may depend on future events). And as we will see that is the kind of situation where prophecy variables can help.
+
+    This is joint work with Ralf Jung,  Gaurav Parthasarathy,  Marianna Rapoport, Amin Timany, Derek Dreyer and Bart Jacobs.
+    </div>
+    </li>
+  <li>12:30 - 14:00: <strong>Lunch</strong></li>
+  <li>14:00 - 15:00: <a href="http://pauillac.inria.fr/~fpottier/">François Pottier (Inria, France):</a>
+    Playing spy games in Iris
+    <a href="#francois" data-toggle="collapse">[abstract]</a>
+    <div id="francois" class="abstract collapse">
+    I will discuss the specification and proof in Iris of a "local generic solver", that is, an on-demand, incremental, memoizing least fixed point computation algorithm. Although the solver uses long-lived mutable internal state for several purposes, including memoization and "spying", it is apparently pure: no side effects are mentioned in its specification. The proof uses prophecy variables, which it exploits both directly and in the proof of a restricted infinitary conjunction rule. This is joint work with Paulo Emílio de Vilhena and Jacques-Henri Jourdan.
+    </div>
+    </li>
+  <li>15:00 - 15:30: <a href="https://www.stefanesco.com/">Léo Stefanesco (IRIF, France):</a>
+    Parsimonious steps toward termination in Iris
+    <a href="#leo" data-toggle="collapse">[abstract]</a>
+    <div id="leo" class="abstract collapse">
+    I will report on an early work whose purpose is reasoning about termination in Iris. This is achieved by constructing a weak simulation between the program and an abstract transition system.  The weakness of the simulation comes from the fact that our weakest precondition is defined as the guarded fixpoint of a least fixpoint. This is joint work with Amin Timany and Lars Birkedal.
+    </div>
+    </li>
+  <li>15:30 - 16:00: <strong>Coffee break</strong></li>
+  <li>16:00 - 16:30: <a href="https://www.doc.ic.ac.uk/~pg/">Philippa Gardner (Imperial College, UK):</a> Compositional Reasoning for the Termination of Fine-grained Concurrent Programs</li>
+  <li>16:30 - 17:30: <a href="http://gmalecha.github.io/">Gregory Malecha (Bedrock Systems, USA):</a>
     Iris in Industry
     <a href="#gregory" data-toggle="collapse">[abstract]</a>
     <div id="gregory" class="abstract collapse">
     BedRock Systems is developing a trustworthy software foundation for the connected world. To achieve this goal, we are applying formal methods pervasively across our stack ranging from a capability-based micro-hypervisor to a VMM and auxiliary components. Tackling software at this scale leads to interesting engineering difficulties. We have recently embraced Iris to serve as the foundation for our reasoning, but many challenges still remain. In this talk, I discuss some of those challenges. On the language side of things, BedRock Systems is using C++ and we have developed a tool (based on Clang) to convert C++ programs into abstract syntax trees which we ascribe semantics to axiomatically. To make reasoning about our programs more tractable, we have (and are) developing automation to improve the verification experience, especially for the non-concurrent portions of our code. At the system level, we are seeking to leverage Iris's logic to modularize the way that application programs reason about capabilities across the entire system. Doing this requires reasoning about multiple address and capability spaces as well as the interaction between trusted and untrusted code. Beyond the purely technical problems, BedRock's Systems' embrace of formal methods means that we have the opportunity, and the obligation, to train systems developers to write verifiable code and the specifications to go along with it. While we don't expect developers to immediately be able to verify sophisticated concurrent algorithms initially, we are working on representative examples to build a cookbook of verification recipes that can be more easily understood, applied, and automated.
     </div>
     </li>
-  <li><a href="http://pauillac.inria.fr/~fpottier/">François Pottier (Inria, France):</a>
-    Playing spy games in Iris
-    <a href="#francois" data-toggle="collapse">[abstract]</a>
-    <div id="francois" class="abstract collapse">
-    I will discuss the specification and proof in Iris of a "local generic solver",
-    that is, an on-demand, incremental, memoizing least fixed point computation
-    algorithm. Although the solver uses long-lived mutable internal state for
-    several purposes, including memoization and "spying", it is apparently pure: no
-    side effects are mentioned in its specification. The proof uses prophecy
-    variables, which it exploits both directly and in the proof of a restricted
-    infinitary conjunction rule. This is joint work with Paulo Emílio de Vilhena and
-    Jacques-Henri Jourdan.
-    </div>
-</li>
+  <li>18:30 - 21:30: <strong>Conference dinner at No. 16</strong> (<a href="https://goo.gl/maps/3d3BmJCBH8PU6AHr5">Europaplads 16, Aarhus</a>)</li>
   </ul>
-  <p>In addition to the invited talks, there will be the following contributed talks:</p>
+  
+  <h3>Tuesday 29 October</h3>
   <ul>
-  <li><a href="https://www.cs.princeton.edu/~appel/">Andrew Appel (Princeton, USA):</a> Recent developments in the Verified Software Toolchain
-  <a href="#andrew" data-toggle="collapse">[abstract]</a>
-  <div id="andrew" class="abstract collapse">
-  The Verified Software Toolchain has a powerful and expressive program logic for the C programming language, proved sound with a machine-checked proof in Coq w.r.t. the operational semantics of CompCert C, and with a capable proof-automation system. I will summarize several recent developments in the VST project:  Improved proof automation (Wang and Appel), modularity and linking (Beringer and Appel), funspec subsumption (Beringer and Appel), Cbench (Wiedijk) verifications (Appel), floating point, I/O reasoning (Mansky and Appel), foundational connection to CertiKOS operating system (Mansky, Honore, and Appel), foundational shared-memory concurrency (Cuellar, Giannarakis, Madiot, Mansky, Beringer, Appel), assertions-as-annotatoins (Wang and Cao), connection to Certicoq (Korkut and Appel).
-  </div>
-  </li>
-  <li><a href="https://people.mpi-sws.org/~haidang/">Hai Dang (MPI-SWS, Germany):</a> RustBelt Relaxed
-  <a href="#hai" data-toggle="collapse">[abstract]</a>
-  <div id="hai" class="abstract collapse">
-  The original RustBelt made the significant simplifying assumption that the language is sequentially consistent. We adapt RustBelt to account for the relaxed-memory operations that concurrent Rust libraries actually use, in the process uncovering a data race in the Arc library. We will focus the discussion on how to reason about resource reclamation under relaxed memory, using variants of cancellable invariants that are improved with a logical construction we call synchronized ghost state.
-  </div></li>
-  <li><a href="https://www.doc.ic.ac.uk/~pg/">Philippa Gardner (Imperial College, UK):</a> Compositional Reasoning for the Termination of Fine-grained Concurrent Programs</li>
-  <li>Paolo Giarrusso (TUDelft, The Netherlands): Step-Indexed Logical Relations for (guarded) Dependent Object Types
-  <a href="#paolo" data-toggle="collapse">[abstract]</a>
-  <div id="paolo" class="abstract collapse">
-  The metatheory of the Scala core type system (DOT), first established recently, is still hard to extend, like other systems combining subtyping and forms of dependent types. Soundness of important Scala features remains an open problem in theory and in practice. To address some of these issues, we have mechanized in Coq a semantic soundness proof for a DOT variant called guarded DOT, and discuss both additional expressivity and additional restrictions. This is challenging, because in DOT variables can be in scope in their own type, objects can define mutually recursive and impredicative type members, and can contain evidence of subtyping relations that must be sound. We address these challenges by novel applications of step-indexing, as supported by the Iris program logic.
-  </div>
-  </li>
-  <li>Aina Linn Georges (Aarhus University, Denmark): Implementing a Capability Machine model into Iris
-  <a href="#aina" data-toggle="collapse">[abstract]</a>
-  <div id="aina" class="abstract collapse">
-  Capabilities exist at multiples levels of abstraction, with the shared tagline: “an unforgeable token of authority”. At the machine level, a capability gives authority over a piece of memory. Lau Skorstensgaard et. al. [1][2] developed methods for reasoning about capability machines; in [1] they define a logical relation for a capability machine with local capabilities, and present a calling convention that enforces local state encapsulation and well-bracketed control flow. I will present the formalisation of such a model into Iris. I will show the embedding of a capability machine language (in which programs lie in memory) into Iris, and the formalisation of the Logical Relation to reason about programs in that language.<br>
+  <li>09:30 - 10:30: <a href="http://cs.ru.nl/~dfrumin/">Dan Frumin (Radboud University, The Netherlands):</a>
+    Compositional Non-Interference for Fine-Grained Concurrent Programs
+    <a href="#dan" data-toggle="collapse">[abstract]</a>
+    <div id="dan" class="collapse abstract">
+    We present SeLoC: a relational separation logic for verifying non-interference of fine-grained concurrent programs in a compositional way. SeLoC is more expressive than previous approaches, both in terms of the features of the target programming language, and in terms of the logic. The target programming language supports dynamically allocated references (pointers), higher-order functions, and fine-grained fork-based concurrency with low-level atomic operators like compare-and-set. The logic provides an invariant mechanism to establish protocols on data that is not protected by locks. This allows us to verify programs that were beyond the reach of previous approaches.<br> 
 
-[1] Skorstengaard L., Devriese D., Birkedal L. (2018) Reasoning About a Machine with Local Capabilities. Programming Languages and Systems. ESOP 2018.<br>
-[2] Lau Skorstengaard, Dominique Devriese, and Lars Birkedal. 2019. StkTokens: enforcing well-bracketed control flow and stack encapsulation using linear capabilities. Proc. ACM Program. Lang. 3, POPL, Article 19 (January 2019)
-  </div>
-  </li>
-  <li><a href="http://gallium.inria.fr/~agueneau/">Armaël Guéneau (Inria, France):</a> Formal verification of an incremental cycle detection algorithm
-  <a href="#armael" data-toggle="collapse">[abstract]</a>
-  <div id="armael" class="abstract collapse">
-  In this talk, I will present the analysis of a state-of-the-art incremental cycle detection algorithm due to Bender, Fineman, Gilbert, and Tarjan. The algorithm maintains subtle invariants, and features a non trivial asymptotic, amortized complexity bound. I will detail how we exploit Separation Logic with Time Credits to simultaneously verify the correctness and the worst-case amortized complexity of the modified algorithm.
+A key technical innovation in SeLoC is a relational version of weakest preconditions to track information flow using separation logic resources. On top of these weakest preconditions we build a type system-like abstraction, using invariants and logical relations. SeLoC has been mechanized on top of the Iris framework in the Coq proof assistant.
+    </div></li>
+  <li>10:30 - 11:00: <strong>Coffee break</strong></li>
+  <li>11:00 - 11:30: <a href="http://gallium.inria.fr/~gmevel/">Glen Mével (Inria, France):</a>
+    Iris for Multicore OCaml
+    <a href="#glen" data-toggle="collapse">[abstract]</a>
+    <div id="glen" class="abstract collapse">
+    I will present some preliminary work on instantiating the Iris framework for the Multicore OCaml language.
+    </div>
+    </li>
+  <li>11:30 - 12:00: <a href="http://gallium.inria.fr/~agueneau/">Armaël Guéneau (Inria, France):</a>
+    Formal verification of an incremental cycle detection algorithm
+    <a href="#armael" data-toggle="collapse">[abstract]</a>
+    <div id="armael" class="abstract collapse">
+    In this talk, I will present the analysis of a state-of-the-art incremental cycle detection algorithm due to Bender, Fineman, Gilbert, and Tarjan. The algorithm maintains subtle invariants, and features a non trivial asymptotic, amortized complexity bound. I will detail how we exploit Separation Logic with Time Credits to simultaneously verify the correctness and the worst-case amortized complexity of the modified algorithm.
 
-  This is joint work with Arthur Charguéraud, Jacques-Henri Jourdan and François Pottier.
-  </div>
-</li>
-  <li><a href="http://itu.dk/people/jkas/">Jonas Kastberg Hinrichsen (ITU, Denmark):</a> Actris: Session-Type Based Reasoning in Separation Logic
-  <a href="#jonas" data-toggle="collapse">[abstract]</a>
-  <div id="jonas" class="abstract collapse">
-  Message passing is a useful abstraction to implement concurrent programs. For real-world systems, however, it is often combined with other programming and concurrency paradigms, such as higher-order functions, mutable state, shared-memory concurrency, and locks. We present Actris: a logic for proving functional correctness of programs that use a combination of the aforementioned features. Actris combines the power of modern concurrent separation logics with a first-class protocol mechanism—based on session types—for reasoning about message passing in the presence of other concurrency paradigms.
-We show that Actris provides a suitable level of abstraction by proving functional correctness of a variety of examples, including a distributed merge sort, a distributed load-balancing mapper, and a variant of the map-reduce model, using relatively simple specifications. Soundness of Actris is shown using a continuation-passing style (CPS) interpretation of its protocol mechanism into the Iris framework. We mechanised the theory of Actris, together with tactics for symbolic
-execution of programs, as well as all examples in the paper, in the Coq proof assistant.
-  </div>
-  </li>
-  <li><a href="https://lepigre.fr/">Rodolphe Lepigre (MPI-SWS, Germany):</a> Extending Iris with Prophecy Variables
-  <a href="#rodolphe" data-toggle="collapse">[abstract]</a>
-  <div id="rodolphe" class="abstract collapse">
-  In this talk, I will present a recent addition to the Iris framework: prophecy variables. Prophecy variables can be used to predict what will happen later in the execution of a program, while reasoning about its current state. They were first introduced by Abadi and Lamport in the nineties, but were never formally integrated into a Hoare-style program logic before. Thanks to the addiction of prophecy variables we are now able to verify logical atomicity  (a relative of linearizability that will be presented by Ralf) for concurrent data structures like RDCSS or the Herlihy-Wing queue in Iris. These data structures are tricky because the linearization points of their operations (i.e.,  the precise point in their execution at which they appear to take effect) can sometimes only be identified after the fact (it may depend on future events). And as we will see that is the kind of situation where prophecy variables can help.
+    This is joint work with Arthur Charguéraud, Jacques-Henri Jourdan and François Pottier.
+    </div>
+    </li>
+  <li>12:00 - 12:30: <a href="https://www.cs.princeton.edu/~appel/">Andrew Appel (Princeton, USA):</a>
+    Recent developments in the Verified Software Toolchain
+    <a href="#andrew" data-toggle="collapse">[abstract]</a>
+    <div id="andrew" class="abstract collapse">
+    The Verified Software Toolchain has a powerful and expressive program logic for the C programming language, proved sound with a machine-checked proof in Coq w.r.t. the operational semantics of CompCert C, and with a capable proof-automation system. I will summarize several recent developments in the VST project:  Improved proof automation (Wang and Appel), modularity and linking (Beringer and Appel), funspec subsumption (Beringer and Appel), Cbench (Wiedijk) verifications (Appel), floating point, I/O reasoning (Mansky and Appel), foundational connection to CertiKOS operating system (Mansky, Honore, and Appel), foundational shared-memory concurrency (Cuellar, Giannarakis, Madiot, Mansky, Beringer, Appel), assertions-as-annotatoins (Wang and Cao), connection to Certicoq (Korkut and Appel).
+    </div>
+    </li>
+  <li>12:30 - 14:00: <strong>Lunch</strong></li>
+  <li>14:00 - 15:00: <a href="https://people.cs.kuleuven.be/~bart.jacobs/">Bart Jacobs (KU Leuven, Belgium):</a>
+    Specifying I/O using Abstract Nested Hoare Triples
+    <a href="#bart" data-toggle="collapse">[abstract]</a>
+    <div id="bart" class="abstract collapse">
+    We propose a separation logic-based approach for modular specification and verification of the I/O behavior of a program. The approach uses higher-order separation logic predicates to express "abstract nested Hoare triples" that abstractly associate a precondition and a postcondition with an I/O action. The approach supports verifying higher-level I/O actions built on top of lower-level ones, as well as "virtual I/O" actions that in fact just manipulate memory.
+    </div>
+    </li>
+  <li>15:00 - 15:30: Aina Linn Georges (Aarhus University, Denmark):
+    Implementing a Capability Machine model into Iris
+    <a href="#aina" data-toggle="collapse">[abstract]</a>
+    <div id="aina" class="abstract collapse">
+    Capabilities exist at multiples levels of abstraction, with the shared tagline: “an unforgeable token of authority”. At the machine level, a capability gives authority over a piece of memory. Lau Skorstensgaard et. al. [1][2] developed methods for reasoning about capability machines; in [1] they define a logical relation for a capability machine with local capabilities, and present a calling convention that enforces local state encapsulation and well-bracketed control flow. I will present the formalisation of such a model into Iris. I will show the embedding of a capability machine language (in which programs lie in memory) into Iris, and the formalisation of the Logical Relation to reason about programs in that language.<br>
 
-  This is joint work with Ralf Jung,  Gaurav Parthasarathy,  Marianna Rapoport, Amin Timany, Derek Dreyer and Bart Jacobs.
-  </div>
-</li>  
-  <li><a href="http://gallium.inria.fr/~gmevel/">Glen Mével (Inria, France):</a> Iris for Multicore OCaml
-  <a href="#glen" data-toggle="collapse">[abstract]</a>
-  <div id="glen" class="abstract collapse">
-  I will present some preliminary work on instantiating the Iris framework for the Multicore OCaml language.
-  </div>
-  </li>
-  <li><a href="https://www.stefanesco.com/">Léo Stefanesco (IRIF, France):</a> Parsimonious steps toward termination in Iris
-  <a href="#leo" data-toggle="collapse">[abstract]</a>
-  <div id="leo" class="abstract collapse">
-  I will report on an early work whose purpose is reasoning
-about termination in Iris. This is achieved by constructing a weak
-simulation between the program and an abstract transition system.  The
-weakness of the simulation comes from the fact that our weakest
-precondition is defined as the guarded fixpoint of a least
-fixpoint. This is a joint work with Amin Timany and Lars Birkedal.
-  </div>
-  </li>
-  <li><a href="https://distrinet.cs.kuleuven.be/people/amin">Amin Timany (KU Leuven, Belgium):</a> Aneris: A Logic for Node-Local, Modular Reasoning of Distributed Systems
-  <a href="#amin" data-toggle="collapse">[abstract]</a>
-  <div id="amin" class="abstract collapse">
-  Building network-connected programs and distributed systems is a powerful way to provide availability in a digital, always-connected era. However, with great power comes great complexity. Reasoning about distributed systems is well-known to be difficult.<br>
-
-In this paper we present Aneris, a novel framework based on separation logic supporting modular, node-local reasoning about concurrent and distributed systems. The logic is higher-order, concurrent, with higher-order store and network sockets, and is fully mechanized in the Coq proof assistant. We use our framework to verify an implementation of a load balancer that uses multi-threading to distribute load amongst multiple servers and an implementation of the two-phase-commit protocol with a replicated logging service as a client. The two examples certify that Aneris is well-suited for both horizontal and vertical modular reasoning.
-  </div>
-  </li>
+  [1] Skorstengaard L., Devriese D., Birkedal L. (2018) Reasoning About a Machine with Local Capabilities. Programming Languages and Systems. ESOP 2018.<br>
+  [2] Lau Skorstengaard, Dominique Devriese, and Lars Birkedal. 2019. StkTokens: enforcing well-bracketed control flow and stack encapsulation using linear capabilities. Proc. ACM Program. Lang. 3, POPL, Article 19 (January 2019)
+    </div>
+    </li>
+  <li>15:30 - 16:00: <strong>Coffee break</strong></li>
+  <li>16:00 - 16:30: Paolo Giarrusso (TUDelft, The Netherlands):
+    Step-Indexed Logical Relations for (guarded) Dependent Object Types
+    <a href="#paolo" data-toggle="collapse">[abstract]</a>
+    <div id="paolo" class="abstract collapse">
+    The metatheory of the Scala core type system (DOT), first established recently, is still hard to extend, like other systems combining subtyping and forms of dependent types. Soundness of important Scala features remains an open problem in theory and in practice. To address some of these issues, we have mechanized in Coq a semantic soundness proof for a DOT variant called guarded DOT, and discuss both additional expressivity and additional restrictions. This is challenging, because in DOT variables can be in scope in their own type, objects can define mutually recursive and impredicative type members, and can contain evidence of subtyping relations that must be sound. We address these challenges by novel applications of step-indexing, as supported by the Iris program logic.
+    </div>
+    </li>
+  <li>16:30 - 17:00: <a href="https://people.mpi-sws.org/~haidang/">Hai Dang (MPI-SWS, Germany):</a>
+    RustBelt Relaxed
+    <a href="#hai" data-toggle="collapse">[abstract]</a>
+    <div id="hai" class="abstract collapse">
+    The original RustBelt made the significant simplifying assumption that the language is sequentially consistent. We adapt RustBelt to account for the relaxed-memory operations that concurrent Rust libraries actually use, in the process uncovering a data race in the Arc library. We will focus the discussion on how to reason about resource reclamation under relaxed memory, using variants of cancellable invariants that are improved with a logical construction we call synchronized ghost state.
+    </div>
+    </li>
   </ul>
   </div>
-
+  
   <div class="row" style="margin-bottom: 20px;">
   <h2><a name="organizers"></a>Organizers</h2>
   <hr>
