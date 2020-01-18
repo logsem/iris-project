@@ -7,11 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="referrer" content="origin-when-crossorigin">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Iris Project</title>
 
-    <link rel="stylesheet" href="/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css" />
 
@@ -24,8 +23,7 @@
         <p class="lead">Iris is a Higher-Order Concurrent Separation Logic Framework implemented and verified in the proof assistant Coq.</p>
         <p>
           <a href="https://gitlab.mpi-sws.org/iris/iris/" class="btn btn-primary">Coq Formalization</a>
-	          <a href="tutorial-material.html" class="btn btn-primary">Tutorial Material</a>
-          <a href="https://plv.mpi-sws.org/iris/appendix-3.1.pdf" class="btn btn-secondary">Formal Documentation (v3.1)</a>
+          <a href="https://plv.mpi-sws.org/iris/appendix-3.2.pdf" class="btn btn-secondary">Formal Documentation (v3.2)</a>
           <a href="https://lists.mpi-sws.org/listinfo/iris-club" class="btn btn-secondary">Mailing List</a>
           <a href="https://mattermost.mpi-sws.org/iris" class="btn btn-secondary">Chat</a>
         </p>
@@ -34,39 +32,136 @@
 
 
     <div class="container">
-
-<!--<div class="alert alert-info">
-  The Coq code for Derek's <strong>POPL keynote</strong> can be found <a href="https://gitlab.rts.mpi-sws.org/swasey/derek-popl18-talk">on our git server</a>.
-</div>-->
-
       <div class="row">
-        <p class="lead">
+        <p>
           Iris is a framework that can be used for reasoning about
           safety of concurrent programs, as the logic in logical
           relations, to reason about type-systems, data-abstraction
           etc.
           In case of questions, please contact us on the <a href="https://lists.mpi-sws.org/listinfo/iris-club">Iris Club list</a> or in our <a href="https://mattermost.mpi-sws.org/iris">chat room</a>.
-        </p>
-        <p class="lead">
-          Below, we give an overview of
-          the research that uses Iris one way or another.
       </div>
 
     </div>
 
     <div class="container" style="margin-bottom: 20px;">
+      <div class="row">
+        <h2>Learning Iris</h2>
+      </div>
+      <div class="row">
+      <p>Some useful resources designed to learn Iris and its Coq implementation:</p>
+      <ul>
+        <li>The <a href="tutorial-material.html">Iris lecture notes</a> provide a tutorial style introduction to Iris, including a number of exercises (but most of it not in Coq).</li>
+        <li>The <a href="https://gitlab.mpi-sws.org/iris/tutorial-popl18">Iris Tutorial at POPL'18</a> contains a number of exercises to practice the Iris tactics in Coq.</li>
+      </ul>
+      <p>A selection of papers that are suited to get started with Iris:</p>
+      <ul>
+        <li>The <a href="https://www.mpi-sws.org/~dreyer/papers/iris-ground-up/paper.pdf">Iris From The Ground Up paper</a> contains an extensive description of the rules and the model of the Iris logic.</li>
+        <li>The <a href="pdfs/2017-popl-proofmode-final.pdf">Iris Proofmode paper (Section 3)</a> contains a brief tutorial to the Iris tactics in Coq.</li>
+        <li>The <a href="https://gitlab.mpi-sws.org/iris/iris/blob/master/docs/proof_mode.md">Iris Proof Mode (IPM) / MoSeL</a> and the <a href="https://gitlab.mpi-sws.org/iris/iris/blob/master/docs/heap_lang.md">HeapLang</a> documentation provide a reference of the Iris tactics in Coq.</li>
+      </ul>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 20px;">
+      <div class="row">
+        <h2>Events</h2>
+        <ul>
+        <li>20 January 2020: <a href="https://popl20.sigplan.org/details/POPL-2020-tutorialfest/4/-T4-Proving-Semantic-Type-Soundness-in-Iris">Tutorial on Proving Semantic Type Soundness in Iris</a> at POPL, New Orleans, USA</li>
+        <li>28 October–1 November 2019: <a href="workshop-2019">The First Iris Workshop</a>, Aarhus, Denmark</li>
+        <li>8 January 2018: <a href="https://popl18.sigplan.org/details/POPL-2018-TutorialFest/1/Iris-A-Modular-Foundation-for-Higher-Order-Concurrent-Separation-Logic-">Tutorial on Iris</a> at POPL, Los Angeles, USA</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container" style="margin-bottom: 20px;">
 
       <div class="row">
         <h2>Publications</h2>
       </div>
+      <div class="row">
+      <p>Below, we give an overview of the research that uses Iris one way or another.</p>
+      </div>
 
       <div class="row">
         <dl class="ref">
+
+          <dt>RustBelt Meets Relaxed Memory</dt>
+          <dd>
+            <div class="entry">
+              Hoang-Hai Dang, Jacques-Henri Jourdan, Jan-Oliver Kaiser, Derek Dreyer<br/>
+              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages, New Orleans, Louisiana, United States</small>
+              <div class="buttons">
+                <a href="https://plv.mpi-sws.org/rustbelt/rbrlx/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                <a href="https://plv.mpi-sws.org/rustbelt/rbrlx/" class="btn btn-outline-primary btn-sm">website</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>Spy Game: Verifying a Local Generic Solver in Iris</dt>
+          <dd>
+            <div class="entry">
+              Paulo Emílio de Vilhena, François Pottier, Jacques-Henri Jourdan<br/>
+              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages, New Orleans, Louisiana, United States</small>
+              <div class="buttons">
+                <a href="http://gallium.inria.fr/~fpottier/publis/de-vilhena-pottier-jourdan-spy-game-2020.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                <a href="https://gitlab.inria.fr/pdevilhe/spy-game" class="btn btn-outline-primary btn-sm">Coq development</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>Actris: Session-Type Based Reasoning in Separation Logic</dt>
+          <dd>
+            <div class="entry">
+              Jonas Kastberg Hinrichsen, Jesper Bengtson, Robbert Krebbers<br/>
+              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages, New Orleans, Louisiana, United States</small>
+              <div class="buttons">
+                <a href="pdfs/2020-popl-actris-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                <a href="https://gitlab.mpi-sws.org/iris/actris/" class="btn btn-outline-primary btn-sm">Coq development</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>The Future is Ours: Prophecy Variables in Separation Logic</dt>
+          <dd>
+            <div class="entry">
+              Ralf Jung, Rodolphe Lepigre, Gaurav Parthasarathy, Marianna Rapoport, Amin Timany, Derek Dreyer, Bart Jacobs<br/>
+              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages, New Orleans, Louisiana, United States</small>
+              <div class="buttons">
+                <a href="https://plv.mpi-sws.org/prophecies/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                <a href="https://plv.mpi-sws.org/prophecies/" class="btn btn-outline-primary btn-sm">website</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>The High-Level Benefits of Low-Level Sandboxing</dt>
+          <dd>
+            <div class="entry">
+              Michael Sammler, Deepak Garg, Derek Dreyer, Tadeusz Litak<br/>
+              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages, New Orleans, Louisiana, United States</small>
+              <div class="buttons">
+                <a href="https://www.mpi-sws.org/~dreyer/papers/sandboxing/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                <a href="https://gitlab.mpi-sws.org/FCS/lang-sandbox-coq" class="btn btn-outline-primary btn-sm">Coq development</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>Verifying Concurrent, Crash-Safe Systems with Perennial</dt>
+          <dd>
+            <div class="entry">
+              Tej Chajed, Joseph Tassarotti, M. Frans Kaashoek, Nickolai Zeldovich<br/>
+              <small class="text-muted">In SOSP 2019: ACM Symposium on Operating Systems Principles, Huntsville, Canada</small>
+              <div class="buttons">
+                <a href="pdfs/2019-sosp-perennial-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                <a href="https://github.com/mit-pdos/perennial" class="btn btn-outline-primary btn-sm">Coq development</a>
+              </div>
+            </div>
+          </dd>
+
           <dt>Mechanized Relational Verification of Concurrent Programs with Continuations</dt>
           <dd>
             <div class="entry">
               Amin Timany, Lars Birkedal<br/>
-              <small class="text-muted">In ICFP 19: ACM SIGPLAN International Conference on Functional Programming, Berlin, Germany</small>
+              <small class="text-muted">In ICFP 2019: ACM SIGPLAN International Conference on Functional Programming, Berlin, Germany</small>
               <div class="buttons">
                 <a href="pdfs/2019-icfp-logrelcc-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
                 <a href="artifacts/2019-icfp-logrelcc.tar.gz" class="btn btn-outline-primary btn-sm">Coq development</a>
@@ -209,7 +304,7 @@
             Aleš Bizjak, Lars Birkedal<br/>
             <small class="text-muted">In MFPS 2017: Mathematical Foundations of Programming Semantics, Ljubljana, Slovenia </small>
               <div class="buttons">
-                <a href="http://cs.au.dk/~abizjak/documents/publications/box-modality-mfps.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
+                <a href="pdfs/2017-mfps-box-modality.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
               </div>
             </div>
           </dd>
@@ -329,17 +424,28 @@
 
       <div class="row">
         <dl class="ref">
-          <dt>Aneris: A Logic for Node-Local, Modular Reasoning of Distributed Systems</dt>
+          <dt>Aneris: A Mechanised Logic for Modular Reasoning about Distributed Systems</dt>
           <dd>
             <div class="entry">
-              Morten Krogh-Jespersen, Amin Timany, Marit Edna Ohlenbusch, Lars Birkedal<br/>
+              Morten Krogh-Jespersen, Amin Timany, Marit Edna Ohlenbusch, Simon Oddershede Gregersen, Lars Birkedal<br/>
               <small class="text-muted">Submitted for publication</small>
               <div class="buttons">
                 <a href="pdfs/2019-aneris-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
               </div>
             </div>
           </dd>
-          
+  
+          <dt>Compositional Non-Interference for Fine-Grained Concurrent Programs</dt>
+          <dd>
+            <div class="entry">
+              Dan Frumin, Robbert Krebbers, Lars Birkedal<br/>
+              <small class="text-muted">Submitted for publication</small>
+              <div class="buttons">
+                <a href="pdfs/2019-seloc-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
+                <a href="https://cs.ru.nl/~dfrumin/arch/seloc-0.1.tgz" class="btn btn-outline-primary btn-sm">Coq development</a>
+              </div>
+            </div>
+          </dd>     
         </dl>
       </div>
 
@@ -441,6 +547,8 @@
 		  <span class="muted" style="font-size: 10pt;">Contact: <a href="https://www.mpi-sws.org/~dreyer/">Derek Dreyer</a></span>
 		</div>
               </div>
+            </div>
+            <div class="card-deck">
               <div class="card">
 		<a href="http://www.tudelft.nl" class="card-link" title="Visit Delft University of Technology">
                   <img class="card-img-top" src="gfx/delft.png" alt="Delft University of Technology">
