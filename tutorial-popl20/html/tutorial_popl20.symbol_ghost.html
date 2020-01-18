@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<link href="coqdocjs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="coqdocjs.js"></script>
+</head>
+
+<body onload="document.getElementById('content').focus()">
+  <div id="header">
+    <span class="left">
+      <span class="modulename"> <script> document.write(document.title) </script> </span>
+    </span>
+
+    <span class="button" id="toggle-proofs"></span>
+
+    <span class="right">
+      <a href="../">Project Page</a>
+      <a href="./indexpage.html"> Index </a>
+      <a href="./toc.html"> Table of Contents </a>
+    </span>
+</div>
+    <div id="content" tabindex="-1" onblur="document.getElementById('content').focus()">
+    <div id="main">
+<h1 class="libtitle">tutorial_popl20.symbol_ghost</h1>
+
+<div class="code">
+<span class="id" title="keyword">From</span> <span class="id" title="var">iris.algebra</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <span class="id" title="library">auth</span>.<br/>
+<span class="id" title="keyword">From</span> <span class="id" title="var">iris.base_logic</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <span class="id" title="library">lib.own</span>.<br/>
+<span class="id" title="keyword">From</span> <span class="id" title="var">iris.proofmode</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Export</span> <span class="id" title="library">tactics</span>.<br/>
+
+<br/>
+<span class="comment">(*&nbsp;The&nbsp;required&nbsp;ghost&nbsp;theory&nbsp;*)</span><br/>
+<span class="id" title="keyword">Class</span> <a name="symbolG"><span class="id" title="record">symbolG</span></a> <span class="id" title="var">Σ</span> := { <a name="symbol_inG"><span class="id" title="projection">symbol_inG</span></a> :&gt; <span class="id" title="class">inG</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#e15c0eb40e61adefe95778c26e7840f6"><span class="id" title="variable">Σ</span></a> (<span class="id" title="definition">authR</span> <span class="id" title="definition">mnatUR</span>) }.<br/>
+<span class="id" title="keyword">Definition</span> <a name="11ae33ef293fc30252538db22587eff1"><span class="id" title="definition">symbolΣ</span></a> : <span class="id" title="definition">gFunctors</span> := <span class="id" title="notation">#[</span><span class="id" title="constructor">GFunctor</span> (<span class="id" title="definition">authR</span> <span class="id" title="definition">mnatUR</span>)<span class="id" title="notation">]</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Instance</span> <a name="90b8cc6d37b31cc99715391eb2cb3855"><span class="id" title="instance">subG_symbolΣ</span></a> {<span class="id" title="var">Σ</span>} : <span class="id" title="class">subG</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#11ae33ef293fc30252538db22587eff1"><span class="id" title="definition">symbolΣ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#e15c0eb40e61adefe95778c26e7840f6"><span class="id" title="variable">Σ</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Unicode.Utf8_core.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#symbolG"><span class="id" title="class">symbolG</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#e15c0eb40e61adefe95778c26e7840f6"><span class="id" title="variable">Σ</span></a>.<br/>
+<span class="id" title="keyword">Proof</span>. <span class="id" title="var">solve_inG</span>. <span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Section</span> <a name="symbol_ghost"><span class="id" title="section">symbol_ghost</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> `{!<a class="idref" href="tutorial_popl20.symbol_ghost.html#symbolG"><span class="id" title="class">symbolG</span></a> <span class="id" title="var">Σ</span>}.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="counter"><span class="id" title="definition">counter</span></a> (<span class="id" title="var">γ</span> : <span class="id" title="definition">gname</span>) (<span class="id" title="var">n</span> : <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a>) : <span class="id" title="abbreviation">iProp</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#c12c63f6821888b3cb778c1761e58605"><span class="id" title="variable">Σ</span></a> := <span class="id" title="definition">own</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> (<span class="id" title="notation">●</span> <span class="id" title="notation">(</span><a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#aed478b27f23b4f753c27c8ac393febc"><span class="id" title="notation">:</span></a> <span class="id" title="definition">mnat</span><span class="id" title="notation">)</span>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="symbol"><span class="id" title="definition">symbol</span></a> (<span class="id" title="var">γ</span> : <span class="id" title="definition">gname</span>) (<span class="id" title="var">n</span> : <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a>) : <span class="id" title="abbreviation">iProp</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#c12c63f6821888b3cb778c1761e58605"><span class="id" title="variable">Σ</span></a> := <span class="id" title="definition">own</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> (<span class="id" title="notation">◯</span> <span class="id" title="notation">(</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#S"><span class="id" title="constructor">S</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#aed478b27f23b4f753c27c8ac393febc"><span class="id" title="notation">:</span></a> <span class="id" title="definition">mnat</span><span class="id" title="notation">)</span>).<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Global Instance</span> <a name="counter_timeless"><span class="id" title="instance">counter_timeless</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">n</span> : <span class="id" title="class">Timeless</span> (<a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>. <span class="id" title="tactic">apply</span> <span class="id" title="var">_</span>. <span class="id" title="keyword">Qed</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Global Instance</span> <a name="symbol_timeless"><span class="id" title="instance">symbol_timeless</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">n</span> : <span class="id" title="class">Timeless</span> (<a class="idref" href="tutorial_popl20.symbol_ghost.html#symbol"><span class="id" title="definition">symbol</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>. <span class="id" title="tactic">apply</span> <span class="id" title="var">_</span>. <span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="counter_exclusive"><span class="id" title="lemma">counter_exclusive</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">n1</span> <span class="id" title="var">n2</span> : <a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n1"><span class="id" title="variable">n1</span></a> <span class="id" title="notation">-∗</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n2"><span class="id" title="variable">n2</span></a> <span class="id" title="notation">-∗</span> <span class="id" title="notation">False</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="lemma">bi.wand_intro_r</span>. <span class="id" title="tactic">rewrite</span> -<span class="id" title="lemma">own_op</span> <span class="id" title="lemma">own_valid</span> /=. <span class="id" title="tactic">by</span> <span class="id" title="var">iDestruct</span> 1 <span class="id" title="keyword">as</span> %[].<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Global Instance</span> <a name="symbol_persistent"><span class="id" title="instance">symbol_persistent</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">n</span> : <span class="id" title="class">Persistent</span> (<a class="idref" href="tutorial_popl20.symbol_ghost.html#symbol"><span class="id" title="definition">symbol</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>. <span class="id" title="tactic">apply</span> <span class="id" title="var">_</span>. <span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="counter_alloc"><span class="id" title="lemma">counter_alloc</span></a> <span class="id" title="var">n</span> : (<span class="id" title="notation">|==&gt;</span> <span class="id" title="notation">∃</span> <span class="id" title="var">γ</span><span class="id" title="notation">,</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a>)%<span class="id" title="var">I</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> (<span class="id" title="lemma">own_alloc</span> (<span class="id" title="notation">●</span> <span class="id" title="notation">(</span><span class="id" title="var">n</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#aed478b27f23b4f753c27c8ac393febc"><span class="id" title="notation">:</span></a><span class="id" title="definition">mnat</span><span class="id" title="notation">)</span> <span class="id" title="notation">⋅</span> <span class="id" title="notation">◯</span> <span class="id" title="notation">(</span><span class="id" title="var">n</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#aed478b27f23b4f753c27c8ac393febc"><span class="id" title="notation">:</span></a><span class="id" title="definition">mnat</span><span class="id" title="notation">)</span>)) <span class="id" title="keyword">as</span> (<span class="id" title="var">γ</span>) "[Hγ Hγf]";<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">first</span> <span class="id" title="tactic">by</span> <span class="id" title="tactic">apply</span> <span class="id" title="lemma">auth_both_valid</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iExists</span> <span class="id" title="var">γ</span>. <span class="id" title="tactic">by</span> <span class="id" title="var">iFrame</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="counter_inc"><span class="id" title="lemma">counter_inc</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">n</span> : <a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a> <span class="id" title="notation">==∗</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> (<a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#S"><span class="id" title="constructor">S</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a>) <span class="id" title="notation">∗</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#symbol"><span class="id" title="definition">symbol</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> -<span class="id" title="lemma">own_op</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="lemma">own_update</span>, <span class="id" title="lemma">auth_update_alloc</span>, <span class="id" title="lemma">mnat_local_update</span>. <span class="id" title="tactic">omega</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="symbol_obs"><span class="id" title="lemma">symbol_obs</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">s</span> <span class="id" title="var">n</span> : <a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a> <span class="id" title="notation">-∗</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#symbol"><span class="id" title="definition">symbol</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#s"><span class="id" title="variable">s</span></a> <span class="id" title="notation">-∗</span> <span class="id" title="notation">⌜</span>(<a class="idref" href="tutorial_popl20.symbol_ghost.html#s"><span class="id" title="variable">s</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Peano.html#00fe0eaf5e6949f0a31725357afa4bba"><span class="id" title="notation">&lt;</span></a> <a class="idref" href="tutorial_popl20.symbol_ghost.html#n"><span class="id" title="variable">n</span></a>)%<span class="id" title="var">nat</span><span class="id" title="notation">⌝</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "Hc Hs".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iDestruct</span> <span class="id" title="notation">(</span><span class="id" title="lemma">own_valid_2</span> <span class="id" title="notation">with</span> "Hc Hs"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> %[?%<span class="id" title="lemma">mnat_included</span> <span class="id" title="var">_</span>]%<span class="id" title="lemma">auth_both_valid</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iPureIntro</span>. <span class="id" title="tactic">omega</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+<span class="id" title="keyword">End</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#symbol_ghost"><span class="id" title="section">symbol_ghost</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Type</span><span class="id" title="var">classes</span> <span class="id" title="keyword">Opaque</span> <span class="id" title="var">counter</span> <span class="id" title="var">symbol</span>.<br/>
+</div>
+</div>
+<div id="footer">
+  Generated by <a href="http://coq.inria.fr/">coqdoc</a> and improved with <a href="https://github.com/tebbi/coqdocjs">CoqdocJS</a>
+</div>
+</div>
+</body>
+
+</html>

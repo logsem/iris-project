@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<link href="coqdocjs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="coqdocjs.js"></script>
+</head>
+
+<body onload="document.getElementById('content').focus()">
+  <div id="header">
+    <span class="left">
+      <span class="modulename"> <script> document.write(document.title) </script> </span>
+    </span>
+
+    <span class="button" id="toggle-proofs"></span>
+
+    <span class="right">
+      <a href="../">Project Page</a>
+      <a href="./indexpage.html"> Index </a>
+      <a href="./toc.html"> Table of Contents </a>
+    </span>
+</div>
+    <div id="content" tabindex="-1" onblur="document.getElementById('content').focus()">
+    <div id="main">
+<h1 class="libtitle">tutorial_popl20.unsafe</h1>
+
+<div class="code">
+<span class="id" title="keyword">From</span> <span class="id" title="var">tutorial_popl20</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Export</span> <a class="idref" href="tutorial_popl20.sem_typed.html#"><span class="id" title="library">sem_typed</span></a>.<br/>
+<span class="id" title="keyword">From</span> <span class="id" title="var">tutorial_popl20</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#"><span class="id" title="library">symbol_ghost</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#"><span class="id" title="library">two_state_ghost</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Section</span> <a name="unsafe"><span class="id" title="section">unsafe</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> `{<span class="id" title="class">heapG</span> <span class="id" title="var">Σ</span>}.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a name="lab7"></a><h1 class="section">Exercise (easy)</h1>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="unsafe_pure"><span class="id" title="definition">unsafe_pure</span></a> : <span class="id" title="inductive">val</span> := <span class="id" title="notation">λ</span><span class="id" title="notation">:</span> <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">if</span><span class="id" title="notation">:</span> <span class="id" title="notation">#</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a> <span class="id" title="notation">then</span> <span class="id" title="notation">#</span>13 <span class="id" title="notation">else</span> <span class="id" title="notation">#</span>13 <span class="id" title="notation">#</span>37.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="sem_typed_unsafe_pure"><span class="id" title="lemma">sem_typed_unsafe_pure</span></a> : <span class="id" title="notation">∅</span> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">⊨</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#unsafe_pure"><span class="id" title="definition">unsafe_pure</span></a> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">:</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#sem_ty_int"><span class="id" title="definition">sem_ty_int</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> (<span class="id" title="var">vs</span>) "!# HΓ"; <span class="id" title="tactic">simpl</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iApply</span> <span class="id" title="lemma">wp_value</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "!#" (? -&gt;).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_lam</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_if</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> /<a class="idref" href="tutorial_popl20.sem_types.html#sem_ty_car"><span class="id" title="projection">sem_ty_car</span></a> /=.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">by</span> <span class="id" title="var">iExists</span> 13.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a name="lab8"></a><h1 class="section">Exercise (easy)</h1>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="unsafe_ref"><span class="id" title="definition">unsafe_ref</span></a> : <span class="id" title="inductive">val</span> := <span class="id" title="notation">λ</span><span class="id" title="notation">:</span> <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">let</span><span class="id" title="notation">:</span> "l" <span class="id" title="notation">:=</span> <span class="id" title="notation">ref</span> <span class="id" title="notation">#</span>0 <span class="id" title="notation">in</span> "l" <span class="id" title="notation">&lt;-</span> <span class="id" title="notation">#</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a><span class="id" title="notation">;;</span> <span class="id" title="notation">!</span>"l".<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="sem_typed_unsafe_ref"><span class="id" title="lemma">sem_typed_unsafe_ref</span></a> : <span class="id" title="notation">∅</span> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">⊨</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#unsafe_ref"><span class="id" title="definition">unsafe_ref</span></a> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">:</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#sem_ty_bool"><span class="id" title="definition">sem_ty_bool</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> (<span class="id" title="var">vs</span>) "!# HΓ"; <span class="id" title="tactic">simpl</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iApply</span> <span class="id" title="lemma">wp_value</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "!#" (? -&gt;).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_lam</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_alloc</span> <span class="id" title="var">l</span> <span class="id" title="keyword">as</span> "Hl".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_let</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_store</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_load</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> /<a class="idref" href="tutorial_popl20.sem_types.html#sem_ty_car"><span class="id" title="projection">sem_ty_car</span></a> /=.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">by</span> <span class="id" title="var">iExists</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a name="lab9"></a><h1 class="section">Exercise (moderate)</h1>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="unsafe_ref_ne_0"><span class="id" title="definition">unsafe_ref_ne_0</span></a> : <span class="id" title="inductive">val</span> := <span class="id" title="notation">λ</span><span class="id" title="notation">:</span> <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">let</span><span class="id" title="notation">:</span> "l" <span class="id" title="notation">:=</span> <span class="id" title="notation">ref</span> <span class="id" title="notation">#</span>1 <span class="id" title="notation">in</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">((</span><span class="id" title="notation">λ</span><span class="id" title="notation">:</span> "x"<span class="id" title="notation">,</span> <span class="id" title="notation">if</span><span class="id" title="notation">:</span> "x" <span class="id" title="notation">≠</span> <span class="id" title="notation">#</span>0 <span class="id" title="notation">then</span> "l" <span class="id" title="notation">&lt;-</span> "x" <span class="id" title="notation">else</span> <span class="id" title="notation">#</span><span class="id" title="notation">()</span><span class="id" title="notation">),</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">(</span><span class="id" title="notation">λ</span><span class="id" title="notation">:</span> <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span> <span class="id" title="notation">assert</span><span class="id" title="notation">:</span> <span class="id" title="notation">!</span>"l" <span class="id" title="notation">≠</span> <span class="id" title="notation">#</span>0<span class="id" title="notation">))</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="sem_typed_unsafe_ref_ne_0"><span class="id" title="lemma">sem_typed_unsafe_ref_ne_0</span></a> :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">∅</span> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">⊨</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#unsafe_ref_ne_0"><span class="id" title="definition">unsafe_ref_ne_0</span></a> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">:</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">(</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#sem_ty_int"><span class="id" title="definition">sem_ty_int</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">)</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">*</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">(</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">)</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> (<span class="id" title="var">vs</span>) "!# HΓ"; <span class="id" title="tactic">simpl</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iApply</span> <span class="id" title="lemma">wp_value</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "!#" (? -&gt;).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_lam</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_alloc</span> <span class="id" title="var">l</span> <span class="id" title="keyword">as</span> "Hl".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_let</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">I</span> := (<span class="id" title="notation">∃</span> <span class="id" title="var">n</span> : <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Numbers.BinNums.html#Z"><span class="id" title="inductive">Z</span></a><span class="id" title="notation">,</span> <span class="id" title="notation">⌜</span><span class="id" title="notation">#</span><a class="idref" href="tutorial_popl20.unsafe.html#n"><span class="id" title="variable">n</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Unicode.Utf8_core.html#eac9b9307401b34847f15ea69bb5957f"><span class="id" title="notation">≠</span></a> <span class="id" title="notation">#</span>0<span class="id" title="notation">⌝</span> <span class="id" title="notation">∗</span> <span class="id" title="var">l</span> <span class="id" title="notation">↦</span> <span class="id" title="notation">#</span><a class="idref" href="tutorial_popl20.unsafe.html#n"><span class="id" title="variable">n</span></a>)%<span class="id" title="var">I</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> <span class="id" title="notation">(</span><span class="id" title="lemma">inv_alloc</span> (<span class="id" title="definition">nroot</span> <span class="id" title="notation">.@</span> "inv") <span class="id" title="var">_</span> <span class="id" title="var">I</span> <span class="id" title="notation">with</span> "[Hl]"<span class="id" title="notation">)</span>%<span class="id" title="var">I</span> <span class="id" title="keyword">as</span> "#Hinv".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="tactic">by</span> <span class="id" title="var">iNext</span>; <span class="id" title="var">iExists</span> 1; <span class="id" title="var">iFrame</span>. }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_pures</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iExists</span> <span class="id" title="var">_</span>, <span class="id" title="var">_</span>. <span class="id" title="var">iSplit</span>; <span class="id" title="tactic">first</span> <span class="id" title="var">done</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iSplit</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">iIntros</span> "!#" (? [<span class="id" title="var">n</span> -&gt;]).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_lam</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_op</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> (<span class="id" title="definition">decide</span> (<span class="id" title="var">n</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> 0%<span class="id" title="var">Z</span>)); <span class="id" title="var">simplify_eq</span>/=.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="var">wp_op</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_if</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">done</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="id" title="tactic">rewrite</span> <span class="id" title="lemma">bool_decide_eq_false_2</span>; <span class="id" title="var">last</span> <span class="id" title="tactic">congruence</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_op</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_if</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iInv</span> (<span class="id" title="definition">nroot</span> <span class="id" title="notation">.@</span> "inv") <span class="id" title="keyword">as</span> (<span class="id" title="var">m</span>) "&gt;[% Hl]".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_store</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iModIntro</span>. <span class="id" title="var">iSplit</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">iExists</span> <span class="id" title="var">n</span>; <span class="id" title="tactic">auto</span> <span class="id" title="keyword">with</span> <span class="id" title="tactic">congruence</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* <span class="id" title="var">done</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="var">iIntros</span> "!#" (? -&gt;).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_lam</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_pures</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iApply</span> <span class="id" title="lemma">wp_assert</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">(*&nbsp;Need&nbsp;because&nbsp;of&nbsp;atomic&nbsp;expression&nbsp;*)</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_bind</span> (<span class="id" title="notation">!</span> <span class="id" title="var">_</span>)%<span class="id" title="var">E</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iInv</span> (<span class="id" title="definition">nroot</span> <span class="id" title="notation">.@</span> "inv") <span class="id" title="keyword">as</span> (<span class="id" title="var">m</span>) "&gt;[% Hl]".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_load</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iModIntro</span>. <span class="id" title="var">iSplitL</span> "Hl".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="var">iExists</span> <span class="id" title="var">m</span>; <span class="id" title="tactic">auto</span>. }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_op</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> <span class="id" title="lemma">bool_decide_eq_false_2</span>; <span class="id" title="var">last</span> <span class="id" title="var">done</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">by</span> <span class="id" title="var">wp_op</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a name="lab10"></a><h1 class="section">Exercise (hard)</h1>
+
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="unsafe_ref_reuse"><span class="id" title="definition">unsafe_ref_reuse</span></a> : <span class="id" title="inductive">val</span> :=<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">λ</span><span class="id" title="notation">:</span> <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span> <span class="id" title="notation">let</span><span class="id" title="notation">:</span> "l" <span class="id" title="notation">:=</span> <span class="id" title="notation">ref</span> <span class="id" title="notation">#</span>0 <span class="id" title="notation">in</span> <span class="id" title="notation">λ</span><span class="id" title="notation">:</span> <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span> "l" <span class="id" title="notation">&lt;-</span> <span class="id" title="notation">#</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a><span class="id" title="notation">;;</span> <span class="id" title="notation">!</span>"l".<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="sem_typed_unsafe_ref_reuse"><span class="id" title="lemma">sem_typed_unsafe_ref_reuse</span></a> `{<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_stateG"><span class="id" title="class">two_stateG</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#aa96ad5b89d373ae59b587bcdc85878f"><span class="id" title="variable">Σ</span></a>}:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">∅</span> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">⊨</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#unsafe_ref_reuse"><span class="id" title="definition">unsafe_ref_reuse</span></a> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">:</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">(</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#sem_ty_bool"><span class="id" title="definition">sem_ty_bool</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">)</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> (<span class="id" title="var">vs</span>) "!# HΓ"; <span class="id" title="tactic">simpl</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iApply</span> <span class="id" title="lemma">wp_value</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "!#" (? -&gt;).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_lam</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_alloc</span> <span class="id" title="var">l</span> <span class="id" title="keyword">as</span> "Hl".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_init"><span class="id" title="lemma">two_state_init</span></a> <span class="id" title="keyword">as</span> (<span class="id" title="var">γ</span>) "Ho".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">pose</span> (<span class="id" title="var">I</span> := (<span class="id" title="notation">∃</span> <span class="id" title="var">b</span><span class="id" title="notation">,</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_auth"><span class="id" title="definition">two_state_auth</span></a> <span class="id" title="var">γ</span> <a class="idref" href="tutorial_popl20.unsafe.html#b"><span class="id" title="variable">b</span></a> <span class="id" title="notation">∗</span> <span class="id" title="var">l</span> <span class="id" title="notation">↦</span> <span class="id" title="notation">(</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#201058f4aa915cdea9258bc97aa9ee97"><span class="id" title="notation">if</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#b"><span class="id" title="variable">b</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#201058f4aa915cdea9258bc97aa9ee97"><span class="id" title="notation">then</span></a> <span class="id" title="notation">#</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#201058f4aa915cdea9258bc97aa9ee97"><span class="id" title="notation">else</span></a> <span class="id" title="notation">#</span>0<span class="id" title="notation">)</span>)%<span class="id" title="var">I</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> <span class="id" title="notation">(</span><span class="id" title="lemma">inv_alloc</span> (<span class="id" title="definition">nroot</span> <span class="id" title="notation">.@</span> "inv") <span class="id" title="var">_</span> <span class="id" title="var">I</span> <span class="id" title="notation">with</span> "[Hl Ho]"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> "#Hinv".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="var">iNext</span>. <span class="id" title="var">iExists</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#false"><span class="id" title="constructor">false</span></a>. <span class="id" title="var">iFrame</span>. }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_pures</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "!#" (? -&gt;).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_lam</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">(*&nbsp;Need&nbsp;because&nbsp;of&nbsp;atomic&nbsp;expression&nbsp;*)</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_bind</span> (<span class="id" title="var">_</span> <span class="id" title="notation">&lt;-</span> <span class="id" title="var">_</span>)%<span class="id" title="var">E</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iInv</span> (<span class="id" title="definition">nroot</span> <span class="id" title="notation">.@</span> "inv") <span class="id" title="keyword">as</span> (<span class="id" title="var">o</span>) "&gt;[Ho Hl]".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_store</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> <span class="id" title="notation">(</span><a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_update"><span class="id" title="lemma">two_state_update</span></a> <span class="id" title="notation">with</span> "Ho"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> "[Ho Hf]".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iModIntro</span>. <span class="id" title="var">iSplitL</span> "Hl Ho".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="var">iNext</span>. <span class="id" title="var">iExists</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a>. <span class="id" title="var">iFrame</span>. }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_pures</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iInv</span> (<span class="id" title="definition">nroot</span> <span class="id" title="notation">.@</span> "inv") <span class="id" title="keyword">as</span> (<span class="id" title="var">o'</span>) "&gt;[Ho Hl]".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iDestruct</span> <span class="id" title="notation">(</span><a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_agree"><span class="id" title="lemma">two_state_agree</span></a> <span class="id" title="notation">with</span> "Ho Hf"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> %-&gt;.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_load</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iModIntro</span>. <span class="id" title="var">iSplitL</span> "Hl Ho".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="var">iNext</span>. <span class="id" title="var">iExists</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a>. <span class="id" title="var">iFrame</span>. }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">rewrite</span> /<a class="idref" href="tutorial_popl20.sem_types.html#sem_ty_car"><span class="id" title="projection">sem_ty_car</span></a> /=. <span class="id" title="tactic">by</span> <span class="id" title="var">iExists</span> <span class="id" title="var">_</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a name="lab11"></a><h1 class="section">Exercise (hard)</h1>
+ Semantic typing of a symbol ADT (taken from Dreyer's POPL'18 talk) 
+</div>
+<div class="code">
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="symbol_adt_inc"><span class="id" title="definition">symbol_adt_inc</span></a> : <span class="id" title="inductive">val</span> := <span class="id" title="notation">λ</span><span class="id" title="notation">:</span> "x" <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span> <span class="id" title="constructor">FAA</span> "x" <span class="id" title="notation">#</span>1.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="symbol_adt_check"><span class="id" title="definition">symbol_adt_check</span></a> : <span class="id" title="inductive">val</span> := <span class="id" title="notation">λ</span><span class="id" title="notation">:</span> "x" "y"<span class="id" title="notation">,</span> <span class="id" title="notation">assert</span><span class="id" title="notation">:</span> "y" <span class="id" title="notation">&lt;</span> <span class="id" title="notation">!</span>"x".<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="symbol_adt"><span class="id" title="definition">symbol_adt</span></a> : <span class="id" title="inductive">val</span> := <span class="id" title="notation">λ</span><span class="id" title="notation">:</span> <span class="id" title="notation">&lt;&gt;</span><span class="id" title="notation">,</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">let</span><span class="id" title="notation">:</span> "x" <span class="id" title="notation">:=</span> <span class="id" title="abbreviation">Alloc</span> <span class="id" title="notation">#</span>0 <span class="id" title="notation">in</span> <span class="id" title="notation">(</span><a class="idref" href="tutorial_popl20.unsafe.html#symbol_adt_inc"><span class="id" title="definition">symbol_adt_inc</span></a> "x"<span class="id" title="notation">,</span> <a class="idref" href="tutorial_popl20.unsafe.html#symbol_adt_check"><span class="id" title="definition">symbol_adt_check</span></a> "x"<span class="id" title="notation">)</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="symbol_adt_ty"><span class="id" title="definition">symbol_adt_ty</span></a> `{<span class="id" title="class">heapG</span> <a class="idref" href="tutorial_popl20.unsafe.html#aa96ad5b89d373ae59b587bcdc85878f"><span class="id" title="variable">Σ</span></a>} : <a class="idref" href="tutorial_popl20.sem_types.html#sem_ty"><span class="id" title="record">sem_ty</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#aa96ad5b89d373ae59b587bcdc85878f"><span class="id" title="variable">Σ</span></a> :=<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#e44c28be71cef29e5f9587eb910266b7"><span class="id" title="notation">∃</span></a> <span class="id" title="var">A</span><a class="idref" href="tutorial_popl20.sem_type_formers.html#e44c28be71cef29e5f9587eb910266b7"><span class="id" title="notation">,</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">(</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#A"><span class="id" title="variable">A</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">)</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">*</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">(</span></a><a class="idref" href="tutorial_popl20.unsafe.html#A"><span class="id" title="variable">A</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#64ec31fff651da01d32198166b5e8657"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.sem_type_formers.html#7dd67abb4319fe6d17417a4477b5d82c"><span class="id" title="notation">()</span></a><a class="idref" href="tutorial_popl20.sem_type_formers.html#4af4ea7f0e8b16d287f24fe8cb8d876d"><span class="id" title="notation">)</span></a>).<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Section</span> <a name="unsafe.sem_typed_symbol_adt"><span class="id" title="section">sem_typed_symbol_adt</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Context</span> `{<span class="id" title="class">heapG</span> <a class="idref" href="tutorial_popl20.unsafe.html#aa96ad5b89d373ae59b587bcdc85878f"><span class="id" title="variable">Σ</span></a>, <a class="idref" href="tutorial_popl20.symbol_ghost.html#symbolG"><span class="id" title="class">symbolG</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#aa96ad5b89d373ae59b587bcdc85878f"><span class="id" title="variable">Σ</span></a>}.<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="symbol_adtN"><span class="id" title="definition">symbol_adtN</span></a> := <span class="id" title="definition">nroot</span> <span class="id" title="notation">.@</span> "symbol_adt".<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="symbol_inv"><span class="id" title="definition">symbol_inv</span></a> (<span class="id" title="var">γ</span> : <span class="id" title="definition">gname</span>) (<span class="id" title="var">l</span> : <span class="id" title="record">loc</span>) : <span class="id" title="abbreviation">iProp</span> <a class="idref" href="tutorial_popl20.unsafe.html#aa96ad5b89d373ae59b587bcdc85878f"><span class="id" title="variable">Σ</span></a> :=<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<span class="id" title="notation">∃</span> <span class="id" title="var">n</span> : <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a><span class="id" title="notation">,</span> <a class="idref" href="tutorial_popl20.unsafe.html#l"><span class="id" title="variable">l</span></a> <span class="id" title="notation">↦</span> <span class="id" title="notation">#</span><a class="idref" href="tutorial_popl20.unsafe.html#n"><span class="id" title="variable">n</span></a> <span class="id" title="notation">∗</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#counter"><span class="id" title="definition">counter</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#n"><span class="id" title="variable">n</span></a>)%<span class="id" title="var">I</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="sem_ty_symbol"><span class="id" title="definition">sem_ty_symbol</span></a> (<span class="id" title="var">γ</span> : <span class="id" title="definition">gname</span>) : <a class="idref" href="tutorial_popl20.sem_types.html#sem_ty"><span class="id" title="record">sem_ty</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#aa96ad5b89d373ae59b587bcdc85878f"><span class="id" title="variable">Σ</span></a> := <a class="idref" href="tutorial_popl20.sem_types.html#SemTy"><span class="id" title="constructor">SemTy</span></a> (<a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Unicode.Utf8_core.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">λ</span></a> <span class="id" title="var">w</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Unicode.Utf8_core.html#bc1ad27deabe143d39d35abe6be2c1a4"><span class="id" title="notation">,</span></a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="notation">∃</span> <span class="id" title="var">n</span> : <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#nat"><span class="id" title="inductive">nat</span></a><span class="id" title="notation">,</span> <span class="id" title="notation">⌜</span><a class="idref" href="tutorial_popl20.unsafe.html#w"><span class="id" title="variable">w</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <span class="id" title="notation">#</span><a class="idref" href="tutorial_popl20.unsafe.html#n"><span class="id" title="variable">n</span></a><span class="id" title="notation">⌝</span> <span class="id" title="notation">∧</span> <a class="idref" href="tutorial_popl20.symbol_ghost.html#symbol"><span class="id" title="definition">symbol</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#n"><span class="id" title="variable">n</span></a>)%<span class="id" title="var">I</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="sem_typed_symbol_adt"><span class="id" title="lemma">sem_typed_symbol_adt</span></a> <span class="id" title="var">Γ</span> : <a class="idref" href="tutorial_popl20.unsafe.html#1b004e48cd1f64e22d5c000cf0d7f047"><span class="id" title="variable">Γ</span></a> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">⊨</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#symbol_adt"><span class="id" title="definition">symbol_adt</span></a> <a class="idref" href="tutorial_popl20.sem_typed.html#3a399242aa00b5b8125c3791f52d8ea1"><span class="id" title="notation">:</span></a> <a class="idref" href="tutorial_popl20.unsafe.html#symbol_adt_ty"><span class="id" title="definition">symbol_adt_ty</span></a>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> (<span class="id" title="var">vs</span>) "!# _ /=". <span class="id" title="var">iApply</span> <span class="id" title="lemma">wp_value</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "!#" (<span class="id" title="var">v</span> -&gt;). <span class="id" title="var">wp_lam</span>. <span class="id" title="var">wp_alloc</span> <span class="id" title="var">l</span> <span class="id" title="keyword">as</span> "Hl"; <span class="id" title="var">wp_pures</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> (<a class="idref" href="tutorial_popl20.symbol_ghost.html#counter_alloc"><span class="id" title="lemma">counter_alloc</span></a> 0) <span class="id" title="keyword">as</span> (<span class="id" title="var">γ</span>) "Hc".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> <span class="id" title="notation">(</span><span class="id" title="lemma">inv_alloc</span> <a class="idref" href="tutorial_popl20.unsafe.html#symbol_adtN"><span class="id" title="definition">symbol_adtN</span></a> <span class="id" title="var">_</span> (<a class="idref" href="tutorial_popl20.unsafe.html#symbol_inv"><span class="id" title="definition">symbol_inv</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">l</span>) <span class="id" title="notation">with</span> "[Hl Hc]"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> "#?".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="var">iExists</span> 0%<span class="id" title="var">nat</span>. <span class="id" title="tactic">by</span> <span class="id" title="var">iFrame</span>. }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">do</span> 2 (<span class="id" title="var">wp_lam</span>; <span class="id" title="var">wp_pures</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iExists</span> (<a class="idref" href="tutorial_popl20.unsafe.html#sem_ty_symbol"><span class="id" title="definition">sem_ty_symbol</span></a> <span class="id" title="var">γ</span>), <span class="id" title="var">_</span>, <span class="id" title="var">_</span>; <span class="id" title="tactic">repeat</span> <span class="id" title="var">iSplit</span>=&gt; //.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">repeat</span> <span class="id" title="tactic">rewrite</span> /<a class="idref" href="tutorial_popl20.sem_types.html#sem_ty_car"><span class="id" title="projection">sem_ty_car</span></a> /=. <span class="id" title="var">iIntros</span> "!#" (? -&gt;). <span class="id" title="var">wp_pures</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iInv</span> <a class="idref" href="tutorial_popl20.unsafe.html#symbol_adtN"><span class="id" title="definition">symbol_adtN</span></a> <span class="id" title="keyword">as</span> (<span class="id" title="var">n</span>) "&gt;[Hl Hc]". <span class="id" title="var">wp_faa</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> <span class="id" title="notation">(</span><a class="idref" href="tutorial_popl20.symbol_ghost.html#counter_inc"><span class="id" title="lemma">counter_inc</span></a> <span class="id" title="notation">with</span> "Hc"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> "[Hc #Hs]".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iModIntro</span>; <span class="id" title="var">iSplitL</span>; <span class="id" title="var">last</span> <span class="id" title="tactic">eauto</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iExists</span> (<a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#S"><span class="id" title="constructor">S</span></a> <span class="id" title="var">n</span>). <span class="id" title="tactic">rewrite</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ZArith.Znat.html#Nat2Z.inj_succ"><span class="id" title="lemma">Nat2Z.inj_succ</span></a> -<a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ZArith.BinInt.html#Z.add_1_r"><span class="id" title="lemma">Z.add_1_r</span></a>. <span class="id" title="var">iFrame</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">repeat</span> <span class="id" title="tactic">rewrite</span> /<a class="idref" href="tutorial_popl20.sem_types.html#sem_ty_car"><span class="id" title="projection">sem_ty_car</span></a> /=. <span class="id" title="var">iIntros</span> "!#" (<span class="id" title="var">v</span>).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iDestruct</span> 1 <span class="id" title="keyword">as</span> (<span class="id" title="var">n</span> -&gt;) "#Hs". <span class="id" title="var">wp_pures</span>. <span class="id" title="var">iApply</span> <span class="id" title="lemma">wp_assert</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_bind</span> (<span class="id" title="notation">!</span><span class="id" title="var">_</span>)%<span class="id" title="var">E</span>. <span class="id" title="var">iInv</span> <a class="idref" href="tutorial_popl20.unsafe.html#symbol_adtN"><span class="id" title="definition">symbol_adtN</span></a> <span class="id" title="keyword">as</span> (<span class="id" title="var">n'</span>) "&gt;[Hl Hc]". <span class="id" title="var">wp_load</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iDestruct</span> <span class="id" title="notation">(</span><a class="idref" href="tutorial_popl20.symbol_ghost.html#symbol_obs"><span class="id" title="lemma">symbol_obs</span></a> <span class="id" title="notation">with</span> "Hc Hs"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> %?. <span class="id" title="var">iModIntro</span>. <span class="id" title="var">iSplitL</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="id" title="var">iExists</span> <span class="id" title="var">n'</span>. <span class="id" title="var">iFrame</span>. }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">wp_op</span>. <span class="id" title="tactic">rewrite</span> <span class="id" title="abbreviation">bool_decide_true</span>; <span class="id" title="var">last</span> <span class="id" title="var">lia</span>. <span class="id" title="tactic">eauto</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">End</span> <a class="idref" href="tutorial_popl20.unsafe.html#unsafe.sem_typed_symbol_adt"><span class="id" title="section">sem_typed_symbol_adt</span></a>.<br/>
+<span class="id" title="keyword">End</span> <a class="idref" href="tutorial_popl20.unsafe.html#unsafe"><span class="id" title="section">unsafe</span></a>.<br/>
+</div>
+</div>
+<div id="footer">
+  Generated by <a href="http://coq.inria.fr/">coqdoc</a> and improved with <a href="https://github.com/tebbi/coqdocjs">CoqdocJS</a>
+</div>
+</div>
+</body>
+
+</html>

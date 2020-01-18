@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<link href="coqdocjs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="coqdocjs.js"></script>
+</head>
+
+<body onload="document.getElementById('content').focus()">
+  <div id="header">
+    <span class="left">
+      <span class="modulename"> <script> document.write(document.title) </script> </span>
+    </span>
+
+    <span class="button" id="toggle-proofs"></span>
+
+    <span class="right">
+      <a href="../">Project Page</a>
+      <a href="./indexpage.html"> Index </a>
+      <a href="./toc.html"> Table of Contents </a>
+    </span>
+</div>
+    <div id="content" tabindex="-1" onblur="document.getElementById('content').focus()">
+    <div id="main">
+<h1 class="libtitle">tutorial_popl20.two_state_ghost</h1>
+
+<div class="code">
+<span class="id" title="keyword">From</span> <span class="id" title="var">iris.algebra</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <span class="id" title="library">auth</span>.<br/>
+<span class="id" title="keyword">From</span> <span class="id" title="var">iris.base_logic</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <span class="id" title="library">lib.own</span>.<br/>
+<span class="id" title="keyword">From</span> <span class="id" title="var">iris.proofmode</span> <span class="id" title="keyword">Require</span> <span class="id" title="keyword">Export</span> <span class="id" title="library">tactics</span>.<br/>
+
+<br/>
+<span class="comment">(*&nbsp;The&nbsp;required&nbsp;ghost&nbsp;theory&nbsp;*)</span><br/>
+<span class="id" title="keyword">Class</span> <a name="two_stateG"><span class="id" title="record">two_stateG</span></a> <span class="id" title="var">Σ</span> := { <a name="two_state_inG"><span class="id" title="projection">two_state_inG</span></a> :&gt; <span class="id" title="class">inG</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#e15c0eb40e61adefe95778c26e7840f6"><span class="id" title="variable">Σ</span></a> (<span class="id" title="definition">authR</span> (<span class="id" title="definition">optionUR</span> <span class="id" title="definition">unitR</span>)) }.<br/>
+<span class="id" title="keyword">Definition</span> <a name="6056a49d40c36c881398eca4a3f1863e"><span class="id" title="definition">two_stateΣ</span></a> : <span class="id" title="definition">gFunctors</span> := <span class="id" title="notation">#[</span><span class="id" title="constructor">GFunctor</span> (<span class="id" title="definition">authR</span> (<span class="id" title="definition">optionUR</span> <span class="id" title="definition">unitR</span>))<span class="id" title="notation">]</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Instance</span> <a name="074c2f85a44ec46d120d7ea979104330"><span class="id" title="instance">subG_two_stateΣ</span></a> {<span class="id" title="var">Σ</span>} : <span class="id" title="class">subG</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#6056a49d40c36c881398eca4a3f1863e"><span class="id" title="definition">two_stateΣ</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#e15c0eb40e61adefe95778c26e7840f6"><span class="id" title="variable">Σ</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Unicode.Utf8_core.html#c41c566ddac4c1298b9e7dd2bae1c794"><span class="id" title="notation">→</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#two_stateG"><span class="id" title="class">two_stateG</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#e15c0eb40e61adefe95778c26e7840f6"><span class="id" title="variable">Σ</span></a>.<br/>
+<span class="id" title="keyword">Proof</span>. <span class="id" title="var">solve_inG</span>. <span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+<span class="id" title="keyword">Section</span> <a name="two_state_ghost"><span class="id" title="section">two_state_ghost</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Context</span> `{!<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_stateG"><span class="id" title="class">two_stateG</span></a> <span class="id" title="var">Σ</span>}.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="two_state_auth"><span class="id" title="definition">two_state_auth</span></a> (<span class="id" title="var">γ</span> : <span class="id" title="definition">gname</span>) (<span class="id" title="var">b</span> : <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#bool"><span class="id" title="inductive">bool</span></a>) : <span class="id" title="abbreviation">iProp</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#7c52e63cc46763d49464cda77755bd05"><span class="id" title="variable">Σ</span></a> :=<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="definition">own</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> (<span class="id" title="notation">●</span> <span class="id" title="notation">(</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#201058f4aa915cdea9258bc97aa9ee97"><span class="id" title="notation">if</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b"><span class="id" title="variable">b</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#201058f4aa915cdea9258bc97aa9ee97"><span class="id" title="notation">then</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#Some"><span class="id" title="constructor">Some</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Program.Syntax.html#f5cb26d96fc0400fc3c881290947e554"><span class="id" title="notation">()</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.ssr.ssreflect.html#201058f4aa915cdea9258bc97aa9ee97"><span class="id" title="notation">else</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#None"><span class="id" title="constructor">None</span></a><span class="id" title="notation">)</span>).<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Definition</span> <a name="two_state_final"><span class="id" title="definition">two_state_final</span></a> (<span class="id" title="var">γ</span> : <span class="id" title="definition">gname</span>) : <span class="id" title="abbreviation">iProp</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#7c52e63cc46763d49464cda77755bd05"><span class="id" title="variable">Σ</span></a> :=<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="definition">own</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> (<span class="id" title="notation">◯</span> <span class="id" title="notation">(</span><a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#Some"><span class="id" title="constructor">Some</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Program.Syntax.html#f5cb26d96fc0400fc3c881290947e554"><span class="id" title="notation">()</span></a><span class="id" title="notation">)</span>).<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="two_state_init"><span class="id" title="lemma">two_state_init</span></a> : (<span class="id" title="notation">|==&gt;</span> <span class="id" title="notation">∃</span> <span class="id" title="var">γ</span><span class="id" title="notation">,</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_auth"><span class="id" title="definition">two_state_auth</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#false"><span class="id" title="constructor">false</span></a>)%<span class="id" title="var">I</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>. <span class="id" title="var">iApply</span> <span class="id" title="lemma">own_alloc</span>. <span class="id" title="tactic">by</span> <span class="id" title="tactic">apply</span> <span class="id" title="lemma">auth_auth_valid</span>. <span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="two_state_update"><span class="id" title="lemma">two_state_update</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">b</span> :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_auth"><span class="id" title="definition">two_state_auth</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b"><span class="id" title="variable">b</span></a> <span class="id" title="notation">==∗</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_auth"><span class="id" title="definition">two_state_auth</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a> <span class="id" title="notation">∗</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_final"><span class="id" title="definition">two_state_final</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "H".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iMod</span> <span class="id" title="notation">(</span><span class="id" title="lemma">own_update</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<span class="id" title="notation">●</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#Some"><span class="id" title="constructor">Some</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Program.Syntax.html#f5cb26d96fc0400fc3c881290947e554"><span class="id" title="notation">()</span></a> <span class="id" title="notation">⋅</span> <span class="id" title="notation">◯</span> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#Some"><span class="id" title="constructor">Some</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Program.Syntax.html#f5cb26d96fc0400fc3c881290947e554"><span class="id" title="notation">()</span></a>) <span class="id" title="notation">with</span> "H"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> "[$ $]"; <span class="id" title="var">last</span> <span class="id" title="var">done</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="lemma">auth_update_alloc</span>. <span class="id" title="tactic">destruct</span> <span class="id" title="var">b</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">by</span> <span class="id" title="tactic">apply</span> <span class="id" title="lemma">local_update_unital_discrete</span>=&gt; -[[]|].<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;- <span class="id" title="tactic">by</span> <span class="id" title="tactic">apply</span> <span class="id" title="lemma">alloc_option_local_update</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Global Instance</span> <a name="two_state_auth_timeless"><span class="id" title="instance">two_state_auth_timeless</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">b</span> : <span class="id" title="class">Timeless</span> (<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_auth"><span class="id" title="definition">two_state_auth</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b"><span class="id" title="variable">b</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>. <span class="id" title="tactic">apply</span> <span class="id" title="var">_</span>. <span class="id" title="keyword">Qed</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Global Instance</span> <a name="two_state_final_timeless"><span class="id" title="instance">two_state_final_timeless</span></a> <span class="id" title="var">γ</span> : <span class="id" title="class">Timeless</span> (<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_final"><span class="id" title="definition">two_state_final</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>. <span class="id" title="tactic">apply</span> <span class="id" title="var">_</span>. <span class="id" title="keyword">Qed</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Global Instance</span> <a name="two_state_final_persistent"><span class="id" title="instance">two_state_final_persistent</span></a> <span class="id" title="var">γ</span> : <span class="id" title="class">Persistent</span> (<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_final"><span class="id" title="definition">two_state_final</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a>).<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>. <span class="id" title="tactic">apply</span> <span class="id" title="var">_</span>. <span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Lemma</span> <a name="two_state_agree"><span class="id" title="lemma">two_state_agree</span></a> <span class="id" title="var">γ</span> <span class="id" title="var">b</span> :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_auth"><span class="id" title="definition">two_state_auth</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b"><span class="id" title="variable">b</span></a> <span class="id" title="notation">-∗</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_final"><span class="id" title="definition">two_state_final</span></a> <a class="idref" href="tutorial_popl20.two_state_ghost.html#b0e5ed29efd576246de3282fa163293b"><span class="id" title="variable">γ</span></a> <span class="id" title="notation">-∗</span> <span class="id" title="notation">⌜</span><a class="idref" href="tutorial_popl20.two_state_ghost.html#b"><span class="id" title="variable">b</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Logic.html#6cd0f7b28b6092304087c7049437bb1a"><span class="id" title="notation">=</span></a> <a class="idref" href="http://coq.inria.fr/distrib/V8.10.2/stdlib//Coq.Init.Datatypes.html#true"><span class="id" title="constructor">true</span></a><span class="id" title="notation">⌝</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Proof</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iIntros</span> "H1 H2".<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="var">iDestruct</span> <span class="id" title="notation">(</span><span class="id" title="lemma">own_valid_2</span> <span class="id" title="notation">with</span> "H1 H2"<span class="id" title="notation">)</span> <span class="id" title="keyword">as</span> %[<span class="id" title="var">Hinc</span> <span class="id" title="var">_</span>]%<span class="id" title="lemma">auth_both_valid</span>.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">apply</span> <span class="id" title="lemma">option_included</span> <span class="id" title="tactic">in</span> <span class="id" title="var">Hinc</span> <span class="id" title="keyword">as</span> [|([]&amp;[]&amp;<span class="id" title="var">_</span>&amp;?&amp;<span class="id" title="var">_</span>)];<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="id" title="tactic">destruct</span> <span class="id" title="var">b</span>; <span class="id" title="var">naive_solver</span>.<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Qed</span>.<br/>
+
+<br/>
+&nbsp;&nbsp;<span class="id" title="keyword">Type</span><span class="id" title="var">classes</span> <span class="id" title="keyword">Opaque</span> <span class="id" title="var">two_state_auth</span> <span class="id" title="var">two_state_final</span>.<br/>
+<span class="id" title="keyword">End</span> <a class="idref" href="tutorial_popl20.two_state_ghost.html#two_state_ghost"><span class="id" title="section">two_state_ghost</span></a>.<br/>
+</div>
+</div>
+<div id="footer">
+  Generated by <a href="http://coq.inria.fr/">coqdoc</a> and improved with <a href="https://github.com/tebbi/coqdocjs">CoqdocJS</a>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Iris Tutorial</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <section class="jumbotron text-xs-center">
+      <div class="container">
+	<h1 class="jumbotron-heading display-1"><a href="https://iris-project.org/" class="nav-link active">Iris Project</a></h1>
+
+        <div class="row">
+	  <h2>Tutorial on Proving Semantic Type Soundness in Iris</h2>
+	  <h5>20 January 2020, at POPL, New Orleans, USA</h5>
+        </div>
+	<a href="https://gitlab.mpi-sws.org/iris/iris/" class="btn btn-primary">Coq Formalization of Iris</a>
+	<a href="https://gitlab.mpi-sws.org/iris/tutorial-popl20" class="btn btn-primary">Tutorial repository</a>
+	<a href="https://popl20.sigplan.org/details/POPL-2020-tutorialfest/4/-T4-Proving-Semantic-Type-Soundness-in-Iris" class="btn btn-primary">Tutorial info on POPL'20 website</a>
+      </div>
+    </section>
+    
+    <div class="container">
+      
+      <div class="row">
+        <p class="lead">
+	  In this tutorial we demonstrate how the <b>Iris</b> framework for concurrent separation logic can be used to prove type soundness of feature-rich, realistic languages, using the "semantic approach'' to type soundness. Contrary to the traditional "syntactic approach" of progress and preservation, the semantic approach has several advantages in terms of reasoning about data abstraction and unsafe features. We show that the semantic approach leads to clear and concise proofs that can be effectively mechanized using the implementation of Iris in the Coq proof assistant.
+        </p>
+        <p class="lead">
+          
+      </div>
+      
+      <div class="container" style="margin-bottom:20px">
+        <div class="row">
+          <h2>Tutorial Material</h2>
+        </div>
+	<p>
+	  The tutorial material can be found in the Tutorial repository at <a href="https://gitlab.mpi-sws.org/iris/tutorial-popl20">https://gitlab.mpi-sws.org/iris/tutorial-popl20</a>. Below is an overview of the files in that repository with links to <code>coqdoc</code> generated html documentation of these files.
+	</p>
+	
+        <div class="row">
+          <ul class="ref">
+	    <li> <a href="html/tutorial_popl20.base.html">base.v</a>: Some basic definitions and notations.</li>
+	    <li> <a href="html/tutorial_popl20.types.html">types.v</a>: Syntactic types.</li>
+	    <li> <a href="html/tutorial_popl20.typed.html">typed.v</a>: Syntactic typing rules.</li>
+	    <li> <a href="html/tutorial_popl20.sem_types.html">sem_types.v</a>: Semantic types.</li>
+	    <li> <a href="html/tutorial_popl20.sem_type_formers.html">sem_type_formers.v</a>: Type formers, <i>e.g.</i>, product types, sum types, function types, <i>etc.</i>, for semantic types.</li>
+	    <li> <a href="html/tutorial_popl20.sem_operators.html">sem_operators.v</a>: Boilerplate to support typing operators, <i>e.g.</i>, <code>+</code>, <code>-</code>, <code>*</code>, <i>etc.</i></li>
+	    <li> <a href="html/tutorial_popl20.sem_typed.html">sem_typed.v</a>: The semantic typing relation for typing contexts and (based on that) open programs.</li>
+	    <li> <a href="html/tutorial_popl20.safety.html">safety.v</a>: The adequacy theorem for our semantic types, <i>i.e.</i>, any semantically typed program is <i>safe</i>.</li>
+	    <li> <a href="html/tutorial_popl20.compatibility.html">compatibility.v</a>: Compatibility lemmas.</li>
+	    <li> <a href="html/tutorial_popl20.interp.html">interp.v</a>: Interpretation of syntactic types using semantic type formers.</li>
+	    <li> <a href="html/tutorial_popl20.fundamental.html">fundamental.v</a>: The fundamental theorem of logical relations.</li>
+	    <li> <a href="html/tutorial_popl20.unsafe.html">unsafe.v</a>: Examples of programs that are not syntactically well-typed but <b>are</b> semantically typed. <span class="text-danger">(Includes solution to exercises)</span></li>
+	    <li> <a href="html/tutorial_popl20.parametricity.html">parametricity.v</a>: Examples of using our logical relations to prove (unary) parametricity theorems. <span class="text-danger">(Includes solution to exercises)</span></li>
+	  </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+  </body>
+</html>
