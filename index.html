@@ -23,9 +23,16 @@
         <p class="lead">Iris is a Higher-Order Concurrent Separation Logic Framework, <br> implemented and verified in the Coq proof assistant.</p>
         <p>
           <a href="https://gitlab.mpi-sws.org/iris/iris/" class="btn btn-primary">Coq Formalization</a>
-          <a href="https://plv.mpi-sws.org/iris/appendix-3.2.pdf" class="btn btn-secondary">Technical Documentation (v3.2)</a>
-          <a href="https://lists.mpi-sws.org/listinfo/iris-club" class="btn btn-secondary">Mailing List</a>
-          <a href="https://mattermost.mpi-sws.org/iris" class="btn btn-secondary">Chat</a>
+          <a href="https://plv.mpi-sws.org/iris/appendix-3.2.pdf" class="btn btn-primary">Technical Documentation (v3.2)</a>
+          <a href="https://lists.mpi-sws.org/listinfo/iris-club" class="btn btn-primary">Mailing List</a>
+          <a href="https://mattermost.mpi-sws.org/iris" class="btn btn-primary">Chat</a>
+        </p>
+        <p>
+          <a href="#learning" class="btn btn-secondary">Learning Iris</a>
+          <a href="#events" class="btn btn-secondary">Events</a>
+          <a href="#publications" class="btn btn-secondary">Publications</a>
+          <a href="#phd" class="btn btn-secondary">PhD dissertations</a>
+          <a href="#other" class="btn btn-secondary">Other material</a>
         </p>
       </div>
     </section>
@@ -45,7 +52,7 @@
 
     <div class="container" style="margin-bottom: 20px;">
       <div class="row">
-        <h2>Learning Iris</h2>
+        <a name="learning"></a><h2>Learning Iris</h2>
       </div>
       <div class="row">
       <p>Some useful resources designed to learn Iris and its Coq implementation:</p>
@@ -64,7 +71,7 @@
 
     <div class="container" style="margin-bottom: 20px;">
       <div class="row">
-        <h2>Events</h2>
+        <a name="events"></a><h2>Events</h2>
         <ul>
         <li>20 January 2020: <a href="https://popl20.sigplan.org/details/POPL-2020-tutorialfest/4/-T4-Proving-Semantic-Type-Soundness-in-Iris">Tutorial on Proving Semantic Type Soundness in Iris</a> at POPL, New Orleans, USA</li>
         <li>28 October–1 November 2019: <a href="workshop-2019">The First Iris Workshop</a>, Aarhus, Denmark</li>
@@ -76,7 +83,7 @@
     <div class="container" style="margin-bottom: 20px;">
 
       <div class="row">
-        <h2>Publications</h2>
+        <a name="publications"></a><h2>Publications</h2>
       </div>
       <div class="row">
       <p>Below, we give an overview of the research that uses Iris one way or another.</p>
@@ -456,10 +463,63 @@
       </div>
 
       <div class="row">
-        <h2>Draft papers</h2>
+        <a name="phd"></a><h2>PhD dissertations</h2>
       </div>
 
       <div class="row">
+        <dl class="ref">
+          <dt>Compositional Abstractions for Verifying Concurrent Data Structures</dt>
+          <dd>
+            <div class="entry">
+              Siddharth Krishna<br/>
+              <small class="text-muted">New York University, September 2019</small>
+              <div class="buttons">
+                <a href="https://cs.nyu.edu/media/publications/krishna_siddharth.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>Verifying Concurrent Randomized Algorithms</dt>
+          <dd>
+            <div class="entry">
+              Joseph Tassarotti<br/>
+              <small class="text-muted">Carnegie Mellon University, January 2019</small>
+              <div class="buttons">
+                <a href="pdfs/2019-phd-tassarotti.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>Towards Modular Reasoning for Stateful and Concurrent Programs</dt>
+          <dd>
+            <div class="entry">
+              Morten Krogh-Jespersen<br/>
+              <small class="text-muted">Aarhus University, September 2018</small>
+              <div class="buttons">
+                <a href="https://pure.au.dk/portal/files/142698762/Morten_Krogh_Jespersen_thesis_final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+              </div>
+            </div>
+          </dd>
+
+          <dt>Contributions in Programming Languages Theory</dt>
+          <dd>
+            <div class="entry">
+              Amin Timany<br/>
+              <small class="text-muted">KU Leuven, May 2018</small>
+              <div class="buttons">
+                <a href="https://lirias.kuleuven.be/retrieve/510052" class="btn btn-outline-primary btn-sm">.pdf</a>
+              </div>
+            </div>
+          </dd>
+        </dl>
+      </div>
+
+      <div class="row">
+        <a name="other"></a><h2>Other material</h2>
+      </div>
+
+      <div class="row">
+        <p>Draft papers:</p>
         <dl class="ref">
           <dt>Machine-Checked Semantic Session Typing</dt>
           <dd>
@@ -483,15 +543,26 @@
                 <a href="https://github.com/Blaisorblade/dot-iris" class="btn btn-outline-primary btn-sm">Coq development</a>
               </div>
             </div>
-          </dd>     
+          </dd>
+
+          <dt>ReLoC Reloaded: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</dt>
+          <dd>
+            <div class="entry">
+            Dan Frumin, Robbert Krebbers, Lars Birkedal<br/>
+              <small class="text-muted">Submitted for publication</small>
+              <br/>
+              <div class="buttons">
+                <a href="pdfs/2020-reloc-reloaded-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
+                <a href="http://cs.ru.nl/~dfrumin/reloc/" class="btn btn-outline-primary btn-sm">website</a>
+                <a href="https://gitlab.mpi-sws.org/iris/reloc" class="btn btn-outline-primary btn-sm">Coq development</a>
+              </div>
+            </div>
+          </dd>    
         </dl>
       </div>
 
       <div class="row">
-        <h2>Case studies, MSc theses, Abstracts, Talks</h2>
-      </div>
-
-      <div class="row">
+        <p>Case studies, MSc theses, abstracts, talks:</p>
         <dl class="ref">
           <dt>Mechanized Reasoning about a Capability Machine</dt>
           <dd>
