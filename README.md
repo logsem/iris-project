@@ -8,7 +8,7 @@ Updating is just a matter of commiting and pushing your changes. Github-pages wi
 
 To add a new publication find
 ```html
-    <div class="ref">
+    <dl class="ref">
 ```
 which is the datalist containing references to publications. A publication consists of two tags, a *dt* tag containing the title and a *dd* tag containing authors and links. Copy a paper-section like the following:
 
