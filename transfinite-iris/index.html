@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Transfinite Iris: Resolving an Existential Dilemma of Step-Indexed Separation Logic</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+  </head>
+
+  <body style="background-color: #eceeef">
+    <section class="jumbotron text-xs-center">
+      <div class="container">
+        <h1 class="jumbotron-heading display-1">Transfinite Iris</h1>
+        <p class="lead">Resolving an Existential Dilemma of Step-Indexed Separation Logic</p>
+        <p class="lead">
+          <a href="https://people.mpi-sws.org/~spies/" style="white-space: nowrap">Simon Spies</a>,
+          Lennard Gäher,
+          <a href="https://jozefg.github.io" style="white-space: nowrap">Daniel Gratzer</a>,
+          <a href="http://www.cs.bc.edu/~tassarot/" style="white-space: nowrap">Joseph Tassarotti</a>,
+          <a href="https://robbertkrebbers.nl" style="white-space: nowrap">Robbert Krebbers</a>,
+          <a href="https://www.mpi-sws.org/~dreyer/" style="white-space: nowrap">Derek Dreyer</a>,
+          <a href="https://cs.au.dk/~birke/" style="white-space: nowrap">Lars Birekdal</a>
+	      </p>
+        <p>
+          <a href="../pdfs/2021-pldi-transfinite-iris-submission.pdf" class="btn btn-primary">Paper</a>
+          <a href="../pdfs/2021-pldi-transfinite-iris-submission-appendix.pdf" class="btn btn-primary">Technical documentation</a>
+          <a href="https://gitlab.mpi-sws.org/iris/transfinite" class="btn btn-primary">Coq formalization</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="jumbotron" style="background-color: #fff">
+    <div class="container" style="margin-bottom: 20px">
+
+      <div class="row">
+        <p class="lead">
+          Step-indexed separation logic has proven to be a powerful tool for modular reasoning about higher-order stateful programs.
+          However, it has only been used to reason about safety properties, never liveness properties.
+          In this paper, we observe that the inability of step-indexed separation logic to support liveness properties stems fundamentally from its failure to validate what we call the <i>existential property</i>, connecting the meaning of existential quantification inside and outside the logic.
+          We show how to validate the existential property&mdash;and thus enable liveness reasoning&mdash;by moving from finite step-indices (natural numbers) to <i>transfinite</i> step-indices (ordinals).
+          Concretely, we transform the Coq-based step-indexed logic Iris to <b>Transfinite Iris</b>, and demonstrate its effectiveness in proving termination and termination-preserving refinement for higher-order stateful programs.
+          </p>
+	      <div class="text-xs-center">
+          <a href="paper.pdf" class="btn btn-primary">Read Paper</a>
+	      </div>
+      </div>
+
+    </div>
+    </div>
+  </body>
+</html>
