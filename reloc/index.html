@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
+    <meta name="referrer" content="origin-when-crossorigin">
 
     <title>ReLoC: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</title>
 
@@ -16,7 +16,7 @@
 
   </head>
 
-  <body style="background-color: #eceeef">
+  <body>
     <section class="jumbotron text-xs-center">
       <div class="container">
         <h1 class="jumbotron-heading display-1">ReLoC</h1>
@@ -33,35 +33,13 @@
       </div>
     </section>
 
-    <section class="jumbotron" style="background-color: #fff">
-    <div class="container" style="margin-bottom: 20px">
-
+    <div class="container">
       <div class="row">
-        <p class="lead">
-	  ReLoC is a relational separation logic for proving refinements of programs with higher-order state, fine-grained concurrency, polymorphism and recursive types.
-  The core of ReLoC is its refinement judgment <code>e ≼ e' : τ</code>, which states that a program <code>e</code> refines a program <code>e'</code> at type <code>τ</code>.
-ReLoC provides type-directed structural rules and symbolic execution rules in separation-logic style for manipulating the judgment, whereas in prior work on refinements for languages with higher-order state and concurrency, such proofs were carried out by unfolding the judgment into its definition in the model.
-ReLoC's abstract proof rules make it simpler to carry out refinement proofs, and enable us to generalize the notion of logically atomic specifications to the relational case, which we call <em>logically atomic relational specifications</em>.
-
-ReLoC is built on top of the Iris framework for separation logic in Coq, allowing us
-to leverage features of Iris to prove soundness of ReLoC, and to carry out refinement proofs in ReLoC.
-We implement tactics for interactive proofs in ReLoC, allowing us to mechanize several case studies in Coq, and thereby demonstrate the practicality of ReLoC.
-	</p>
-    </div>
-
-    </div>
-    </section>
-
-    <section class="jumbotron">
-      <div class="container">
-
-	<div class="row text-xs-center">
-
-	</div>
+        <p>ReLoC is a mechanised logic for interactively proving contextual refinements of programs in a language with higher-order state, fine-grained concurrency, polymorphism and existential and recursive types.</p>
+        <p>ReLoC is built on top of <a href="https://iris-project.org">Iris</a>—a state of the art concurrent separation logic.</p>
       </div>
-    </section>
+    </div>
 
     <script src="../bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-
   </body>
 </html>
