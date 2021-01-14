@@ -42,7 +42,7 @@
 
     <div class="container" style="margin-bottom: 20px;">
       <div class="row">
-        <a name="learning"></a><h2>ReLoC Reloaded</h2>
+        <h2>ReLoC Reloaded</h2>
       </div>
       <div class="row">
       <p>A new version of ReLoC is under development and is available online at <a href="https://gitlab.mpi-sws.org/iris/reloc">https://gitlab.mpi-sws.org/iris/reloc</a>. Do check it out!</p>
@@ -53,6 +53,31 @@
       </ul>
 
       <p>ReLoC Reloaded improves on the logic described in the LICS18 paper in several ways. In terms of the formalization it works with the latest version of Iris, and it is build directly on top of heap_lang – the programming language that comes directly with Iris.</p>
+       </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 20px;">
+      <div class="row">
+        <h2>Guide to the examples</h2>
+      </div>
+      <div class="row">
+      <ul>
+      <li>The &ldquo;bit&rdquo; module/simple representation independence example is in <code>examples/bit.v</code>.</li>
+      <li>The counter refinement and the logically atomic specification for the fine-grained counter are in <code>lib/counter.v</code>.</li>
+      <li>The specifications for the spin lock are in <code>lib/lock.v</code>.</li>
+      <li>The HOCAP-style specifications for the counter are in
+      <code>experimental/hocap/counter.v</code> and the ticket lock refinement is in
+      <code>experimental/hocap/ticket_lock.v</code>.</li>
+      <li>Equivalences between different fixed point combinator are in <code>lib/Y.v</code>.</li>
+      <li>The coin flip example is in <code>examples/coinflip.v</code> and the late/early
+      choice example is in <code>examples/lateearlychoice.v</code>.</li>
+      <li>The (in)equational theory of non-deterministic choice is in <code>examples/or.v</code>.</li>
+      <li>Treiber stack refinement is in <code>examples/stack/refinement.v</code>.</li>
+      <li>A number of &ldquo;higher order functions with state&rdquo; examples from <a href="https://dl.acm.org/citation.cfm?id=1863566">Dreyer, Neis, Birkedal &rsquo;10</a> are in <code>examples/various.v</code>.</li>
+      <li>A number of examples from <a href="https://dl.acm.org/citation.cfm?id=1480925">SDRI</a> are in <code>examples/namegen.v</code>, <code>examples/symbol.v</code>, and <code>examples/cell.v</code>.</li>
+      <li>The stack with helping example is in <code>experimental/helping/helping_stack.v</code>.</li>
+      </ul>
+      </div>
     </div>
 
     <script src="../bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
