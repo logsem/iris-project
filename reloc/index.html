@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>ReLoC: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</title>
+
+    <link rel="stylesheet" href="../bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css" />
+
+  </head>
+
+  <body style="background-color: #eceeef">
+    <section class="jumbotron text-xs-center">
+      <div class="container">
+        <h1 class="jumbotron-heading display-1">ReLoC</h1>
+        <p class="lead">A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</p>
+        <p class="lead">
+          <a href="https://groupoid.moe/">Dan Frumin</a>,
+          <a href="https://robbertkrebbers.nl/">Robbert Krebbers</a>,
+          <a href="https://cs.au.dk/~birke/">Lars Birkedal</a></p>
+        <p>
+          <a href="../pdfs/2018-lics-reloc-final.pdf" class="btn btn-primary">LICS 2018 paper</a>
+          <a href="../pdfs/2020-reloc-reloaded-submission.pdf" class="btn btn-primary">Extended journal paper</a>
+          <a href="https://gitlab.mpi-sws.org/iris/reloc" class="btn btn-secondary">Latest version of ReLoC</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="jumbotron" style="background-color: #fff">
+    <div class="container" style="margin-bottom: 20px">
+
+      <div class="row">
+        <p class="lead">
+	  ReLoC is a relational separation logic for proving refinements of programs with higher-order state, fine-grained concurrency, polymorphism and recursive types.
+  The core of ReLoC is its refinement judgment <code>e ≼ e' : τ</code>, which states that a program <code>e</code> refines a program <code>e'</code> at type <code>τ</code>.
+ReLoC provides type-directed structural rules and symbolic execution rules in separation-logic style for manipulating the judgment, whereas in prior work on refinements for languages with higher-order state and concurrency, such proofs were carried out by unfolding the judgment into its definition in the model.
+ReLoC's abstract proof rules make it simpler to carry out refinement proofs, and enable us to generalize the notion of logically atomic specifications to the relational case, which we call <em>logically atomic relational specifications</em>.
+
+ReLoC is built on top of the Iris framework for separation logic in Coq, allowing us
+to leverage features of Iris to prove soundness of ReLoC, and to carry out refinement proofs in ReLoC.
+We implement tactics for interactive proofs in ReLoC, allowing us to mechanize several case studies in Coq, and thereby demonstrate the practicality of ReLoC.
+	</p>
+    </div>
+
+    </div>
+    </section>
+
+    <section class="jumbotron">
+      <div class="container">
+
+	<div class="row text-xs-center">
+
+	</div>
+      </div>
+    </section>
+
+    <script src="../bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+  </body>
+</html>
