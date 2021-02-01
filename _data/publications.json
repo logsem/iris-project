@@ -739,7 +739,7 @@
       ],
       "description": "Extended Abstract for talk at PRISC 2020: Principles of Secure Compilation",
       "urls": [
-        { "name": "Pdf", "url": "pdfs/2020-iris-capabilities-prisc-conf.pdf" }
+        { "name": ".pdf", "url": "pdfs/2020-iris-capabilities-prisc-conf.pdf" }
       ]
     },
     {
@@ -750,7 +750,7 @@
         "Lars Birkedal"
       ],
       "urls": [
-        { "name": "Pdf", "url": "pdfs/2017-case-study-verifying-dartino-framework.pdf" },
+        { "name": ".pdf", "url": "pdfs/2017-case-study-verifying-dartino-framework.pdf" },
         { "name": "Coq development", "url": "artifacts/2017-case-study-verifying-dartino-framework.zip" }
       ]
     },
@@ -763,7 +763,7 @@
         "Lars Birkedal"
       ],
       "urls": [
-        { "name": "Pdf", "url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf" },
+        { "name": ".pdf", "url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FP/iris-examples/tree/master/theories/concurrent_stacks" }
       ]
     },
@@ -774,7 +774,7 @@
       ],
       "description": "Master's thesis at Aarhus University supervised by Lars Birkedal, June 2017",
       "urls": [
-        { "name": "Pdf", "url": "pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf" }
+        { "name": ".pdf", "url": "pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf" }
       ]
     },
     {
