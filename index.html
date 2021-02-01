@@ -111,11 +111,9 @@
                 {% if doc.pdf_url %}
                 <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">.pdf</a>
                 {% endif %}
-                {% if doc.other_urls %}
                 {% for e in doc.other_urls %}
                 <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
                 {% endfor %}
-                {% endif %}
               </div>
             </div>
           </dd>
@@ -139,11 +137,9 @@
                 {% if doc.pdf_url %}
                 <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">.pdf</a>
                 {% endif %}
-                {% if doc.other_urls %}
                 {% for e in doc.other_urls %}
                 <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
                 {% endfor %}
-                {% endif %}
               </div>
             </div>
           </dd>
@@ -170,11 +166,9 @@
                 {% if doc.pdf_url %}
                 <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
                 {% endif %}
-                {% if doc.other_urls %}
                 {% for e in doc.other_urls %}
                 <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
                 {% endfor %}
-                {% endif %}
               </div>
             </div>
           </dd>
@@ -194,11 +188,9 @@
               <small class="text-muted">{{ doc.description }}</small>
               {% endif %}
               <div class="buttons">
-                {% if doc.urls %}
                 {% for e in doc.urls %}
                 <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
                 {% endfor %}
-                {% endif %}
               </div>
             </div>
           </dd>
