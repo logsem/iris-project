@@ -415,7 +415,7 @@
         "Derek Dreyer"
       ],
       "where_published": "In ICFP 2018: ACM SIGPLAN International Conference on Functional Programming",
-      "note": "Section 5 contains a case study using the Iris Proof Mode.",
+      "description": "Section 5 contains a case study using the Iris Proof Mode.",
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/KaiserZKRD18.html",
       "pdf_url": "pdfs/2018-icfp-mtac2-final.pdf",
       "other_urls": [
@@ -680,7 +680,7 @@
       "status": "Submitted for publication",
       "pdf_url": "https://iris-project.org/pdfs/2020-transfinite-iris-submission.pdf",
       "other_urls": [
-        { "name": "Website", "url": "https://iris-project.org/transfinite-iris/" },
+        { "name": "website", "url": "https://iris-project.org/transfinite-iris/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/transfinite" }
       ]
     },
@@ -697,7 +697,7 @@
       "status": "Submitted for publication",
       "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
       "other_urls": [
-        { "name": "Website", "url": "https://plv.mpi-sws.org/refinedc/" },
+        { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" }
       ]
     },
@@ -724,7 +724,7 @@
       "status": "Submitted for publication",
       "pdf_url": "pdfs/2021-reloc-reloaded-submission.pdf",
       "other_urls": [
-        { "name": "Website", "url": "https://iris-project.org/reloc/" },
+        { "name": "website", "url": "https://iris-project.org/reloc/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
       ]
     }
@@ -786,7 +786,7 @@
       ],
       "description": "At CoqPL 2017: The Third International Workshop on Coq for Programming Languages, Paris, France",
       "urls": [
-        { "name": "Abstract", "url": "https://lirias.kuleuven.be/bitstream/123456789/555709/1/CoqPL.pdf" },
+        { "name": "abstract", "url": "https://lirias.kuleuven.be/bitstream/123456789/555709/1/CoqPL.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/examples/tree/master/theories/logrel" }
       ]
     },
@@ -798,8 +798,8 @@
       ],
       "description": "At HOPE 2015: 4th ACM SIGPLAN Workshop on Higher-Order Programming with Effects, Vancouver, Canada",
       "urls": [
-        { "name": "Talk on Youtube", "url": "https://www.youtube.com/watch?v=9Dyna88piek" },
-        { "name": "Slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-hope2015.pdf" }
+        { "name": "talk on youtube", "url": "https://www.youtube.com/watch?v=9Dyna88piek" },
+        { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-hope2015.pdf" }
       ]
     }
   ]
