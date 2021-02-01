@@ -415,7 +415,7 @@
         "Derek Dreyer"
       ],
       "where_published": "In ICFP 2018: ACM SIGPLAN International Conference on Functional Programming",
-      "title": "Section 5 contains a case study using the Iris Proof Mode.",
+      "note": "Section 5 contains a case study using the Iris Proof Mode.",
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/KaiserZKRD18.html",
       "pdf_url": "pdfs/2018-icfp-mtac2-final.pdf",
       "other_urls": [

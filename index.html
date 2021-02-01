@@ -106,6 +106,9 @@
             <div class="entry">
               {{ doc.authors | join: ", " }}<br/>
               <small class="text-muted">{{ doc.where_published }}</small><br/>
+              {% if doc.note %}
+              <small class="text-muted">{{ doc.note }}</small><br/>
+              {% endif %}
               {% if doc.awards %}
               {% for a in doc.awards %}
               <span class="important"><strong>{{ a }}</strong></span>
