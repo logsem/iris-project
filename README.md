@@ -8,7 +8,8 @@ Updating is just a matter of commiting and pushing your changes. Github-pages wi
 
 Assuming you have a working and decently recent Ruby installation with `bundler` (`gem install bundler`) you should be able to set everything up by running at the root of the repository to install all dependencies (including Jekyll).
 ```bash
-bundle install
+bundle config set --local path '.bundle'
+bundle update
 ```
 You should then be able to run the following command to have Jekyll serve the site at [http://127.0.0.1:4000](http://127.0.0.1:4000).
 ```bash
