@@ -1,46 +1,50 @@
 # iris-project
 
-## How to update the site
+## How do I update the site?
 
 Updating is just a matter of commiting and pushing your changes. Github-pages will automatically observe the change and in a matter of seconds the main home-page will be updated. 
 
+## How do I test the site locally?
+
+Assuming you have a working and decently recent Ruby installation with `bundler` (`gem install bundler`) you should be able to set everything up by running at the root of the repository to install all dependencies (including Jekyll).
+```bash
+bundle config set --local path '.bundle'
+bundle update
+```
+You should then be able to run the following command to have Jekyll serve the site at [http://127.0.0.1:4000](http://127.0.0.1:4000).
+```bash
+bundle exec jekyll serve
+```
+
 ## How to add publications
 
-To add a new publication find
-```html
-    <dl class="ref">
+To add a new publication simply edit `_data/publications.json`, find
+```json
+  "publications": [
 ```
-which is the datalist containing references to publications. A publication consists of two tags, a *dt* tag containing the title and a *dd* tag containing authors and links. Copy a paper-section like the following:
-
-```html
-          <dt>Iris: Monoids and Invariants as an Orthogonal Basis for Concurrent Reasoning</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung, David Swasey, Filip Sieczkowski, Kasper Svendsen, Aaron Turon, Lars Birkedal, and Derek Dreyer<br />
-              <small class="text-muted">In POPL 2015: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages, Mumbai, India</small>
-              <div class="buttons">
-                <a href="http://plv.mpi-sws.org/iris/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="http://plv.mpi-sws.org/iris/appendix.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-                <a href="http://dl.acm.org/citation.cfm?doid=2676726.2676980" class="btn btn-outline-primary btn-sm">publisher's site</a>
-              </div>
-            </div>
-          </dd>
-```
-
-and insert it into the top right below:
-
-```html
-        <dl class="ref">
+and insert a new entry of the following form right below it.
+```json
+    {
+      "title": "Strong Logic for Weak Memory: Reasoning About Release-Acquire Consistency in Iris",
+      "authors": [
+        "Jan-Oliver Kaiser",
+        "Hoang-Hai Dang",
+        "Derek Dreyer",
+        "Ori Lahav",
+        "Viktor Vafeiadis"
+      ],
+      "where_published": "In ECOOP 2017: European Conference on Object-Oriented Programming",
+      "awards": [ "ECOOP 2017 Distinguished Paper Award" ],
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/ecoop/KaiserDDLV17.html",
+      "pdf_url": "http://drops.dagstuhl.de/opus/volltexte/2017/7275/pdf/LIPIcs-ECOOP-2017-17.pdf",
+      "other_urls": [
+        { "name": "website", "url": "http://plv.mpi-sws.org/igps" }
+      ]
+    },
 ```
 
-To add links to the paper, to techinical appendices, repositories etc. find:
+The `"awards"`, `"dblp_url"` and `"other_urls"` fields are optional.
 
-```html
-	<div class="buttons">
-```
+The `"dblp_url"` field should only be included if a DBLP entry exists for the paper. The URL is the one of the DBLP page where you can view the bibtex entry for the paper (without any GET data, so just cut at the `?`).
 
-One can add a new link simple by adding another anchor-entry to the div:
-
-```html
-        <a href="http://some.link/to/a.pdf" class="btn btn-outline-primary btn-sm">name for link</a>
-```
+A similar method can be used to insert a draft papers, PhD dissertations and other stuff. Look for `"draft_papers"`, `"phd_dissertations"` and `"others"` respectively.

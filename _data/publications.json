@@ -1,0 +1,806 @@
+{
+  "publications": [
+    {
+      "title": "Contextual Refinement of the Michael-Scott Queue (Proof Pearl)",
+      "authors": [
+        "Simon Friis Vindum",
+        "Lars Birkedal"
+      ],
+      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "pdf_url": "https://www.cs.au.dk/~birke/papers/2021-ms-queue-final.pdf"
+    },
+    {
+      "title": "Reasoning about Monotonicity in Separation Logic",
+      "authors": [
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "pdf_url": "pdfs/2021-CPP-monotone-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/amintimany/monotone" }
+      ]
+    },
+    {
+      "title": "Machine-Checked Semantic Session Typing",
+      "authors": [
+        "Jonas Kastberg Hinrichsen",
+        "Daniël Louwrink",
+        "Robbert Krebbers",
+        "Jesper Bengtson"
+      ],
+      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "awards": [ "CPP 2021 Distinguished Paper Award" ],
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2021-cpp-sessions-final.pdf" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
+      ]
+    },
+    {
+      "title": "Efficient and Provable Local Capability Revocation using Uninitialized Capabilities",
+      "authors": [
+        "Aïna Linn Georges",
+        "Armaël Guéneau",
+        "Thomas Van Strydonck",
+        "Amin Timany",
+        "Alix Trieu",
+        "Sander Huyghebaert",
+        "Dominique Devriese",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/GeorgesGSTTHDB21.html",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2021-popl-ucaps-final.pdf" },
+        { "name": "Coq formalization", "url": "https://github.com/logsem/cerise-stack" }
+      ]
+    },
+    {
+      "title": "Mechanized Logical Relations for Termination-Insensitive Noninterference",
+      "authors": [
+        "Simon Oddershede Gregersen",
+        "Johan Bay",
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/GregersenBTB21.html",
+      "pdf_url": "pdfs/2021-popl-tiniris-final.pdf",
+      "other_urls": [
+        { "name": "technical appendix", "url": "pdfs/2021-popl-tiniris-appendix.pdf" },
+        { "name": "Coq formalization", "url": "https://github.com/logsem/iris-tini" }
+      ]
+    },
+    {
+      "title": "Distributed Causal Memory: Modular Specification and Verification in Higher-Order Distributed Separation Logic",
+      "authors": [
+        "Léon Gondelman",
+        "Simon Oddershede Gregersen",
+        "Abel Nieto",
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/GondelmanGNTB21.html",
+      "pdf_url": "pdfs/2021-popl-ccddb-final.pdf",
+      "other_urls": [
+        { "name": "technical appendix", "url": "pdfs/2021-popl-ccddb-appendix.pdf" },
+        { "name": "Coq formalization", "url": "https://zenodo.org/record/4066608" }
+      ]
+    },
+    {
+      "title": "Fully Abstract from Static to Gradual",
+      "authors": [
+        "Koen Jacobs",
+        "Amin Timany",
+        "Dominique Devriese"
+      ],
+      "where_published": "In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/JacobsTD21.html",
+      "pdf_url": "pdfs/2021-popl-fae-gradual-final.pdf",
+      "other_urls": [
+        { "name": "Coq formalization", "url": "https://github.com/scaup/fae-gtlc-mu" }
+      ]
+    },
+    {
+      "title": "A Separation Logic for Effect Handlers",
+      "authors": [
+        "Paulo Emílio de Vilhena",
+        "François Pottier"
+      ],
+      "where_published": "In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/VilhenaP21.html",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "http://cambium.inria.fr/~fpottier/publis/de-vilhena-pottier-sleh.pdf" },
+        { "name": "Coq formalization", "url": "https://gitlab.inria.fr/pdevilhe/hazel" }
+      ]
+    },
+    {
+      "title": "Safe Systems Programming in Rust: The Promise and the Challenge",
+      "authors": [
+        "Ralf Jung",
+        "Jacques-Henri Jourdan",
+        "Robbert Krebbers",
+        "Derek Dreyer"
+      ],
+      "where_published": "To appear in CACM",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2020-rustbelt-cacm-submission.pdf" }
+      ]
+    },
+    {
+      "title": "Cosmo: A Concurrent Separation Logic for Multicore OCaml",
+      "authors": [
+        "Glen Mével",
+        "Jacques-Henri Jourdan",
+        "François Pottier"
+      ],
+      "where_published": "In ICFP 2020: ACM SIGPLAN International Conference on Functional Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/MevelJP20.html",
+      "pdf_url": "pdfs/2020-icfp-cosmo-final.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://gitlab.inria.fr/gmevel/cosmo" }
+      ]
+    },
+    {
+      "title": "Scala Step-by-Step: Soundness for DOT with Step-Indexed Logical Relations in Iris",
+      "authors": [
+        "Paolo G. Giarrusso",
+        "Léo Stefanesco",
+        "Amin Timany",
+        "Lars Birkedal",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In ICFP 2020: ACM SIGPLAN International Conference on Functional Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/GiarrussoSTBK20.html",
+      "pdf_url": "pdfs/2020-icfp-dot-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/Blaisorblade/dot-iris" },
+        { "name": "website", "url": "https://dot-iris.github.io/" }
+      ]
+    },
+    {
+      "title": "Compositional Non-Interference for Fine-Grained Concurrent Programs",
+      "authors": [
+        "Dan Frumin",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "where_published": "In S&P 2021: IEEE Symposium on Security and Privacy",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2020-seloc-submission.pdf" },
+        { "name": "Coq development", "url": "https://github.com/co-dan/SeLoC" }
+      ]
+    },
+    {
+      "title": "Verifying Concurrent Search Structure Templates",
+      "authors": [
+        "Siddharth Krishna",
+        "Nisarg Patel",
+        "Dennis Shasha",
+        "Thomas Wies"
+      ],
+      "where_published": "In PLDI 2020: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/pldi/KrishnaPSW20.html",
+      "pdf_url": "http://cs.nyu.edu/wies/publ/templates-pldi20.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/nyu-acsys/template-proofs/" }
+      ]
+    },
+    {
+      "title": "Aneris: A Mechanised Logic for Modular Reasoning about Distributed Systems",
+      "authors": [
+        "Morten Krogh-Jespersen",
+        "Amin Timany",
+        "Marit Edna Ohlenbusch",
+        "Simon Oddershede Gregersen",
+        "Lars Birkedal"
+      ],
+      "where_published": "In ESOP 2020: European Symposium on Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/esop/Krogh-Jespersen20.html",
+      "pdf_url": "pdfs/2020-esop-aneris-final.pdf",
+      "other_urls": [
+        { "name": "technical appendix", "url": "pdfs/2020-esop-aneris-final-appendix.pdf" },
+        { "name": "Coq development", "url": "artifacts/2020-esop-aneris.tar.gz" }
+      ]
+    },
+    {
+      "title": "RustBelt Meets Relaxed Memory",
+      "authors": [
+        "Hoang-Hai Dang",
+        "Jacques-Henri Jourdan",
+        "Jan-Oliver Kaiser",
+        "Derek Dreyer"
+      ],
+      "where_published": "In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/DangJKD20.html",
+      "pdf_url": "https://plv.mpi-sws.org/rustbelt/rbrlx/paper.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plv.mpi-sws.org/rustbelt/rbrlx/" }
+      ]
+    },
+    {
+      "title": "Spy Game: Verifying a Local Generic Solver in Iris",
+      "authors": [
+        "Paulo Emílio de Vilhena",
+        "François Pottier",
+        "Jacques-Henri Jourdan"
+      ],
+      "where_published": "In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/VilhenaPJ20.html",
+      "pdf_url": "http://gallium.inria.fr/~fpottier/publis/de-vilhena-pottier-jourdan-spy-game-2020.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.inria.fr/pdevilhe/spy-game" }
+      ]
+    },
+    {
+      "title": "Actris: Session-Type Based Reasoning in Separation Logic",
+      "authors": [
+        "Jonas Kastberg Hinrichsen",
+        "Jesper Bengtson",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/HinrichsenBK20.html",
+      "pdf_url": "pdfs/2020-popl-actris-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris/" }
+      ]
+    },
+    {
+      "title": "The Future is Ours: Prophecy Variables in Separation Logic",
+      "authors": [
+        "Ralf Jung",
+        "Rodolphe Lepigre",
+        "Gaurav Parthasarathy",
+        "Marianna Rapoport",
+        "Amin Timany",
+        "Derek Dreyer",
+        "Bart Jacobs"
+      ],
+      "where_published": "In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/JungLPRTDJ20.html",
+      "pdf_url": "https://plv.mpi-sws.org/prophecies/paper.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plv.mpi-sws.org/prophecies/" }
+      ]
+    },
+    {
+      "title": "The High-Level Benefits of Low-Level Sandboxing",
+      "authors": [
+        "Michael Sammler",
+        "Deepak Garg",
+        "Derek Dreyer",
+        "Tadeusz Litak"
+      ],
+      "where_published": "In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/SammlerGDL20.html",
+      "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/sandboxing/paper.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FCS/lang-sandbox-coq" }
+      ]
+    },
+    {
+      "title": "Verifying Concurrent, Crash-Safe Systems with Perennial",
+      "authors": [
+        "Tej Chajed",
+        "Joseph Tassarotti",
+        "M. Frans Kaashoek",
+        "Nickolai Zeldovich"
+      ],
+      "where_published": "In SOSP 2019: ACM Symposium on Operating Systems Principles",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/sosp/ChajedTKZ19.html",
+      "pdf_url": "pdfs/2019-sosp-perennial-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/mit-pdos/perennial" }
+      ]
+    },
+    {
+      "title": "Mechanized Relational Verification of Concurrent Programs with Continuations",
+      "authors": [
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In ICFP 2019: ACM SIGPLAN International Conference on Functional Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/TimanyB19.html",
+      "pdf_url": "pdfs/2019-icfp-logrelcc-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "artifacts/2019-icfp-logrelcc.tar.gz" }
+      ]
+    },
+    {
+      "title": "Semi-Automated Reasoning About Non-Determinism in C Expressions",
+      "authors": [
+        "Dan Frumin",
+        "Léon Gondelman",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In ESOP 2019: European Symposium on Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/esop/FruminGK19.html",
+      "pdf_url": "pdfs/2019-esop-c.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/c" },
+        { "name": "website", "url": "https://cs.ru.nl/~dfrumin/wpc/" },
+        { "name": "slides", "url": "http://cs.ru.nl/~dfrumin/wpc/esop-talk.pdf" }
+      ]
+    },
+    {
+      "title": "Time Credits and Time Receipts in Iris",
+      "authors": [
+        "Glen Mével",
+        "Jacques-Henri Jourdan",
+        "François Pottier"
+      ],
+      "where_published": "In ESOP 2019: European Symposium on Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/esop/MevelJP19.html",
+      "pdf_url": "pdfs/2019-esop-time.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.inria.fr/gmevel/iris-time-proofs" }
+      ]
+    },
+    {
+      "title": "Iron: Managing Obligations in Higher-Order Concurrent Separation Logic",
+      "authors": [
+        "Aleš Bizjak",
+        "Daniel Gratzer",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2019: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/BizjakGKB19.html",
+      "pdf_url": "pdfs/2019-popl-iron-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iron" },
+        { "name": "website", "url": "iron/" }
+      ]
+    },
+    {
+      "title": "A Separation Logic for Concurrent Randomized Programs",
+      "authors": [
+        "Joseph Tassarotti",
+        "Robert Harper"
+      ],
+      "where_published": "In POPL 2019: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/TassarottiH19.html",
+      "pdf_url": "pdfs/2019-popl-polaris-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/jtassarotti/polaris" }
+      ]
+    },
+    {
+      "title": "Iris from the Ground Up: A Modular Foundation for Higher-Order Concurrent Separation Logic",
+      "dubbed_title": "Iris 3.1",
+      "authors": [
+        "Ralf Jung",
+        "Robbert Krebbers",
+        "Jacques-Henri Jourdan",
+        "Aleš Bizjak",
+        "Lars Birkedal",
+        "Derek Dreyer"
+      ],
+      "where_published": "Journal of Functional Programming (JFP), Volume 28, e20, November 2018",
+      "description": "This is a significantly revised and expanded synthesis of the Iris 2.0 and 3.0 papers.",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/jfp/JungKJBBD18.html",
+      "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/iris-ground-up/paper.pdf",
+      "other_urls": [
+        { "name": "technical appendix", "url": "https://plv.mpi-sws.org/iris/appendix-3.1.pdf" }
+      ]
+    },
+    {
+      "title": "MoSeL: A General, Extensible Modal Framework for Interactive Proofs in Separation Logic",
+      "authors": [
+        "Robbert Krebbers",
+        "Jacques-Henri Jourdan",
+        "Ralf Jung",
+        "Joseph Tassarotti",
+        "Jan-Oliver Kaiser",
+        "Amin Timany",
+        "Arthur Charguéraud",
+        "Derek Dreyer"
+      ],
+      "where_published": "In ICFP 2018: ACM SIGPLAN International Conference on Functional Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/KrebbersJ0TKTCD18.html",
+      "pdf_url": "pdfs/2018-icfp-mosel-final.pdf",
+      "other_urls": [
+        { "name": "website", "url": "mosel/" }
+      ]
+    },
+    {
+      "title": "Mtac2: Typed Tactics for Backward Reasoning in Coq",
+      "authors": [
+        "Jan-Oliver Kaiser",
+        "Beta Ziliani",
+        "Robbert Krebbers",
+        "Yann Régis-Gianas",
+        "Derek Dreyer"
+      ],
+      "where_published": "In ICFP 2018: ACM SIGPLAN International Conference on Functional Programming",
+      "description": "Section 5 contains a case study using the Iris Proof Mode.",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/KaiserZKRD18.html",
+      "pdf_url": "pdfs/2018-icfp-mtac2-final.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://github.com/Mtac2/Mtac2" }
+      ]
+    },
+    {
+      "title": "ReLoC: A Mechanised Relational Logic for Fine-Grained Concurrency",
+      "authors": [
+        "Dan Frumin",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "where_published": "In LICS 2018: ACM/IEEE Symposium on Logic in Computer Science",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/lics/FruminKB18.html",
+      "pdf_url": "pdfs/2018-lics-reloc-final.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://iris-project.org/reloc/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/dfrumin/logrel-conc" },
+        { "name": "slides", "url": "http://cs.ru.nl/~dfrumin/pdf/t/reloc-lics.pdf" }
+      ]
+    },
+    {
+      "title": "RustBelt: Securing the Foundations of the Rust Programming Language",
+      "authors": [
+        "Ralf Jung",
+        "Jacques-Henri Jourdan",
+        "Robbert Krebbers",
+        "Derek Dreyer"
+      ],
+      "where_published": "In POPL 2018: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/0002JKD18.html",
+      "pdf_url": "https://plv.mpi-sws.org/rustbelt/popl18/paper.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plv.mpi-sws.org/rustbelt/popl18/" }
+      ]
+    },
+    {
+      "title": "A Logical Relation for Monadic Encapsulation of State: Proving contextual equivalences in the presence of runST",
+      "authors": [
+        "Amin Timany",
+        "L&eacute;o Stefanesco",
+        "Morten Krogh-Jespersen",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2018: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/TimanySKB18.html",
+      "pdf_url": "pdfs/2018-popl-runST-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "artifacts/2018-popl-runst.tar.gz" }
+      ]
+    },
+    {
+      "title": "On Models of Higher-Order Separation Logic",
+      "authors": [
+        "Aleš Bizjak",
+        "Lars Birkedal"
+      ],
+      "where_published": "In MFPS 2017: Mathematical Foundations of Programming Semantics",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/entcs/BizjakB18.html",
+      "pdf_url": "pdfs/2017-mfps-box-modality.pdf"
+    },
+    {
+      "title": "Robust and Compositional Verification of Object Capability Patterns",
+      "authors": [
+        "David Swasey",
+        "Deepak Garg",
+        "Derek Dreyer"
+      ],
+      "where_published": "In OOPSLA 2017: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "awards": [ "OOPSLA 2017 Distinguished Paper Award" ],
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/Swasey0D17.html",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "http://www.mpi-sws.org/~dreyer/papers/ocpl/paper.pdf" },
+        { "name": "Coq development", "url": "http://www.mpi-sws.org/~dreyer/papers/ocpl/ocpl.tgz" },
+        { "name": "Coq development (VM)", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-vm-20170705.ova" }
+      ]
+    },
+    {
+      "title": "Strong Logic for Weak Memory: Reasoning About Release-Acquire Consistency in Iris",
+      "authors": [
+        "Jan-Oliver Kaiser",
+        "Hoang-Hai Dang",
+        "Derek Dreyer",
+        "Ori Lahav",
+        "Viktor Vafeiadis"
+      ],
+      "where_published": "In ECOOP 2017: European Conference on Object-Oriented Programming",
+      "awards": [ "ECOOP 2017 Distinguished Paper Award" ],
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/ecoop/KaiserDDLV17.html",
+      "pdf_url": "http://drops.dagstuhl.de/opus/volltexte/2017/7275/pdf/LIPIcs-ECOOP-2017-17.pdf",
+      "other_urls": [
+        { "name": "website", "url": "http://plv.mpi-sws.org/igps" }
+      ]
+    },
+    {
+      "title": "A Higher-Order Logic for Concurrent Termination-Preserving Refinement",
+      "authors": [
+        "Joseph Tassarotti",
+        "Ralf Jung",
+        "Robert Harper"
+      ],
+      "where_published": "In ESOP 2017: European Symposium on Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/esop/TassarottiJ017.html",
+      "pdf_url": "pdfs/2017-esop-refinement-final.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://www.cs.cmu.edu/~jtassaro/papers/iris-refinement/index.html" },
+        { "name": "arXiv", "url": "https://arxiv.org/abs/1701.05888" }
+      ]
+    },
+    {
+      "title": "The Essence of Higher-Order Concurrent Separation Logic",
+      "dubbed_title": "Iris 3.0",
+      "authors": [
+        "Robbert Krebbers",
+        "Ralf Jung",
+        "Aleš Bizjak",
+        "Jacques-Henri Jourdan",
+        "Derek Dreyer",
+        "Lars Birkedal"
+      ],
+      "where_published": "In ESOP 2017: European Symposium on Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/esop/Krebbers0BJDB17.html",
+      "pdf_url": "pdfs/2017-esop-iris3-final.pdf",
+      "other_urls": [
+        { "name": "technical appendix", "url": "https://plv.mpi-sws.org/iris/appendix-3.0.pdf" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-3.0.0" }
+      ]
+    },
+    {
+      "title": "Interactive Proofs in Higher-Order Concurrent Separation Logic",
+      "dubbed_title": "Iris Proof Mode",
+      "authors": [
+        "Robbert Krebbers",
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2017: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/popl/KrebbersTB17.html",
+      "pdf_url": "pdfs/2017-popl-proofmode-final.pdf"
+    },
+    {
+      "title": "A Relational Model of Types-and-Effects in Higher-Order Concurrent Separation Logic",
+      "authors": [
+        "Morten Krogh-Jespersen",
+        "Kasper Svendsen",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2017: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/popl/Krogh-Jespersen17.html",
+      "pdf_url": "pdfs/2017-popl-effects-final.pdf",
+      "other_urls": [
+        { "name": "technical appendix", "url": "pdfs/2017-popl-effects-appendix.pdf" }
+      ]
+    },
+    {
+      "title": "Higher-Order Ghost State",
+      "dubbed_title": "Iris 2.0",
+      "authors": [
+        "Ralf Jung",
+        "Robbert Krebbers",
+        "Lars Birkedal",
+        "Derek Dreyer"
+      ],
+      "where_published": "In ICFP 2016: ACM SIGPLAN International Conference on Functional Programming",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/icfp/0002KBD16.html",
+      "pdf_url": "pdfs/2016-icfp-iris2-final.pdf",
+      "other_urls": [
+        { "name": "technical appendix (1/2)", "url": "pdfs/2016-icfp-iris2-final-appendix.pdf" },
+        { "name": "technical appendix (2/2)", "url": "http://plv.mpi-sws.org/iris/appendix-2.0.pdf" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-2.0" },
+        { "name": "talk on youtube", "url": "https://www.youtube.com/watch?v=vUxWU-qvGX0" },
+        { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-icfp2016.pdf" }
+      ]
+    },
+    {
+      "title": "Iris: Monoids and Invariants as an Orthogonal Basis for Concurrent Reasoning",
+      "dubbed_title": "Iris 1.0",
+      "authors": [
+        "Ralf Jung",
+        "David Swasey",
+        "Filip Sieczkowski",
+        "Kasper Svendsen",
+        "Aaron Turon",
+        "Lars Birkedal",
+        "Derek Dreyer"
+      ],
+      "where_published": "In POPL 2015: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "dblp_url": "https://dblp.uni-trier.de/rec/conf/popl/JungSSSTBD15.html",
+      "pdf_url": "pdfs/2015-popl-iris1-final.pdf",
+      "other_urls": [
+        { "name": "technical appendix", "url": "http://plv.mpi-sws.org/iris/appendix.pdf" },
+        { "name": "(historic) Coq formalization", "url": "http://plv.mpi-sws.org/iris/distrib/" },
+        { "name": "publisher's site", "url": "http://dl.acm.org/citation.cfm?doid=2676726.2676980" },
+        { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-popl2015.pdf" }
+      ]
+    }
+  ],
+  "phd_dissertations": [
+    {
+      "title": "Concurrent Separation Logics for Safety, Refinement, and Security",
+      "author": "Dan Frumin",
+      "university": "Radboud University",
+      "date": "March 2021",
+      "pdf_url": "https://groupoid.moe/pdf/thesis.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://groupoid.moe/thesis.html" }
+      ]
+    },
+    {
+      "title": "Understanding and Evolving the Rust Programming Language",
+      "author": "Ralf Jung",
+      "university": "MPI-SWS and Saarbrücken Graduate School of Computer Science",
+      "date": "August 2020",
+      "dblp_url": "https://dblp.uni-trier.de/rec/phd/dnb/Jung20.html",
+      "pdf_url": "https://people.mpi-sws.org/~jung/phd/thesis-screen.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://people.mpi-sws.org/~jung/thesis.html" }
+      ]
+    },
+    {
+      "title": "Compositional Abstractions for Verifying Concurrent Data Structures",
+      "author": "Siddharth Krishna",
+      "university": "New York University",
+      "date": "September 2019",
+      "pdf_url": "https://cs.nyu.edu/media/publications/krishna_siddharth.pdf"
+    },
+    {
+      "title": "Verifying Concurrent Randomized Algorithms",
+      "author": "Joseph Tassarotti",
+      "university": "Carnegie Mellon University",
+      "date": "January 2019",
+      "pdf_url": "pdfs/2019-phd-tassarotti.pdf"
+    },
+    {
+      "title": "Towards Modular Reasoning for Stateful and Concurrent Programs",
+      "author": "Morten Krogh-Jespersen",
+      "university": "Aarhus University",
+      "date": "September 2018",
+      "pdf_url": "https://pure.au.dk/portal/files/142698762/Morten_Krogh_Jespersen_thesis_final.pdf"
+    },
+    {
+      "title": "Contributions in Programming Languages Theory",
+      "author": "Amin Timany",
+      "university": "KU Leuven",
+      "date": "May 2018",
+      "pdf_url": "https://lirias.kuleuven.be/retrieve/510052"
+    }
+  ],
+  "draft_papers": [
+    {
+      "title": "Transfinite Iris: Resolving an Existential Dilemma of Step-Indexed Separation Logic",
+      "authors": [
+        "Simon Spies",
+        "Lennard Gäher",
+        "Daniel Gratzer",
+        "Joseph Tassarotti",
+        "Robbert Krebbers",
+        "Derek Dreyer",
+        "Lars Birkedal"
+      ],
+      "status": "Submitted for publication",
+      "pdf_url": "https://iris-project.org/pdfs/2020-transfinite-iris-submission.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://iris-project.org/transfinite-iris/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/transfinite" }
+      ]
+    },
+    {
+      "title": "RefinedC: A Foundational Refinement Type System for C Based on Separation Logic Programming",
+      "authors": [
+        "Michael Sammler",
+        "Rodolphe Lepigre",
+        "Robbert Krebbers",
+        "Kayvan Memarian",
+        "Derek Dreyer",
+        "Deepak Garg"
+      ],
+      "status": "Submitted for publication",
+      "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" }
+      ]
+    },
+    {
+      "title": "Actris 2.0: Asynchronous Session-Type Based Reasoning in Separation Logic",
+      "authors": [
+        "Jonas Kastberg Hinrichsen",
+        "Jesper Bengtson",
+        "Robbert Krebbers"
+      ],
+      "status": "Submitted for publication",
+      "pdf_url": "pdfs/2020-actris2-submission.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
+      ]
+    },
+    {
+      "title": "ReLoC Reloaded: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity",
+      "authors": [
+        "Dan Frumin",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "status": "Submitted for publication",
+      "pdf_url": "pdfs/2021-reloc-reloaded-submission.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://iris-project.org/reloc/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
+      ]
+    }
+  ],
+  "others": [
+    {
+      "title": "Mechanized Reasoning about a Capability Machine",
+      "authors": [
+        "Aina Linn Georges",
+        "Alix Trieu",
+        "Lars Birkedal"
+      ],
+      "description": "Extended Abstract for talk at PRISC 2020: Principles of Secure Compilation",
+      "urls": [
+        { "name": ".pdf", "url": "pdfs/2020-iris-capabilities-prisc-conf.pdf" }
+      ]
+    },
+    {
+      "title": "Verifying a Concurrent Data-Structure from the Dartino Framework",
+      "authors": [
+        "Morten Krogh-Jespersen",
+        "Thomas Dinsdale-Young",
+        "Lars Birkedal"
+      ],
+      "urls": [
+        { "name": ".pdf", "url": "pdfs/2017-case-study-verifying-dartino-framework.pdf" },
+        { "name": "Coq development", "url": "artifacts/2017-case-study-verifying-dartino-framework.zip" }
+      ]
+    },
+    {
+      "title": "Formalizing Concurrent Stacks With Helping: A Case Study In Iris",
+      "authors": [
+        "Daniel Gratzer",
+        "Mathias Høier",
+        "Aleš Bizjak",
+        "Lars Birkedal"
+      ],
+      "urls": [
+        { "name": ".pdf", "url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FP/iris-examples/tree/master/theories/concurrent_stacks" }
+      ]
+    },
+    {
+      "title": "Verifying Hash Tables in Iris",
+      "authors": [
+        "Esben Glavind Clausen"
+      ],
+      "description": "Master's thesis at Aarhus University supervised by Lars Birkedal, June 2017",
+      "urls": [
+        { "name": ".pdf", "url": "pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf" }
+      ]
+    },
+    {
+      "title": "Logical Relations in Iris",
+      "authors": [
+        "Amin Timany",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "description": "At CoqPL 2017: The Third International Workshop on Coq for Programming Languages, Paris, France",
+      "urls": [
+        { "name": "abstract", "url": "https://lirias.kuleuven.be/bitstream/123456789/555709/1/CoqPL.pdf" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/examples/tree/master/theories/logrel" }
+      ]
+    },
+    {
+      "title": "Unifying Worlds and Resources",
+      "authors": [
+        "Ralf Jung",
+        "Derek Dreyer"
+      ],
+      "description": "At HOPE 2015: 4th ACM SIGPLAN Workshop on Higher-Order Programming with Effects, Vancouver, Canada",
+      "urls": [
+        { "name": "talk on youtube", "url": "https://www.youtube.com/watch?v=9Dyna88piek" },
+        { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-hope2015.pdf" }
+      ]
+    }
+  ]
+}

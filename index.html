@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -83,519 +85,39 @@
     </div>
 
     <div class="container" style="margin-bottom: 20px;">
-
       <div class="row">
         <a name="publications"></a><h2>Publications</h2>
       </div>
+
       <div class="row">
-      <p>Below, we give an overview of the research that uses Iris one way or another.</p>
+        <p>Below, we give an overview of the research that uses Iris one way or another.</p>
       </div>
 
       <div class="row">
         <dl class="ref">
-
-	  <dt>Contextual Refinement of the Michael-Scott Queue (Proof Pearl)</dt>
+          {% for doc in site.data.publications.publications %}
+          <dt>{{ doc.title }}{% if doc.dubbed_title %}(&quot;{{ doc.dubbed_title }}&quot;){% endif %}</dt>
           <dd>
             <div class="entry">
-              Simon Friis Vindum, Lars Birkedal<br/>
-              <small class="text-muted">In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs</small><br/>
+              {{ doc.authors | join: ", " }}<br/>
+              <small class="text-muted">{{ doc.where_published }}</small>
+              {% if doc.description %}
+              <br/><small class="text-muted">{{ doc.description }}</small>
+              {% endif %}
+              {% for a in doc.awards %}
+              <br/><small style="color: red">Recipient of <strong>{{ a }}</strong></small>
+              {% endfor %}
               <div class="buttons">
-                <a href="https://www.cs.au.dk/~birke/papers/2021-ms-queue-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                {% if doc.pdf_url %}
+                <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">.pdf</a>
+                {% endif %}
+                {% for e in doc.other_urls %}
+                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
+                {% endfor %}
               </div>
             </div>
           </dd>
-
-	  <dt>Reasoning about Monotonicity in Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Amin Timany, Lars Birkedal<br/>
-              <small class="text-muted">In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs</small><br/>
-              <div class="buttons">
-                <a href="pdfs/2021-CPP-monotone-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://github.com/amintimany/monotone" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Machine-Checked Semantic Session Typing</dt>
-          <dd>
-            <div class="entry">
-              Jonas Kastberg Hinrichsen, Daniël Louwrink, Robbert Krebbers, Jesper Bengtson<br/>
-              <small class="text-muted">In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs</small><br/>
-	    <small style="color: red">Recipient of <strong>CPP 2021 Distinguished Paper Award</strong></small>
-              <div class="buttons">
-                <a href="pdfs/2021-cpp-sessions-final.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://gitlab.mpi-sws.org/iris/actris" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Efficient and Provable Local Capability Revocation using Uninitialized Capabilities</dt>
-          <dd>
-            <div class="entry">
-              Aïna Linn Georges, Armaël Guéneau, Thomas Van Strydonck, Amin Timany, Alix Trieu, Sander Huyghebaert, Dominique Devriese, Lars Birkedal <br/>
-              <small class="text-muted">In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2021-popl-ucaps-final.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://github.com/logsem/cerise-stack" class="btn btn-outline-primary btn-sm">Coq formalization</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Mechanized Logical Relations for Termination-Insensitive Noninterference</dt>
-          <dd>
-            <div class="entry">
-              Simon Oddershede Gregersen, Johan Bay, Amin Timany, Lars Birkedal <br/>
-              <small class="text-muted">In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2021-popl-tiniris-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="pdfs/2021-popl-tiniris-appendix.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-                <a href="https://github.com/logsem/iris-tini" class="btn btn-outline-primary btn-sm">Coq formalization</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Distributed Causal Memory: Modular Specification and Verification in Higher-Order Distributed Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Léon Gondelman, Simon Oddershede Gregersen, Abel Nieto, Amin Timany, Lars Birkedal <br/>
-              <small class="text-muted">In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2021-popl-ccddb-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="pdfs/2021-popl-ccddb-appendix.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-                <a href="https://zenodo.org/record/4066608" class="btn btn-outline-primary btn-sm">Coq formalization</a>
-              </div>
-            </div>
-          </dd>
-
-	  <dt>Fully Abstract from Static to Gradual</dt>
-          <dd>
-            <div class="entry">
-              Koen Jacobs, Amin Timany, Dominique Devriese<br/>
-              <small class="text-muted">In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2021-popl-fae-gradual-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://github.com/scaup/fae-gtlc-mu" class="btn btn-outline-primary btn-sm">Coq formalization</a>
-              </div>
-            </div>
-          </dd>
-
-	  <dt>A Separation Logic for Effect Handlers</dt>
-          <dd>
-            <div class="entry">
-              Paulo Emílio de Vilhena, François Pottier<br/>
-              <small class="text-muted">In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="http://cambium.inria.fr/~fpottier/publis/de-vilhena-pottier-sleh.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://gitlab.inria.fr/pdevilhe/hazel" class="btn btn-outline-primary btn-sm">Coq formalization</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Safe Systems Programming in Rust: The Promise and the Challenge</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung, Jacques-Henri Jourdan, Robbert Krebbers, Derek Dreyer<br/>
-              <small class="text-muted">To appear in CACM</small>
-              <div class="buttons">
-                <a href="pdfs/2020-rustbelt-cacm-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Cosmo: A Concurrent Separation Logic for Multicore OCaml</dt>
-          <dd>
-            <div class="entry">
-              Glen Mével, Jacques-Henri Jourdan, François Pottier<br/>
-              <small class="text-muted">In ICFP 2020: ACM SIGPLAN International Conference on Functional Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2020-icfp-cosmo-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.inria.fr/gmevel/cosmo" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Scala Step-by-Step: Soundness for DOT with Step-Indexed Logical Relations in Iris</dt>
-          <dd>
-            <div class="entry">
-              Paolo G. Giarrusso, Léo Stefanesco, Amin Timany, Lars Birkedal, Robbert Krebbers<br/>
-              <small class="text-muted">In ICFP 2020: ACM SIGPLAN International Conference on Functional Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2020-icfp-dot-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://github.com/Blaisorblade/dot-iris" class="btn btn-outline-primary btn-sm">Coq development</a>
-                <a href="https://dot-iris.github.io/" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Compositional Non-Interference for Fine-Grained Concurrent Programs</dt>
-          <dd>
-            <div class="entry">
-              Dan Frumin, Robbert Krebbers, Lars Birkedal<br/>
-              <small class="text-muted">In S&P 2021: IEEE Symposium on Security and Privacy</small>
-              <div class="buttons">
-                <a href="pdfs/2020-seloc-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://github.com/co-dan/SeLoC" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Verifying Concurrent Search Structure Templates</dt>
-          <dd>
-            <div class="entry">
-              Siddharth Krishna, Nisarg Patel, Dennis Shasha, Thomas Wies<br/>
-              <small class="text-muted">In PLDI 2020: ACM SIGPLAN Conference on Programming Language Design and Implementation</small>
-              <div class="buttons">
-                <a href="http://cs.nyu.edu/wies/publ/templates-pldi20.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://github.com/nyu-acsys/template-proofs/" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Aneris: A Mechanised Logic for Modular Reasoning about Distributed Systems</dt>
-          <dd>
-            <div class="entry">
-              Morten Krogh-Jespersen, Amin Timany, Marit Edna Ohlenbusch, Simon Oddershede Gregersen, Lars Birkedal<br/>
-              <small class="text-muted">In ESOP 2020: European Symposium on Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2020-esop-aneris-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="pdfs/2020-esop-aneris-final-appendix.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-                <a href="artifacts/2020-esop-aneris.tar.gz" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>RustBelt Meets Relaxed Memory</dt>
-          <dd>
-            <div class="entry">
-              Hoang-Hai Dang, Jacques-Henri Jourdan, Jan-Oliver Kaiser, Derek Dreyer<br/>
-              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="https://plv.mpi-sws.org/rustbelt/rbrlx/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://plv.mpi-sws.org/rustbelt/rbrlx/" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Spy Game: Verifying a Local Generic Solver in Iris</dt>
-          <dd>
-            <div class="entry">
-              Paulo Emílio de Vilhena, François Pottier, Jacques-Henri Jourdan<br/>
-              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="http://gallium.inria.fr/~fpottier/publis/de-vilhena-pottier-jourdan-spy-game-2020.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.inria.fr/pdevilhe/spy-game" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Actris: Session-Type Based Reasoning in Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Jonas Kastberg Hinrichsen, Jesper Bengtson, Robbert Krebbers<br/>
-              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2020-popl-actris-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.mpi-sws.org/iris/actris/" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>The Future is Ours: Prophecy Variables in Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung, Rodolphe Lepigre, Gaurav Parthasarathy, Marianna Rapoport, Amin Timany, Derek Dreyer, Bart Jacobs<br/>
-              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="https://plv.mpi-sws.org/prophecies/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://plv.mpi-sws.org/prophecies/" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>The High-Level Benefits of Low-Level Sandboxing</dt>
-          <dd>
-            <div class="entry">
-              Michael Sammler, Deepak Garg, Derek Dreyer, Tadeusz Litak<br/>
-              <small class="text-muted">In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="https://www.mpi-sws.org/~dreyer/papers/sandboxing/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.mpi-sws.org/FCS/lang-sandbox-coq" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Verifying Concurrent, Crash-Safe Systems with Perennial</dt>
-          <dd>
-            <div class="entry">
-              Tej Chajed, Joseph Tassarotti, M. Frans Kaashoek, Nickolai Zeldovich<br/>
-              <small class="text-muted">In SOSP 2019: ACM Symposium on Operating Systems Principles</small>
-              <div class="buttons">
-                <a href="pdfs/2019-sosp-perennial-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://github.com/mit-pdos/perennial" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Mechanized Relational Verification of Concurrent Programs with Continuations</dt>
-          <dd>
-            <div class="entry">
-              Amin Timany, Lars Birkedal<br/>
-              <small class="text-muted">In ICFP 2019: ACM SIGPLAN International Conference on Functional Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2019-icfp-logrelcc-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="artifacts/2019-icfp-logrelcc.tar.gz" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Semi-Automated Reasoning About Non-Determinism in C Expressions</dt>
-          <dd>
-            <div class="entry">
-              Dan Frumin, Léon Gondelman, Robbert Krebbers<br/>
-              <small class="text-muted">In ESOP 2019: European Symposium on Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2019-esop-c.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.mpi-sws.org/iris/c" class="btn btn-outline-primary btn-sm">Coq development</a>
-                <a href="https://cs.ru.nl/~dfrumin/wpc/" class="btn btn-outline-primary btn-sm">website</a>
-                <a href="http://cs.ru.nl/~dfrumin/wpc/esop-talk.pdf" class="btn btn-outline-primary btn-sm">slides</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Time Credits and Time Receipts in Iris</dt>
-          <dd>
-            <div class="entry">
-              Glen Mével, Jacques-Henri Jourdan, François Pottier<br/>
-              <small class="text-muted">In ESOP 2019: European Symposium on Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2019-esop-time.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.inria.fr/gmevel/iris-time-proofs" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Iron: Managing Obligations in Higher-Order Concurrent Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Aleš Bizjak, Daniel Gratzer, Robbert Krebbers, Lars Birkedal<br/>
-              <small class="text-muted">In POPL 2019: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2019-popl-iron-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.mpi-sws.org/iris/iron" class="btn btn-outline-primary btn-sm">Coq development</a>
-                <a href="iron/" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>A Separation Logic for Concurrent Randomized Programs</dt>
-          <dd>
-            <div class="entry">
-              Joseph Tassarotti, Robert Harper<br/>
-              <small class="text-muted">In POPL 2019: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2019-popl-polaris-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://github.com/jtassarotti/polaris" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Iris from the Ground Up: A Modular Foundation for Higher-Order Concurrent Separation Logic (&quot;Iris 3.1&quot;)</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung, Robbert Krebbers, Jacques-Henri Jourdan, Aleš Bizjak, Lars Birkedal, Derek Dreyer<br/>
-              <small class="text-muted"> Journal of Functional Programming (JFP), Volume 28, e20, November 2018</small>
-	      <br/>
-	      <small class="text-muted"> This is a significantly revised and expanded synthesis of the Iris 2.0 and 3.0 papers.</small>
-              <div class="buttons">
-                <a href="https://www.mpi-sws.org/~dreyer/papers/iris-ground-up/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://plv.mpi-sws.org/iris/appendix-3.1.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>MoSeL: A General, Extensible Modal Framework for Interactive Proofs in Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Robbert Krebbers, Jacques-Henri Jourdan, Ralf Jung, Joseph Tassarotti, Jan-Oliver Kaiser, Amin Timany, Arthur Charguéraud, Derek Dreyer<br/>
-              <small class="text-muted">In ICFP 2018: ACM SIGPLAN International Conference on Functional Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2018-icfp-mosel-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="mosel/" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Mtac2: Typed Tactics for Backward Reasoning in Coq</dt>
-          <dd>
-            <div class="entry">
-            Jan-Oliver Kaiser, Beta Ziliani, Robbert Krebbers, Yann Régis-Gianas, Derek Dreyer<br/>
-              <small class="text-muted">In ICFP 2018: ACM SIGPLAN International Conference on Functional Programming</small>
-              <br/>
-	            <small class="text-muted">Section 5 contains a case study using the Iris Proof Mode.</small>
-              <div class="buttons">
-                <a href="pdfs/2018-icfp-mtac2-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://github.com/Mtac2/Mtac2" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>ReLoC: A Mechanised Relational Logic for Fine-Grained Concurrency</dt>
-          <dd>
-            <div class="entry">
-            Dan Frumin, Robbert Krebbers, Lars Birkedal<br/>
-              <small class="text-muted">In LICS 2018: ACM/IEEE Symposium on Logic in Computer Science</small>
-              <br/>
-              <div class="buttons">
-                <a href="pdfs/2018-lics-reloc-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://iris-project.org/reloc/" class="btn btn-outline-primary btn-sm">website</a>
-                <a href="https://gitlab.mpi-sws.org/dfrumin/logrel-conc" class="btn btn-outline-primary btn-sm">Coq development</a>
-                <a href="http://cs.ru.nl/~dfrumin/pdf/t/reloc-lics.pdf" class="btn btn-outline-primary btn-sm">slides</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>RustBelt: Securing the Foundations of the Rust Programming Language</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung, Jacques-Henri Jourdan, Robbert Krebbers, Derek Dreyer<br/>
-              <small class="text-muted">In POPL 2018: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="https://plv.mpi-sws.org/rustbelt/popl18/paper.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://plv.mpi-sws.org/rustbelt/popl18/" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-         <dt>A Logical Relation for Monadic Encapsulation of State: Proving contextual equivalences in the presence of runST</dt>
-          <dd>
-            <div class="entry">
-            Amin Timany, L&eacute;o Stefanesco, Morten Krogh-Jespersen, Lars Birkedal<br/>
-            <small class="text-muted">In POPL 2018: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2018-popl-runST-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="artifacts/2018-popl-runst.tar.gz" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>On Models of Higher-Order Separation Logic</dt>
-          <dd>
-            <div class="entry">
-            Aleš Bizjak, Lars Birkedal<br/>
-            <small class="text-muted">In MFPS 2017: Mathematical Foundations of Programming Semantics</small>
-              <div class="buttons">
-                <a href="pdfs/2017-mfps-box-modality.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Robust and Compositional Verification of Object Capability Patterns</dt>
-          <dd>
-            <div class="entry">
-            David Swasey, Deepak Garg, Derek Dreyer<br/>
-            <small class="text-muted">In OOPSLA 2017: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications</small><br/>
-	    <small style="color: red">Recipient of <strong>OOPSLA 2017 Distinguished Paper Award</strong></small>
-              <div class="buttons">
-                <a href="http://www.mpi-sws.org/~dreyer/papers/ocpl/paper.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="http://www.mpi-sws.org/~dreyer/papers/ocpl/ocpl.tgz" class="btn btn-outline-primary btn-sm">Coq development</a>
-                <a href="https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-vm-20170705.ova" class="btn btn-outline-primary btn-sm">Coq development (VM)</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Strong Logic for Weak Memory: Reasoning About Release-Acquire Consistency in Iris</dt>
-          <dd>
-            <div class="entry">
-            Jan-Oliver Kaiser, Hoang-Hai Dang, Derek Dreyer, Ori Lahav, Viktor Vafeiadis<br/>
-            <small class="text-muted">In ECOOP 2017: European Conference on Object-Oriented Programming</small><br/>
-	    <small style="color: red">Recipient of <strong>ECOOP 2017 Distinguished Paper Award</strong></small>
-            <div class="buttons">
-                <a href="http://drops.dagstuhl.de/opus/volltexte/2017/7275/pdf/LIPIcs-ECOOP-2017-17.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="http://plv.mpi-sws.org/igps" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>A Higher-Order Logic for Concurrent Termination-Preserving Refinement</dt>
-          <dd>
-            <div class="entry">
-            Joseph Tassarotti, Ralf Jung, Robert Harper<br/>
-            <small class="text-muted">In ESOP 2017: European Symposium on Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2017-esop-refinement-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://www.cs.cmu.edu/~jtassaro/papers/iris-refinement/index.html" class="btn btn-outline-primary btn-sm">website</a>
-                <a href="https://arxiv.org/abs/1701.05888" class="btn btn-outline-primary btn-sm">arXiv</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>The Essence of Higher-Order Concurrent Separation Logic (&quot;Iris 3.0&quot;)</dt>
-          <dd>
-            <div class="entry">
-	          Robbert Krebbers, Ralf Jung, Aleš Bizjak, Jacques-Henri Jourdan, Derek Dreyer, Lars Birkedal<br/>
-            <small class="text-muted">In ESOP 2017: European Symposium on Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2017-esop-iris3-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://plv.mpi-sws.org/iris/appendix-3.0.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-                <a href="https://gitlab.mpi-sws.org/iris/iris/tree/iris-3.0.0" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Interactive Proofs in Higher-Order Concurrent Separation Logic (&quot;Iris Proof Mode&quot;)</dt>
-          <dd>
-            <div class="entry">
-	      Robbert Krebbers, Amin Timany, Lars Birkedal<br />
-              <small class="text-muted">In POPL 2017: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2017-popl-proofmode-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>A Relational Model of Types-and-Effects in Higher-Order Concurrent Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Morten Krogh-Jespersen, Kasper Svendsen, Lars Birkedal<br />
-              <small class="text-muted">In POPL 2017: ACM SIGPLAN Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2017-popl-effects-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="pdfs/2017-popl-effects-appendix.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Higher-Order Ghost State (&quot;Iris 2.0&quot;)</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung, Robbert Krebbers, Lars Birkedal, Derek Dreyer<br />
-              <small class="text-muted">In ICFP 2016: ACM SIGPLAN International Conference on Functional Programming</small>
-              <div class="buttons">
-                <a href="pdfs/2016-icfp-iris2-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="pdfs/2016-icfp-iris2-final-appendix.pdf" class="btn btn-outline-primary btn-sm">technical appendix (1/2)</a>
-                <a href="http://plv.mpi-sws.org/iris/appendix-2.0.pdf" class="btn btn-outline-primary btn-sm">technical appendix (2/2)</a>
-                <a href="https://gitlab.mpi-sws.org/iris/iris/tree/iris-2.0" class="btn btn-outline-primary btn-sm">Coq development</a>
-                <a href="https://www.youtube.com/watch?v=vUxWU-qvGX0" class="btn btn-outline-primary btn-sm">talk on youtube</a>
-                <a href="https://people.mpi-sws.org/~jung/iris/talk-icfp2016.pdf" class="btn btn-outline-primary btn-sm">slides</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Iris: Monoids and Invariants as an Orthogonal Basis for Concurrent Reasoning (&quot;Iris 1.0&quot;)</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung, David Swasey, Filip Sieczkowski, Kasper Svendsen, Aaron Turon, Lars Birkedal, Derek Dreyer<br />
-              <small class="text-muted">In POPL 2015: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages</small>
-              <div class="buttons">
-                <a href="pdfs/2015-popl-iris1-final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="http://plv.mpi-sws.org/iris/appendix.pdf" class="btn btn-outline-primary btn-sm">technical appendix</a>
-                <a href="http://plv.mpi-sws.org/iris/distrib/" class="btn btn-outline-primary btn-sm">(historic) Coq formalization</a>
-                <a href="http://dl.acm.org/citation.cfm?doid=2676726.2676980" class="btn btn-outline-primary btn-sm">publisher's site</a>
-                <a href="https://people.mpi-sws.org/~jung/iris/talk-popl2015.pdf" class="btn btn-outline-primary btn-sm">slides</a>
-              </div>
-            </div>
-          </dd>
+          {% endfor %}
         </dl>
       </div>
 
@@ -605,72 +127,23 @@
 
       <div class="row">
         <dl class="ref">
-          <dt>Concurrent Separation Logics for Safety, Refinement, and Security</dt>
+          {% for doc in site.data.publications.phd_dissertations %}
+          <dt>{{ doc.title }}</dt>
           <dd>
             <div class="entry">
-              Dan Frumin<br/>
-              <small class="text-muted">Radboud University, March 2021</small>
+              {{ doc.author }}<br/>
+              <small class="text-muted">{{ doc.university }}, {{ doc.date }}</small>
               <div class="buttons">
-                <a href="https://groupoid.moe/pdf/thesis.pdf" class="btn btn-outline-primary btn-sm">pdf</a>
-                <a href="https://groupoid.moe/thesis.html" class="btn btn-outline-primary btn-sm">website</a>
+                {% if doc.pdf_url %}
+                <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">.pdf</a>
+                {% endif %}
+                {% for e in doc.other_urls %}
+                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
+                {% endfor %}
               </div>
             </div>
           </dd>
-          
-          <dt>Understanding and Evolving the Rust Programming Language</dt>
-          <dd>
-            <div class="entry">
-              Ralf Jung<br/>
-              <small class="text-muted">MPI-SWS and Saarbrücken Graduate School of Computer Science, August 2020</small>
-              <div class="buttons">
-                <a href="https://people.mpi-sws.org/~jung/thesis.html" class="btn btn-outline-primary btn-sm">website</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Compositional Abstractions for Verifying Concurrent Data Structures</dt>
-          <dd>
-            <div class="entry">
-              Siddharth Krishna<br/>
-              <small class="text-muted">New York University, September 2019</small>
-              <div class="buttons">
-                <a href="https://cs.nyu.edu/media/publications/krishna_siddharth.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Verifying Concurrent Randomized Algorithms</dt>
-          <dd>
-            <div class="entry">
-              Joseph Tassarotti<br/>
-              <small class="text-muted">Carnegie Mellon University, January 2019</small>
-              <div class="buttons">
-                <a href="pdfs/2019-phd-tassarotti.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Towards Modular Reasoning for Stateful and Concurrent Programs</dt>
-          <dd>
-            <div class="entry">
-              Morten Krogh-Jespersen<br/>
-              <small class="text-muted">Aarhus University, September 2018</small>
-              <div class="buttons">
-                <a href="https://pure.au.dk/portal/files/142698762/Morten_Krogh_Jespersen_thesis_final.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Contributions in Programming Languages Theory</dt>
-          <dd>
-            <div class="entry">
-              Amin Timany<br/>
-              <small class="text-muted">KU Leuven, May 2018</small>
-              <div class="buttons">
-                <a href="https://lirias.kuleuven.be/retrieve/510052" class="btn btn-outline-primary btn-sm">.pdf</a>
-              </div>
-            </div>
-          </dd>
+          {% endfor %}
         </dl>
       </div>
 
@@ -681,133 +154,47 @@
       <div class="row">
         <p>Draft papers:</p>
         <dl class="ref">
-          <dt>Transfinite Iris: Resolving an Existential Dilemma of Step-Indexed Separation Logic</dt>
+          {% for doc in site.data.publications.draft_papers %}
+          <dt>{{ doc.title }}</dt>
           <dd>
             <div class="entry">
-              Simon Spies, Lennard Gäher, Daniel Gratzer, Joseph Tassarotti, Robbert Krebbers, Derek Dreyer, Lars Birkedal
-              <br />
-              <small class="text-muted">Submitted for publication</small>
+              {{ doc.authors | join: ", " }}<br/>
+              {% if doc.status %}
+              <small class="text-muted">{{ doc.status }}</small>
+              {% endif %}
               <div class="buttons">
-                <a href="https://iris-project.org/pdfs/2020-transfinite-iris-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://iris-project.org/transfinite-iris/" class="btn btn-outline-primary btn-sm">website</a>
-                <a href="https://gitlab.mpi-sws.org/iris/transfinite" class="btn btn-outline-primary btn-sm">Coq development</a>
+                {% if doc.pdf_url %}
+                <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
+                {% endif %}
+                {% for e in doc.other_urls %}
+                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
+                {% endfor %}
               </div>
             </div>
           </dd>
-          <dt>RefinedC: A Foundational Refinement Type System for C Based on Separation Logic Programming</dt>
-          <dd>
-            <div class="entry">
-              Michael Sammler, Rodolphe Lepigre, Robbert Krebbers, Kayvan Memarian, Derek Dreyer, Deepak Garg<br/>
-              <small class="text-muted">Submitted for publication</small>
-              <div class="buttons">
-                <a href="https://plv.mpi-sws.org/refinedc/paper.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://plv.mpi-sws.org/refinedc/" class="btn btn-outline-primary btn-sm">website</a>
-                <a href="https://gitlab.mpi-sws.org/iris/refinedc" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Actris 2.0: Asynchronous Session-Type Based Reasoning in Separation Logic</dt>
-          <dd>
-            <div class="entry">
-              Jonas Kastberg Hinrichsen, Jesper Bengtson, Robbert Krebbers<br/>
-              <small class="text-muted">Submitted for publication</small>
-              <div class="buttons">
-                <a href="pdfs/2020-actris2-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://gitlab.mpi-sws.org/iris/actris" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>ReLoC Reloaded: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</dt>
-          <dd>
-            <div class="entry">
-            Dan Frumin, Robbert Krebbers, Lars Birkedal<br/>
-              <small class="text-muted">Submitted for publication</small>
-              <br/>
-              <div class="buttons">
-                <a href="pdfs/2021-reloc-reloaded-submission.pdf" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                <a href="https://iris-project.org/reloc/" class="btn btn-outline-primary btn-sm">website</a>
-                <a href="https://gitlab.mpi-sws.org/iris/reloc" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
+          {% endfor %}
         </dl>
       </div>
 
       <div class="row">
         <p>Case studies, MSc theses, abstracts, talks:</p>
         <dl class="ref">
-          <dt>Mechanized Reasoning about a Capability Machine</dt>
+          {% for doc in site.data.publications.others %}
+          <dt>{{ doc.title }}</dt>
           <dd>
             <div class="entry">
-              Aina Linn Georges, Alix Trieu, Lars Birkedal<br/>
-              <small class="text-muted">Extended Abstract for talk at PRISC 2020: Principles of Secure Compilation</small>
+              {{ doc.authors | join: ", " }}<br/>
+              {% if doc.description %}
+              <small class="text-muted">{{ doc.description }}</small>
+              {% endif %}
               <div class="buttons">
-                <a href="pdfs/2020-iris-capabilities-prisc-conf.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
+                {% for e in doc.urls %}
+                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
+                {% endfor %}
               </div>
             </div>
           </dd>
-
-          <dt>Verifying a Concurrent Data-Structure from the Dartino Framework</dt>
-          <dd>
-            <div class="entry">
-              Morten Krogh-Jespersen, Thomas Dinsdale-Young, Lars Birkedal<br/>
-              <!-- <small class="text-muted"> </small> -->
-              <div class="buttons">
-                <a href="pdfs/2017-case-study-verifying-dartino-framework.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="artifacts/2017-case-study-verifying-dartino-framework.zip" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Formalizing Concurrent Stacks With Helping: A Case Study In Iris
-          </dt>
-          <dd>
-            <div class="entry">
-              Daniel Gratzer, Mathias Høier, Aleš Bizjak, Lars Birkedal<br/>
-              <!-- <small class="text-muted"> </small> -->
-              <div class="buttons">
-                <a href="pdfs/2017-case-study-concurrent-stacks-with-helping.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-                <a href="https://gitlab.mpi-sws.org/FP/iris-examples/tree/master/theories/concurrent_stacks" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Verifying Hash Tables in Iris</dt>
-          <dd>
-            <div class="entry">
-              Esben Glavind Clausen<br/>
-              <small class="text-muted"> Master's thesis at Aarhus University supervised by Lars Birkedal, June 2017 </small>
-              <div class="buttons">
-                <a href="pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf" class="btn btn-outline-primary btn-sm">.pdf</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Logical Relations in Iris</dt>
-          <dd>
-            <div class="entry">
-            Amin Timany, Robbert Krebbers, Lars Birkedal<br/>
-            <small class="text-muted">At CoqPL 2017: The Third International Workshop on Coq for Programming Languages, Paris, France</small>
-              <div class="buttons">
-                <a href="https://lirias.kuleuven.be/bitstream/123456789/555709/1/CoqPL.pdf" class="btn btn-outline-primary btn-sm">abstract</a>
-                <a href="https://gitlab.mpi-sws.org/iris/examples/tree/master/theories/logrel" class="btn btn-outline-primary btn-sm">Coq development</a>
-              </div>
-            </div>
-          </dd>
-
-          <dt>Unifying Worlds and Resources</dt>
-          <dd>
-            <div class="entry">
-            Ralf Jung, Derek Dreyer<br/>
-            <small class="text-muted">At HOPE 2015: 4th ACM SIGPLAN Workshop on Higher-Order Programming with Effects, Vancouver, Canada</small>
-              <div class="buttons">
-                <a href="https://www.youtube.com/watch?v=9Dyna88piek" class="btn btn-outline-primary btn-sm">talk on youtube</a>
-                <a href="https://people.mpi-sws.org/~jung/iris/talk-hope2015.pdf" class="btn btn-outline-primary btn-sm">slides</a>
-              </div>
-            </div>
-          </dd>
+          {% endfor %}
         </dl>
       </div>
     </div>
