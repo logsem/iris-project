@@ -48,3 +48,28 @@ The `"awards"`, `"dblp_url"` and `"other_urls"` fields are optional.
 The `"dblp_url"` field should only be included if a DBLP entry exists for the paper. The URL is the one of the DBLP page where you can view the bibtex entry for the paper (without any GET data, so just cut at the `?`).
 
 A similar method can be used to insert a draft papers, PhD dissertations and other stuff. Look for `"draft_papers"`, `"phd_dissertations"` and `"others"` respectively.
+
+# Some useful notes on the JSON data
+
+The bibliography data used to generate the webpage are all contained in the
+JSON file `_data/publications.json`. This is the file you need to modify if
+you with to add one of your publications to the webpage.
+
+The file `_data/publications.json` contains four lists:
+- `publications` containing metadata for all the publications,
+- `phd_dissertations` containing metadata for all PhD dissertations,
+- `draft_papers` contains metadata for all the draft papers,
+- `others` contains metadata for other stuff (MSc theses, talks, ...).
+
+## DBLP data (for possible use in the webpage)
+
+Items under `publications` and `phd_dissertations` have, whenever available, a
+field `dblp_url` giving the base DBLP url for the entry. It can be used to get
+additional metadata from DBLP in several format (by replacing the extension):
+- `.html` (as stored in our metadata) gives you the URL to the document's page
+  on DBLP, where you can then access all the usual data,
+- `.xml` gives you a XML record containing the document's metadata,
+- `.bib` gives you a bibtex file for the document. Note that in this case, you
+  can use the GET parameter `param` with value `0`, `1`, or `2` to control the
+  version of the bibtex you get (condensed, standard, or with crossref).
+
