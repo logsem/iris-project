@@ -96,7 +96,7 @@
       <div class="row">
         <dl class="ref">
           {% for doc in site.data.publications.publications %}
-          <dt>{{ doc.title }}{% if doc.dubbed_title %}(&quot;{{ doc.dubbed_title }}&quot;){% endif %}</dt>
+          <dt>{{ doc.title }}{% if doc.dubbed_title %} (&quot;{{ doc.dubbed_title }}&quot;){% endif %}</dt>
           <dd>
             <div class="entry">
               {{ doc.authors | join: ", " }}<br/>
