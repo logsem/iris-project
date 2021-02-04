@@ -57,3 +57,14 @@ img.card-img-top {
 .card-subtitle {
   text-align: center;
 }
+
+.btn-primary {
+  background-color: #5436c0;
+  border-color: #5436c0;
+}
+
+.btn-primary:hover {
+  background-color: #291879;
+  border-color: #5436c0;
+}
+

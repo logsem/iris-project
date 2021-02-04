@@ -1,2 +1,4 @@
 exclude:
   - README.md
+  - iris-logo
+  - Makefile
