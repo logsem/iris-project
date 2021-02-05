@@ -1,0 +1,103 @@
+\documentclass[tikz]{standalone}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+\input{logosetup}
+
+\tikzset{
+  % .48 is a magic number: should be .5! Adjust if you change font
+  center of i at=.48,
+  stem=serif,
+  variant=square,
+  % adjust for font
+  % stem thickness=.09em,
+  % colors
+  % box color=iris!70,
+  text color=black,
+  star color=iris,
+  % stem shorten=0pt,
+  % stem color=green!30!black,
+  % sans serif,
+  no dot,
+}
+
+
+\begin{document}
+% We make a couple of measurements here for the placement of the i/stem
+\Large%
+\ifserifstem%
+  \savebox\gap{\textmd{i}}%
+\else%
+  \savebox\gap{\,}%
+  \tikzset{center of i at=.4}%
+\fi
+\savebox\lasts{s}%
+\normalsize%
+% Here you can vary the font with e.g.
+% \sc
+\begin{tikzpicture}
+
+
+  % Draw "Iris" omitting the second i
+  \node[tight,txt] (iris) at (0.05,-.27) {\Large Ir\phantom{\usebox\gap}s};
+
+  \ifserifstem
+  % Draw just the i but clipping the top bit
+  \begin{scope}
+    \clip
+      (iris.south west)
+      rectangle
+      ([yshift=1ex]iris.south east) ;
+    \node[tight,grass]
+      (i) at (iris)
+      {\Large \phantom{Ir}i\phantom{s}};
+  \end{scope}
+  \fi
+
+  % Star / Flower
+  %%% 6-armed
+  % \node[tight,xshift=0.1ex,yshift=-.2ex,star]
+  %   (star) {\LARGE$*$};
+  %%% 6-armed bold
+  \node[tight,xshift=0.1ex,yshift=-.2ex,star]
+    (star) {\LARGE$\boldsymbol{*}$};
+  %%% 5-armed
+  % \node[tight,xshift=0.1ex,yshift=-.2ex,rotate=32,star]
+  %   (star) {\raisebox{-3ex}[1ex][.5ex]{\Huge*}};
+
+  % The bent stem
+  \begin{pgfonlayer}{lower}
+  \draw[flower stem]
+    ([xshift=-\imid\wd\gap-\wd\lasts]iris.base east)
+    -- +(0,0.15)
+    to[in=-60,out=90]
+    node[dot]{}
+     (star.center);
+  \end{pgfonlayer}
+
+  % The leaf
+  % \fill[txt] (star.center) ++(-40:5pt) circle[radius=.7pt];
+
+  % The "invariant" box
+  \begin{pgfonlayer}{bg}
+  \ifsquare
+    \node[border,square,line width=1pt,fit=(star)(iris)] {};
+  \else
+    \node[
+      inner sep=2pt,
+      inner xsep=3pt,
+      fit=(iris) % lazy, I know
+    ] (box) {};
+    \draw[border,line width=1pt]
+      ([xshift=-1ex]box.north west-|star) --
+      (box.north west) --
+      (box.south west) --
+      (box.south east) --
+      (box.north east) --
+      ([xshift=1ex]box.north east-|star)
+    ;
+  \fi
+  \end{pgfonlayer}
+\end{tikzpicture}
+
+\end{document}

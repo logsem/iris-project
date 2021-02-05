@@ -73,3 +73,10 @@ additional metadata from DBLP in several format (by replacing the extension):
   can use the GET parameter `param` with value `0`, `1`, or `2` to control the
   version of the bibtex you get (condensed, standard, or with crossref).
 
+# Iris logo
+
+The sources for the Iris logo and favicon are found in the `iris-logo` folder.
+The images currently used by the webpage are recorded in the `gfx` directory,
+but these images are updated using the `Makefile` (just run `make` to update
+the images after editing the sources). Variables in the `Makefile` are used to
+control which variant of the logo and favicon are to be used.

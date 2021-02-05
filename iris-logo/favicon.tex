@@ -1,0 +1,54 @@
+\documentclass[tikz]{standalone}
+\usepackage{libertine}
+\input{logosetup}
+
+
+\tikzset{
+  center of i at=.48,
+  % .48 is a magic number: should be .5! Adjust if you change font
+  stem=serif,
+  variant=square,
+  % adjust for font
+  % stem thickness=.09em,
+  % colors
+  % box color=iris!70,
+  text color=black,
+  star color=iris,
+  % stem color=green!30!black,
+  %%%
+  square/.append style={
+    inner sep=.1pt,
+  },
+  short stem/.style = {},
+  long stem/.style = {
+    square/.append style={xshift=1pt,yshift=-1pt}
+  },
+  no stem/.style = {
+    grass/.style = {draw=none},
+  },
+}
+\begin{document}
+
+\begin{tikzpicture}[no stem] % can change to long stem here
+
+  %%% 6-armed
+  % \node[tight,xshift=0.1ex,yshift=-.2ex,star]
+  %   (star) {\LARGE$*$};
+  %%% 6-armed bold
+  \node[tight,star]
+    (star) {\LARGE{\raisebox{0pt}[1.06\height][0pt]{$\boldsymbol{*}$}}};
+  \tikzset{square/.append style={inner sep=-1pt}}
+  %%% 5-armed
+  % \node[star,tight,rotate=35]
+  %   (star) {\raisebox{-3ex}[1ex][.5ex]{\Huge*}};
+
+  \begin{pgfonlayer}{bg}
+  \node[border,line width=1pt,fit=(star),square] (box) {};
+  \end{pgfonlayer}
+  \useasboundingbox;
+
+  \draw[grass,line width=.115em,shorten >=2.5pt,{[bend]Butt Cap}-{Round Cap}] (box.-65) ++(0,1pt) to[in=-65,out=90] (star.center);
+
+\end{tikzpicture}
+
+\end{document}
