@@ -95,29 +95,7 @@
 
       <div class="row">
         <dl class="ref">
-          {% for doc in site.data.publications.publications %}
-          <dt>{{ doc.title }}{% if doc.dubbed_title %} (&quot;{{ doc.dubbed_title }}&quot;){% endif %}</dt>
-          <dd>
-            <div class="entry">
-              {{ doc.authors | join: ", " }}<br/>
-              <small class="text-muted">{{ doc.where_published }}</small>
-              {% if doc.description %}
-              <br/><small class="text-muted">{{ doc.description }}</small>
-              {% endif %}
-              {% for a in doc.awards %}
-              <br/><small style="color: red">Recipient of <strong>{{ a }}</strong></small>
-              {% endfor %}
-              <div class="buttons">
-                {% if doc.pdf_url %}
-                <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">.pdf</a>
-                {% endif %}
-                {% for e in doc.other_urls %}
-                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
-                {% endfor %}
-              </div>
-            </div>
-          </dd>
-          {% endfor %}
+          {% include publications.html publications=site.data.publications.publications %}
         </dl>
       </div>
 
@@ -127,23 +105,7 @@
 
       <div class="row">
         <dl class="ref">
-          {% for doc in site.data.publications.phd_dissertations %}
-          <dt>{{ doc.title }}</dt>
-          <dd>
-            <div class="entry">
-              {{ doc.author }}<br/>
-              <small class="text-muted">{{ doc.university }}, {{ doc.date }}</small>
-              <div class="buttons">
-                {% if doc.pdf_url %}
-                <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">.pdf</a>
-                {% endif %}
-                {% for e in doc.other_urls %}
-                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
-                {% endfor %}
-              </div>
-            </div>
-          </dd>
-          {% endfor %}
+          {% include publications.html publications=site.data.publications.phd_dissertations %}
         </dl>
       </div>
 
@@ -154,47 +116,14 @@
       <div class="row">
         <p>Draft papers:</p>
         <dl class="ref">
-          {% for doc in site.data.publications.draft_papers %}
-          <dt>{{ doc.title }}</dt>
-          <dd>
-            <div class="entry">
-              {{ doc.authors | join: ", " }}<br/>
-              {% if doc.status %}
-              <small class="text-muted">{{ doc.status }}</small>
-              {% endif %}
-              <div class="buttons">
-                {% if doc.pdf_url %}
-                <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">[preprint] .pdf</a>
-                {% endif %}
-                {% for e in doc.other_urls %}
-                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
-                {% endfor %}
-              </div>
-            </div>
-          </dd>
-          {% endfor %}
+          {% include publications.html publications=site.data.publications.draft_papers pdf_name="[preprint] .pdf" %}
         </dl>
       </div>
 
       <div class="row">
         <p>Case studies, MSc theses, abstracts, talks:</p>
         <dl class="ref">
-          {% for doc in site.data.publications.others %}
-          <dt>{{ doc.title }}</dt>
-          <dd>
-            <div class="entry">
-              {{ doc.authors | join: ", " }}<br/>
-              {% if doc.description %}
-              <small class="text-muted">{{ doc.description }}</small>
-              {% endif %}
-              <div class="buttons">
-                {% for e in doc.urls %}
-                <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
-                {% endfor %}
-              </div>
-            </div>
-          </dd>
-          {% endfor %}
+          {% include publications.html publications=site.data.publications.others %}
         </dl>
       </div>
     </div>
