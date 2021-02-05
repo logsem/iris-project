@@ -617,9 +617,8 @@
   "phd_dissertations": [
     {
       "title": "Concurrent Separation Logics for Safety, Refinement, and Security",
-      "author": "Dan Frumin",
-      "university": "Radboud University",
-      "date": "March 2021",
+      "authors": ["Dan Frumin"],
+      "description": "Radboud University, March 2021",
       "pdf_url": "https://groupoid.moe/pdf/thesis.pdf",
       "other_urls": [
         { "name": "website", "url": "https://groupoid.moe/thesis.html" }
@@ -627,9 +626,8 @@
     },
     {
       "title": "Understanding and Evolving the Rust Programming Language",
-      "author": "Ralf Jung",
-      "university": "MPI-SWS and Saarbrücken Graduate School of Computer Science",
-      "date": "August 2020",
+      "authors": ["Ralf Jung"],
+      "description": "MPI-SWS and Saarbrücken Graduate School of Computer Science, August 2020",
       "dblp_url": "https://dblp.uni-trier.de/rec/phd/dnb/Jung20.html",
       "pdf_url": "https://people.mpi-sws.org/~jung/phd/thesis-screen.pdf",
       "other_urls": [
@@ -638,30 +636,26 @@
     },
     {
       "title": "Compositional Abstractions for Verifying Concurrent Data Structures",
-      "author": "Siddharth Krishna",
-      "university": "New York University",
-      "date": "September 2019",
+      "authors": ["Siddharth Krishna"],
+      "description": "New York University, September 2019",
       "pdf_url": "https://cs.nyu.edu/media/publications/krishna_siddharth.pdf"
     },
     {
       "title": "Verifying Concurrent Randomized Algorithms",
-      "author": "Joseph Tassarotti",
-      "university": "Carnegie Mellon University",
-      "date": "January 2019",
+      "authors": ["Joseph Tassarotti"],
+      "description": "Carnegie Mellon University, January 2019",
       "pdf_url": "pdfs/2019-phd-tassarotti.pdf"
     },
     {
       "title": "Towards Modular Reasoning for Stateful and Concurrent Programs",
-      "author": "Morten Krogh-Jespersen",
-      "university": "Aarhus University",
-      "date": "September 2018",
+      "authors": ["Morten Krogh-Jespersen"],
+      "description": "Aarhus University, September 2018",
       "pdf_url": "https://pure.au.dk/portal/files/142698762/Morten_Krogh_Jespersen_thesis_final.pdf"
     },
     {
       "title": "Contributions in Programming Languages Theory",
-      "author": "Amin Timany",
-      "university": "KU Leuven",
-      "date": "May 2018",
+      "authors": ["Amin Timany"],
+      "description": "KU Leuven, May 2018",
       "pdf_url": "https://lirias.kuleuven.be/retrieve/510052"
     }
   ],
@@ -677,7 +671,7 @@
         "Derek Dreyer",
         "Lars Birkedal"
       ],
-      "status": "Submitted for publication",
+      "description": "Submitted for publication",
       "pdf_url": "https://iris-project.org/pdfs/2020-transfinite-iris-submission.pdf",
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/transfinite-iris/" },
@@ -694,7 +688,7 @@
         "Derek Dreyer",
         "Deepak Garg"
       ],
-      "status": "Submitted for publication",
+      "description": "Submitted for publication",
       "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
       "other_urls": [
         { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
@@ -708,7 +702,7 @@
         "Jesper Bengtson",
         "Robbert Krebbers"
       ],
-      "status": "Submitted for publication",
+      "description": "Submitted for publication",
       "pdf_url": "pdfs/2020-actris2-submission.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
@@ -721,7 +715,7 @@
         "Robbert Krebbers",
         "Lars Birkedal"
       ],
-      "status": "Submitted for publication",
+      "description": "Submitted for publication",
       "pdf_url": "pdfs/2021-reloc-reloaded-submission.pdf",
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/reloc/" },
@@ -738,9 +732,7 @@
         "Lars Birkedal"
       ],
       "description": "Extended Abstract for talk at PRISC 2020: Principles of Secure Compilation",
-      "urls": [
-        { "name": ".pdf", "url": "pdfs/2020-iris-capabilities-prisc-conf.pdf" }
-      ]
+      "pdf_url": "pdfs/2020-iris-capabilities-prisc-conf.pdf"
     },
     {
       "title": "Verifying a Concurrent Data-Structure from the Dartino Framework",
@@ -749,8 +741,8 @@
         "Thomas Dinsdale-Young",
         "Lars Birkedal"
       ],
-      "urls": [
-        { "name": ".pdf", "url": "pdfs/2017-case-study-verifying-dartino-framework.pdf" },
+      "pdf_url": "pdfs/2017-case-study-verifying-dartino-framework.pdf",
+      "other_urls": [
         { "name": "Coq development", "url": "artifacts/2017-case-study-verifying-dartino-framework.zip" }
       ]
     },
@@ -762,8 +754,8 @@
         "Aleš Bizjak",
         "Lars Birkedal"
       ],
-      "urls": [
-        { "name": ".pdf", "url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf" },
+      "pdf_url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf",
+      "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FP/iris-examples/tree/master/theories/concurrent_stacks" }
       ]
     },
@@ -773,9 +765,7 @@
         "Esben Glavind Clausen"
       ],
       "description": "Master's thesis at Aarhus University supervised by Lars Birkedal, June 2017",
-      "urls": [
-        { "name": ".pdf", "url": "pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf" }
-      ]
+      "pdf_url": "pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf"
     },
     {
       "title": "Logical Relations in Iris",
@@ -785,7 +775,7 @@
         "Lars Birkedal"
       ],
       "description": "At CoqPL 2017: The Third International Workshop on Coq for Programming Languages, Paris, France",
-      "urls": [
+      "other_urls": [
         { "name": "abstract", "url": "https://lirias.kuleuven.be/bitstream/123456789/555709/1/CoqPL.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/examples/tree/master/theories/logrel" }
       ]
@@ -797,7 +787,7 @@
         "Derek Dreyer"
       ],
       "description": "At HOPE 2015: 4th ACM SIGPLAN Workshop on Higher-Order Programming with Effects, Vancouver, Canada",
-      "urls": [
+      "other_urls": [
         { "name": "talk on youtube", "url": "https://www.youtube.com/watch?v=9Dyna88piek" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-hope2015.pdf" }
       ]
