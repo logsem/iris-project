@@ -732,9 +732,7 @@
         "Lars Birkedal"
       ],
       "description": "Extended Abstract for talk at PRISC 2020: Principles of Secure Compilation",
-      "other_urls": [
-        { "name": ".pdf", "url": "pdfs/2020-iris-capabilities-prisc-conf.pdf" }
-      ]
+      "pdf_url": "pdfs/2020-iris-capabilities-prisc-conf.pdf"
     },
     {
       "title": "Verifying a Concurrent Data-Structure from the Dartino Framework",
@@ -743,8 +741,8 @@
         "Thomas Dinsdale-Young",
         "Lars Birkedal"
       ],
+      "pdf_url": "pdfs/2017-case-study-verifying-dartino-framework.pdf",
       "other_urls": [
-        { "name": ".pdf", "url": "pdfs/2017-case-study-verifying-dartino-framework.pdf" },
         { "name": "Coq development", "url": "artifacts/2017-case-study-verifying-dartino-framework.zip" }
       ]
     },
@@ -756,8 +754,8 @@
         "Aleš Bizjak",
         "Lars Birkedal"
       ],
+      "pdf_url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf",
       "other_urls": [
-        { "name": ".pdf", "url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FP/iris-examples/tree/master/theories/concurrent_stacks" }
       ]
     },
@@ -767,9 +765,7 @@
         "Esben Glavind Clausen"
       ],
       "description": "Master's thesis at Aarhus University supervised by Lars Birkedal, June 2017",
-      "other_urls": [
-        { "name": ".pdf", "url": "pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf" }
-      ]
+      "pdf_url": "pdfs/2017-thesis-verifying-hash-tables-in-iris.pdf"
     },
     {
       "title": "Logical Relations in Iris",
