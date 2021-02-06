@@ -1,7 +1,7 @@
 FAVICON=favicon
 LOGO=official-logo
 
-all: gfx/favicon.svg gfx/logo.svg
+all: gfx/favicon.svg gfx/favicon.ico gfx/logo.svg
 .PHONY: all
 
 iris-logo/%.pdf: iris-logo/%.tex
@@ -12,6 +12,9 @@ iris-logo/%.svg: iris-logo/%.pdf
 
 gfx/favicon.svg: iris-logo/${FAVICON}.svg
 	cp $< $@
+
+gfx/favicon.ico: iris-logo/${FAVICON}.svg
+	convert $< $@
 
 gfx/logo.svg: iris-logo/${LOGO}.svg
 	cp $< $@
