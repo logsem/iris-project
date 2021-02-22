@@ -1,0 +1,4 @@
+$latex = 'latex %O %S && dvisvgm --no-font %D';
+$pdflatex = 'pdflatex %O %S && pdf2svg %D %B.svg';
+$clean_ext = "%R.pdf %R.dvi";
+$clean_full_ext = "%R.svg %R.ico";
