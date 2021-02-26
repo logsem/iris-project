@@ -16,10 +16,8 @@
         "Lars Birkedal"
       ],
       "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
-	"other_urls": [
-            { "name": "[amended after publication] .pdf", "url": "pdfs/2021-CPP-monotone-final.pdf" }
-	],
       "other_urls": [
+	  { "name": "[amended after publication] .pdf", "url": "pdfs/2021-CPP-monotone-final.pdf" },
         { "name": "Coq development", "url": "https://github.com/amintimany/monotone" }
       ]
     },
