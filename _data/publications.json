@@ -661,6 +661,21 @@
   ],
   "draft_papers": [
     {
+      "title": "GhostCell: Separating Permissions from Data in Rust",
+      "authors": [
+	"Joshua Yanovski",
+	"Hoang-Hai Dang",
+	"Ralf Jung",
+	"Derek Dreyer"
+      ],
+      "description": "Submitted for publication",
+      "pdf_url": "http://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf",
+      "other_urls": [
+        { "name": "website", "url": "http://plv.mpi-sws.org/rustbelt/ghostcell/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FP/ghostcell" }
+      ]
+    },
+    {
       "title": "Transfinite Iris: Resolving an Existential Dilemma of Step-Indexed Separation Logic",
       "authors": [
         "Simon Spies",
