@@ -490,6 +490,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/Swasey0D17.html",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "http://www.mpi-sws.org/~dreyer/papers/ocpl/paper.pdf" },
+        { "name": "[long version] .pdf", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-oopsla17-long.pdf" },
         { "name": "Coq development", "url": "http://www.mpi-sws.org/~dreyer/papers/ocpl/ocpl.tgz" },
         { "name": "Coq development (VM)", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-vm-20170705.ova" }
       ]
