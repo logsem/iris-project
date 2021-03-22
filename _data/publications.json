@@ -116,16 +116,17 @@
       ]
     },
     {
-      "title": "Safe Systems Programming in Rust: The Promise and the Challenge",
+      "title": "Safe Systems Programming in Rust",
       "authors": [
         "Ralf Jung",
         "Jacques-Henri Jourdan",
         "Robbert Krebbers",
         "Derek Dreyer"
       ],
-      "where_published": "To appear in CACM",
+      "where_published": "In CACM: Communications of the ACM",
+      "pdf_url": "pdfs/2021-rustbelt-cacm-final.pdf",
       "other_urls": [
-        { "name": "[preprint] .pdf", "url": "pdfs/2020-rustbelt-cacm-submission.pdf" }
+        { "name": "html + video", "url": "https://cacm.acm.org/magazines/2021/4/251364-safe-systems-programming-in-rust/fulltext" }
       ]
     },
     {
