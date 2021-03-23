@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "Safe Systems Programming in Rust",
+      "authors": [
+        "Ralf Jung",
+        "Jacques-Henri Jourdan",
+        "Robbert Krebbers",
+        "Derek Dreyer"
+      ],
+      "where_published": "In CACM: Communications of the ACM",
+      "pdf_url": "pdfs/2021-rustbelt-cacm-final.pdf",
+      "other_urls": [
+        { "name": "html + video", "url": "https://cacm.acm.org/magazines/2021/4/251364-safe-systems-programming-in-rust/fulltext" }
+      ]
+    },
+    {
       "title": "Contextual Refinement of the Michael-Scott Queue (Proof Pearl)",
       "authors": [
         "Simon Friis Vindum",
@@ -113,20 +127,6 @@
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "http://cambium.inria.fr/~fpottier/publis/de-vilhena-pottier-sleh.pdf" },
         { "name": "Coq formalization", "url": "https://gitlab.inria.fr/pdevilhe/hazel" }
-      ]
-    },
-    {
-      "title": "Safe Systems Programming in Rust",
-      "authors": [
-        "Ralf Jung",
-        "Jacques-Henri Jourdan",
-        "Robbert Krebbers",
-        "Derek Dreyer"
-      ],
-      "where_published": "In CACM: Communications of the ACM",
-      "pdf_url": "pdfs/2021-rustbelt-cacm-final.pdf",
-      "other_urls": [
-        { "name": "html + video", "url": "https://cacm.acm.org/magazines/2021/4/251364-safe-systems-programming-in-rust/fulltext" }
       ]
     },
     {
