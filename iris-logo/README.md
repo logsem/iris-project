@@ -1,31 +1,43 @@
 # The Iris Logo
 
-This folder hosts the sources used to produce the Iris logo and favicon.
+This folder hosts the the Iris logo and favicon, and their sources.
+The SVG files at the root of this folder are the official logos.
+The ICO and PDF are the official versions in these formats.
 
-## Logo
+The `src` folder contains the sources from which the official logos can be produced. Note however that the output may vary depending on the platform and LaTeX distribution.
 
-The official logo can be obtained, in SVG form, via
+The `design` folder contains the LaTeX/TikZ sources used to experiment with designs of the logo/favicon.
+They offer various parameters and switches to produce (unofficial) variants of the logo.
+They are preserved here as an archive and in case of a redesign.
+
+## Compiling the Logo
+
+The official SVG logo can be obtained from the sources in `src` via
 
     latexmk -dvi logo
 
 This will produce the SVG by first compiling to DVI then to SVG using [`dvisvgm`][dvisvgm] (see below for installation notes).
-Alternatively, by running
+
+The official PDF logo is obtained by running
 
     latexmk -pdf logo
-
-one gets a PDF.
-An SVG could be obtained from the PDF by running `pdf2svg`.
 
 To clean up:
 
     latexmk -c logo # gets rid of auxiliary files (including DVI)
     latexmk -C logo # gets rid of SVG output too
 
-The SVG or PDF can be converted to a PNG using [ImageMagik][magik]'s `convert`:
+The preferred format for use in interactive media is SVG, for print material use PDF.
+In the cases where a vector format is not suitable,
+the SVG logo can be converted to a PNG using Export function of [Inkscape][ink].
+
+The SVG or PDF logo can also be converted to a PNG using
+[ImageMagik][magik]'s `convert`:
 
     convert -density 1200 logo.svg logo.png
 
 Note that ImageMagik may use different SVG engines in different systems with varying output quality. Converting from a PDF may give better quality and more reproducible results.
+For best results, use Inkscape (which has a CLI interface).
 
 ## Favicon
 
@@ -52,12 +64,6 @@ To clean up:
     latexmk -C favicon # clean output too
 
 
-## Design folder
-
-The `design` folder contains the LaTeX/TikZ sources used to experiment with designs of the logo/favicon.
-They offer various parameters and switches to produce variants of the logo.
-They are preserved here as an archive and in case of a redesign.
-
 ## Installation of `dvisvgm`
 
 The [`dvisvgm`][dvisvgm] program is shipped with TeXLive.
@@ -71,3 +77,4 @@ The issue is made worse by the fact that the standard way to install GhostScript
 
 [dvisvgm]: https://dvisvgm.de/
 [magik]: https://imagemagick.org/index.php
+[ink]: https://inkscape.org/
