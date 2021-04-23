@@ -1,10 +1,16 @@
 # The Iris Logo
 
-This folder hosts the the Iris logo and favicon, and their sources.
-The SVG files at the root of this folder are the official logos.
-The ICO and PDF are the official versions in these formats.
+This folder hosts the the *sources* for producing the Iris logo and favicon.
+We provide the pre-compiled official logos in SVG, PDF and ICO formats in the `/gfx` folder:
 
-The `src` folder contains the sources from which the official logos can be produced. Note however that the output may vary depending on the platform and LaTeX distribution.
+* Logo: [SVG](../gfx/logo.svg) | [PDF](../gfx/logo.pdf)
+* Icon: [SVG](../gfx/favicon.svg) | [PDF](../gfx/favicon.pdf) | [ICO](../gfx/favicon.ico)
+
+In case of discrepancies between the formats, SVG is the authoritative source.
+
+If you just need to include the logo in other documents we recommend using the above pre-compiled files, as the exact output from sources may depend on the versions of the LaTeX packages installed.
+
+This folder contains the sources from which the official logos can be produced. Note however that the output may vary depending on the platform and LaTeX distribution.
 
 The `design` folder contains the LaTeX/TikZ sources used to experiment with designs of the logo/favicon.
 They offer various parameters and switches to produce (unofficial) variants of the logo.
@@ -12,7 +18,7 @@ They are preserved here as an archive and in case of a redesign.
 
 ## Compiling the Logo
 
-The official SVG logo can be obtained from the sources in `src` via
+The official SVG logo can be obtained using
 
     latexmk -dvi logo
 
