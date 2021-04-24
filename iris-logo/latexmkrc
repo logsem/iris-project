@@ -1,0 +1,3 @@
+$latex = 'latex %O %S && dvisvgm --no-font --optimize=all --zoom=5 %D';
+$clean_ext = "%R.dvi";
+$clean_full_ext = "%R.svg %R.pdf %R.ico";

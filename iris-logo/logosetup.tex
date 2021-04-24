@@ -1,25 +1,17 @@
+\usepackage{libertine}
+
 \usepackage{amsmath}
 \usepackage{tikz}
-\usetikzlibrary{arrows,calc,fit,shapes.geometric,arrows.meta,bending}
+\usetikzlibrary{fit,arrows.meta,bending,shapes.geometric}
 
-\newif\ifsquare
-\newif\ifserifstem
-\newsavebox\gap%
-\newsavebox\lasts%
 
 \definecolor{iris}{HTML}{5436c0}
-% \definecolor{iris}{HTML}{5a4fcf}
-% \definecolor{iris}{HTML}{483d8b}
 
-
-\pgfdeclarelayer{lower}
 \pgfdeclarelayer{bg}
-\pgfsetlayers{bg,lower,main}
+\pgfsetlayers{bg,main}
 
 \tikzset{
   square/.style={
-    fill=white,
-    inner sep=-1pt,
     regular polygon,
     regular polygon sides=4,
   },
@@ -27,36 +19,85 @@
     inner sep=0, outer sep=0,
   },
   flower stem/.style={
-    grass,
-    stem width, stem len,
+    black,
+    line width=.07em,
+    shorten >= 1.8pt,
     Butt Cap-{[bend]Round Cap}
   },
-  center of i at/.store in=\imid,
-  stem/.is choice,
-  stem/plain/.code={\serifstemfalse},
-  stem/serif/.code={\serifstemtrue},
-  variant/.is choice,
-  variant/square/.code={\squaretrue},
-  variant/rectangle/.code={\squarefalse},
-  text color/.style={txt/.style={color=#1}},
-  text color=black,
-  box color/.style={border/.style={draw=#1}},
-  box color=black,
-  stem color/.style={grass/.style={#1}},
-  stem color=black,
-  stem thickness/.style={stem width/.style={line width=#1}},
-  stem thickness=.115em,
-  stem shorten/.style={stem len/.style={shorten >=#1}},
-  stem shorten=2.5pt,
-  star color/.style={star/.style={color=#1}},
-  star color=black,
-  leaves color/.style={leaves/.style={#1}},
-  leaves color=green!40!black,
-  dot/.style={
-    pos=#1,xshift=2pt,leaves,
-    fill,circle,tight,minimum size=1.5pt,
+  box/.style={
+    draw=black,
+    fill=white,
+    line width=.35pt
   },
-  dot/.default={.4},
-  no dot/.style={dot/.style={}},
-  sans serif/.code={\AtBeginDocument{\sffamily}\tikzset{stem thickness=.12em, center of i at=.5,}}
+  txt/.style=black,
+  % 6-armed star glyph taken from \usepackage[libertine]{newtxmath}
+  star/.pic={
+    \pgfsetxvec{\pgfpoint{.84pt}{0pt}}
+    \pgfsetyvec{\pgfpoint{0pt}{.84pt}}
+    \pgfmoveto{\pgfpointxy{2.50000011}{1.12783824}}
+    \pgfcurveto{\pgfpointxy{2.50000011}{1.37220276}}{\pgfpointxy{2.29323319}{1.61656848}}{\pgfpointxy{2.03007528}{1.61656848}}
+    \pgfcurveto{\pgfpointxy{1.7105264}{1.61656848}}{\pgfpointxy{0.52631583}{0.45113566}}{\pgfpointxy{0.11278199}{0.20677115}}
+    \pgfcurveto{\pgfpointxy{0.11278199}{0.99625689}}{\pgfpointxy{0.50751884}{1.80454082}}{\pgfpointxy{0.50751884}{2.29327106}}
+    \pgfcurveto{\pgfpointxy{0.50751884}{2.59402777}}{\pgfpointxy{0.31954891}{2.7820001}}{\pgfpointxy{0.01879702}{2.7820001}}
+    \pgfcurveto{\pgfpointxy{-0.28195487}{2.7820001}}{\pgfpointxy{-0.45112781}{2.59402777}}{\pgfpointxy{-0.45112781}{2.29327106}}
+    \pgfcurveto{\pgfpointxy{-0.45112781}{1.72935165}}{\pgfpointxy{-0.11278193}{0.97745989}}{\pgfpointxy{-0.11278193}{0.20677115}}
+    \pgfcurveto{\pgfpointxy{-0.56390977}{0.46993266}}{\pgfpointxy{-1.69172935}{1.67295946}}{\pgfpointxy{-1.99248124}{1.67295946}}
+    \pgfcurveto{\pgfpointxy{-2.25563908}{1.67295946}}{\pgfpointxy{-2.481203}{1.42859494}}{\pgfpointxy{-2.481203}{1.18423043}}
+    \pgfcurveto{\pgfpointxy{-2.481203}{0.67670319}}{\pgfpointxy{-0.78947368}{0.31955431}}{\pgfpointxy{-0.22556389}{0.01879759}}
+    \pgfcurveto{\pgfpointxy{-0.82706767}{-0.33835129}}{\pgfpointxy{-1.95488726}{-0.50752663}}{\pgfpointxy{-2.23684209}{-0.69550018}}
+    \pgfcurveto{\pgfpointxy{-2.36842104}{-0.78949116}}{\pgfpointxy{-2.5}{-0.9210677}}{\pgfpointxy{-2.5}{-1.10904004}}
+    \pgfcurveto{\pgfpointxy{-2.5}{-1.37220275}}{\pgfpointxy{-2.29323307}{-1.59777028}}{\pgfpointxy{-2.03007523}{-1.59777028}}
+    \pgfcurveto{\pgfpointxy{-1.69172935}{-1.59777028}}{\pgfpointxy{-0.54511277}{-0.43233746}}{\pgfpointxy{-0.11278193}{-0.18797294}}
+    \pgfcurveto{\pgfpointxy{-0.11278193}{-0.97745868}}{\pgfpointxy{-0.50751879}{-1.78574262}}{\pgfpointxy{-0.50751879}{-2.29326984}}
+    \pgfcurveto{\pgfpointxy{-0.50751879}{-2.57522955}}{\pgfpointxy{-0.30075186}{-2.78200008}}{\pgfpointxy{0.00000003}{-2.78200008}}
+    \pgfcurveto{\pgfpointxy{0.28195492}{-2.78200008}}{\pgfpointxy{0.45112786}{-2.55643256}}{\pgfpointxy{0.45112786}{-2.29326984}}
+    \pgfcurveto{\pgfpointxy{0.45112786}{-1.69175645}}{\pgfpointxy{0.13157898}{-0.95866169}}{\pgfpointxy{0.13157898}{-0.18797294}}
+    \pgfcurveto{\pgfpointxy{0.56390982}{-0.45113445}}{\pgfpointxy{1.7105264}{-1.65416246}}{\pgfpointxy{1.9924813}{-1.65416246}}
+    \pgfcurveto{\pgfpointxy{2.2556392}{-1.65416246}}{\pgfpointxy{2.48120312}{-1.40979674}}{\pgfpointxy{2.48120312}{-1.14663523}}
+    \pgfcurveto{\pgfpointxy{2.48120312}{-0.95866169}}{\pgfpointxy{2.34962417}{-0.84587853}}{\pgfpointxy{2.21804521}{-0.75189115}}
+    \pgfcurveto{\pgfpointxy{1.84210535}{-0.50752663}}{\pgfpointxy{0.84586472}{-0.35714828}}{\pgfpointxy{0.22556394}{0.01879759}}
+    \pgfcurveto{\pgfpointxy{0.9022557}{0.41354048}}{\pgfpointxy{1.82330836}{0.46993266}}{\pgfpointxy{2.23684221}{0.71429718}}
+    \pgfcurveto{\pgfpointxy{2.40601514}{0.80828816}}{\pgfpointxy{2.50000011}{0.9398647}}{\pgfpointxy{2.50000011}{1.12783824}}
+    \pgfpathclose
+    \pgfusepath{fill}
+    \node[circle,minimum size=4.8,tight,transform shape] ()  {}; % this is to get anchors
+  },
+  % 6-armed star glyph taken from \usepackage[libertine]{newtxmath}
+  bold star/.pic={
+    \pgfsetxvec{\pgfpoint{2.3pt}{0pt}}
+    \pgfsetyvec{\pgfpoint{0pt}{2.3pt}}
+    \pgfmoveto{\pgfpointxy{0.22300498}{-0.37572151}}
+    \pgflineto{\pgfpointxy{1.56103308}{-1.36163706}}
+    \pgfcurveto{\pgfpointxy{1.83098605}{-1.58464152}}{\pgfpointxy{1.85446031}{-1.58464152}}{\pgfpointxy{1.9953052}{-1.58464152}}
+    \pgfcurveto{\pgfpointxy{2.28873312}{-1.58464152}}{\pgfpointxy{2.5000001}{-1.29121428}}{\pgfpointxy{2.5000001}{-1.04473556}}
+    \pgfcurveto{\pgfpointxy{2.5000001}{-0.89215321}}{\pgfpointxy{2.429578}{-0.72783406}}{\pgfpointxy{2.26525886}{-0.64567449}}
+    \pgfcurveto{\pgfpointxy{2.17136181}{-0.58698918}}{\pgfpointxy{2.03051693}{-0.56351492}}{\pgfpointxy{0.50469474}{-0.0001347}}
+    \pgfcurveto{\pgfpointxy{2.01877946}{0.56324552}}{\pgfpointxy{2.17136181}{0.58671978}}{\pgfpointxy{2.26525886}{0.64540509}}
+    \pgfcurveto{\pgfpointxy{2.429578}{0.71582787}}{\pgfpointxy{2.5000001}{0.88014702}}{\pgfpointxy{2.5000001}{1.04446616}}
+    \pgfcurveto{\pgfpointxy{2.5000001}{1.29094556}}{\pgfpointxy{2.28873312}{1.5843728}}{\pgfpointxy{1.9953052}{1.5843728}}
+    \pgfcurveto{\pgfpointxy{1.86619779}{1.5843728}}{\pgfpointxy{1.84272352}{1.5843728}}{\pgfpointxy{1.58450734}{1.38484192}}
+    \pgflineto{\pgfpointxy{0.22300498}{0.37545211}}
+    \pgfcurveto{\pgfpointxy{0.2699535}{0.68061682}}{\pgfpointxy{0.50469474}{2.04211918}}{\pgfpointxy{0.50469474}{2.1594898}}
+    \pgfcurveto{\pgfpointxy{0.50469474}{2.46465451}}{\pgfpointxy{0.2112675}{2.6054994}}{\pgfpointxy{0.00000052}{2.6054994}}
+    \pgfcurveto{\pgfpointxy{-0.21126646}{2.6054994}}{\pgfpointxy{-0.50469439}{2.46465451}}{\pgfpointxy{-0.50469439}{2.1594898}}
+    \pgfcurveto{\pgfpointxy{-0.50469439}{2.04211918}}{\pgfpointxy{-0.25821567}{0.62193151}}{\pgfpointxy{-0.22300462}{0.37545211}}
+    \pgflineto{\pgfpointxy{-1.56103272}{1.36136766}}
+    \pgfcurveto{\pgfpointxy{-1.8309857}{1.5843728}}{\pgfpointxy{-1.85445996}{1.5843728}}{\pgfpointxy{-1.99530484}{1.5843728}}
+    \pgfcurveto{\pgfpointxy{-2.28873208}{1.5843728}}{\pgfpointxy{-2.49999974}{1.29094556}}{\pgfpointxy{-2.49999974}{1.04446616}}
+    \pgfcurveto{\pgfpointxy{-2.49999974}{0.89188449}}{\pgfpointxy{-2.42957764}{0.72756534}}{\pgfpointxy{-2.2652585}{0.64540509}}
+    \pgfcurveto{\pgfpointxy{-2.17136146}{0.58671978}}{\pgfpointxy{-2.03051657}{0.56324552}}{\pgfpointxy{-0.50469439}{-0.0001347}}
+    \pgfcurveto{\pgfpointxy{-2.0187791}{-0.56351492}}{\pgfpointxy{-2.17136146}{-0.58698918}}{\pgfpointxy{-2.2652585}{-0.64567449}}
+    \pgfcurveto{\pgfpointxy{-2.42957764}{-0.71609727}}{\pgfpointxy{-2.49999974}{-0.88041642}}{\pgfpointxy{-2.49999974}{-1.04473556}}
+    \pgfcurveto{\pgfpointxy{-2.49999974}{-1.29121428}}{\pgfpointxy{-2.28873208}{-1.58464152}}{\pgfpointxy{-1.99530484}{-1.58464152}}
+    \pgfcurveto{\pgfpointxy{-1.86619743}{-1.58464152}}{\pgfpointxy{-1.84272317}{-1.58464152}}{\pgfpointxy{-1.58450698}{-1.38511132}}
+    \pgflineto{\pgfpointxy{-0.22300462}{-0.37572151}}
+    \pgfcurveto{\pgfpointxy{-0.28168993}{-0.71609727}}{\pgfpointxy{-0.50469439}{-2.0423879}}{\pgfpointxy{-0.50469439}{-2.15975921}}
+    \pgfcurveto{\pgfpointxy{-0.50469439}{-2.46492323}}{\pgfpointxy{-0.21126715}{-2.6057688}}{\pgfpointxy{0.00000052}{-2.6057688}}
+    \pgfcurveto{\pgfpointxy{0.21126819}{-2.6057688}}{\pgfpointxy{0.50469474}{-2.46492323}}{\pgfpointxy{0.50469474}{-2.15975921}}
+    \pgfcurveto{\pgfpointxy{0.50469474}{-2.0423879}}{\pgfpointxy{0.25821603}{-0.58698918}}{\pgfpointxy{0.22300498}{-0.37572151}}
+    \pgfpathclose
+    \pgfusepath{fill}
+    \node[circle,minimum size=5.1*2.3pt,tight,transform shape] ()  {}; % this is to get anchors
+  }
 }
+

@@ -1,0 +1,42 @@
+\documentclass[tikz]{standalone}
+
+\input{logosetup}
+
+
+\begin{document}
+% We make a couple of measurements here for the placement of the i/stem
+\Large%
+\newsavebox\gap%
+\savebox\gap{\kern3pt}%
+\newsavebox\lasts%
+\savebox\lasts{s}%
+\normalsize%
+\begin{tikzpicture}
+
+
+  % Draw "Iris" omitting the second i
+  \node[tight,txt] (iris) at (0.05,-.27) {\Large Ir\phantom{\usebox\gap}s};
+
+  % Star / Flower
+  \fill (1.19ex,-.92ex) pic[iris,rotate=7] (star) {star};
+
+  % The bent stem
+  \draw[flower stem]
+    ([xshift=-.65\wd\gap-\wd\lasts]iris.base east)
+    -- +(0,0.05)
+    to[in=-120,out=90]
+     ([xshift=.01ex,yshift=-.08ex]star.center);
+
+  % The "invariant" box
+  \begin{pgfonlayer}{bg}
+    \node[
+      box,
+      inner sep=1.2pt,
+      inner xsep=1.7pt,
+      fit=(iris)(star) % lazy, I know
+    ] (box) {};
+  \end{pgfonlayer}
+
+\end{tikzpicture}
+
+\end{document}

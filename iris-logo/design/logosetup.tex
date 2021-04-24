@@ -1,0 +1,62 @@
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,fit,shapes.geometric,arrows.meta,bending}
+
+\newif\ifsquare
+\newif\ifserifstem
+\newsavebox\gap%
+\newsavebox\lasts%
+
+\definecolor{iris}{HTML}{5436c0}
+% \definecolor{iris}{HTML}{5a4fcf}
+% \definecolor{iris}{HTML}{483d8b}
+
+
+\pgfdeclarelayer{lower}
+\pgfdeclarelayer{bg}
+\pgfsetlayers{bg,lower,main}
+
+\tikzset{
+  square/.style={
+    fill=white,
+    inner sep=-1pt,
+    regular polygon,
+    regular polygon sides=4,
+  },
+  tight/.style={
+    inner sep=0, outer sep=0,
+  },
+  flower stem/.style={
+    grass,
+    stem width, stem len,
+    Butt Cap-{[bend]Round Cap}
+  },
+  center of i at/.store in=\imid,
+  stem/.is choice,
+  stem/plain/.code={\serifstemfalse},
+  stem/serif/.code={\serifstemtrue},
+  variant/.is choice,
+  variant/square/.code={\squaretrue},
+  variant/rectangle/.code={\squarefalse},
+  text color/.style={txt/.style={color=#1}},
+  text color=black,
+  box color/.style={border/.style={draw=#1}},
+  box color=black,
+  stem color/.style={grass/.style={#1}},
+  stem color=black,
+  stem thickness/.style={stem width/.style={line width=#1}},
+  stem thickness=.115em,
+  stem shorten/.style={stem len/.style={shorten >=#1}},
+  stem shorten=2.5pt,
+  star color/.style={star/.style={color=#1}},
+  star color=black,
+  leaves color/.style={leaves/.style={#1}},
+  leaves color=green!40!black,
+  dot/.style={
+    pos=#1,xshift=2pt,leaves,
+    fill,circle,tight,minimum size=1.5pt,
+  },
+  dot/.default={.4},
+  no dot/.style={dot/.style={}},
+  sans serif/.code={\AtBeginDocument{\sffamily}\tikzset{stem thickness=.12em, center of i at=.5,}}
+}
