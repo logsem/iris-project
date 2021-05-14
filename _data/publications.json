@@ -690,7 +690,7 @@
         "Lars Birkedal"
       ],
       "description": "Submitted for publication",
-      "pdf_url": "https://iris-project.org/pdfs/2020-transfinite-iris-submission.pdf",
+      "pdf_url": "https://iris-project.org/pdfs/2021-pldi-transfinite-iris-final.pdf",
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/transfinite-iris/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/transfinite" }
