@@ -20,5 +20,5 @@ logo.svg: ../iris-logo/${LOGO}.svg
 	cp $< $@
 
 clean:
-	rm -f ../iris-logo/*.aux ../iris-logo/*.log ../iris-logo/*.svg ../iris-logo/*.pdf favicon.svg favicon.ico logo.svg
+	rm -f ../iris-logo/*.aux ../iris-logo/*.log ../iris-logo/*.svg ../iris-logo/*.pdf ../iris-logo/*.dvi favicon.svg favicon.ico logo.svg
 .PHONY: clean
