@@ -1,6 +1,41 @@
 {
   "publications": [
     {
+      "title": "RefinedC: A Foundational Refinement Type System for C Based on Separation Logic Programming",
+      "authors": [
+        "Michael Sammler",
+        "Rodolphe Lepigre",
+        "Robbert Krebbers",
+        "Kayvan Memarian",
+        "Derek Dreyer",
+        "Deepak Garg"
+      ],
+      "where_published": "In PLDI 2021: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" }
+      ]
+    },
+    {
+      "title": "Transfinite Iris: Resolving an Existential Dilemma of Step-Indexed Separation Logic",
+      "authors": [
+        "Simon Spies",
+        "Lennard Gäher",
+        "Daniel Gratzer",
+        "Joseph Tassarotti",
+        "Robbert Krebbers",
+        "Derek Dreyer",
+        "Lars Birkedal"
+      ],
+      "where_published": "In PLDI 2021: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "pdf_url": "https://iris-project.org/pdfs/2021-pldi-transfinite-iris-final.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://iris-project.org/transfinite-iris/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/transfinite" }
+      ]
+    },
+    {
       "title": "Safe Systems Programming in Rust",
       "authors": [
         "Ralf Jung",
@@ -8,7 +43,7 @@
         "Robbert Krebbers",
         "Derek Dreyer"
       ],
-      "where_published": "In CACM: Communications of the ACM",
+      "where_published": "In Communications of the ACM (CACM), April 2021",
       "pdf_url": "pdfs/2021-rustbelt-cacm-final.pdf",
       "other_urls": [
         { "name": "html + video", "url": "https://cacm.acm.org/magazines/2021/4/251364-safe-systems-programming-in-rust/fulltext" }
@@ -676,41 +711,6 @@
       "other_urls": [
         { "name": "website", "url": "http://plv.mpi-sws.org/rustbelt/ghostcell/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FP/ghostcell" }
-      ]
-    },
-    {
-      "title": "Transfinite Iris: Resolving an Existential Dilemma of Step-Indexed Separation Logic",
-      "authors": [
-        "Simon Spies",
-        "Lennard Gäher",
-        "Daniel Gratzer",
-        "Joseph Tassarotti",
-        "Robbert Krebbers",
-        "Derek Dreyer",
-        "Lars Birkedal"
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "https://iris-project.org/pdfs/2021-pldi-transfinite-iris-final.pdf",
-      "other_urls": [
-        { "name": "website", "url": "https://iris-project.org/transfinite-iris/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/transfinite" }
-      ]
-    },
-    {
-      "title": "RefinedC: A Foundational Refinement Type System for C Based on Separation Logic Programming",
-      "authors": [
-        "Michael Sammler",
-        "Rodolphe Lepigre",
-        "Robbert Krebbers",
-        "Kayvan Memarian",
-        "Derek Dreyer",
-        "Deepak Garg"
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
-      "other_urls": [
-        { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" }
       ]
     },
     {
