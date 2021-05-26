@@ -1,7 +1,7 @@
 {
   "publications": [
     {
-      "title": "GoJournal: a verified, concurrent, crash-safe journaling system",
+      "title": "GoJournal: A Verified, Concurrent, Crash-Safe Journaling System",
       "authors": [
         "Tej Chajed",
         "Joseph Tassarotti",
