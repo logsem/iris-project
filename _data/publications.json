@@ -54,6 +54,19 @@
       ]
     },
     {
+      "title": "Compositional Non-Interference for Fine-Grained Concurrent Programs",
+      "authors": [
+        "Dan Frumin",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "where_published": "In S&P 2021: IEEE Symposium on Security and Privacy",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2020-seloc-submission.pdf" },
+        { "name": "Coq development", "url": "https://github.com/co-dan/SeLoC" }
+      ]
+    },
+    {
       "title": "Safe Systems Programming in Rust",
       "authors": [
         "Ralf Jung",
@@ -65,42 +78,6 @@
       "pdf_url": "pdfs/2021-rustbelt-cacm-final.pdf",
       "other_urls": [
         { "name": "html + video", "url": "https://cacm.acm.org/magazines/2021/4/251364-safe-systems-programming-in-rust/fulltext" }
-      ]
-    },
-    {
-      "title": "Contextual Refinement of the Michael-Scott Queue (Proof Pearl)",
-      "authors": [
-        "Simon Friis Vindum",
-        "Lars Birkedal"
-      ],
-      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
-      "pdf_url": "https://www.cs.au.dk/~birke/papers/2021-ms-queue-final.pdf"
-    },
-    {
-      "title": "Reasoning about Monotonicity in Separation Logic",
-      "authors": [
-        "Amin Timany",
-        "Lars Birkedal"
-      ],
-      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
-      "other_urls": [
-	  { "name": "[amended after publication] .pdf", "url": "pdfs/2021-CPP-monotone-final.pdf" },
-        { "name": "Coq development", "url": "https://github.com/amintimany/monotone" }
-      ]
-    },
-    {
-      "title": "Machine-Checked Semantic Session Typing",
-      "authors": [
-        "Jonas Kastberg Hinrichsen",
-        "Daniël Louwrink",
-        "Robbert Krebbers",
-        "Jesper Bengtson"
-      ],
-      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
-      "awards": [ "CPP 2021 Distinguished Paper Award" ],
-      "other_urls": [
-        { "name": "[preprint] .pdf", "url": "pdfs/2021-cpp-sessions-final.pdf" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
       ]
     },
     {
@@ -183,6 +160,42 @@
       ]
     },
     {
+      "title": "Contextual Refinement of the Michael-Scott Queue (Proof Pearl)",
+      "authors": [
+        "Simon Friis Vindum",
+        "Lars Birkedal"
+      ],
+      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "pdf_url": "https://www.cs.au.dk/~birke/papers/2021-ms-queue-final.pdf"
+    },
+    {
+      "title": "Reasoning about Monotonicity in Separation Logic",
+      "authors": [
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "other_urls": [
+	  { "name": "[amended after publication] .pdf", "url": "pdfs/2021-CPP-monotone-final.pdf" },
+        { "name": "Coq development", "url": "https://github.com/amintimany/monotone" }
+      ]
+    },
+    {
+      "title": "Machine-Checked Semantic Session Typing",
+      "authors": [
+        "Jonas Kastberg Hinrichsen",
+        "Daniël Louwrink",
+        "Robbert Krebbers",
+        "Jesper Bengtson"
+      ],
+      "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "awards": [ "CPP 2021 Distinguished Paper Award" ],
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2021-cpp-sessions-final.pdf" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
+      ]
+    },
+    {
       "title": "Cosmo: A Concurrent Separation Logic for Multicore OCaml",
       "authors": [
         "Glen Mével",
@@ -211,19 +224,6 @@
       "other_urls": [
         { "name": "Coq development", "url": "https://github.com/Blaisorblade/dot-iris" },
         { "name": "website", "url": "https://dot-iris.github.io/" }
-      ]
-    },
-    {
-      "title": "Compositional Non-Interference for Fine-Grained Concurrent Programs",
-      "authors": [
-        "Dan Frumin",
-        "Robbert Krebbers",
-        "Lars Birkedal"
-      ],
-      "where_published": "In S&P 2021: IEEE Symposium on Security and Privacy",
-      "other_urls": [
-        { "name": "[preprint] .pdf", "url": "pdfs/2020-seloc-submission.pdf" },
-        { "name": "Coq development", "url": "https://github.com/co-dan/SeLoC" }
       ]
     },
     {
