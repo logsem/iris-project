@@ -1,6 +1,23 @@
 {
   "publications": [
     {
+      "title": "GoJournal: a verified, concurrent, crash-safe journaling system",
+      "authors": [
+        "Tej Chajed",
+        "Joseph Tassarotti",
+        "Mark Theng",
+        "Ralf Jung",
+        "M. Frans Kaashoek",
+        "Nickolai Zeldovich"
+      ],
+      "where_published": "In OSDI 2021: USENIX Symposium on Operating System Design and Implementation",
+      "pdf_url": "https://www.chajed.io/papers/gojournal:osdi2021.pdf",
+      "other_urls": [
+        { "name": "code", "url": "https://github.com/mit-pdos/go-journal" },
+        { "name": "Coq development", "url": "https://github.com/mit-pdos/perennial" }
+      ]
+    },
+    {
       "title": "RefinedC: Automating the Foundational Verification of C Code with Refined Ownership Types",
       "authors": [
         "Michael Sammler",
