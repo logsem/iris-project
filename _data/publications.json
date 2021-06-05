@@ -28,7 +28,7 @@
         "Deepak Garg"
       ],
       "where_published": "In PLDI 2021: ACM SIGPLAN Conference on Programming Language Design and Implementation",
-      "awards": [ "PLDI 2021 Distinguished Paper Award" ],
+      "awards": [ "PLDI 2021 Distinguished Paper Award", "PLDI 2021 Distinguished Artifact Award" ],
       "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
       "other_urls": [
         { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
