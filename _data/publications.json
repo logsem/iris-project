@@ -1,6 +1,22 @@
 {
   "publications": [
     {
+      "title": "Theorems for Free from Separation Logic Specifications",
+      "authors": [
+        "Lars Birkedal",
+        "Thomas Dinsdale-Young",
+        "Armaël Guéneau",
+        "Guilhem Jaber",
+        "Kasper Svendsen",
+        "Nikos Tzevelekos"
+      ],
+      "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "https://iris-project.org/pdfs/2021-icfp-intensional-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/logsem/free-theorems-sl" }
+      ]
+    },
+    {
       "title": "GoJournal: A Verified, Concurrent, Crash-Safe Journaling System",
       "authors": [
         "Tej Chajed",
