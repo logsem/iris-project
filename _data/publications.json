@@ -1,5 +1,19 @@
 {
   "publications": [
+      {
+      "title": "ReLoC Reloaded: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity",
+      "authors": [
+        "Dan Frumin",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "description": "In LMCS: Logical Methods in Computer Science",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2021-reloc-reloaded-submission.pdf" },
+        { "name": "website", "url": "https://iris-project.org/reloc/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
+      ]
+    },
     {
       "title": "Theorems for Free from Separation Logic Specifications",
       "authors": [
@@ -760,20 +774,6 @@
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
       ]
     },
-    {
-      "title": "ReLoC Reloaded: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity",
-      "authors": [
-        "Dan Frumin",
-        "Robbert Krebbers",
-        "Lars Birkedal"
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "pdfs/2021-reloc-reloaded-submission.pdf",
-      "other_urls": [
-        { "name": "website", "url": "https://iris-project.org/reloc/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
-      ]
-    }
   ],
   "others": [
     {
