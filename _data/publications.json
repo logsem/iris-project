@@ -761,21 +761,6 @@
   ],
   "draft_papers": [
     {
-      "title": "GhostCell: Separating Permissions from Data in Rust",
-      "authors": [
-	"Joshua Yanovski",
-	"Hoang-Hai Dang",
-	"Ralf Jung",
-	"Derek Dreyer"
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "http://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf",
-      "other_urls": [
-        { "name": "website", "url": "http://plv.mpi-sws.org/rustbelt/ghostcell/" },
-        { "name": "Rust and Coq sources", "url": "https://gitlab.mpi-sws.org/FP/ghostcell" }
-      ]
-    },
-    {
       "title": "Actris 2.0: Asynchronous Session-Type Based Reasoning in Separation Logic",
       "authors": [
         "Jonas Kastberg Hinrichsen",
