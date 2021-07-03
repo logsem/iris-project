@@ -15,6 +15,20 @@
       ]
     },
     {
+      "title": "GhostCell: Separating Permissions from Data in Rust",
+      "authors": [
+	"Joshua Yanovski",
+	"Hoang-Hai Dang",
+	"Ralf Jung",
+	"Derek Dreyer"
+      ],
+      "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf",
+      "other_urls": [
+        { "name": "website with Rust and Coq development", "url": "https://plv.mpi-sws.org/rustbelt/ghostcell/" }
+      ]
+    },
+    {
       "title": "Theorems for Free from Separation Logic Specifications",
       "authors": [
         "Lars Birkedal",
