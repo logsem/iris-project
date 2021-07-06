@@ -1,6 +1,18 @@
 {
   "publications": [
       {
+      "title": "Formal Verification of a Concurrent Bounded Queue in a Weak Memory Model",
+      "authors": [
+        "Glen Mével",
+        "Jacques-Henri Jourdan"
+      ],
+      "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "https://iris-project.org/pdfs/2021-icfp-cosmo-queue-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.inria.fr/gmevel/cosmo" }
+      ]
+    },
+      {
       "title": "ReLoC Reloaded: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity",
       "authors": [
         "Dan Frumin",
@@ -250,7 +262,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/MevelJP20.html",
       "pdf_url": "pdfs/2020-icfp-cosmo-final.pdf",
       "other_urls": [
-        { "name": "website", "url": "https://gitlab.inria.fr/gmevel/cosmo" }
+        { "name": "Web development", "url": "https://gitlab.inria.fr/gmevel/cosmo" }
       ]
     },
     {
