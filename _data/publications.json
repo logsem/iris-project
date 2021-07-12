@@ -735,7 +735,7 @@
     {
       "title": "Concurrent Separation Logics for Safety, Refinement, and Security",
       "authors": ["Dan Frumin"],
-      "description": "Radboud University, March 2021",
+      "description": "Radboud University Nijmegen, March 2021",
       "pdf_url": "https://groupoid.moe/pdf/thesis.pdf",
       "other_urls": [
         { "name": "website", "url": "https://groupoid.moe/thesis.html" }
