@@ -21,7 +21,7 @@
       ],
       "description": "In LMCS: Logical Methods in Computer Science",
       "other_urls": [
-        { "name": "[preprint] .pdf", "url": "pdfs/2021-reloc-reloaded-submission.pdf" },
+        { "name": "[preprint] .pdf", "url": "pdfs/2021-lmcs-reloc-reloaded-final" },
         { "name": "website", "url": "https://iris-project.org/reloc/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
       ]
