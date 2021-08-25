@@ -53,7 +53,8 @@
       "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "https://iris-project.org/pdfs/2021-icfp-intensional-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/logsem/free-theorems-sl" }
+        { "name": "Coq development", "url": "https://github.com/logsem/free-theorems-sl" },
+        { "name": "Video", "url": "https://www.youtube.com/watch?v=8lv6UYX9toM" }
       ]
     },
     {
