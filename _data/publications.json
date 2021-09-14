@@ -50,7 +50,8 @@
         "Kasper Svendsen",
         "Nikos Tzevelekos"
       ],
-      "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
+        "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
+        "awards": [ "ICFP 2021 Distinguished Paper Award" ],
       "pdf_url": "https://iris-project.org/pdfs/2021-icfp-intensional-final.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://github.com/logsem/free-theorems-sl" },
