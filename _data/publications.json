@@ -20,7 +20,7 @@
         "Lars Birkedal"
       ],
       "where_published": "In LMCS 2021: Logical Methods in Computer Science",
-      "pdf_url": "pdfs/2021-lmcs-reloc-reloaded-final",
+      "pdf_url": "pdfs/2021-lmcs-reloc-reloaded-final.pdf",
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/reloc/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
