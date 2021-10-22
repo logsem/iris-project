@@ -781,6 +781,22 @@
   ],
   "draft_papers": [
     {
+      "title": "Trillium: Unifying Refinement and Higher-Order Distributed Separation Logic",
+      "authors": [
+        "Amin Timany",
+        "Simon Oddershede Gregersen",
+        "Léo Stefanesco",
+        "Léon Gondelman",
+        "Abel Nieto",
+        "Lars Birkedal"
+      ],
+      "description": "Submitted for publication",
+      "pdf_url": "pdfs/2021-submitted-trillium.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "artifacts/2021-submitted-trillium.zip" }
+      ]
+    },
+    {
       "title": "Actris 2.0: Asynchronous Session-Type Based Reasoning in Separation Logic",
       "authors": [
         "Jonas Kastberg Hinrichsen",
