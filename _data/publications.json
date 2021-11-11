@@ -7,7 +7,7 @@
         "Stephanie Balzer",
         "Robbert Krebbers"
       ],
-      "where_published": "In POPL 2022: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-connectivity-graphs.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://github.com/julesjacobs/cgraphs" }
@@ -23,7 +23,7 @@
         "Derek Dreyer",
         "Peter Sewell"
       ],
-      "where_published": "In POPL 2022: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-vip.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
