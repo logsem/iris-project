@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Connectivity Graphs: A Method for Proving Deadlock Freedom Based on Separation Logic",
+      "authors": [
+        "Jules Jacobs",
+        "Stephanie Balzer",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In POPL 2022: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "pdf_url": "https://iris-project.org/pdfs/2022-popl-connectivity-graphs.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/julesjacobs/cgraphs" }
+      ]
+    },
+    {
       "title": "VIP: Verifying Real-World C Idioms with Integer-Pointer Casts",
       "authors": [
         "Rodolphe Lepigre",
