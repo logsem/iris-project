@@ -1,6 +1,24 @@
 {
   "publications": [
     {
+      "title": "Simuliris: A Separation Logic Framework for Verifying Concurrent Program Optimizations",
+      "authors": [
+        "Lennard Gäher",
+        "Michael Sammler",
+        "Simon Spies",
+        "Ralf Jung",
+        "Hoang-Hai Dang",
+        "Robbert Krebbers",
+        "Jeehoon Kang",
+        "Derek Dreyer"
+      ],
+      "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "https://iris-project.org/pdfs/2022-popl-simuliris.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/simuliris/" }
+      ]
+    },
+    {
       "title": "Connectivity Graphs: A Method for Proving Deadlock Freedom Based on Separation Logic",
       "authors": [
         "Jules Jacobs",
