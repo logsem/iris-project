@@ -15,7 +15,8 @@
       "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-simuliris.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/simuliris/" }
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/simuliris/" },
+        { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.5667545" }
       ]
     },
     {
