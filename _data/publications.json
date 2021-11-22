@@ -49,8 +49,6 @@
         { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.5662349" }
       ]
     },
-{
-  "publications": [
     {
       "title": "A Separation Logic for Heap Space under Garbage Collection",
       "authors": [
