@@ -49,6 +49,21 @@
         { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.5662349" }
       ]
     },
+{
+  "publications": [
+    {
+      "title": "Simuliris: A Separation Logic for Heap Space under Garbage Collection",
+      "authors": [
+	  "Jean-Marie Madiot",
+	  "François Pottier"
+      ],
+      "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "http://cambium.inria.fr/~fpottier/publis/madiot-pottier-diamonds-2022.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.inria.fr/fpottier/diamonds" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.5549765" }
+      ]
+    },
     {
       "title": "Formal Verification of a Concurrent Bounded Queue in a Weak Memory Model",
       "authors": [
