@@ -56,7 +56,7 @@
 	  "François Pottier"
       ],
       "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
-      "pdf_url": "http://cambium.inria.fr/~fpottier/publis/madiot-pottier-diamonds-2022.pdf",
+      "pdf_url": "https://cambium.inria.fr/~fpottier/publis/madiot-pottier-diamonds-2022.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.inria.fr/fpottier/diamonds" },
         { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.5549765" }
