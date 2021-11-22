@@ -152,7 +152,8 @@
       "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
       "other_urls": [
         { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc", "Artifact and appendix": "https://doi.org/10.5281/zenodo.4646747" }
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
+	  { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.4646747" }
       ]
     },
     {
