@@ -52,7 +52,7 @@
 {
   "publications": [
     {
-      "title": "Simuliris: A Separation Logic for Heap Space under Garbage Collection",
+      "title": "A Separation Logic for Heap Space under Garbage Collection",
       "authors": [
 	  "Jean-Marie Madiot",
 	  "François Pottier"
