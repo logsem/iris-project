@@ -844,6 +844,19 @@
   ],
   "draft_papers": [
     {
+      "title": "Diaframe: Automated Verification of Fine-Grained Concurrent Programs in Iris",
+      "authors": [
+        "Ike Mulder",
+        "Robbert Krebbers",
+        "Herman Geuvers",
+      ],
+      "description": "Submitted for publication",
+      "pdf_url": "https://robbertkrebbers.nl/research/articles/diaframe.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/automation" }
+      ]
+    },
+    {
       "title": "Trillium: Unifying Refinement and Higher-Order Distributed Separation Logic",
       "authors": [
         "Amin Timany",
