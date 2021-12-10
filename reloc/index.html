@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <meta name="referrer" content="origin-when-crossorigin">
 
-    <title>ReLoC: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</title>
+    <title>ReLoC: A Mechanized Relational Logic for Fine-Grained Concurrency</title>
 
     <link rel="stylesheet" href="../bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
 
@@ -21,14 +21,9 @@
       <div class="container">
         <h1 class="jumbotron-heading display-1">ReLoC</h1>
         <p class="lead">A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</p>
-        <p class="lead">
-          <a href="https://groupoid.moe/">Dan Frumin</a>,
-          <a href="https://robbertkrebbers.nl/">Robbert Krebbers</a>,
-          <a href="https://cs.au.dk/~birke/">Lars Birkedal</a></p>
         <p>
-          <a href="../pdfs/2018-lics-reloc-final.pdf" class="btn btn-primary">LICS 2018 conference paper</a>
-          <a href="../pdfs/2021-lmcs-reloc-reloaded-final.pdf" class="btn btn-primary">LMCS 2021 extended journal paper</a>
-          <a href="https://gitlab.mpi-sws.org/iris/reloc" class="btn btn-secondary">Latest version of ReLoC</a>
+          <a href="../pdfs/2021-lmcs-reloc-reloaded-final.pdf" class="btn btn-primary">Read the journal paper</a>
+          <a href="https://gitlab.mpi-sws.org/iris/reloc" class="btn btn-secondary">Download the Coq source code</a>
         </p>
       </div>
     </section>
@@ -36,23 +31,24 @@
     <div class="container">
       <div class="row">
       <p>
-      <img src="reloc.png" alt="ReLoC" style="float: right; width: 250px; margin-left: 3em; margin-bottom: 3em;" />
+      <img src="reloc.png" alt="ReLoC" style="float: right; margin-left: 3em; margin-bottom: 3em;" />
       ReLoC is a mechanised logic for interactively proving contextual refinements of programs in a language with higher-order state, fine-grained concurrency, polymorphism and existential and recursive types.
       </p>
       <p>
       ReLoC is built on top of <a href="https://iris-project.org">Iris</a>—a state of the art concurrent separation logic.
       </p>
 
-      <h2>ReLoC Reloaded</h2>
-      <p>
-      A new version of ReLoC is under development and is available online at <a href="https://gitlab.mpi-sws.org/iris/reloc">https://gitlab.mpi-sws.org/iris/reloc</a>. Do check it out!</p>
+      <h2>Publications and case studies</h2>
       <ul>
-      <li>Read our <a href="../pdfs/2021-lmcs-reloc-reloaded-final.pdf">extended journal paper in LMCS describing ReLoC Reloaded</a>.</li>
-      <li>Check out an accompanying <a href="https://cs.ru.nl/~dfrumin/reloc/tech-appendix.pdf">technical appendix</a> (last edited June 24, 2020).</li>
+      <li><a href="../pdfs/2022-cpp-folly-queue.pdf">Mechanized Verification of a Fine-Grained Concurrent Queue from Meta's Folly Library</a>, Simon Friis Vindum, Dan Frumin, Lars Birkedal. CPP 2022.</li>
+      <li><a href="../pdfs/2021-cpp-ms-queue-final.pdf">Contextual Refinement of the Michael-Scott Queue (Proof Pearl)</a>, Simon Friis Vindum, Lars Birkedal. CPP 2021.</li>
+      <li><a href="../pdfs/2021-lmcs-reloc-reloaded-final.pdf">ReLoC Reloaded: A Mechanized Relational Logic for Fine-Grained Concurrency and Logical Atomicity</a>, Dan Frumin, Robbert Krebbers, Lars Birkedal. LMCS 2021.</li>
+      <li>There is also an accompanying <a href="https://cs.ru.nl/~dfrumin/reloc/tech-appendix.pdf">technical appendix</a>, describing verification of a stack with helping.</li>
+      <li>Older <a href="../pdfs/2018-lics-reloc-final.pdf">conference paper</a>, describing the first version of ReLoC.</li>
       </ul>
-      <p>ReLoC Reloaded improves on the logic described in the LICS18 paper in several ways. In terms of the formalization it works with the latest version of Iris, and it is build directly on top of heap_lang – the programming language that comes directly with Iris.</p>
 
       <h2>Guide to the examples</h2>
+      The <a href="https://gitlab.mpi-sws.org/iris/reloc">Coq formalization</a> comes with a number of examples, intended to demonstrate and evaluate ReLoC:
       <ul>
       <li>The &ldquo;bit&rdquo; module/simple representation independence example is in <code>examples/bit.v</code>.</li>
       <li>The counter refinement and the logically atomic specification for the fine-grained counter are in <code>lib/counter.v</code>.</li>
@@ -67,7 +63,8 @@
       <li>Treiber stack refinement is in <code>examples/stack/refinement.v</code>.</li>
       <li>A number of &ldquo;higher order functions with state&rdquo; examples from <a href="https://dl.acm.org/citation.cfm?id=1863566">Dreyer, Neis, Birkedal &rsquo;10</a> are in <code>examples/various.v</code>.</li>
       <li>A number of examples from <a href="https://dl.acm.org/citation.cfm?id=1480925">SDRI</a> are in <code>examples/namegen.v</code>, <code>examples/symbol.v</code>, and <code>examples/cell.v</code>.</li>
-      <li>The stack with helping example is in <code>experimental/helping/helping_stack.v</code>.</li>
+      <li>The stack with helping example is in <code>examples/stack_helping/</code>.</li>
+      <li>The Folly queue case study is in <code>examples/folly_queue/</code>.</li>
       </ul>
       </div>
     </div>
