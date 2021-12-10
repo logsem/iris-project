@@ -1,7 +1,7 @@
 {
   "publications": [
     {
-      "title": "Contextual Refinement of the Michael-Scott Queue (Proof Pearl)",
+      "title": "Mechanized Verification of a Fine-Grained Concurrent Queue from Meta's Folly Library",
       "authors": [
         "Simon Friis Vindum",
         "Dan Frumin",
