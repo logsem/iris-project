@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Contextual Refinement of the Michael-Scott Queue (Proof Pearl)",
+      "authors": [
+        "Simon Friis Vindum",
+        "Dan Frumin",
+        "Lars Birkedal"
+      ],
+      "where_published": "In CPP 2022: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "pdf_url": "pdfs/2022-cpp-folly-queue.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc/-/tree/master/theories/examples/folly_queue" },
+      ]
+    },
+    {
       "title": "Simuliris: A Separation Logic Framework for Verifying Concurrent Program Optimizations",
       "authors": [
         "Lennard Gäher",
@@ -287,7 +300,7 @@
         "Lars Birkedal"
       ],
       "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
-      "pdf_url": "https://www.cs.au.dk/~birke/papers/2021-ms-queue-final.pdf"
+      "pdf_url": "pdfs/2021-cpp-ms-queue-final.pdf"
     },
     {
       "title": "Reasoning about Monotonicity in Separation Logic",
