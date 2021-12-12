@@ -1,6 +1,18 @@
 {
   "publications": [
     {
+      "title": "Applying Formal Verification to Microkernel IPC at Meta",
+      "authors": [
+	"Quentin Carbonneaux",
+	"Noam Zilberstein",
+        "Christoph Klee",
+        "Peter W. O'Hearn",
+        "Francesco Zappa Nardelli"
+      ],
+      "where_published": "In CPP 2022: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "pdf_url": "http://www0.cs.ucl.ac.uk/staff/p.ohearn/MetaVerificationDraft.pdf"
+    },
+    {
       "title": "Mechanized Verification of a Fine-Grained Concurrent Queue from Meta's Folly Library",
       "authors": [
         "Simon Friis Vindum",
