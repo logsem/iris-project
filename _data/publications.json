@@ -10,7 +10,7 @@
         "Francesco Zappa Nardelli"
       ],
       "where_published": "In CPP 2022: ACM SIGPLAN International Conference on Certified Programs and Proofs",
-      "pdf_url": "http://www0.cs.ucl.ac.uk/staff/p.ohearn/MetaVerificationDraft.pdf"
+      "pdf_url": "https://www.cs.cornell.edu/~noamz/files/pubs/cpp22.pdf"
     },
     {
       "title": "Mechanized Verification of a Fine-Grained Concurrent Queue from Meta's Folly Library",
