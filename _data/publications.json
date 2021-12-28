@@ -38,6 +38,7 @@
         "Derek Dreyer"
       ],
       "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "awards": [ "POPL 2022 Distinguished Paper Award" ],
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-simuliris.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/simuliris/" },
