@@ -72,7 +72,8 @@
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-vip.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
-        { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.5662349" }
+        { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.5662349" },
+        { "name": "Video", "url": "https://youtu.be/jrMxY8TnAoc" }
       ]
     },
     {
@@ -463,7 +464,8 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/JungLPRTDJ20.html",
       "pdf_url": "https://plv.mpi-sws.org/prophecies/paper.pdf",
       "other_urls": [
-        { "name": "website", "url": "https://plv.mpi-sws.org/prophecies/" }
+        { "name": "website", "url": "https://plv.mpi-sws.org/prophecies/" },
+        { "name": "video", "url": "https://youtu.be/6Xhhasl50YU" }
       ]
     },
     {
