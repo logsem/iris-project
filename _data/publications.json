@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Actris 2.0: Asynchronous Session-Type Based Reasoning in Separation Logic",
+      "authors": [
+        "Jonas Kastberg Hinrichsen",
+        "Jesper Bengtson",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In LMCS 2022: Logical Methods in Computer Science",
+      "pdf_url": "pdfs/2020-actris2-submission.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
+      ]
+    },
+    {
       "title": "Applying Formal Verification to Microkernel IPC at Meta",
       "authors": [
 	"Quentin Carbonneaux",
@@ -898,19 +911,6 @@
       "pdf_url": "pdfs/2021-submitted-trillium.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "artifacts/2021-submitted-trillium.zip" }
-      ]
-    },
-    {
-      "title": "Actris 2.0: Asynchronous Session-Type Based Reasoning in Separation Logic",
-      "authors": [
-        "Jonas Kastberg Hinrichsen",
-        "Jesper Bengtson",
-        "Robbert Krebbers"
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "pdfs/2020-actris2-submission.pdf",
-      "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
       ]
     },
   ],
