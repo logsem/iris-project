@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Le Temps des Cerises: Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities",
+      "authors": [
+        "Aïna Linn Georges",
+        "Alix Trieu",
+        "Lars Birkedal"
+      ],
+      "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-directed-capabilities-final.pdf" },
+        { "name": "Coq development", "url": "https://github.com/logsem/cerise-stack-monotone" }
+      ]
+    },
+    {
       "title": "Actris 2.0: Asynchronous Session-Type Based Reasoning in Separation Logic",
       "authors": [
         "Jonas Kastberg Hinrichsen",
