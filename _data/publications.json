@@ -363,9 +363,9 @@
         "Jesper Bengtson"
       ],
       "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "pdf_url": "pdfs/2021-cpp-sessions-final.pdf",
       "awards": [ "CPP 2021 Distinguished Paper Award" ],
       "other_urls": [
-        { "name": "[preprint] .pdf", "url": "pdfs/2021-cpp-sessions-final.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
       ]
     },
