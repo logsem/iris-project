@@ -11,16 +11,9 @@
   <title>Iris Workshop 2022</title>
 
   <link rel="stylesheet" href="../bootstrap.min.css">
+  <script src="../jquery.min.js"></script>
   <script src="../bootstrap.min.js"></script>
-  
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-  .abstract {
-    border : 1px solid #888888;
-    padding: 10px;
-    margin-bottom: 4px;
-  }
-  </style>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -52,18 +45,55 @@
   <hr>
   <p>The following speakers have confirmed to give an invited talk:</p>
   <ul>
-  <li><a href="https://cs.au.dk/~ageorges/">Aïna Linn Georges</a> (Aarhus University, Denmark)</li>
-  <li><a href="https://users.ece.cmu.edu/~afromher/">Aymeric Fromherz</a> (Inria, France)</li>
-  <li><a href="https://www.emanueledosualdo.com/">Emanuele d'Osualdo</a> (MPI-SWS, Germany)</li>
-  <li>Ike Mulder (Radboud University Nijmegen, The Netherlands)</li>
-  <li>Koen Jacobs (KU Leuven, Belgium)</li>
+  <li><a href="https://cs.au.dk/~ageorges/">Aïna Linn Georges (Aarhus University, Denmark)</a>:
+    Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities
+    <a href="#aina" data-toggle="collapse">[abstract]</a>
+    <div id="aina" class="abstract collapse">
+    Capability machines are a type of CPUs that support fine-grained privilege separation using capabilities, machine words that include forms of authority. Formal models of capability machines and associated calling conventions have so far focused on establishing two forms of stack safety properties, namely local state encapsulation and well-bracketed control flow. In this joint work with Alix Trieu and Lars Birkedal, we present a novel kind of directed capability  and show how to use them to make an earlier suggested calling convention more efficient. We define unary and binary logical relations, expressive enough to reason about temporal stack safety (in addition to local state encapsulation and well-bracketed control flow), and use them to verify concrete examples, all mechanised in Iris.</div>
+    </li>
+  <li><a href="https://users.ece.cmu.edu/~afromher/">Aymeric Fromherz (Inria, France)</a>:
+    Steel, a Concurrent Separation Logic for F*
+    <a href="#aymeric" data-toggle="collapse">[abstract]</a>
+    <div id="aymeric" class="abstract collapse">
+    F* is a proof-oriented programming language with support for dependent types and user-defined effects, which has been used to develop several sequential real-world applications, such as the HACL*/EverCrypt cryptographic provider and the EverParse library of verified parsers and serializers. In this talk, we present Steel, a framework based on concurrent separation logic that extends F* with support for concurrency. Steel draws inspiration from Iris and provides a highly expressive, impredicative separation logic with support for partial commutative monoids and dynamically allocated invariants. However, while Iris provides a powerful logical framework into which other logics and programming languages can be embedded, Steel instead aims to extend an existing proof assistant's language and reasoning facilities, leading to several design decisions that distinguish it from Iris.<br>
+
+In this talk, we will give a tour of Steel, and emphasize on the significant points of contrast with Iris. In particular, we will present how we shallowly embed a concurrent separation logic into F*, and provide a high level of proof automation through a cooperation between the Z3 SMT solver and custom decision procedures implemented as F* tactics. We will finally demonstrate the programmability of Steel by presenting the implementation and verification of several libraries that illustrate key features of the framework.
+    </div></li>
+  <li><a href="https://www.emanueledosualdo.com/">Emanuele d'Osualdo (MPI-SWS, Germany)</a>:
+    TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs
+    <a href="#emanuele" data-toggle="collapse">[abstract]</a>
+    <div id="emanuele" class="abstract collapse">
+    Modern concurrent separation logics achieved great compositionality for proofs of partial correctness of fine-grained shared-memory concurrent programs. We have comparatively little understanding of compositional reasoning about progress (liveness) properties: that is, something good eventually happens (e.g. termination, deadlock-freedom). Yet, the intricacies of the design of concurrent programs often arise precisely from the need to guarantee progress properties.<br>
+
+    We introduce TaDA Live, a compositional separation logic for reasoning about the termination of fine-grained concurrent programs. In this talk, we will explain the design of TaDA Live total specifications and verification through examples. We will demonstrate that our specifications are expressive, concise, abstract, and atomic. To show they are also useful, we will give an overview of the verification system that uses these specifications. The proof system achieves compositionality by introducing a number of innovations: ghost state for liveness, modular deadlock detection and thread-local liveness reasoning.
+    </div></li>
+  <li>Ike Mulder (Radboud University Nijmegen, The Netherlands):
+    Automating your Iris proofs with Diaframe
+    <a href="#ike" data-toggle="collapse">[abstract]</a>
+    <div id="ike" class="abstract collapse">
+    Proofs in Iris often contain steps that are 'obvious' for humans, yet difficult for automation. Think of closing invariants, instantiating existentials, and mutating ghost state. Existing tools like eauto and iFrame are not always able to handle such cases.
+In this talk, I will demonstrate Diaframe: a plugin for Iris that offers strong, extensible proof automation.
+Inspired by ideas from logic programming and bi-abduction, Diaframe can open and close invariants when appropriate, perform ghost updates automatically, and can easily be mixed with existing interactive proofs. I will walk you through the process of extending Diaframe for different programming languages and resources, and discuss some of the limitations and open problems.
+    </div></li>
+  <li>Koen Jacobs (KU Leuven, Belgium):
+    Purity of an ST Monad: Full Abstraction by Semantically Typed Back-Translation
+    <a href="#koen" data-toggle="collapse">[abstract]</a>
+    <div id="koen" class="abstract collapse">
+    In 1995, Launchbury and Peyton Jones extended Haskell with an ST monad that allows the programmer to use higher-order mutable state. They informally argued that these state computations were safely encapsulated, and as such, that the rich reasoning principles stemming from the *purity* of the language, were not threatened. <br>
+
+    In this talk, we give a formal account of the preservation of *purity* after adding an ST monad to a simply-typed call-by-value recursive lambda calculus. We state and prove full abstraction when embedding the pure language into its extension with ST;
+contextual equivalences from the pure language continue to hold in the presence of ST.<br>
+
+    Proving full abstraction of compilers is usually done by emulating or *back-translating* the target features (here: ST computations) into the source language, a well-known challenge in the secure compilation community. We employ a novel proof technique for proving our full abstraction result that allows us to use a semantically (but not syntactically) typed back-translation into an intermediate language.<br>
+
+    In this talk, we'll spend some time on this proof technique. Specifically, we'll go over the intermediate semantically-typed language which is defined by logical relations expressed in the Iris framework and sketch out why a semantically typed back-translation is indeed sufficient. As mentioned, we'll apply the technique to back-translate ST computations. Lastly, we'll contemplate a bit about what the proof technique may entail more generally.
+    </div></li>
   </ul>
   <p>In addition to the invited talks, there will be a number of contributed talks.
   Various speakers have already confirmed to give a contributed talk (a list with titles and abstracts will be displayed in due course), but there are still a number of spots left.
   If you would like to give a contributed talk or have a suggestion for a speaker, please send an e-mail to the organizers.
   </div>
 
-  
   <div class="row" style="margin-bottom: 20px;">
   <h2><a name="location"></a>Location</h2>
   <hr>
