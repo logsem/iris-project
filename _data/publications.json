@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Diaframe: Automated Verification of Fine-Grained Concurrent Programs in Iris",
+      "authors": [
+        "Ike Mulder",
+        "Robbert Krebbers",
+        "Herman Geuvers",
+      ],
+      "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2022-pldi-diaframe-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
+      ]
+    },
+    {
       "title": "Le Temps des Cerises: Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities",
       "authors": [
         "Aïna Linn Georges",
@@ -897,19 +910,6 @@
     }
   ],
   "draft_papers": [
-    {
-      "title": "Diaframe: Automated Verification of Fine-Grained Concurrent Programs in Iris",
-      "authors": [
-        "Ike Mulder",
-        "Robbert Krebbers",
-        "Herman Geuvers",
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "https://robbertkrebbers.nl/research/articles/diaframe.pdf",
-      "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/automation" }
-      ]
-    },
     {
       "title": "Trillium: Unifying Refinement and Higher-Order Distributed Separation Logic",
       "authors": [
