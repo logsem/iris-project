@@ -23,7 +23,7 @@
     <p class="lead">2 May – 6 May 2022, Radboud University Nijmegen, The Netherlands</p>
     <p>
       <a href="#invited" class="btn btn-primary">Invited talks</a>
-      <a href="#contributed" class="btn btn-primary">Contributed talks</a>
+      <a href="#program" class="btn btn-primary">Program</a>
       <a href="#location" class="btn btn-primary">Location</a>
       <a href="#organizers" class="btn btn-primary">Organizers</a>
       <a href="#registration" class="btn btn-primary">Registration</a>
@@ -46,12 +46,50 @@
   <hr>
   <ul>
   <li><a href="https://cs.au.dk/~ageorges/">Aïna Linn Georges (Aarhus University, Denmark)</a>:
-    Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities
-    <a href="#aina" data-toggle="collapse">[abstract]</a>
-    <div id="aina" class="abstract collapse">
-    Capability machines are a type of CPUs that support fine-grained privilege separation using capabilities, machine words that include forms of authority. Formal models of capability machines and associated calling conventions have so far focused on establishing two forms of stack safety properties, namely local state encapsulation and well-bracketed control flow. In this joint work with Alix Trieu and Lars Birkedal, we present a novel kind of directed capability  and show how to use them to make an earlier suggested calling convention more efficient. We define unary and binary logical relations, expressive enough to reason about temporal stack safety (in addition to local state encapsulation and well-bracketed control flow), and use them to verify concrete examples, all mechanised in Iris.</div>
-    </li>
+    Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities</li>
   <li><a href="https://users.ece.cmu.edu/~afromher/">Aymeric Fromherz (Inria, France)</a>:
+    Steel, a Concurrent Separation Logic for F*</li>
+  <li><a href="https://www.emanueledosualdo.com/">Emanuele d'Osualdo (MPI-SWS, Germany)</a>:
+    TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs</li>
+  <li><a href="https://ikemulder.nl/">Ike Mulder (Radboud University Nijmegen, The Netherlands)</a>:
+    Automating your Iris proofs with Diaframe</li>
+  <li>Koen Jacobs (KU Leuven, Belgium):
+    Purity of an ST Monad: Full Abstraction by Semantically Typed Back-Translation</li>
+  </ul>
+  </div>
+
+  <div class="row" style="margin-bottom: 20px;">
+  <h2><a name="program"></a>Program</h2>
+  <hr>
+  <h3>Monday 2 May</h3>
+  <ul>
+  <li>09:00 - 09:30: <a href="https://jihgfee.github.io/">Jonas Kastberg Hinrichsen (Aarhus University, Denmark)</a>:
+    The Actris Ghost Theory: Session Type-Based Ghost Theory for Reasoning about Reliable Communication
+    <a href="#jonas" data-toggle="collapse">[abstract]</a>
+    <div id="jonas" class="abstract collapse">
+    Binary sessions, specifying bidirectional exchanges of messages between two processes, has widely been used to model idealised reliable communication, where messages are never dropped, duplicated, or arrive out of order. Such sessions allow for sophisticated protocol structures, as evidenced by the ever expanding work on session types, a behavioural type system for specifying the types of
+individual messages of a sequence of exchanges.<br>
+    However, the expressivity of these session types is often restricted to a decidable fragment, which limits their capabilities for reasoning about functional correctness. Furthermore, the session types literature primarily considers the idealised setting,
+which does not account for more complex reliable communication layers, e.g. with message duplication alongside duplicate-protection.<br>
+    In this talk, I will cover the ongoing story of Actris, a framework for session type-based reasoning in separation logic, and how it can be used to reason about reliable communication in arbitrary settings. In particular, I will elaborate on a generic process of applying the ghost theory of Actris to obtain reliable communication primitives for systems with an arbitrary communication layer. To this effect, I provide a concrete instantiation of the Actris ghost theory for node-local reliable channels in an ML-like language.
+    </div></li>
+  <li>09:30 - 10:00: <a href="https://cs.au.dk/~gondelman/">Léon Gondelman (Aarhus University, Denmark)</a>:
+    Tying Loose Ends: Modular Verification of Client-Server Communication using Distributed Separation Logic and Dependent Separation Protocols
+    <a href="#leon" data-toggle="collapse">[abstract]</a>
+    <div id="leon" class="abstract collapse">
+    In the past few years, Iris has been successfully applied to achieve modular verification of communicating processes in two different directions. On one side, the Actris project introduced binary session protocols as a high-level specification pattern to reason about connected reliable binary communication but has applied it to reason about message-passing concurrency, where the communication layer itself is reliable. On the other side, Aneris project enabled reasoning about realistic distributed programs, which communicate over an unreliable UDP-like network. This can suit reasoning about programs for which connected or reliable communication is not needed but requires to set up mechanisms such as retransmission/acknowledgments and sequence numbering of messages every time the session guarantees (in-order message delivery without duplicates) are needed.<br>
+    Together with Jonas Kastberg Hinrichsen we have recently let Aneris and Actris projects meet to enable reasoning about reliable communication in distributed systems. The rendez-vous point is our verified library that provides BSD socket-like API primitives (connect, listen, accept, send, recv) for client-server reliable communication which we have implemented in OCaml. Our implementation is then automatically translated into Aneris, where it is verified in a highly modular way: (a) the four-way handshake initialization and the retransmission/acknowledgments mechanisms are verified using all of Aneris facilities to reason about node-local concurrency and networking; (b) the data exchange send and receive operations exposed to the user by the API are verified using session dependent protocols of Actris (c) to verify clients against our library one need only use the specified API, which carries away internal details of the concrete proof.<br>
+    Our work provides hence a piece of additional evidence that Actris Ghost Theory represents a general domain-independent framework for reliable communication and allows using Aneris to reason both about client-server reliable communication and unreliable unconnected communication within the same framework. In this talk, I will cover some of the key aspects and interesting points of our work and explain how this modularity has been achieved.
+    </div></li>
+  <li>10:00 - 10:30: <a href="https://julesjacobs.com/">Jules Jacobs (Radboud University Nijmegen, The Netherlands)</a>:
+    Connectivity Graphs: A Method for Proving Deadlock Freedom Based on Separation Logic
+    <a href="#jules" data-toggle="collapse">[abstract]</a>
+    <div id="jules" class="abstract collapse">
+    Linear types can be used to guarantee memory leak freedom, and also to guarantee deadlock freedom (e.g. with session types).
+Proving such properties formally in Coq is made challenging because this relies on reasoning about the acyclicity of the connectivity graph structure between threads and the communication channels that connect them. We introduce a generic connectivity graph framework to encapsulate the reasoning about such graph structure away from the language-specific reasoning about typing. This framework can be used to prove deadlock and memory leak freedom in the style of progress and preservation and uses <em>separation logic</em> as a meta theoretic tool to treat connectivity graph edges and labels substructurally. To prove preservation locally, we distill generic separation logic rules for <em>local graph transformations</em> that preserve acyclicity of the connectivity graph. To prove global progress locally, we introduce a <em>waiting induction</em> principle for acyclic connectivity graphs. We use the framework to give mechanized proofs of deadlock and memory leak freedom for a variant GV (a session typed functional language), MPGV (a new variant of GV featuring multiparty session types), and μGV (a new minimalist concurrent lambda calculus). In the future, we would like to investigate whether connectivity graphs can also be used to create an Iris-based program logic that ensures deadlock freedom.
+    </div></li>
+  <li>10:30 - 11:00: <strong>Coffee break</strong></li>
+  <li>11:00 - 12:00: <a href="https://users.ece.cmu.edu/~afromher/">Aymeric Fromherz (Inria, France)</a>:
     Steel, a Concurrent Separation Logic for F*
     <a href="#aymeric" data-toggle="collapse">[abstract]</a>
     <div id="aymeric" class="abstract collapse">
@@ -59,15 +97,14 @@
 
 In this talk, we will give a tour of Steel, and emphasize on the significant points of contrast with Iris. In particular, we will present how we shallowly embed a concurrent separation logic into F*, and provide a high level of proof automation through a cooperation between the Z3 SMT solver and custom decision procedures implemented as F* tactics. We will finally demonstrate the programmability of Steel by presenting the implementation and verification of several libraries that illustrate key features of the framework.
     </div></li>
-  <li><a href="https://www.emanueledosualdo.com/">Emanuele d'Osualdo (MPI-SWS, Germany)</a>:
-    TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs
-    <a href="#emanuele" data-toggle="collapse">[abstract]</a>
-    <div id="emanuele" class="abstract collapse">
-    Modern concurrent separation logics achieved great compositionality for proofs of partial correctness of fine-grained shared-memory concurrent programs. We have comparatively little understanding of compositional reasoning about progress (liveness) properties: that is, something good eventually happens (e.g. termination, deadlock-freedom). Yet, the intricacies of the design of concurrent programs often arise precisely from the need to guarantee progress properties.<br>
-
-    We introduce TaDA Live, a compositional separation logic for reasoning about the termination of fine-grained concurrent programs. In this talk, we will explain the design of TaDA Live total specifications and verification through examples. We will demonstrate that our specifications are expressive, concise, abstract, and atomic. To show they are also useful, we will give an overview of the verification system that uses these specifications. The proof system achieves compositionality by introducing a number of innovations: ghost state for liveness, modular deadlock detection and thread-local liveness reasoning.
-    </div></li>
-  <li>Ike Mulder (Radboud University Nijmegen, The Netherlands):
+  <li>12:00 - 12:30: <a href="https://people.mpi-sws.org/~msammler/">Michael Sammler (MPI-SWS, Germany)</a>:
+    Predictable, efficient, and extensible Iris automation with Lithium
+    <a href="#michael" data-toggle="collapse">[abstract]</a>
+    <div id="michael" class="abstract collapse">
+    This talk presents the Lithium proof automation for Iris that has been used to automate a refinement and ownership type system for C (RefinedC) and a separation logic for a realistic model of Arm and RISC-V assembly (Islaris). Even though these applications are quite complex, the core Lithium proof automation is based on a simple principle that everyone using Coq is familiar with: goal-directed
+proof search without backtracking. This talk shows how proof automation via goal-directed proof search can be applied to Iris and how it results in a predictable, efficient, and extensible proof automation for Iris. This talk will be structured as an interactive demonstration of Lithium in Coq.</div></li>
+  <li>12:30 - 14:00: <strong>Lunch</strong></li>
+  <li>14:00 - 15:00: <a href="https://ikemulder.nl/">Ike Mulder (Radboud University Nijmegen, The Netherlands)</a>:
     Automating your Iris proofs with Diaframe
     <a href="#ike" data-toggle="collapse">[abstract]</a>
     <div id="ike" class="abstract collapse">
@@ -75,7 +112,37 @@ In this talk, we will give a tour of Steel, and emphasize on the significant poi
 In this talk, I will demonstrate Diaframe: a plugin for Iris that offers strong, extensible proof automation.
 Inspired by ideas from logic programming and bi-abduction, Diaframe can open and close invariants when appropriate, perform ghost updates automatically, and can easily be mixed with existing interactive proofs. I will walk you through the process of extending Diaframe for different programming languages and resources, and discuss some of the limitations and open problems.
     </div></li>
-  <li>Koen Jacobs (KU Leuven, Belgium):
+  <li>15:00 - 15:30: <a href="https://soft.vub.ac.be/~skeuchel/">Steven Keuchel (Vrije Universiteit Brussels, Belgium)</a>:
+    Verified Symbolic Execution with Kripke Specification Monads (and no Meta-Programming)
+    <a href="#steven" data-toggle="collapse">[abstract]</a>
+    <div id="steven" class="abstract collapse">
+    Verifying soundness of symbolic execution-based program verifiers is a significant challenge. This is especially true if the resulting tool needs to be usable outside of the proof assistant, in which case we cannot rely on shallowly embedded assertion logics and meta-programming. The tool needs to manipulate deeply embedded assertions, and it is crucial for efficiency to eagerly prune unreachable paths and simplify intermediate assertions in a way that can be justified towards the soundness proof. Only a few such tools exist in the literature, and their soundness proofs are intricate and hard to generalize or reuse. We contribute a novel, systematic approach for the construction and soundness proof of such a symbolic execution-based verifier. We first implement a verification condition generator as an object language interpreter in a specification monad, using an abstract interface featuring angelic and demonic nondeterminism. Next, we build a symbolic executor by implementing a similar interpreter, in a symbolic specification monad. This symbolic monad lives in a universe that is Kripke-indexed by variables in scope and a path condition. Finally, we relate the resulting symbolic executor with the concrete verification condition generator using a Kripke logical relation. We report on the practical application of these techniques in Katamaran, a tool for verifying security guarantees offered by instruction set architectures (ISAs). The tool is fully verified by combining our symbolic execution machinery with a soundness proof of the concrete verification conditions against an axiomatized separation logic, and an Iris-based implementation of the axioms, proven sound against the operational semantics. Based on our experience with Katamaran, we can report good results on practicality and efficiency of the tool, demonstrating practical viability of our symbolic execution approach.</div>
+    </li>
+  <li>15:30 - 16:00: <strong>Coffee break</strong></li>
+  <li>16:00 - 16:30: <a href="https://cs.au.dk/~zyliu/">Zongyuan Liu (Aarhus University, Denmark)</a>:
+    A Separation Logic for Communicating Virtual Machines
+    <a href="#zongyuan" data-toggle="collapse">[abstract]</a>
+    <div id="zongyuan" class="abstract collapse">
+    A hypervisor is a piece of software that allows one host machine to support mutiple guest virtual machines (VMs). Hypervisors are used extensively for virtualization in cloud computing and more. A hypervisor ensures that each VM runs as if on bare metal, and at the same time pro- vides isolation, to separate untrusted code from security-critical code. We study the Hafnium hypervisor initially developed at Google. Hafnium implements hypercalls for communication among VMs, both via memory sharing and via message passing, following the FF-A specification of ARM, and Hafnium is claimed to provide memory isolation for those parts of the memory that are not shared via communication. We present an operational semantics which models the essential behavior of Hafnium, with fairly realistic hypercall interfaces. We further develop a program logic for modular formal verification of client VM programs that can communicate with other VMs via hypercalls, and a logical relation that captures the extent to which unknown code running on a VM is isolated from other VMs. Using the program logic and the logical relation, we reason about known VM programs that interact with VMs running arbitrary unknown code, and show robust safety: no matter what the unknown code does, it cannot violate specifications proved for the known code. This captures key aspects of the desired memory isolation properties of the hypervisor. All of the work has been mechanized using the Iris separation logic framework in Coq.<br>
+    Joint work with Sergei Stepanenko, Aslan Askarov, Jean Pichon-Pharabod, Amin Timany, Lars Birkedal.</div></li>
+  <li>16:30 - 17:00: Paolo G. Giarrusso (Bedrock Systems, Germany):
+    Programming a Microkernel Specification in Separation Logic
+    <a href="#paolo" data-toggle="collapse">[abstract]</a>
+    <div id="paolo" class="abstract collapse">
+    Microkernel specifications must support reasoning about well-behaved clients in the presence of untrusted code. To this end, one can give an operational model of the abstract machine offered by the operating system; but it is challenging to build a faithful large-footprint operational model for a realistic microkernel using fine-grained concurrency, which will expose non-deterministic behavior and non-atomic sequences of atomic steps.<br>
+		To address this problem, we give our microkernel specifications operational-like specifications directly in separation logic, similarly to what is done in TaDA. This way, we can use existential quantification to model non-deterministic choice, iterated atomic updates to express sequencing, and separating conjunction to model (a slightly relaxed form of) non-deterministic evaluation order that we have found suitable in practice. We apply these techniques to our specification of NOVA, the L4-family microkernel that forms the foundation of the BedRock HyperVisor.<br>
+		On top of these specifications, we can both derive pleasant reasoning principles for well-behaved code, and (according to a proof sketch) we can verify software in the presence of unverified code.<br>
+		Joint work with Paolo G. Giarrusso, Gregory Malecha, David Swasey, Yoichi Hirai.</div> </li>
+  <li>17:00 - 17:30: <a href="https://people.mpi-sws.org/~haidang/">Hai Dang (Bedrock Systems, Germany)</a>:
+    More hidden states, more modalities, and generalized invariants and ghost ownership
+    <a href="#hai" data-toggle="collapse">[abstract]</a>
+    <div id="hai" class="abstract collapse">
+    Local states are commonly used to maintain agreement within a component and isolation across components. A language level thread can has its own thread-local storage; a hypervisor maintains separate address spaces (virtual address translations) for its virtual machines; a processor has multiple-level caches that are local to a CPU core or a group of CPU cores. Reasoning about local states needs to make sure that (1) within a component, the local state is ambient, i.e. it is always readily available, but is unobtrusive to the reasoning and (2) across components, local states should be isolated, but can also be used in cross-component communications in a safe and secure way.<br>
+    Iris provides an abstraction called “monotone predicates” (monPred) to account for local states in form of "BI indices”, which was inspired by several weak memory developments in Iris. At BedRock Systems, we aim to handle, within a single logic, different types of local states at different levels of abstraction. This means that we also need to handle the composition, the interaction, and/or the abstraction between different types of local states. To that end, we develop “monotone lenses” to support the interaction between types of local states, and generalize monPred with monotone lenses, resulting in multiple local-state "modalities" inspired by the weak memory works. Furthermore, we push for the generalization of Iris invariants and ghost ownership for monPred with lenses.</div></li>
+  </ul>
+  <h3>Tuesday 3 May</h3>
+  <ul>
+  <li>09:00 - 10:00: Koen Jacobs (KU Leuven, Belgium):
     Purity of an ST Monad: Full Abstraction by Semantically Typed Back-Translation
     <a href="#koen" data-toggle="collapse">[abstract]</a>
     <div id="koen" class="abstract collapse">
@@ -88,86 +155,62 @@ contextual equivalences from the pure language continue to hold in the presence 
 
     In this talk, we'll spend some time on this proof technique. Specifically, we'll go over the intermediate semantically-typed language which is defined by logical relations expressed in the Iris framework and sketch out why a semantically typed back-translation is indeed sufficient. As mentioned, we'll apply the technique to back-translate ST computations. Lastly, we'll contemplate a bit about what the proof technique may entail more generally.
     </div></li>
-  </ul>
-  </div>
-
-  <div class="row" style="margin-bottom: 20px;">
-  <h2><a name="contributed"></a>Contributed talks</h2>
-  <hr>
-  <ul>
-  <li><a href="http://cambium.inria.fr/~gmevel/">Glen Mével (Inria, France)</a>:
-    Debits in nested suspensions: proof of Okasaki's banker's queue
-    <a href="#glen" data-toggle="collapse">[abstract]</a>
-    <div id="glen" class="abstract collapse">
-    By avoiding to compute the same thing twice, thunks are handy for implementing persistent data structures with good amortized time costs, regardless of their usage scenario. Okasaki's "banker's queue" is one such data structure; it uses a lazy list.<br>
-    Some program logics enable formal proofs of amortized time complexity by means of a resource called "time credits”. In an earlier work, we have shown how to construct time credits within Iris, thus enabling time reasoning in a general-purpose program logic with separation. We have demonstrated this by proving a specification for a library of thunks, following Danielsson (2008). A thunk predicate has a time debit to be paid before the thunk can be forced. However, our previous work did not support anticipating debit from a nested thunk in an enclosing thunk; we need this reasoning rule to prove the banker's queue. Thus, we present an updated API and proof for thunks, and we sketch a proof of the correctness and amortized time complexity of the banker's queue. 
-    </div></li>
-  <li><a href="https://jihgfee.github.io/">Jonas Kastberg Hinrichsen (Aarhus University, Denmark)</a>:
-    The Actris Ghost Theory: Session Type-Based Ghost Theory for Reasoning about Reliable Communication
-    <a href="#jonas" data-toggle="collapse">[abstract]</a>
-    <div id="jonas" class="abstract collapse">
-    Binary sessions, specifying bidirectional exchanges of messages between two processes, has widely been used to model idealised reliable communication, where messages are never dropped, duplicated, or arrive out of order. Such sessions allow for sophisticated protocol structures, as evidenced by the ever expanding work on session types, a behavioural type system for specifying the types of
-individual messages of a sequence of exchanges.<br>
-    However, the expressivity of these session types is often restricted to a decidable fragment, which limits their capabilities for reasoning about functional correctness. Furthermore, the session types literature primarily considers the idealised setting,
-which does not account for more complex reliable communication layers, e.g. with message duplication alongside duplicate-protection.<br>
-    In this talk, I will cover the ongoing story of Actris, a framework for session type-based reasoning in separation logic, and how it can be used to reason about reliable communication in arbitrary settings. In particular, I will elaborate on a generic process of applying the ghost theory of Actris to obtain reliable communication primitives for systems with an arbitrary communication layer. To this effect, I provide a concrete instantiation of the Actris ghost theory for node-local reliable channels in an ML-like language.
-    </div></li>
-  <li><a href="https://julesjacobs.com/">Jules Jacobs (Radboud University Nijmegen, The Netherlands)</a>:
-    Connectivity Graphs: A Method for Proving Deadlock Freedom Based on Separation Logic
-    <a href="#jules" data-toggle="collapse">[abstract]</a>
-    <div id="jules" class="abstract collapse">
-    Linear types can be used to guarantee memory leak freedom, and also to guarantee deadlock freedom (e.g. with session types).
-Proving such properties formally in Coq is made challenging because this relies on reasoning about the acyclicity of the connectivity graph structure between threads and the communication channels that connect them. We introduce a generic connectivity graph framework to encapsulate the reasoning about such graph structure away from the language-specific reasoning about typing. This framework can be used to prove deadlock and memory leak freedom in the style of progress and preservation and uses <em>separation logic</em> as a meta theoretic tool to treat connectivity graph edges and labels substructurally. To prove preservation locally, we distill generic separation logic rules for <em>local graph transformations</em> that preserve acyclicity of the connectivity graph. To prove global progress locally, we introduce a <em>waiting induction</em> principle for acyclic connectivity graphs. We use the framework to give mechanized proofs of deadlock and memory leak freedom for a variant GV (a session typed functional language), MPGV (a new variant of GV featuring multiparty session types), and μGV (a new minimalist concurrent lambda calculus). In the future, we would like to investigate whether connectivity graphs can also be used to create an Iris-based program logic that ensures deadlock freedom.
-    </div></li>
-  <li><a href="https://cs.au.dk/~gondelman/">Léon Gondelman (Aarhus University, Denmark)</a>:
-    Tying Loose Ends: Modular Verification of Client-Server Communication using Distributed Separation Logic and Dependent Separation Protocols
-    <a href="#leon" data-toggle="collapse">[abstract]</a>
-    <div id="leon" class="abstract collapse">
-    In the past few years, Iris has been successfully applied to achieve modular verification of communicating processes in two different directions. On one side, the Actris project introduced binary session protocols as a high-level specification pattern to reason about connected reliable binary communication but has applied it to reason about message-passing concurrency, where the communication layer itself is reliable. On the other side, Aneris project enabled reasoning about realistic distributed programs, which communicate over an unreliable UDP-like network. This can suit reasoning about programs for which connected or reliable communication is not needed but requires to set up mechanisms such as retransmission/acknowledgments and sequence numbering of messages every time the session guarantees (in-order message delivery without duplicates) are needed.<br>
-    Together with Jonas Kastberg Hinrichsen we have recently let Aneris and Actris projects meet to enable reasoning about reliable communication in distributed systems. The rendez-vous point is our verified library that provides BSD socket-like API primitives (connect, listen, accept, send, recv) for client-server reliable communication which we have implemented in OCaml. Our implementation is then automatically translated into Aneris, where it is verified in a highly modular way: (a) the four-way handshake initialization and the retransmission/acknowledgments mechanisms are verified using all of Aneris facilities to reason about node-local concurrency and networking; (b) the data exchange send and receive operations exposed to the user by the API are verified using session dependent protocols of Actris (c) to verify clients against our library one need only use the specified API, which carries away internal details of the concrete proof.<br>
-    Our work provides hence a piece of additional evidence that Actris Ghost Theory represents a general domain-independent framework for reliable communication and allows using Aneris to reason both about client-server reliable communication and unreliable unconnected communication within the same framework. In this talk, I will cover some of the key aspects and interesting points of our work and explain how this modularity has been achieved.
-    </div></li>
-  <li><a href="https://people.mpi-sws.org/~msammler/">Michael Sammler (MPI-SWS, Germany)</a>:
-    Predictable, efficient, and extensible Iris automation with Lithium
-    <a href="#michael" data-toggle="collapse">[abstract]</a>
-    <div id="michael" class="abstract collapse">
-    This talk presents the Lithium proof automation for Iris that has been used to automate a refinement and ownership type system for C (RefinedC) and a separation logic for a realisic model of Arm and RISC-V assembly (Islaris). Even though these applications are quite complex, the core Lithium proof automation is based on a simple principle that everyone using Coq is familiar with: goal-directed
-proof search without backtracking. This talk shows how proof automation via goal-directed proof search can be applied to Iris and how it results in a predictable, efficient, and extensible proof automation for Iris. This talk will be structured as an interactive demonstration of Lithium in Coq.</div>
-    </li>
-  <li><a href="https://people.mpi-sws.org/~spies/">Simon Spies (MPI-SWS, Germany)</a>:
-    Later Credits: Resourceful Reasoning for the Later Modality
-    <a href="#simons" data-toggle="collapse">[abstract]</a>
-    <div id="simons" class="abstract collapse">
-    Iris integrates two major lines of semantics and verification research: separation logic and step-indexed logical relations. The symbiosis of both enables powerful reasoning principles for (among other things) modelling richly typed languages like Rust. To incorporate step-indexed logical relations, propositions are given meaning through a step-indexed model in Iris, and step-indexed reasoning is reflected into the logic through the so-called "later" modality. As users of Iris know well, this modality is a blessing and a curse. On the one hand, it provides an elegant, high-level account of step-indexed reasoning. On the other hand, when used in sufficiently sophisticated ways, it can become a nuisance, turning perfectly natural proof strategies into dead ends.<br>
-    In this talk, I will present our recent work on later credits, a new technique for escaping later-modality quagmires. By leveraging the second ancestor of Iris—separation logic—later credits turn "the right to eliminate a later" into an ownable resource, which is subject to all the traditional modular reasoning principles of separation logic. Later credits enable new kinds of nontrivial step-indexed arguments, and also simplify existing proofs (e.g., by removing make-laterable from logical atomicity and by admitting an invariant opening rule without laters).
-    </div></li>
-  <li><a href="https://simongregersen.com/">Simon Oddershede Gregersen (Aarhus University, Denmark)</a>:
-    Trillium: History-Sensitive Refinement in Separation Logic
-    <a href="#simon" data-toggle="collapse">[abstract]</a>
-    <div id="simon" class="abstract collapse">
-    Formal verification systems such as TLA+ have been widely used to design, model, and verify complex concurrent and distributed systems. In many of these tool suites, systems are modeled as state transition systems, and both safety and liveness properties can usually be checked. This enables users to reason about abstract system specifications and uncover design flaws, but it offers no guarantees about the implementations of systems nor about the relation between an implementation and its abstract specification.<br>
-    In this work, we show how to connect concrete implementations of concurrent and distributed systems to abstract system models. We develop Trillium, a language-agnostic separation logic framework for establishing history-sensitive refinement relations between programs and models. We use our logic to prove correctness of concrete implementations of two-phase commit and single-decree Paxos by showing that they refine their abstract TLA+ specifications. We further use our notion of refinement to transfer fairness assumptions on program executions to model traces and then transfer liveness properties of fair model traces back to program executions. This enables us to prove liveness properties such as strong eventual consistency of a concrete implementation of a Conflict-Free Replicated Data Type and fair termination of a concurrent program.</div>
-    </li>
-  <li><a href="https://soft.vub.ac.be/~skeuchel/">Steven Keuchel (Vrije Universiteit Brussels, Belgium)</a>:
-    Verified Symbolic Execution with Kripke Specification Monads (and no Meta-Programming)
-    <a href="#steven" data-toggle="collapse">[abstract]</a>
-    <div id="steven" class="abstract collapse">
-    Verifying soundness of symbolic execution-based program verifiers is a significant challenge. This is especially true if the resulting tool needs to be usable outside of the proof assistant, in which case we cannot rely on shallowly embedded assertion logics and meta-programming. The tool needs to manipulate deeply embedded assertions, and it is crucial for efficiency to eagerly prune unreachable paths and simplify intermediate assertions in a way that can be justified towards the soundness proof. Only a few such tools exist in the literature, and their soundness proofs are intricate and hard to generalize or reuse. We contribute a novel, systematic approach for the construction and soundness proof of such a symbolic execution-based verifier. We first implement a verification condition generator as an object language interpreter in a specification monad, using an abstract interface featuring angelic and demonic nondeterminism. Next, we build a symbolic executor by implementing a similar interpreter, in a symbolic specification monad. This symbolic monad lives in a universe that is Kripke-indexed by variables in scope and a path condition. Finally, we relate the resulting symbolic executor with the concrete verification condition generator using a Kripke logical relation. We report on the practical application of these techniques in Katamaran, a tool for verifying security guarantees offered by instruction set architectures (ISAs). The tool is fully verified by combining our symbolic execution machinery with a soundness proof of the concrete verification conditions against an axiomatized separation logic, and an Iris-based implementation of the axioms, proven sound against the operational semantics. Based on our experience with Katamaran, we can report good results on practicality and efficiency of the tool, demonstrating practical viability of our symbolic execution approach.</div>
-    </li>
-  <li><a href="https://vtss.doc.ic.ac.uk/people/rao.html">Xiaojia Rao (Imperial College London, UK)</a>:
+  <li>10:00 - 10:30: <a href="https://vtss.doc.ic.ac.uk/people/rao.html">Xiaojia Rao (Imperial College London, UK)</a>:
     Iris Wasm: A Program Logic for WebAssembly
     <a href="#xiaojia" data-toggle="collapse">[abstract]</a>
     <div id="xiaojia" class="abstract collapse">
     WebAssembly (Wasm) is a modern bytecode language, primarily designed to be a compilation target for other languages to run in browsers efficiently. The WebAssembly standard is described informal semantics, with several mechanised specifications including our work on WasmCert-Coq. In this talk, we describe Iris Wasm, a higher-order program logic for Wasm which builds on WasmCert-Coq and our previous first-order program logic for Wasm.<br>
     Unlike ML-like languages (for example, HeapLang) which have been well-studied in Iris, Wasm is a stack-based language with complex control-flow instructions. Some of the common designs and techniques in Iris for reasoning about program behaviour are therefore not appropriate for Wasm. Iris Wasm therefore builds on Wasm directly, instead of working with an encoding of Wasm in a functional language. We will compare Iris reasoning for WebAssembly and HeapLang, highlighting the interesting differences. We will also demonstrate reasoning in Iris Wasm with some simple examples.
     </div></li>
-  <li><a href="https://cs.au.dk/~zyliu/">Zongyuan Liu (Aarhus University, Denmark)</a>:
-    A Separation Logic for Communicating Virtual Machines
-    <a href="#zongyuan" data-toggle="collapse">[abstract]</a>
-    <div id="zongyuan" class="abstract collapse">
-    A hypervisor is a piece of software that allows one host machine to support mutiple guest virtual machines (VMs). Hypervisors are used extensively for virtualization in cloud computing and more. A hypervisor ensures that each VM runs as if on bare metal, and at the same time pro- vides isolation, to separate untrusted code from security-critical code. We study the Hafnium hypervisor initially developed at Google. Hafnium implements hypercalls for communication among VMs, both via memory sharing and via message passing, following the FF-A specification of ARM, and Hafnium is claimed to provide memory isolation for those parts of the memory that are not shared via communication. We present an operational semantics which models the essential behavior of Hafnium, with fairly realistic hypercall interfaces. We further develop a program logic for modular formal verification of client VM programs that can communicate with other VMs via hypercalls, and a logical relation that captures the extent to which unknown code running on a VM is isolated from other VMs. Using the program logic and the logical relation, we reason about known VM programs that interact with VMs running arbitrary unknown code, and show robust safety: no matter what the unknown code does, it cannot violate specifications proved for the known code. This captures key aspects of the desired memory isolation properties of the hypervisor. All of the work has been mechanized using the Iris separation logic framework in Coq.<br>
-    Joint work with Sergei Stepanenko, Aslan Askarov, Jean Pichon-Pharabod, Amin Timany, Lars Birkedal.</div>
+  <li>10:30 - 11:00: <strong>Coffee break</strong></li>
+  <li>11:00 - 12:00: <a href="https://cs.au.dk/~ageorges/">Aïna Linn Georges (Aarhus University, Denmark)</a>:
+    Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities
+    <a href="#aina" data-toggle="collapse">[abstract]</a>
+    <div id="aina" class="abstract collapse">
+    Capability machines are a type of CPUs that support fine-grained privilege separation using capabilities, machine words that include forms of authority. Formal models of capability machines and associated calling conventions have so far focused on establishing two forms of stack safety properties, namely local state encapsulation and well-bracketed control flow. In this joint work with Alix Trieu and Lars Birkedal, we present a novel kind of directed capability  and show how to use them to make an earlier suggested calling convention more efficient. We define unary and binary logical relations, expressive enough to reason about temporal stack safety (in addition to local state encapsulation and well-bracketed control flow), and use them to verify concrete examples, all mechanised in Iris.</div>
     </li>
+  <li>12:00 - 12:30: <a href="https://cs.au.dk/~vindum/">Simon Friis Vindum (Aarhus University, Denmark)</a>:
+  	A Concurrent Separation Logic for Weak Persistent Memory
+  	<a href="#simonf" data-toggle="collapse">[abstract]</a>
+    <div id="simonf" class="abstract collapse">
+    In this talk, I will present a concurrent separation logic capable of verifying programs that make use of weak persistent memory. Persistent memory (also known as non-volatile memory) is a recently developed memory technology that promises to revolutionize the traditional storage hierarchy by combining the speed of DRAM with the durability of SDD/HDD. This makes it possible to forego secondary storage and store data permanently in memory — thus avoiding the complexity and overhead of serializing data to slower, but durable, secondary storage. The CPU’s caches are however expected to remain volatile. This means that data can not be written atomically to the persistent memory. Only a weak ordering on the order in which writes reach persistent memory is known. This makes reasoning about programs that makes use of persistent memory challenging, which is further complicated by the fact that the content of the persistent memory should always be recoverable after a crash.
+    </div></li>
+  <li>12:30 - 14:00: <strong>Lunch</strong></li>
+  <li>14:00 - 15:00: <a href="https://www.emanueledosualdo.com/">Emanuele d'Osualdo (MPI-SWS, Germany)</a>:
+    TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs
+    <a href="#emanuele" data-toggle="collapse">[abstract]</a>
+    <div id="emanuele" class="abstract collapse">
+    Modern concurrent separation logics achieved great compositionality for proofs of partial correctness of fine-grained shared-memory concurrent programs. We have comparatively little understanding of compositional reasoning about progress (liveness) properties: that is, something good eventually happens (e.g. termination, deadlock-freedom). Yet, the intricacies of the design of concurrent programs often arise precisely from the need to guarantee progress properties.<br>
+
+    We introduce TaDA Live, a compositional separation logic for reasoning about the termination of fine-grained concurrent programs. In this talk, we will explain the design of TaDA Live total specifications and verification through examples. We will demonstrate that our specifications are expressive, concise, abstract, and atomic. To show they are also useful, we will give an overview of the verification system that uses these specifications. The proof system achieves compositionality by introducing a number of innovations: ghost state for liveness, modular deadlock detection and thread-local liveness reasoning.
+    </div></li>
+  <li>15:00 - 15:30: <a href="https://simongregersen.com/">Simon Oddershede Gregersen (Aarhus University, Denmark)</a>:
+    Trillium: History-Sensitive Refinement in Separation Logic
+    <a href="#simon" data-toggle="collapse">[abstract]</a>
+    <div id="simon" class="abstract collapse">
+    Formal verification systems such as TLA+ have been widely used to design, model, and verify complex concurrent and distributed systems. In many of these tool suites, systems are modeled as state transition systems, and both safety and liveness properties can usually be checked. This enables users to reason about abstract system specifications and uncover design flaws, but it offers no guarantees about the implementations of systems nor about the relation between an implementation and its abstract specification.<br>
+    In this work, we show how to connect concrete implementations of concurrent and distributed systems to abstract system models. We develop Trillium, a language-agnostic separation logic framework for establishing history-sensitive refinement relations between programs and models. We use our logic to prove correctness of concrete implementations of two-phase commit and single-decree Paxos by showing that they refine their abstract TLA+ specifications. We further use our notion of refinement to transfer fairness assumptions on program executions to model traces and then transfer liveness properties of fair model traces back to program executions. This enables us to prove liveness properties such as strong eventual consistency of a concrete implementation of a Conflict-Free Replicated Data Type and fair termination of a concurrent program.</div></li>
+  <li>15:30 - 16:00: <strong>Coffee break</strong></li>
+  <li>16:00 - 16:30: <a href="https://people.mpi-sws.org/~spies/">Simon Spies (MPI-SWS, Germany)</a>:
+    Later Credits: Resourceful Reasoning for the Later Modality
+    <a href="#simons" data-toggle="collapse">[abstract]</a>
+    <div id="simons" class="abstract collapse">
+    Iris integrates two major lines of semantics and verification research: separation logic and step-indexed logical relations. The symbiosis of both enables powerful reasoning principles for (among other things) modelling richly typed languages like Rust. To incorporate step-indexed logical relations, propositions are given meaning through a step-indexed model in Iris, and step-indexed reasoning is reflected into the logic through the so-called "later" modality. As users of Iris know well, this modality is a blessing and a curse. On the one hand, it provides an elegant, high-level account of step-indexed reasoning. On the other hand, when used in sufficiently sophisticated ways, it can become a nuisance, turning perfectly natural proof strategies into dead ends.<br>
+    In this talk, I will present our recent work on later credits, a new technique for escaping later-modality quagmires. By leveraging the second ancestor of Iris—separation logic—later credits turn "the right to eliminate a later" into an ownable resource, which is subject to all the traditional modular reasoning principles of separation logic. Later credits enable new kinds of nontrivial step-indexed arguments, and also simplify existing proofs (e.g., by removing make-laterable from logical atomicity and by admitting an invariant opening rule without laters).
+    </div></li>
+  <li>16:30 - 17:00: <a href="http://cambium.inria.fr/~gmevel/">Glen Mével (Inria, France)</a>:
+    Debits in nested suspensions: proof of Okasaki's banker's queue
+    <a href="#glen" data-toggle="collapse">[abstract]</a>
+    <div id="glen" class="abstract collapse">
+    By avoiding to compute the same thing twice, thunks are handy for implementing persistent data structures with good amortized time costs, regardless of their usage scenario. Okasaki's "banker's queue" is one such data structure; it uses a lazy list.<br>
+    Some program logics enable formal proofs of amortized time complexity by means of a resource called "time credits". In an earlier work, we have shown how to construct time credits within Iris, thus enabling time reasoning in a general-purpose program logic with separation. We have demonstrated this by proving a specification for a library of thunks, following Danielsson (2008). A thunk predicate has a time debit to be paid before the thunk can be forced. However, our previous work did not support anticipating debit from a nested thunk in an enclosing thunk; we need this reasoning rule to prove the banker's queue. Thus, we present an updated API and proof for thunks, and we sketch a proof of the correctness and amortized time complexity of the banker's queue. 
+    </div></li>
+  <li>17:00 - 17:30: <a href="https://abeln.github.io/">Abel Nieto (Aarhus University, Denmark)</a>:
+    Modular Verification of Commutative Replicated Datatypes in Separation Logic
+    <a href="#abel" data-toggle="collapse">[abstract]</a>
+    <div id="abel" class="abstract collapse">
+    Commutative Replicated Data Types (CRDTs) are a family of distributed data structures where all operations are designed to commute, so that replica states eventually converge. Additionally, CRDTs require that operations be propagated between replicas in causal order. This talk presents a framework for verifying safety properties of OCaml CRDT implementations using separation logic. The framework consists of two libraries. One implements a Reliable Causal Broadcast (RCB) protocol so that replicas can exchange messages in causal order. A second OpLib library then uses RCB to export a CRDT builder interface that simplifies the creation (and correctness proofs) of new CRDTs. OpLib allows clients to implement new CRDTs as purely-functional data structures, without having to reason about network operations, concurrency control and mutable state, and without having to re-implement causal broadcast each time. Using OpLib, we have implemented 10 sample CRDTs from the literature, including multiple versions of replicated registers and sets, as well as two CRDT combinators for products and maps. Our proofs are conducted in the Aneris distributed separation logic.
+    </div></li>
   </ul>
   </div>
 
