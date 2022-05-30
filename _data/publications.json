@@ -932,6 +932,20 @@
         { "name": "Coq development", "url": "artifacts/2021-submitted-trillium.zip" }
       ]
     },
+    {
+      "title": "Modular Verification of Op-Based CRDTs in Separation Logic",
+      "authors": [
+        "Abel Nieto",
+        "Léon Gondelman",
+        "Alban Reynaud",
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "description": "Submitted for publication",
+      "pdf_url": "pdfs/2022-oopsla-crdts-submission.pdf",
+      "other_urls": [
+      ]
+    },
   ],
   "others": [
     {
