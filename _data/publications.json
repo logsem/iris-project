@@ -34,8 +34,8 @@
         "Robbert Krebbers"
       ],
       "where_published": "In LMCS 2022: Logical Methods in Computer Science",
+      "pdf_url": "pdfs/2022-lmcs-actris2-final.pdf",
       "other_urls": [
-        { "name": "[preprint] .pdf", "url": "pdfs/2020-actris2-submission.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
       ]
     },
