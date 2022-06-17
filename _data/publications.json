@@ -1,6 +1,41 @@
 {
   "publications": [
     {
+      "title": "Compass: Strong and Compositional Library Specifications in Relaxed Memory Separation Logic",
+      "authors": [
+	  "Hoang-Hai Dang",
+	  "Jaehwang Jung",
+	  "Jaemin Choi",
+	  "Duc-Than Nguyen",
+	  "William Mansky",
+	  "Jeehoon Kang",
+	  "Derek Dreyer"
+      ],
+      "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/compass/paper.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/gpfsl/-/tree/ci/compass" },
+	{ "name": "website", "url": "https://plv.mpi-sws.org/compass" }
+      ]
+    },
+    {
+      "title": "RustHornBelt: A Semantic Foundation for Functional Verification of Rust Programs with Unsafe Code",
+      "authors": [
+	  "Yusuke Matsushita",
+	  "Xavier Denis",
+	  "Jacques-Henri Jourdan",
+	  "Derek Dreyer"
+      ],
+      "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/rusthornbelt/paper.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/lambda-rust/-/tree/masters/rusthornbelt" },
+	{ "name": "Creusot development", "url": "https://github.com/xldenis/rhb-specs" },
+	{ "name": "artifact", "url": "https://doi.org/10.5281/zenodo.6426048" },
+	{ "name": "errata", "url": "https://people.mpi-sws.org/~dreyer/papers/rusthornbelt/errata.txt" }
+      ]
+    },
+    {
       "title": "Diaframe: Automated Verification of Fine-Grained Concurrent Programs in Iris",
       "authors": [
         "Ike Mulder",
@@ -11,6 +46,24 @@
       "pdf_url": "pdfs/2022-pldi-diaframe-final.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
+      ]
+    },
+    {
+      "title": "Islaris: Verification of Machine Code Against Authoritative ISA Semantics",
+      "authors": [
+	  "Michael Sammler",
+	  "Angus Hammond",
+	  "Rodolphe Lepigre",
+	  "Brian Campbell",
+	  "Jean Pichon-Pharabod",
+	  "Derek Dreyer",
+	  "Deepak Garg",
+	  "Peter Sewell"
+      ],
+      "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/islaris/paper.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/rems-project/islaris" }
       ]
     },
     {
