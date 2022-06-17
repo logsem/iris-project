@@ -27,6 +27,7 @@
 	  "Derek Dreyer"
       ],
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "awards": [ "PLDI 2022 Distinguished Paper Award" ],
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/rusthornbelt/paper.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/lambda-rust/-/tree/masters/rusthornbelt" },
