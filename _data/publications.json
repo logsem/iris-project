@@ -1,6 +1,24 @@
 {
   "publications": [
     {
+      "title": "Later Credits: Resourceful Reasoning for the Later Modality",
+      "authors": [
+        "Simon Spies",
+        "Lennard Gäher",
+        "Joseph Tassarotti",
+        "Ralf Jung",
+        "Robbert Krebbers",
+        "Lars Birkedal",
+        "Derek Dreyer"
+      ],
+      "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "https://plv.mpi-sws.org/later-credits/paper-later-credits.pdf",
+      "other_urls": [
+	      { "name": "Website (with Coq development)", "url": "https://plv.mpi-sws.org/later-credits/" },
+        { "name": "Artifact and appendix", "url": "https://zenodo.org/record/6702804#.Ytqb1h1BzB9" }
+      ]
+    },
+    {
       "title": "Compass: Strong and Compositional Library Specifications in Relaxed Memory Separation Logic",
       "authors": [
 	  "Hoang-Hai Dang",
