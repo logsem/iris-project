@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Multiparty GV: Functional Multiparty Session Types with Certified Deadlock Freedom",
+      "authors": [
+        "Jules Jacobs",
+        "Stephanie Balzer",
+        "Robbert Krebbers",
+      ],
+      "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2022-icfp-multiparty.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.6882808" }
+      ]
+    },
+    {
       "title": "Later Credits: Resourceful Reasoning for the Later Modality",
       "authors": [
         "Simon Spies",
