@@ -1,6 +1,21 @@
 {
   "publications": [
     {
+      "title": "Modular Verification of Op-Based CRDTs in Separation Logic",
+      "authors": [
+        "Abel Nieto",
+        "Léon Gondelman",
+        "Alban Reynaud",
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-crdts.pdf" },
+        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7055010" }
+      ]
+    },
+    {
       "title": "Multiparty GV: Functional Multiparty Session Types with Certified Deadlock Freedom",
       "authors": [
         "Jules Jacobs",
@@ -1016,20 +1031,6 @@
       "pdf_url": "pdfs/2021-submitted-trillium.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "artifacts/2021-submitted-trillium.zip" }
-      ]
-    },
-    {
-      "title": "Modular Verification of Op-Based CRDTs in Separation Logic",
-      "authors": [
-        "Abel Nieto",
-        "Léon Gondelman",
-        "Alban Reynaud",
-        "Amin Timany",
-        "Lars Birkedal"
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "pdfs/2022-crdts-submission.pdf",
-      "other_urls": [
       ]
     },
   ],
