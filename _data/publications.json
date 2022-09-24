@@ -20,7 +20,7 @@
       "authors": [
         "Jules Jacobs",
         "Stephanie Balzer",
-        "Robbert Krebbers",
+        "Robbert Krebbers"
       ],
       "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "pdfs/2022-icfp-multiparty.pdf",
@@ -88,7 +88,7 @@
       "authors": [
         "Ike Mulder",
         "Robbert Krebbers",
-        "Herman Geuvers",
+        "Herman Geuvers"
       ],
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2022-pldi-diaframe-final.pdf",
@@ -162,7 +162,7 @@
       "where_published": "In CPP 2022: ACM SIGPLAN International Conference on Certified Programs and Proofs",
       "pdf_url": "pdfs/2022-cpp-folly-queue.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc/-/tree/master/theories/examples/folly_queue" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc/-/tree/master/theories/examples/folly_queue" }
       ]
     },
     {
@@ -1032,7 +1032,7 @@
       "other_urls": [
         { "name": "Coq development", "url": "artifacts/2021-submitted-trillium.zip" }
       ]
-    },
+    }
   ],
   "others": [
     {
