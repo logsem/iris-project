@@ -16,6 +16,19 @@
       ]
     },
     {
+      "title": "Le Temps des Cerises: Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities",
+      "authors": [
+        "Aïna Linn Georges",
+        "Alix Trieu",
+        "Lars Birkedal"
+      ],
+      "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-directed-capabilities-final.pdf" },
+        { "name": "Coq development", "url": "https://github.com/logsem/cerise-stack-monotone" }
+      ]
+    },
+    {
       "title": "Verified symbolic execution with Kripke specification monads (and no meta-programming)",
       "authors": [
         "Steven Keuchel",
@@ -126,19 +139,6 @@
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/islaris/paper.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://github.com/rems-project/islaris" }
-      ]
-    },
-    {
-      "title": "Le Temps des Cerises: Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities",
-      "authors": [
-        "Aïna Linn Georges",
-        "Alix Trieu",
-        "Lars Birkedal"
-      ],
-      "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
-      "other_urls": [
-        { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-directed-capabilities-final.pdf" },
-        { "name": "Coq development", "url": "https://github.com/logsem/cerise-stack-monotone" }
       ]
     },
     {
