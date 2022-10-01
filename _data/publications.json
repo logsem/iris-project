@@ -16,6 +16,20 @@
       ]
     },
     {
+      "title": "Verified symbolic execution with Kripke specification monads (and no meta-programming)",
+      "authors": [
+        "Steven Keuchel",
+        "Sander Huyghebaert",
+        "Georgy Lukyanov",
+        "Dominique Devriese"
+      ],
+      "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2022-icfp-symbexec.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://dl.acm.org/do/10.5281/zenodo.6865817/full/" }
+      ]
+    },
+    {
       "title": "Multiparty GV: Functional Multiparty Session Types with Certified Deadlock Freedom",
       "authors": [
         "Jules Jacobs",
