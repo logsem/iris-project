@@ -37,7 +37,7 @@
         "Dominique Devriese"
       ],
       "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
-      "pdf_url": "pdfs/2022-icfp-symbexec.pdf",
+      "pdf_url": "pdfs/2022-icfp-symbexec-final.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://dl.acm.org/do/10.5281/zenodo.6865817/full/" }
       ]
