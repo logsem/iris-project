@@ -29,7 +29,7 @@
       ]
     },
     {
-      "title": "Verified symbolic execution with Kripke specification monads (and no meta-programming)",
+      "title": "Verified Symbolic Execution with Kripke Specification Monads (and No Meta-programming)",
       "authors": [
         "Steven Keuchel",
         "Sander Huyghebaert",
@@ -39,6 +39,8 @@
       "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "pdfs/2022-icfp-symbexec-final.pdf",
       "other_urls": [
+        { "name": "Website", "url": "https://katamaran-project.github.io/" },
+        { "name": "Coq development", "url": "https://github.com/katamaran-project/katamaran" },
         { "name": "Artifact", "url": "https://dl.acm.org/do/10.5281/zenodo.6865817/full/" }
       ]
     },
