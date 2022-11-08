@@ -976,7 +976,7 @@
   ],
   "phd_dissertations": [
     {
-      "title": "Verifying a concurrent, crash-safe file system with sequential reasoning",
+      "title": "Verifying a Concurrent, Crash-Safe File System with Sequential Reasoning",
       "authors": ["Tej Chajed"],
       "description": "Massachusetts Institute of Technology, May 2022",
       "awards": [ "Honorable Mention for the SIGOPS Dennis M. Ritchie Thesis Award" ],
