@@ -1035,6 +1035,17 @@
   ],
   "draft_papers": [
     {
+      "title": "A Logical Approach to Type Soundness",
+      "authors": [
+        "Amin Timany",
+	"Robbert Krebbers",
+        "Derek Dreyer",
+        "Lars Birkedal"
+      ],
+      "description": "Submitted for publication",
+      "pdf_url": "pdfs/2022-submitted-logical-type-soundness.pdf",
+    },
+    {
       "title": "Trillium: Unifying Refinement and Higher-Order Distributed Separation Logic",
       "authors": [
         "Amin Timany",
