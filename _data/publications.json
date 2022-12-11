@@ -1,6 +1,22 @@
 {
   "publications": [
     {
+      "title": "BFF: Foundational and Automated Verification of Bitfield-Manipulating Programs",
+      "authors": [
+        "Fengmin Zhu",
+        "Michael Sammler",
+        "Rodolphe Lepigre",
+        "Derek Dreyer",
+        "Deepak Garg"
+      ],
+      "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-bff.pdf" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.7079022"},
+        { "name": "Website", "url": "https://plv.mpi-sws.org/refinedc/bff" }
+      ]
+    },
+    {
       "title": "Modular Verification of Op-Based CRDTs in Separation Logic",
       "authors": [
         "Abel Nieto",
@@ -23,6 +39,7 @@
         "Lars Birkedal"
       ],
       "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "awards": [ "OOPSLA 2022 Distinguished Paper Award" ],
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-directed-capabilities-final.pdf" },
         { "name": "Coq development", "url": "https://github.com/logsem/cerise-stack-monotone" }
