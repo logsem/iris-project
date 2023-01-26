@@ -1052,6 +1052,20 @@
   ],
   "draft_papers": [
     {
+      "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logic",
+      "authors": [
+        "Simon Oddershede Gregersen",
+	"Alejandro Aguirre",
+        "Philipp G. Haselwarter",
+        "Joseph Tassarotti",
+        "Lars Birkedal"
+      ],
+      "description": "Submitted for publication",
+      "other_urls": [
+        { "name": "arXiv", "url": "https://arxiv.org/abs/2301.10061" }
+      ]
+    },
+    {
       "title": "A Logical Approach to Type Soundness",
       "authors": [
         "Amin Timany",
