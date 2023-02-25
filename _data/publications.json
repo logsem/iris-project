@@ -993,6 +993,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Proof of Programs with Effect Handlers",
+      "authors": ["Paulo Emílio de Vilhena"],
+      "description": "Université Paris Cité, December 2022",
+      "pdf_url": "https://devilhena-paulo.github.io/thesis/de-vilhena-thesis.pdf"
+    },
+    {
       "title": "Verifying a Concurrent, Crash-Safe File System with Sequential Reasoning",
       "authors": ["Tej Chajed"],
       "description": "Massachusetts Institute of Technology, May 2022",
