@@ -999,6 +999,12 @@
       "pdf_url": "https://devilhena-paulo.github.io/thesis/de-vilhena-thesis.pdf"
     },
     {
+      "title": "A Mechanized Program Logic for Concurrent Programs with the Weak Memory Model of Multicore OCaml",
+      "authors": ["Glen Mével"],
+      "description": "Inria and Université Paris Cité, December 2022",
+      "pdf_url": "https://gmevel.github.io/papers/mevel_phd-dissertation.pdf"
+    },
+    {
       "title": "Verifying a Concurrent, Crash-Safe File System with Sequential Reasoning",
       "authors": ["Tej Chajed"],
       "description": "Massachusetts Institute of Technology, May 2022",
