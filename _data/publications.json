@@ -13,6 +13,7 @@
       ],
       "where_published": "In POPL 2023: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "pdfs/2023-popl-dimsum.pdf",
+      "awards": [ "POPL 2023 Distinguished Paper Award" ],
       "other_urls": [
         { "name": "Website", "url": "https://plv.mpi-sws.org/dimsum/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/dimsum" },
