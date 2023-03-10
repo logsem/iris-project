@@ -1,6 +1,26 @@
 {
   "publications": [
     {
+      "title": "DimSum: A Decentralized Approach to Multi-language Semantics and Verification",
+      "authors": [
+        "Michael Sammler",
+        "Simon Spies",
+        "Youngju Song",
+        "Emanuele D'Osualdo",
+        "Robbert Krebbers",
+        "Robbert Krebbers",
+        "Deepak Garg",
+        "Derek Dreyer"
+      ],
+      "where_published": "In POPL 2023: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2023-popl-dimsum.pdf",
+      "other_urls": [
+        { "name": "Website", "url": "https://plv.mpi-sws.org/dimsum/" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/dimsum" },
+        { "name": "Artifact", "url": "https://zenodo.org/record/7306313"}
+      ]
+    },
+    {
       "title": "BFF: Foundational and Automated Verification of Bitfield-Manipulating Programs",
       "authors": [
         "Fengmin Zhu",
