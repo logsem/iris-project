@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "A High-Level Separation Logic for Heap Space under Garbage Collection",
+      "authors": [
+        "Alexandre Moine",
+        "Arthur Charguéraud",
+        "François Pottier"
+      ],
+      "where_published": "In POPL 2023: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "http://cambium.inria.fr/~amoine/publications/moine-chargueraud-pottier-23.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.inria.fr/amoine/spacelambda" },
+        { "name": "Artifact", "url": "https://zenodo.org/record/7129302"}
+      ]
+    },
+    {
       "title": "DimSum: A Decentralized Approach to Multi-language Semantics and Verification",
       "authors": [
         "Michael Sammler",
