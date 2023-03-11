@@ -1,0 +1,11 @@
+version: "3"
+services:
+  server:
+    image: iris-project:latest
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/iris-project
