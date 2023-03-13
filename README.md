@@ -16,6 +16,9 @@ You should then be able to run the following command to have Jekyll serve the si
 bundle exec jekyll serve
 ```
 
+Alternately, you can use Docker (and Docker Compose). Run `docker-compose up
+--build` to build and run the container, then navigate to `localhost:4000`.
+
 ## How to add publications
 
 To add a new publication simply edit `_data/publications.json`, find

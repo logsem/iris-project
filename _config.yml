@@ -2,3 +2,5 @@ exclude:
   - README.md
   - iris-logo
   - Makefile
+  - Dockerfile
+  - docker-compose.yml
