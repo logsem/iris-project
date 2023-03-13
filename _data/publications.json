@@ -48,6 +48,20 @@
       ]
     },
     {
+      "title": "Purity of an ST monad: full abstraction by semantically typed back-translation",
+      "authors": [
+        "Koen Jacobs",
+        "Dominique Devriese",
+        "Amin Timany"
+      ],
+      "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/JacobsDT22.html",
+      "pdf_url": "pdfs/2022-oopsla-purity-of-ST.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://zenodo.org/record/6329773#.ZA7x2y-B08Y" }
+      ]
+    },
+    {
       "title": "BFF: Foundational and Automated Verification of Bitfield-Manipulating Programs",
       "authors": [
         "Fengmin Zhu",
