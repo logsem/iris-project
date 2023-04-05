@@ -11,14 +11,20 @@
 
     <title>Iris Tutorial</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .lectures-table tr:nth-child(4n+1), .lectures-table tr:nth-child(4n+2) {
+          background: #E0E0E0;
+        }
+    </style>
 
   </head>
 
   <body>
-    <section class="jumbotron text-xs-center">
+    <div class="bg-secondary py-5 mb-3 text-sm-center" style="--bs-bg-opacity : 0.1">
       <div class="container">
 	    <h1 class="jumbotron-heading display-1">Iris Project</h1>
 
@@ -26,7 +32,7 @@
 	      <h2>Lecture Notes</h2>
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="container">
 
@@ -80,124 +86,124 @@
           </div>
 
           
-          <table style="border-collapse: collapse; line-height: 120%;" border="1">
+          <table class="text-nowrap table table-bordered border-secondary">
             <thead>
               <tr>
-                <td style="padding: 3pt;"><strong>Week</strong></td>
-                <td style="padding: 10pt;"><strong>Day</strong></td>
-                <td style="padding: 3pt;"><strong>Lecture</strong></td>
-                <td style="padding: 10pt; width: 110pt"><strong>Literature</strong></td>
-                <td style="padding: 3pt;"><strong>Slides</strong></td>
-                <td style="padding: 3pt;"><strong>Hand-in Exercises</strong></td>
+                <th>Week</th>
+                <th>Day</th>
+                <th>Lecture</th>
+                <th>Literature</th>
+                <th>Slides</th>
+                <th>Hand-in Exercises</th>
               </tr>
             </thead>
-            <tbody>
-              <tr style="background-color: #f5f5f5;">
-                <td rowspan="2" style="text-align: center;">1</td>
-                <td style="padding: 3pt; text-align: center;">Day 1</td>
-                <td style="padding: 3pt;"><strong>Intro + Operational Semantics</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 1+2</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture1-intro-opsem.pdf">lecture1</a></td>
-                <td style="padding: 3pt;"> </td>
-              </tr>
-              <tr style="background-color: #f5f5f5;">
-                <td style="padding: 3pt; text-align: center;">Day 2</td>
-                <td style="padding: 3pt;"><strong>Basic Logic of Resources</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 3</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture2-basic-logic-of-resources.pdf">lecture2</a></td>
-                <td style="padding: 3pt;">ILN Ex. 3.2</td>
+            <tbody class="lectures-table">
+              <tr>
+                <td rowspan="2" class="text-center align-middle">1</td>
+                <td>Day 1</td>
+                <td><strong>Intro + Operational Semantics</strong></td>
+                <td>ILN Sec. 1+2</td>
+                <td><a href="tutorial-pdfs/lecture1-intro-opsem.pdf">lecture1</a></td>
+                <td></td>
               </tr>
               <tr>
-                <td rowspan="2" style="text-align: center;">2</td>
-                <td style="padding: 3pt; text-align: center;">Day 1</td>
-                <td style="padding: 3pt;"><strong>Basic Separation Logic: Hoare Triples</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 4.0</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture3-basic-hoare-triples.pdf">lecture3</a></td>
-                <td style="padding: 3pt;"> </td>
+                <td>Day 2</td>
+                <td><strong>Basic Logic of Resources</strong></td>
+                <td>ILN Sec. 3</td>
+                <td><a href="tutorial-pdfs/lecture2-basic-logic-of-resources.pdf">lecture2</a></td>
+                <td>ILN Ex. 3.2</td>
               </tr>
               <tr>
-                <td style="padding: 3pt; text-align: center;">Day 2</td>
-                <td style="padding: 3pt;"><strong>Basic Separation Logic: Proving
+                <td rowspan="2" class="text-center align-middle">2</td>
+                <td>Day 1</td>
+                <td><strong>Basic Separation Logic: Hoare Triples</strong></td>
+                <td>ILN Sec. 4.0</td>
+                <td><a href="tutorial-pdfs/lecture3-basic-hoare-triples.pdf">lecture3</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Day 2</td>
+                <td><strong>Basic Separation Logic: Proving
                     Pointer Programs</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 4.1</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture4-lists.pdf">lecture4</a></td>
-                <td style="padding: 3pt;">ILN Ex. 4.1, 4.2, 4.5, 4.11, 4.21</td>
+                <td>ILN Sec. 4.1</td>
+                <td><a href="tutorial-pdfs/lecture4-lists.pdf">lecture4</a></td>
+                <td>ILN Ex. 4.1, 4.2, 4.5, 4.11, 4.21</td>
               </tr>
-              <tr style="background-color: #f5f5f5;">
-                <td rowspan="2" style="text-align: center;">3</td>
-                <td style="padding: 3pt; text-align: center;">Day 1</td>
-                <td style="padding: 3pt;"><strong>Basic Separation Logic: Abstract
+              <tr>
+                <td rowspan="2" class="text-center align-middle">3</td>
+                <td>Day 1</td>
+                <td><strong>Basic Separation Logic: Abstract
                     Data Types</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 4.2</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture5-adt-styles.pdf">lecture5</a></td>
-                <td style="padding: 3pt;"> </td>
-              </tr>
-              <tr style="background-color: #f5f5f5;">
-                <td style="padding: 3pt; text-align: center;">Day 2</td>
-                <td style="padding: 3pt;"><strong>Case Study: foldr</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 4.3</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture6-foldr.pdf">lecture6</a> </td>
-                <td style="padding: 3pt;">ILN Ex. 4.29, 4.34</td>
+                <td>ILN Sec. 4.2</td>
+                <td><a href="tutorial-pdfs/lecture5-adt-styles.pdf">lecture5</a></td>
+                <td></td>
               </tr>
               <tr>
-                <td rowspan="2" style="text-align: center;">4</td>
-                <td style="padding: 3pt; text-align: center;">Day 1</td>
-                <td style="padding: 3pt;"><strong>Later Modality</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 5</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture7-later.pdf">lecture7</a> </td>
-                <td style="padding: 3pt;"> </td>
+                <td>Day 2</td>
+                <td><strong>Case Study: foldr</strong></td>
+                <td>ILN Sec. 4.3</td>
+                <td><a href="tutorial-pdfs/lecture6-foldr.pdf">lecture6</a></td>
+                <td>ILN Ex. 4.29, 4.34</td>
               </tr>
               <tr>
-                <td style="padding: 3pt; text-align: center;">Day 2</td>
-                <td style="padding: 3pt;"><strong>Always Modality</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 6</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture8-persistent.pdf">lecture8</a></td>
-                <td style="padding: 3pt;">ILN Ex. 5.3, 6.2 item (1) (2) and (4)</td>
-              </tr>
-              <tr style="background-color: #f5f5f5;">
-                <td rowspan="2" style="text-align: center;">5</td>
-                <td style="padding: 3pt; text-align: center;">Day 1</td>
-                <td style="padding: 3pt;"><strong>Concurrency: par + invariants</strong> </td>
-                <td style="padding: 3pt;">ILN Sec. 7.1 + 7.2</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture9-invariants.pdf">lecture9</a></td>
-                <td style="padding: 3pt;"> </td>
-              </tr>
-              <tr style="background-color: #f5f5f5;">
-                <td style="padding: 3pt; text-align: center;">Day 2</td>
-                <td style="padding: 3pt;"><strong>Concurrency: ghost state</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 7.4 + 7.5</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture10-ghost-state.pdf">lecture10</a></td>
-                <td style="padding: 3pt;">ILN Ex. 7.6, 7.24 item (3), 7.29, 7.32 (the first triple)</td>
+                <td rowspan="2" class="text-center align-middle">4</td>
+                <td>Day 1</td>
+                <td><strong>Later Modality</strong></td>
+                <td>ILN Sec. 5</td>
+                <td><a href="tutorial-pdfs/lecture7-later.pdf">lecture7</a></td>
+                <td></td>
               </tr>
               <tr>
-                <td rowspan="2" style="text-align: center;">6</td>
-                <td style="padding: 3pt; text-align: center;">Day 1</td>
-                <td style="padding: 3pt;"><strong>Concurrency: Case Study: spin lock + concurrent bag</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 7.6</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture11-cas-spin-lock.pdf">lecture11</a></td>
-                <td style="padding: 3pt;"> </td>
+                <td>Day 2</td>
+                <td><strong>Always Modality</strong></td>
+                <td>ILN Sec. 6</td>
+                <td><a href="tutorial-pdfs/lecture8-persistent.pdf">lecture8</a></td>
+                <td>ILN Ex. 5.3, 6.2 item (1) (2) and (4)</td>
               </tr>
               <tr>
-                <td style="padding: 3pt; text-align: center;">Day 2</td>
-                <td style="padding: 3pt;"><strong>Concurrency: Case Study: counter modules</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 7.7</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture12-counter-modules.pdf">lecture12</a></td>
-                <td style="padding: 3pt;">ILN Ex. 7.37, 7.42.</td>
+                <td rowspan="2" class="text-center align-middle">5</td>
+                <td>Day 1</td>
+                <td><strong>Concurrency: par + invariants</strong></td>
+                <td>ILN Sec. 7.1 + 7.2</td>
+                <td><a href="tutorial-pdfs/lecture9-invariants.pdf">lecture9</a></td>
+                <td></td>
               </tr>
-              <tr style="background-color: #f5f5f5;">
-                <td rowspan="2" style="text-align: center;">7</td>
-                <td style="padding: 3pt; text-align: center;">Day 1</td>
-                <td style="padding: 3pt;"><strong>Weakest preconditions and fancy update modality </strong></td>
-                <td style="padding: 3pt;">ILN Sec. 8.1 + 8.2</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture13-wp-fancy-update-modality.pdf">lecture13</a></td>
-                <td style="padding: 3pt;"> </td>
+              <tr>
+                <td>Day 2</td>
+                <td><strong>Concurrency: ghost state</strong></td>
+                <td>ILN Sec. 7.4 + 7.5</td>
+                <td><a href="tutorial-pdfs/lecture10-ghost-state.pdf">lecture10</a></td>
+                <td>ILN Ex. 7.6, 7.24 item (3), 7.29, 7.32 (the first triple)</td>
               </tr>
-              <tr style="background-color: #f5f5f5;">
-                <td style="padding: 3pt; text-align: center;">Day 2</td>
-                <td style="padding: 3pt;"><strong>Concurrency: Case Study: concurrent stack with helping</strong></td>
-                <td style="padding: 3pt;">ILN Sec. 10</td>
-                <td style="padding: 3pt;"> <a href="tutorial-pdfs/lecture14-stacks-with-helping.pdf">lecture14</a></td>
-                <td style="padding: 3pt;">ILN Ex. 7.43 (the one for incr), 7.47, 7.49 (the two specs for read).</td>
+              <tr>
+                <td rowspan="2" class="text-center align-middle">6</td>
+                <td>Day 1</td>
+                <td><strong>Concurrency: Case Study: spin lock + concurrent bag</strong></td>
+                <td>ILN Sec. 7.6</td>
+                <td><a href="tutorial-pdfs/lecture11-cas-spin-lock.pdf">lecture11</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Day 2</td>
+                <td><strong>Concurrency: Case Study: counter modules</strong></td>
+                <td>ILN Sec. 7.7</td>
+                <td><a href="tutorial-pdfs/lecture12-counter-modules.pdf">lecture12</a></td>
+                <td>ILN Ex. 7.37, 7.42.</td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="text-center align-middle">7</td>
+                <td>Day 1</td>
+                <td><strong>Weakest preconditions and fancy update modality</strong></td>
+                <td>ILN Sec. 8.1 + 8.2</td>
+                <td><a href="tutorial-pdfs/lecture13-wp-fancy-update-modality.pdf">lecture13</a></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Day 2</td>
+                <td><strong>Concurrency: Case Study: concurrent stack with helping</strong></td>
+                <td>ILN Sec. 10</td>
+                <td><a href="tutorial-pdfs/lecture14-stacks-with-helping.pdf">lecture14</a></td>
+                <td>ILN Ex. 7.43 (the one for incr), 7.47, 7.49 (the two specs for read).</td>
               </tr>
             </tbody>
           </table>

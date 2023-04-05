@@ -2,28 +2,31 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="referrer" content="origin-when-crossorigin">
 
-    <title>Iris Project</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="referrer" content="origin-when-cross-origin">
 
-    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+  <title>Iris Project</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="gfx/favicon.svg">
-    <link rel="alternate icon" href="gfx/favicon.ico">
-  </head>
+  <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-  <body>
-    <section class="jumbotron text-xs-center">
-      <div class="container">
-        <img src="gfx/logo.svg" style="height:140px; margin-bottom:20px;" alt="Iris logo">
-        <p class="lead">A Higher-Order Concurrent Separation Logic Framework, <br> implemented and verified in the Coq proof assistant</p>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="gfx/favicon.svg">
+  <link rel="alternate icon" href="gfx/favicon.ico">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="bg-secondary py-5 mb-3 text-sm-center" style="--bs-bg-opacity : 0.1">
+      <div class="container-fluid">
+        <img src="gfx/logo.svg" style="height:140px; margin-bottom:30px;" alt="Iris logo">
+        <p class="lead">A Higher-Order Concurrent Separation Logic Framework, <br> implemented and verified in the Coq
+          proof assistant</p>
         <p>
           <a href="https://gitlab.mpi-sws.org/iris/iris/" class="btn btn-primary">Coq Formalization</a>
           <a href="https://plv.mpi-sws.org/iris/appendix-4.0.pdf" class="btn btn-primary">Technical Reference (v4.0)</a>
@@ -31,147 +34,179 @@
           <a href="chat.html" class="btn btn-primary">Chat</a>
         </p>
         <p>
-          <a href="#learning" class="btn btn-secondary">Learning Iris</a>
-          <a href="#events" class="btn btn-secondary">Events</a>
-          <a href="#publications" class="btn btn-secondary">Publications</a>
-          <a href="#phd" class="btn btn-secondary">PhD dissertations</a>
-          <a href="#other" class="btn btn-secondary">Other material</a>
+          <a href="#learning" class="btn btn-light border" role="button">Learning Iris</a>
+          <a href="#events" class="btn btn-light border" role="button">Events</a>
+          <a href="#publications" class="btn btn-light border" role="button">Publications</a>
+          <a href="#phd" class="btn btn-light border" role="button">PhD dissertations</a>
+          <a href="#other" class="btn btn-light border" role="button">Other material</a>
         </p>
       </div>
-    </section>
-
-
+    </div>
     <div class="container">
-      <div class="row">
-        <p>
-          Iris is a framework that can be used for reasoning about
-          safety of concurrent programs, as the logic in logical
-          relations, to reason about type-systems, data-abstraction
-          etc.
-          In case of questions, please contact us on the <a href="https://lists.mpi-sws.org/listinfo/iris-club">Iris Club list</a> or in our <a href="chat.html">chat room</a>.
+      <div class="container">
+        <div class="row">
+          <p>
+            Iris is a framework that can be used for reasoning about
+            safety of concurrent programs, as the logic in logical
+            relations, to reason about type-systems, data-abstraction
+            etc.
+            In case of questions, please contact us on the <a href="https://lists.mpi-sws.org/listinfo/iris-club">Iris
+              Club
+              list</a> or in our <a href="chat.html">chat room</a>.
+        </div>
+
+      </div>
+
+      <div class="container" style="margin-bottom: 20px;">
+        <div class="row">
+          <a name="learning"></a>
+          <h2>Learning Iris</h2>
+        </div>
+        <div class="row">
+          <p>Some useful resources designed to learn Iris and its Coq implementation:</p>
+          <ul>
+            <li>The <a href="tutorial-material.html">Iris lecture notes</a> provide a tutorial style introduction to
+              Iris,
+              including a number of exercises (but most of it not in Coq).</li>
+            <li>The second half of Derek Dreyer's <a href="https://plv.mpi-sws.org/semantics-course/">Semantics lecture
+                notes</a> gives an introduction to Iris, including exercises and a Coq development.</li>
+            <li>The <a href="https://gitlab.mpi-sws.org/iris/tutorial-popl21">Iris Tutorial at POPL'21</a> contains a
+              number
+              of exercises to practice the Iris tactics in Coq. A <a
+                href="https://www.youtube.com/watch?v=LjXaffBpMag">video recording</a> of the tutorial talk is also
+              available.</li>
+            <li>The paper <a href="pdfs/2022-submitted-logical-type-soundness.pdf">A Logical Approach to Type
+                Soundness</a>
+              shows how Iris can be used to prove type soundness. See also the <a
+                href="https://www.youtube.com/watch?v=8Xyk_dGcAwk">video recording</a> of Derek Dreyer's POPL'18 keynote
+              and
+              the
+              <a href="https://gitlab.mpi-sws.org/iris/tutorial-popl20">Iris Tutorial at POPL'20</a>.
+          </ul>
+          <p>A selection of papers that are suited to get started with Iris:</p>
+          <ul>
+            <li>The <a href="https://www.mpi-sws.org/~dreyer/papers/iris-ground-up/paper.pdf">Iris From The Ground Up
+                paper</a> contains an extensive description of the rules and the model of the Iris logic.</li>
+            <li>The <a href="pdfs/2017-popl-proofmode-final.pdf">Iris Proofmode paper (Section 3)</a> contains a brief
+              tutorial to the Iris tactics in Coq.</li>
+            <li>The <a href="https://gitlab.mpi-sws.org/iris/iris/blob/master/docs/proof_mode.md">Iris Proof Mode (IPM)
+                /
+                MoSeL</a> and the <a
+                href="https://gitlab.mpi-sws.org/iris/iris/blob/master/docs/heap_lang.md">HeapLang</a>
+              documentation provide a reference of the Iris tactics in Coq.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" style="margin-bottom: 20px;">
+        <div class="row">
+          <a name="events"></a>
+          <h2>Events</h2>
+          <ul>
+            <li>2 May–6 May 2022: <a href="workshop-2022">The Second Iris Workshop</a>, Nijmegen, The Netherlands</li>
+            <li>18 January 2021: <a
+                href="https://popl21.sigplan.org/details/POPL-2021-tutorialfest/4/-T4-Iris-A-Modular-Foundation-for-Higher-Order-Concurrent-Separation-Logic">Tutorial
+                on Iris</a> at POPL, Virtual</li>
+            <li>20 January 2020: <a
+                href="https://popl20.sigplan.org/details/POPL-2020-tutorialfest/4/-T4-Proving-Semantic-Type-Soundness-in-Iris">Tutorial
+                on Proving Semantic Type Soundness in Iris</a> at POPL, New Orleans, USA</li>
+            <li>28 October–1 November 2019: <a href="workshop-2019">The First Iris Workshop</a>, Aarhus, Denmark</li>
+            <li>8 January 2018: <a
+                href="https://popl18.sigplan.org/details/POPL-2018-TutorialFest/1/Iris-A-Modular-Foundation-for-Higher-Order-Concurrent-Separation-Logic-">Tutorial
+                on Iris</a> at POPL, Los Angeles, USA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" style="margin-bottom: 20px;">
+        <div class="row">
+          <a name="publications"></a>
+          <h2>Publications</h2>
+        </div>
+
+        <div class="row">
+          <p>Below, we give an overview of the research that uses Iris one way or another.</p>
+        </div>
+
+        <div class="row">
+          <dl class="ref">
+            {% include publications.html publications=site.data.publications.publications %}
+          </dl>
+        </div>
+
+        <div class="row">
+          <a name="phd"></a>
+          <h2>PhD dissertations</h2>
+        </div>
+
+        <div class="row">
+          <dl class="ref">
+            {% include publications.html publications=site.data.publications.phd_dissertations %}
+          </dl>
+        </div>
+
+        <div class="row">
+          <a name="other"></a>
+          <h2>Other material</h2>
+        </div>
+
+        <div class="row">
+          <p>Draft papers:</p>
+          <dl class="ref">
+            {% include publications.html publications=site.data.publications.draft_papers pdf_name="[preprint] .pdf" %}
+          </dl>
+        </div>
+
+        <div class="row">
+          <p>Case studies, MSc theses, abstracts, talks:</p>
+          <dl class="ref">
+            {% include publications.html publications=site.data.publications.others %}
+          </dl>
+        </div>
       </div>
 
     </div>
 
-    <div class="container" style="margin-bottom: 20px;">
-      <div class="row">
-        <a name="learning"></a><h2>Learning Iris</h2>
-      </div>
-      <div class="row">
-      <p>Some useful resources designed to learn Iris and its Coq implementation:</p>
-      <ul>
-        <li>The <a href="tutorial-material.html">Iris lecture notes</a> provide a tutorial style introduction to Iris, including a number of exercises (but most of it not in Coq).</li>
-        <li>The second half of Derek Dreyer's <a href="https://plv.mpi-sws.org/semantics-course/">Semantics lecture notes</a> gives an introduction to Iris, including exercises and a Coq development.</li>
-        <li>The <a href="https://gitlab.mpi-sws.org/iris/tutorial-popl21">Iris Tutorial at POPL'21</a> contains a number of exercises to practice the Iris tactics in Coq. A <a href="https://www.youtube.com/watch?v=LjXaffBpMag">video recording</a> of the tutorial talk is also available.</li>
-        <li>The paper <a href="pdfs/2022-submitted-logical-type-soundness.pdf">A Logical Approach to Type Soundness</a> shows how Iris can be used to prove type soundness. See also the <a href="https://www.youtube.com/watch?v=8Xyk_dGcAwk">video recording</a> of Derek Dreyer's POPL'18 keynote and the
-        <a href="https://gitlab.mpi-sws.org/iris/tutorial-popl20">Iris Tutorial at POPL'20</a>.
-      </ul>
-      <p>A selection of papers that are suited to get started with Iris:</p>
-      <ul>
-        <li>The <a href="https://www.mpi-sws.org/~dreyer/papers/iris-ground-up/paper.pdf">Iris From The Ground Up paper</a> contains an extensive description of the rules and the model of the Iris logic.</li>
-        <li>The <a href="pdfs/2017-popl-proofmode-final.pdf">Iris Proofmode paper (Section 3)</a> contains a brief tutorial to the Iris tactics in Coq.</li>
-        <li>The <a href="https://gitlab.mpi-sws.org/iris/iris/blob/master/docs/proof_mode.md">Iris Proof Mode (IPM) / MoSeL</a> and the <a href="https://gitlab.mpi-sws.org/iris/iris/blob/master/docs/heap_lang.md">HeapLang</a> documentation provide a reference of the Iris tactics in Coq.</li>
-      </ul>
-      </div>
-    </div>
-
-    <div class="container" style="margin-bottom: 20px;">
-      <div class="row">
-        <a name="events"></a><h2>Events</h2>
-        <ul>
-        <li>2 May–6 May 2022: <a href="workshop-2022">The Second Iris Workshop</a>, Nijmegen, The Netherlands</li>
-        <li>18 January 2021: <a href="https://popl21.sigplan.org/details/POPL-2021-tutorialfest/4/-T4-Iris-A-Modular-Foundation-for-Higher-Order-Concurrent-Separation-Logic">Tutorial on Iris</a> at POPL, Virtual</li>
-        <li>20 January 2020: <a href="https://popl20.sigplan.org/details/POPL-2020-tutorialfest/4/-T4-Proving-Semantic-Type-Soundness-in-Iris">Tutorial on Proving Semantic Type Soundness in Iris</a> at POPL, New Orleans, USA</li>
-        <li>28 October–1 November 2019: <a href="workshop-2019">The First Iris Workshop</a>, Aarhus, Denmark</li>
-        <li>8 January 2018: <a href="https://popl18.sigplan.org/details/POPL-2018-TutorialFest/1/Iris-A-Modular-Foundation-for-Higher-Order-Concurrent-Separation-Logic-">Tutorial on Iris</a> at POPL, Los Angeles, USA</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container" style="margin-bottom: 20px;">
-      <div class="row">
-        <a name="publications"></a><h2>Publications</h2>
-      </div>
-
-      <div class="row">
-        <p>Below, we give an overview of the research that uses Iris one way or another.</p>
-      </div>
-
-      <div class="row">
-        <dl class="ref">
-          {% include publications.html publications=site.data.publications.publications %}
-        </dl>
-      </div>
-
-      <div class="row">
-        <a name="phd"></a><h2>PhD dissertations</h2>
-      </div>
-
-      <div class="row">
-        <dl class="ref">
-          {% include publications.html publications=site.data.publications.phd_dissertations %}
-        </dl>
-      </div>
-
-      <div class="row">
-        <a name="other"></a><h2>Other material</h2>
-      </div>
-
-      <div class="row">
-        <p>Draft papers:</p>
-        <dl class="ref">
-          {% include publications.html publications=site.data.publications.draft_papers pdf_name="[preprint] .pdf" %}
-        </dl>
-      </div>
-
-      <div class="row">
-        <p>Case studies, MSc theses, abstracts, talks:</p>
-        <dl class="ref">
-          {% include publications.html publications=site.data.publications.others %}
-        </dl>
-      </div>
-    </div>
-
-    <section class="jumbotron">
+    <div class="bg-secondary py-5 mb-3" style="--bs-bg-opacity : 0.1">
 
       <div class="container">
 
-	<div class="row">
-          <h2>Main research groups involved</h2>
-	</div>
+        <h2>Main research groups involved</h2>
 
-	<div class="row">
-          <div class="card-deck-wrapper">
-            <div class="card-deck">
-              <div class="card">
-		<a href="http://cs.au.dk/" class="card-link" title="Visit Aarhus University">
-                  <img class="card-img-top" src="gfx/au.png" alt="Aarhus University">
-		</a>
-		<div class="card-footer text-muted" style="text-align: center;">
-		  Logic and Semantics Group <br />
-		  <span class="muted" style="font-size: 10pt;">Contact: <a href="http://cs.au.dk/~birke/">Lars Birkedal</a></span>
-		</div>
-              </div>
-              <div class="card">
-		<a href="http://www.mpi-sws.org/" class="card-link" title="Visit Max Planck Institute for Software Systems">
-                  <img class="card-img-top" src="gfx/mpi-sws-logo.svg" alt="Max Planck Institute for Software Systems" width=250>
-		</a>
-		<div class="card-footer text-muted" style="text-align: center;">
-		  Foundations of Programming Group<br />
-		  <span class="muted" style="font-size: 10pt;">Contact: <a href="https://www.mpi-sws.org/~dreyer/">Derek Dreyer</a></span>
-		</div>
-              </div>
-              <div class="card">
-		<a href="http://www.ru.nl" class="card-link" title="Visit Radboud University">
-                  <img class="card-img-top" src="gfx/radboud.jpg" alt="Radboud University">
-		</a>
-		<div class="card-footer text-muted" style="text-align: center;">
-		  Department of Software Science<br />
-		  <span class="muted" style="font-size: 10pt;">Contact: <a href="https://robbertkrebbers.nl">Robbert Krebbers</a></span>
-		</div>
-              </div>
+        <div class="card-group">
+          <div class="card mx-2 border">
+            <a href="http://cs.au.dk/" class="card-link" title="Visit Aarhus University">
+              <img class="card-img-top" style="width : auto; max-width : 80%;" src="gfx/au.png" alt="Aarhus University">
+            </a>
+            <div class="card-footer text-muted" style="text-align: center;">
+              Logic and Semantics Group <br />
+              <span class="muted" style="font-size: 10pt;">Contact: <a href="http://cs.au.dk/~birke/">Lars
+                  Birkedal</a></span>
             </div>
-<!--            <div class="card-deck">
+          </div>
+          <div class="card mx-2 border">
+            <a href="http://www.mpi-sws.org/" class="card-link" title="Visit Max Planck Institute for Software Systems">
+              <img class="card-img-top" style="width : auto; max-width : 80%;" src="gfx/mpi-sws-logo.svg"
+                alt="Max Planck Institute for Software Systems" width=250>
+            </a>
+            <div class="card-footer text-muted" style="text-align: center;">
+              Foundations of Programming Group<br />
+              <span class="muted" style="font-size: 10pt;">Contact: <a href="https://www.mpi-sws.org/~dreyer/">Derek
+                  Dreyer</a></span>
+            </div>
+          </div>
+          <div class="card mx-2 border">
+            <a href="http://www.ru.nl" class="card-link" title="Visit Radboud University">
+              <img class="card-img-top" style="width : auto; max-width : 80%;" src="gfx/radboud.jpg"
+                alt="Radboud University">
+            </a>
+            <div class="card-footer text-muted" style="text-align: center;">
+              Department of Software Science<br />
+              <span class="muted" style="font-size: 10pt;">Contact: <a href="https://robbertkrebbers.nl">Robbert
+                  Krebbers</a></span>
+            </div>
+          </div>
+          <!--            <div class="card-deck">
               <div class="card">
 		<a href="http://www.tudelft.nl" class="card-link" title="Visit Delft University of Technology">
                   <img class="card-img-top" src="gfx/delft.png" alt="Delft University of Technology">
@@ -192,12 +227,11 @@
               </div>
             </div>
 -->
-          </div>
-	</div>
-
+        </div>
       </div>
 
-    </section>
+
+    </div>
 
     <div class="container container-spacing">
 
@@ -208,48 +242,53 @@
         </p>
       </div>
 
-      <div class="row grants">
-        <div class="card-deck-wrapper">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-block">
-                <h4 class="card-title">ModuRes</h4>
-                <h6 class="card-subtitle text-muted">Modular Reasoning about Concurrent Higher-Order Imperative Programs</h6>
-              </div>
-              <img src="https://cs.au.dk/~birke/modures/ModuRes_logo.jpg" alt="Card image">
-              <div class="card-block">
-                <p class="card-text">Grants from The Danish Council for Independent Research, Sapere Aude: DFF–Advanced Grant 2013
-		  (<a href="http://cs.au.dk/~birke/modures/" class="card-link">more Information</a>)</p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-block">
-                <h4 class="card-title">RustBelt</h4>
-                <h6 class="card-subtitle text-muted">Logical Foundations for the Future of Safe Systems Programming</h6>
-              </div>
-              <img src="https://plv.mpi-sws.org/rustbelt/rustbelt_files/rustbelt-icon.png" alt="Card image">
-              <div class="card-block">
-                <p class="card-text">
-		  2015 ERC Consolidator Grant
-                  (<a href="http://plv.mpi-sws.org/rustbelt/" class="card-link">more information</a>)
-		</p>
-              </div>
-            </div>
+      <div class="card-group">
+        <div class="card mx-2 border">
+          <div class="card-body">
+            <h4 class="card-title">ModuRes</h4>
+            <h6 class="card-subtitle text-muted">Modular Reasoning about Concurrent Higher-Order Imperative Programs
+            </h6>
+          </div>
+          <div class="grants">
+            <img src="https://cs.au.dk/~birke/modures/ModuRes_logo.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Grants from The Danish Council for Independent Research, Sapere Aude: DFF–Advanced
+              Grant 2013
+              (<a href="http://cs.au.dk/~birke/modures/" class="card-link">more Information</a>)</p>
+          </div>
+        </div>
+        <div class="card mx-2 border">
+          <div class="card-body">
+            <h4 class="card-title">RustBelt</h4>
+            <h6 class="card-subtitle text-muted">Logical Foundations for the Future of Safe Systems Programming</h6>
+          </div>
+          <div class="grants">
+            <img src="https://plv.mpi-sws.org/rustbelt/rustbelt_files/rustbelt-icon.png" alt="Card image">
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              2015 ERC Consolidator Grant
+              (<a href="http://plv.mpi-sws.org/rustbelt/" class="card-link">more information</a>)
+            </p>
           </div>
         </div>
       </div>
 
     </div>
+  </div>
+  <hr />
+  <footer style="width: 100%; text-align: center;">
+    <div class="container">
+      <span class="text-muted">iris-project.org is maintained by Logic and Semantics group, Computer Science @ Aarhus
+        University</span>
+    </div>
+  </footer>
 
-    <hr />
-    <footer style="width: 100%; text-align: center;">
-      <div class="container">
-        <span class="text-muted">iris-project.org is maintained by Logic and Semantics group, Computer Science @ Aarhus University</span>
-      </div>
-    </footer>
 
+  <script src="/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
 
-    <script src="/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+</body>
 
-  </body>
 </html>
