@@ -16,6 +16,11 @@ You should then be able to run the following command to have Jekyll serve the si
 bundle exec jekyll serve
 ```
 
+If that does not work (e.g. with strange errors because the old Jekyll Github uses is not compatible with Ruby 3), you can try this:
+```bash
+bundle exec jekyll build && (cd _site && python3 -m http.server 3000)
+```
+
 Alternately, you can use Docker (and Docker Compose). Run `docker-compose up
 --build` to build and run the container, then navigate to `localhost:4000`.
 
