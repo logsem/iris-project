@@ -34,13 +34,13 @@
 
 <div class="container">
   <img src="../gfx/logo.svg" alt="Iris" style="width: 150px; float: right; margin-left: 20px; margin-bottom: 5px;">
-  <div class="row-9" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <p>The <strong>second edition of the Iris workshop</strong> will be held in Nijmegen and it will be focused on <a href="https://iris-project.org">Iris</a>-related research to allow for in-depth talks and discussions. 
   There will be a two-day long program with talks on Monday 2 May and Tuesday 3 May.
   Participants are encouraged to stay 1-3 days longer if they can, for more informal discussions and interaction.</p>
   </div>
 
-  <div class="row" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <h2><a name="invited"></a>Invited talks</h2>
   <hr>
   <ul>
@@ -57,7 +57,7 @@
   </ul>
   </div>
 
-  <div class="row" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <h2><a name="program"></a>Program</h2>
   <hr>
   <h3>Monday 2 May</h3>
@@ -65,7 +65,7 @@
   <li>08:30 - 09:00: <strong>Coffee</strong></li>
   <li>09:00 - 09:30: <a href="https://jihgfee.github.io/">Jonas Kastberg Hinrichsen (Aarhus University, Denmark)</a>:
     The Actris Ghost Theory: Session Type-Based Ghost Theory for Reasoning about Reliable Communication
-    <a href="#jonas" data-toggle="collapse">[abstract]</a>
+    <a href="#jonas" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/jonas_kastberg_hinrichsen.pdf">[slides]</a>
     <div id="jonas" class="abstract collapse">
     Binary sessions, specifying bidirectional exchanges of messages between two processes, has widely been used to model idealised reliable communication, where messages are never dropped, duplicated, or arrive out of order. Such sessions allow for sophisticated protocol structures, as evidenced by the ever expanding work on session types, a behavioural type system for specifying the types of
@@ -76,7 +76,7 @@ which does not account for more complex reliable communication layers, e.g. with
     </div></li>
   <li>09:30 - 10:00: <a href="https://cs.au.dk/~gondelman/">Léon Gondelman (Aarhus University, Denmark)</a>:
     Tying Loose Ends: Modular Verification of Client-Server Communication using Distributed Separation Logic and Dependent Separation Protocols
-    <a href="#leon" data-toggle="collapse">[abstract]</a>
+    <a href="#leon" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/leon_gondelman.pdf">[slides]</a>
     <div id="leon" class="abstract collapse">
     In the past few years, Iris has been successfully applied to achieve modular verification of communicating processes in two different directions. On one side, the Actris project introduced binary session protocols as a high-level specification pattern to reason about connected reliable binary communication but has applied it to reason about message-passing concurrency, where the communication layer itself is reliable. On the other side, Aneris project enabled reasoning about realistic distributed programs, which communicate over an unreliable UDP-like network. This can suit reasoning about programs for which connected or reliable communication is not needed but requires to set up mechanisms such as retransmission/acknowledgments and sequence numbering of messages every time the session guarantees (in-order message delivery without duplicates) are needed.<br>
@@ -85,7 +85,7 @@ which does not account for more complex reliable communication layers, e.g. with
     </div></li>
   <li>10:00 - 10:30: <a href="https://julesjacobs.com/">Jules Jacobs (Radboud University Nijmegen, The Netherlands)</a>:
     Connectivity Graphs: A Method for Proving Deadlock Freedom Based on Separation Logic
-    <a href="#jules" data-toggle="collapse">[abstract]</a>
+    <a href="#jules" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/jules_jacobs.pdf">[slides]</a>
     <div id="jules" class="abstract collapse">
     Linear types can be used to guarantee memory leak freedom, and also to guarantee deadlock freedom (e.g. with session types).
@@ -94,7 +94,7 @@ Proving such properties formally in Coq is made challenging because this relies 
   <li>10:30 - 11:00: <strong>Coffee break</strong></li>
   <li>11:00 - 12:00: <a href="https://users.ece.cmu.edu/~afromher/">Aymeric Fromherz (Inria, France)</a>:
     Steel, a Concurrent Separation Logic for F*
-    <a href="#aymeric" data-toggle="collapse">[abstract]</a>
+    <a href="#aymeric" data-bs-toggle="collapse">[abstract]</a>
     <div id="aymeric" class="abstract collapse">
     F* is a proof-oriented programming language with support for dependent types and user-defined effects, which has been used to develop several sequential real-world applications, such as the HACL*/EverCrypt cryptographic provider and the EverParse library of verified parsers and serializers. In this talk, we present Steel, a framework based on concurrent separation logic that extends F* with support for concurrency. Steel draws inspiration from Iris and provides a highly expressive, impredicative separation logic with support for partial commutative monoids and dynamically allocated invariants. However, while Iris provides a powerful logical framework into which other logics and programming languages can be embedded, Steel instead aims to extend an existing proof assistant's language and reasoning facilities, leading to several design decisions that distinguish it from Iris.<br>
 
@@ -102,7 +102,7 @@ In this talk, we will give a tour of Steel, and emphasize on the significant poi
     </div></li>
   <li>12:00 - 12:30: <a href="https://people.mpi-sws.org/~msammler/">Michael Sammler (MPI-SWS, Germany)</a>:
     Predictable, efficient, and extensible Iris automation with Lithium
-    <a href="#michael" data-toggle="collapse">[abstract]</a>
+    <a href="#michael" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/michael_sammler.pdf">[slides]</a>
     <a href="https://gitlab.mpi-sws.org/iris/refinedc/-/blob/fd493cf468df0336fa14868ad46bd5d2bdfcd45b/tutorial/proofs/lithium/lithium_tutorial.v">[coq demo]</a>
     <div id="michael" class="abstract collapse">
@@ -111,7 +111,7 @@ proof search without backtracking. This talk shows how proof automation via goal
   <li>12:30 - 14:00: <strong>Lunch</strong></li>
   <li>14:00 - 15:00: <a href="https://ikemulder.nl/">Ike Mulder (Radboud University Nijmegen, The Netherlands)</a>:
     Automating your Iris proofs with Diaframe
-    <a href="#ike" data-toggle="collapse">[abstract]</a>
+    <a href="#ike" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/ike_mulder.pdf">[slides]</a>
     <div id="ike" class="abstract collapse">
     Proofs in Iris often contain steps that are 'obvious' for humans, yet difficult for automation. Think of closing invariants, instantiating existentials, and mutating ghost state. Existing tools like eauto and iFrame are not always able to handle such cases.
@@ -120,7 +120,7 @@ Inspired by ideas from logic programming and bi-abduction, Diaframe can open and
     </div></li>
   <li>15:00 - 15:30: <a href="https://soft.vub.ac.be/~skeuchel/">Steven Keuchel (Vrije Universiteit Brussels, Belgium)</a>:
     Verified Symbolic Execution with Kripke Specification Monads (and no Meta-Programming)
-    <a href="#steven" data-toggle="collapse">[abstract]</a>
+    <a href="#steven" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/steven_keuchel.pdf">[slides]</a>
     <div id="steven" class="abstract collapse">
     Verifying soundness of symbolic execution-based program verifiers is a significant challenge. This is especially true if the resulting tool needs to be usable outside of the proof assistant, in which case we cannot rely on shallowly embedded assertion logics and meta-programming. The tool needs to manipulate deeply embedded assertions, and it is crucial for efficiency to eagerly prune unreachable paths and simplify intermediate assertions in a way that can be justified towards the soundness proof. Only a few such tools exist in the literature, and their soundness proofs are intricate and hard to generalize or reuse. We contribute a novel, systematic approach for the construction and soundness proof of such a symbolic execution-based verifier. We first implement a verification condition generator as an object language interpreter in a specification monad, using an abstract interface featuring angelic and demonic nondeterminism. Next, we build a symbolic executor by implementing a similar interpreter, in a symbolic specification monad. This symbolic monad lives in a universe that is Kripke-indexed by variables in scope and a path condition. Finally, we relate the resulting symbolic executor with the concrete verification condition generator using a Kripke logical relation. We report on the practical application of these techniques in Katamaran, a tool for verifying security guarantees offered by instruction set architectures (ISAs). The tool is fully verified by combining our symbolic execution machinery with a soundness proof of the concrete verification conditions against an axiomatized separation logic, and an Iris-based implementation of the axioms, proven sound against the operational semantics. Based on our experience with Katamaran, we can report good results on practicality and efficiency of the tool, demonstrating practical viability of our symbolic execution approach.</div>
@@ -128,14 +128,14 @@ Inspired by ideas from logic programming and bi-abduction, Diaframe can open and
   <li>15:30 - 16:00: <strong>Coffee break</strong></li>
   <li>16:00 - 16:30: <a href="https://cs.au.dk/~zyliu/">Zongyuan Liu (Aarhus University, Denmark)</a>:
     A Separation Logic for Communicating Virtual Machines
-    <a href="#zongyuan" data-toggle="collapse">[abstract]</a>
+    <a href="#zongyuan" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/zongyuan_liu.pdf">[slides]</a>
     <div id="zongyuan" class="abstract collapse">
     A hypervisor is a piece of software that allows one host machine to support mutiple guest virtual machines (VMs). Hypervisors are used extensively for virtualization in cloud computing and more. A hypervisor ensures that each VM runs as if on bare metal, and at the same time pro- vides isolation, to separate untrusted code from security-critical code. We study the Hafnium hypervisor initially developed at Google. Hafnium implements hypercalls for communication among VMs, both via memory sharing and via message passing, following the FF-A specification of ARM, and Hafnium is claimed to provide memory isolation for those parts of the memory that are not shared via communication. We present an operational semantics which models the essential behavior of Hafnium, with fairly realistic hypercall interfaces. We further develop a program logic for modular formal verification of client VM programs that can communicate with other VMs via hypercalls, and a logical relation that captures the extent to which unknown code running on a VM is isolated from other VMs. Using the program logic and the logical relation, we reason about known VM programs that interact with VMs running arbitrary unknown code, and show robust safety: no matter what the unknown code does, it cannot violate specifications proved for the known code. This captures key aspects of the desired memory isolation properties of the hypervisor. All of the work has been mechanized using the Iris separation logic framework in Coq.<br>
     Joint work with Sergei Stepanenko, Aslan Askarov, Jean Pichon-Pharabod, Amin Timany, Lars Birkedal.</div></li>
   <li>16:30 - 17:00: Paolo G. Giarrusso (Bedrock Systems, Germany):
     Programming a Microkernel Specification in Separation Logic
-    <a href="#paolo" data-toggle="collapse">[abstract]</a>
+    <a href="#paolo" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/paolo_giarrusso.pdf">[slides]</a>
     <div id="paolo" class="abstract collapse">
     Microkernel specifications must support reasoning about well-behaved clients in the presence of untrusted code. To this end, one can give an operational model of the abstract machine offered by the operating system; but it is challenging to build a faithful large-footprint operational model for a realistic microkernel using fine-grained concurrency, which will expose non-deterministic behavior and non-atomic sequences of atomic steps.<br>
@@ -144,7 +144,7 @@ Inspired by ideas from logic programming and bi-abduction, Diaframe can open and
 		Joint work with Paolo G. Giarrusso, Gregory Malecha, David Swasey, Yoichi Hirai.</div> </li>
   <li>17:00 - 17:30: <a href="https://people.mpi-sws.org/~haidang/">Hai Dang (Bedrock Systems, Germany)</a>:
     More hidden states, more modalities, and generalized invariants and ghost ownership
-    <a href="#hai" data-toggle="collapse">[abstract]</a>
+    <a href="#hai" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/hai_dang.pdf">[slides]</a>
     <div id="hai" class="abstract collapse">
     Local states are commonly used to maintain agreement within a component and isolation across components. A language level thread can has its own thread-local storage; a hypervisor maintains separate address spaces (virtual address translations) for its virtual machines; a processor has multiple-level caches that are local to a CPU core or a group of CPU cores. Reasoning about local states needs to make sure that (1) within a component, the local state is ambient, i.e. it is always readily available, but is unobtrusive to the reasoning and (2) across components, local states should be isolated, but can also be used in cross-component communications in a safe and secure way.<br>
@@ -155,7 +155,7 @@ Inspired by ideas from logic programming and bi-abduction, Diaframe can open and
   <li>08:30 - 09:00: <strong>Coffee</strong></li>
   <li>09:00 - 10:00: Koen Jacobs (KU Leuven, Belgium):
     Purity of an ST Monad: Full Abstraction by Semantically Typed Back-Translation
-    <a href="#koen" data-toggle="collapse">[abstract]</a>
+    <a href="#koen" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/koen_jacobs.pdf">[slides]</a>
     <div id="koen" class="abstract collapse">
     In 1995, Launchbury and Peyton Jones extended Haskell with an ST monad that allows the programmer to use higher-order mutable state. They informally argued that these state computations were safely encapsulated, and as such, that the rich reasoning principles stemming from the *purity* of the language, were not threatened. <br>
@@ -169,7 +169,7 @@ contextual equivalences from the pure language continue to hold in the presence 
     </div></li>
   <li>10:00 - 10:30: <a href="https://vtss.doc.ic.ac.uk/people/rao.html">Xiaojia Rao (Imperial College London, UK)</a>:
     Iris Wasm: A Program Logic for WebAssembly
-    <a href="#xiaojia" data-toggle="collapse">[abstract]</a>
+    <a href="#xiaojia" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/xiaojia_rao.pdf">[slides]</a>
     <div id="xiaojia" class="abstract collapse">
     WebAssembly (Wasm) is a modern bytecode language, primarily designed to be a compilation target for other languages to run in browsers efficiently. The WebAssembly standard is described informal semantics, with several mechanised specifications including our work on WasmCert-Coq. In this talk, we describe Iris Wasm, a higher-order program logic for Wasm which builds on WasmCert-Coq and our previous first-order program logic for Wasm.<br>
@@ -178,14 +178,14 @@ contextual equivalences from the pure language continue to hold in the presence 
   <li>10:30 - 11:00: <strong>Coffee break</strong></li>
   <li>11:00 - 12:00: <a href="https://cs.au.dk/~ageorges/">Aïna Linn Georges (Aarhus University, Denmark)</a>:
     Efficient Temporal Stack Safety on Capability Machines using Directed Capabilities
-    <a href="#aina" data-toggle="collapse">[abstract]</a>
+    <a href="#aina" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/aina_linn_georges.pdf">[slides]</a>
     <div id="aina" class="abstract collapse">
     Capability machines are a type of CPUs that support fine-grained privilege separation using capabilities, machine words that include forms of authority. Formal models of capability machines and associated calling conventions have so far focused on establishing two forms of stack safety properties, namely local state encapsulation and well-bracketed control flow. In this joint work with Alix Trieu and Lars Birkedal, we present a novel kind of directed capability  and show how to use them to make an earlier suggested calling convention more efficient. We define unary and binary logical relations, expressive enough to reason about temporal stack safety (in addition to local state encapsulation and well-bracketed control flow), and use them to verify concrete examples, all mechanised in Iris.</div>
     </li>
   <li>12:00 - 12:30: <a href="https://cs.au.dk/~vindum/">Simon Friis Vindum (Aarhus University, Denmark)</a>:
   	A Concurrent Separation Logic for Weak Persistent Memory
-  	<a href="#simonf" data-toggle="collapse">[abstract]</a>
+  	<a href="#simonf" data-bs-toggle="collapse">[abstract]</a>
   	<a href="slides/simon_friis_vindum.pdf">[slides]</a>
     <div id="simonf" class="abstract collapse">
     In this talk, I will present a concurrent separation logic capable of verifying programs that make use of weak persistent memory. Persistent memory (also known as non-volatile memory) is a recently developed memory technology that promises to revolutionize the traditional storage hierarchy by combining the speed of DRAM with the durability of SDD/HDD. This makes it possible to forego secondary storage and store data permanently in memory — thus avoiding the complexity and overhead of serializing data to slower, but durable, secondary storage. The CPU’s caches are however expected to remain volatile. This means that data can not be written atomically to the persistent memory. Only a weak ordering on the order in which writes reach persistent memory is known. This makes reasoning about programs that makes use of persistent memory challenging, which is further complicated by the fact that the content of the persistent memory should always be recoverable after a crash.
@@ -193,7 +193,7 @@ contextual equivalences from the pure language continue to hold in the presence 
   <li>12:30 - 14:00: <strong>Lunch</strong></li>
   <li>14:00 - 15:00: <a href="https://www.emanueledosualdo.com/">Emanuele D'Osualdo (MPI-SWS, Germany)</a>:
     TaDA Live: Compositional Reasoning for Termination of Fine-grained Concurrent Programs
-    <a href="#emanuele" data-toggle="collapse">[abstract]</a>
+    <a href="#emanuele" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/emanuele_dosualdo.pdf">[slides]</a>
     <div id="emanuele" class="abstract collapse">
     Modern concurrent separation logics achieved great compositionality for proofs of partial correctness of fine-grained shared-memory concurrent programs. We have comparatively little understanding of compositional reasoning about progress (liveness) properties: that is, something good eventually happens (e.g. termination, deadlock-freedom). Yet, the intricacies of the design of concurrent programs often arise precisely from the need to guarantee progress properties.<br>
@@ -202,7 +202,7 @@ contextual equivalences from the pure language continue to hold in the presence 
     </div></li>
   <li>15:00 - 15:30: <a href="https://simongregersen.com/">Simon Oddershede Gregersen (Aarhus University, Denmark)</a>:
     Trillium: History-Sensitive Refinement in Separation Logic
-    <a href="#simon" data-toggle="collapse">[abstract]</a>
+    <a href="#simon" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/simon_oddershede_gregersen.pdf">[slides]</a>
     <div id="simon" class="abstract collapse">
     Formal verification systems such as TLA+ have been widely used to design, model, and verify complex concurrent and distributed systems. In many of these tool suites, systems are modeled as state transition systems, and both safety and liveness properties can usually be checked. This enables users to reason about abstract system specifications and uncover design flaws, but it offers no guarantees about the implementations of systems nor about the relation between an implementation and its abstract specification.<br>
@@ -210,7 +210,7 @@ contextual equivalences from the pure language continue to hold in the presence 
   <li>15:30 - 16:00: <strong>Coffee break</strong></li>
   <li>16:00 - 16:30: <a href="https://people.mpi-sws.org/~spies/">Simon Spies (MPI-SWS, Germany)</a>:
     Later Credits: Resourceful Reasoning for the Later Modality
-    <a href="#simons" data-toggle="collapse">[abstract]</a>
+    <a href="#simons" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/simon_spies.pdf">[slides]</a>
     <div id="simons" class="abstract collapse">
     Iris integrates two major lines of semantics and verification research: separation logic and step-indexed logical relations. The symbiosis of both enables powerful reasoning principles for (among other things) modelling richly typed languages like Rust. To incorporate step-indexed logical relations, propositions are given meaning through a step-indexed model in Iris, and step-indexed reasoning is reflected into the logic through the so-called "later" modality. As users of Iris know well, this modality is a blessing and a curse. On the one hand, it provides an elegant, high-level account of step-indexed reasoning. On the other hand, when used in sufficiently sophisticated ways, it can become a nuisance, turning perfectly natural proof strategies into dead ends.<br>
@@ -218,7 +218,7 @@ contextual equivalences from the pure language continue to hold in the presence 
     </div></li>
   <li>16:30 - 17:00: <a href="http://cambium.inria.fr/~gmevel/">Glen Mével (Inria, France)</a>:
     Debits in nested suspensions: proof of Okasaki's banker's queue
-    <a href="#glen" data-toggle="collapse">[abstract]</a>
+    <a href="#glen" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/glen_mevel.pdf">[slides]</a>
     <div id="glen" class="abstract collapse">
     By avoiding to compute the same thing twice, thunks are handy for implementing persistent data structures with good amortized time costs, regardless of their usage scenario. Okasaki's "banker's queue" is one such data structure; it uses a lazy list.<br>
@@ -226,7 +226,7 @@ contextual equivalences from the pure language continue to hold in the presence 
     </div></li>
   <li>17:00 - 17:30: <a href="https://abeln.github.io/">Abel Nieto (Aarhus University, Denmark)</a>:
     Modular Verification of Commutative Replicated Datatypes in Separation Logic
-    <a href="#abel" data-toggle="collapse">[abstract]</a>
+    <a href="#abel" data-bs-toggle="collapse">[abstract]</a>
     <a href="slides/abel_nieto.pdf">[slides]</a>
     <div id="abel" class="abstract collapse">
     Commutative Replicated Data Types (CRDTs) are a family of distributed data structures where all operations are designed to commute, so that replica states eventually converge. Additionally, CRDTs require that operations be propagated between replicas in causal order. This talk presents a framework for verifying safety properties of OCaml CRDT implementations using separation logic. The framework consists of two libraries. One implements a Reliable Causal Broadcast (RCB) protocol so that replicas can exchange messages in causal order. A second OpLib library then uses RCB to export a CRDT builder interface that simplifies the creation (and correctness proofs) of new CRDTs. OpLib allows clients to implement new CRDTs as purely-functional data structures, without having to reason about network operations, concurrency control and mutable state, and without having to re-implement causal broadcast each time. Using OpLib, we have implemented 10 sample CRDTs from the literature, including multiple versions of replicated registers and sets, as well as two CRDT combinators for products and maps. Our proofs are conducted in the Aneris distributed separation logic.
@@ -234,7 +234,7 @@ contextual equivalences from the pure language continue to hold in the presence 
   </ul>
   </div>
 
-  <div class="row" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <h2><a name="location"></a>Location</h2>
   <hr>
   <img src="../gfx/radboud.jpg" alt="Radboud University Nijmegen" style="width: 250px; float: right; margin-left: 20px; margin-bottom: 5px;">
@@ -245,7 +245,7 @@ contextual equivalences from the pure language continue to hold in the presence 
   <p>The conference dinner will be in Nijmegen on Tuesday 3 May in <a href="https://depelgrimnijmegen.nl/en/">The Pelgrim Foodbar</a>, Franseplaats 1, Nijmegen <a href="https://goo.gl/maps/DGNcNYDdsA1nwJPr6">[map]</a>.</p>
   </div>
   
-  <div class="row" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <h2><a name="organizers"></a>Organizers</h2>
   <hr>
   <ul>
@@ -254,7 +254,7 @@ contextual equivalences from the pure language continue to hold in the presence 
   <li><a href="http://gallium.inria.fr/~fpottier/">François Pottier</a> (Inria, France)</li>
   </div>
  
-  <div class="row" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <h2><a name="registration"></a>Registration</h2>
   <hr>
   <img src="../gfx/nwo.png" alt="Dutch Research Council (NWO)" style="width: 63px; float: right; margin-left: 20px; margin-bottom: 5px;">
@@ -266,7 +266,7 @@ contextual equivalences from the pure language continue to hold in the presence 
   <p>This workshop is supported in part by the Dutch Research Council (NWO), project 016.Veni.192.259.</p>
   </div>
  
-  <div class="row" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <h2><a name="practical-information"></a>Practical information</h2>
   <hr/>
   <h3>Covid information</h3>
@@ -328,7 +328,7 @@ contextual equivalences from the pure language continue to hold in the presence 
   <p>For traveling by bus or train you must use the <a href="https://www.ov-chipkaart.nl/home-1.htm#/">OV-chipkaart</a> (public transportation chip card). There are still ticket vending machines on bigger railroad stations that can produce a train ticket. You can also buy a ticket online. There is no alternative for the OV-chip card for buses.</p>
   </div>
   
-  <div class="row" style="margin-bottom: 20px;">
+  <div style="margin-bottom: 20px;">
   <h2><a name="about-aarhuss"></a>What to do in Nijmegen</h2>
   <hr>
   <p>The website <a href="https://en.visitnijmegen.com/">Visit Nijmegen</a> provides lots of information about what to do in Nijmegen.</p>
