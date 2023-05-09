@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys, csv, string
 from datetime import date
 from itertools import groupby
