@@ -1,24 +1,137 @@
 <h3>Monday (22 May)</h3>
 <ul>
 <li>08:30-09:00: <strong>Coffee</strong></li>
+<li>09:00-10:00: Thibault Dardinier (ETH Zurich)</a>: Viper: A Verification Language Designed to Automate Separation Logic
+<a href="#ThibaultDardinier" data-bs-toggle="collapse">[abstract]</a>
+<div id="ThibaultDardinier" class="collapse"><div class="abstract">Viper is a framework on which new automatic verification tools and prototypes can be developed simply and quickly. Viper comprises an intermediate verification language (the Viper language) based on separation logic, as well as automatic verifiers for the language. In this talk, I will first give an overview of Viper. I will then discuss how the design of the Viper language enables automatic verification. Finally, I will describe our ongoing work to give a formal foundation for Viper, which includes proving that the successful verification of a Viper program corresponds to a valid proof in separation logic.</div></div>
+</li>
+<li>10:00-10:30: Ike Mulder (Radboud University Nijmegen)</a>: Proof Automation for Disjunctions and Logical Atomicity in Iris
+<a href="#IkeMulder" data-bs-toggle="collapse">[abstract]</a>
+<div id="IkeMulder" class="collapse"><div class="abstract">I will present and demonstrate some of the new capabilities of Diaframe, a proof automation library for Iris: support for logically atomic triples, and better support for disjunctions. In this talk, I focus on the latter, and illustrate why automatically proving disjunctions in separation logic is challenging. By finding appropriate _connections_, Diaframe can automatically infer some required case distinctions, and can make an informed choice of disjunct, all without backtracking.</div></div>
+</li>
+<li>11:00-11:30: Thomas Van Strydonck (KU Leuven)</a>: Reasoning about enclaved execution and attestation in Cerise
+<a href="#ThomasVanStrydonck" data-bs-toggle="collapse">[abstract]</a>
+<div id="ThomasVanStrydonck" class="collapse"><div class="abstract">In recent work, we studied the integration of two related but fundamentally different hardware security mechanisms: *capabilities* and *enclaved execution*. *Hardware capabilities* are unforgeable tokens of authority granting rights to system objects. They are a powerful security mechanism for implementing fine-grained access control and for compartmentalizing untrusted or buggy software components. *Enclaved execution* is a security mechanism that supports the run time creation of enclaves, execution environments for software components that are strongly isolated and that can *attest* their identity to other code running either locally on the same platform or remotely on other platforms.<br /> <br />
+
+By integrating both security mechanisms in a system called CHERITrEE, we arrived at an enclaved execution system that naturally supports useful features that have traditionally been hard to support in enclaved execution, like dynamically growing and shrinking enclaves, non-contiguous and nested enclaves, sharing of memory between enclaves etc.<br /> <br />
+
+In this follow-up work in progress, we are using Iris (specifically, the *Cerise* capability machine model) to reason about the security guarantees offered by the CHERITrEE hardware primitives. Challenges include reasoning about sealing of capabilities and a memory sweep which ensures unique ownership of capabilities. Ultimately, we are interested in formally capturing the full-system guarantees obtained when one successfully attests an enclave. We believe that the general ideas of our approach generalize to other enclaved execution systems as well. </div></div>
+</li>
+<li>11:30-12:00: Sander Huyghebaert (Vrije Universiteit Brussel & KU Leuven)</a>: Formalizing, Verifying and Applying ISA Security Guarantees as Universal Contracts
+<a href="#SanderHuyghebaert" data-bs-toggle="collapse">[abstract]</a>
+<div id="SanderHuyghebaert" class="collapse"><div class="abstract">Progress has recently been made on specifying instruction set architectures (ISAs) in executable formalisms rather than through prose.
+  However, to date, those formal specifications are limited to the functional aspects of the ISA and do not cover its security guarantees.
+  We present a novel, general method for formally specifying an ISA's security
+  guarantees to (1) balance the needs of ISA implementations (hardware) and clients (software), (2) can be semi-automatically verified to hold for the ISA functional semantics, producing a high-assurance mechanically-verifiable proof, and (3) support informal and formal reasoning about security-critical software in the presence of adversarial code.
+  Our method leverages universal contracts: software contracts that express bounds on the authority of arbitrary untrusted code.
+  Universal contracts can be kept agnostic of software abstractions, and strike the right balance between requiring sufficient detail for reasoning about software and preserving implementation freedom of ISA designers and CPU implementers.
+  We semi-automatically verify universal contracts against Sail implementations of ISA semantics using our Katamaran tool; a semi-automatic separation logic verifier for Sail which produces machine-checked proofs for successfully verified contracts.
+  We demonstrate the generality of our method by applying it to two ISAs that offer very different security primitives: (1) MinimalCaps: a custom-built capability machine ISA and (2) a (somewhat simplified) version of RISC-V with PMP.
+  We verify a femtokernel using the security guarantee we have formalized for RISC-V with PMP.
+  For now, we focus on direct channels and integrity guarantees but we explain how the method can be extended to other guarantees in the future.</div></div>
+</li>
+<li>12:00-12:30: Arthur Azevedo de Amorim (Rochester Institute of Technology)</a>: Cryptis: Cryptographic reasoning in separation logic
+<a href="#ArthurAzevedodeAmorim" data-bs-toggle="collapse">[abstract]</a>
+<div id="ArthurAzevedodeAmorim" class="collapse"><div class="abstract">Cryptis is an extension of Iris for reasoning about communication protocols in the symbolic model of cryptography (where operations such as encryption behave as perfect black boxes). Unlike prior work on protocol verification, Cryptis was designed so proofs of correctness of protocols can be reused when verifying larger programs that rely on these protocols. In this talk, I describe the design of Cryptis and go over case studies demonstrating what kinds of results can be proved in the logic.</div></div>
+</li>
+<li>12:30-13:30: <strong>Lunch</strong></li>
+<li>13:30-14:30: <strong>Breakout Session</strong></li>
+<li>14:30-15:00: Alexandre Moine (Inria)</a>: Diamonds Are Forever: Reasoning about Heap Space in a Concurrent and Garbage Collected Language.
+<a href="#AlexandreMoine" data-bs-toggle="collapse">[abstract]</a>
+<div id="AlexandreMoine" class="collapse"><div class="abstract">Memory management is notoriously difficult in a concurrent setting.
+The presence of garbage collection greatly simplifies the life of the
+programmer, eradicating many memory-related bugs. However, the heap
+space usage of garbage-collected programs can be tricky to understand
+and reason about, as there is no explicit program point where space is
+reclaimed.
+
+We recently presented an Iris-powered Separation Logic with Space
+Credits to reason about heap space under garbage collection in a
+high-level, yet sequential, language.
+
+In this talk, we scale up to a concurrent language. For this purpose,
+we introduce new "pointed-by-thread" assertions, which keep track of
+the existence of stack-to-heap pointers in a reasonably lightweight
+manner. These assertions subsume and replace the "Stackable"
+assertions used in our earlier logic. We illustrate our approach on a
+range of examples, including Treiber's stack and Michael-Scott's
+queue, unveiling their surprisingly high heap memory bounds in the
+presence of garbage collection. </div></div>
+</li>
+<li>15:00-15:30: Justus Fasse (KU Leuven)</a>: (WIP) Expressive modular verification of termination for busy-waiting programs
+<a href="#JustusFasse" data-bs-toggle="collapse">[abstract]</a>
+<div id="JustusFasse" class="collapse"><div class="abstract">Busy-waiting is an important, low-level synchronization pattern that is used to implement higher-level abstractions for synchronization. Its termination depends on cooperation by other thread(s) as well as a fair thread scheduler.
+
+We present work in progress on a general approach to verify busy-waiting concurrent programs based on higher-order separation logic. The approach combines the higher-order-programming perspective on verifying concurrent modules presented by Jacobs and Piessens (2011) with the work on "Ghost Signals" (Reinhard and Jacobs, 2021). Based on the latter, we extend the programming language with call permissions, ghost signals, obligations and wait permissions. Call permissions prevent infinite recursion while the other ghost constructs enable the generation of call permissions for busy-waiting. The resulting language has no fair infinite executions. Previously, these ghost extensions were used to verify classical specifications for synchronization constructs where the module creates and discharges obligations. Such specifications, however, fix particular client patterns and would in general require "obligation transfer" to handle more intricate wait dependencies. Our new contribution, inspired by TaDA Live (D'Osualdo, Sutherland, Farzan and Gardner, 2021), is to require the client to create and discharge obligations as necessary to satisfy the module's liveness requirements. However, instead of building these liveness requirements into the logic, we express them by having the module's operations take ghost code as ghost arguments whose job is to generate the call permissions the module needs for its busy-waiting.
+
+With this parameterized setup we aim to recover or even surpass the expressivity of the first-order approach taken by TaDA Live while being more amenable to mechanization in tools that support higher-order separation logic, including Iris.</div></div>
+</li>
+<li>15:30-16:00: Jules Jacobs (Radboud University)</a>: Dependent Session Protocols in Separation Logic from First Principles
+<a href="#JulesJacobs" data-bs-toggle="collapse">[abstract]</a>
+<div id="JulesJacobs" class="collapse"><div class="abstract">TBA</div></div>
+</li>
 </ul>
 <h3>Tuesday (23 May)</h3>
 <ul>
 <li>08:30-09:00: <strong>Coffee</strong></li>
+<li>09:00-10:00: Azalea Raad (Imperial College London)</a>: TBA
+<a href="#AzaleaRaad" data-bs-toggle="collapse">[abstract]</a>
+<div id="AzaleaRaad" class="collapse"><div class="abstract">TBA</div></div>
+</li>
 <li>10:00-10:30: Noam Zilberstein (Cornell University)</a>: Outcome Separation Logic
 <a href="#NoamZilberstein" data-bs-toggle="collapse">[abstract]</a>
 <div id="NoamZilberstein" class="collapse"><div class="abstract">Outcome Separation Logic is a new program logic for reasoning about both program correctness and incorrectness with computation effects such as nondeterminism and randomization. In this talk, I will outline the challenges of incorrectness reasoning and, in particular, how incorrectness interacts with effects. I will also talk about how some of the ideas behind OSL could be combined with Iris.</div></div>
+</li>
+<li>11:00-11:30: Alejandro Aguirre (Aarhus University)</a>: Asynchronous Probabilistic Couplings in Higher-Order Separation Logic
+<a href="#AlejandroAguirre" data-bs-toggle="collapse">[abstract]</a>
+<div id="AlejandroAguirre" class="collapse"><div class="abstract">Probabilistic couplings are the foundation for many probabilistic relational program logics and arise when relating random sampling statements across two programs. In relational program logics, this manifests as dedicated coupling rules that, e.g., say we may reason as if two sampling statements return the same value. However, this approach fundamentally requires aligning or “synchronizing” the sampling statements of the two programs which is not always possible. In this paper we develop Clutch, a higher-order probabilistic relational separation logic that addresses this issue by supporting asynchronous probabilistic couplings. We use Clutch to develop a logical step-indexed logical relational to reason about contextual refinement and equivalence of higher-order programs written in a rich language with higher-order local state and impredicative polymorphism. Finally, we demonstrate the usefulness of our approach on a number of case studies. All the results that appear in the paper have been formalized in the Coq proof assistant using the Coquelicot library and the Iris separation logic framework.</div></div>
+</li>
+<li>11:30-12:00: Clément Allain (Inria Paris, Cambium)</a>: Verification of Chase-Lev work-stealing deque
+<a href="#ClmentAllain" data-bs-toggle="collapse">[abstract]</a>
+<div id="ClmentAllain" class="collapse"><div class="abstract">A parallel scheduler is in charge of running the tasks that make up a parallel computation on a pool of processors. It implements a scheduling policy that governs how these tasks are divided among the processors. Work-stealing is a popular scheduling policy in which an idle processor may steal tasks from others, thereby performing load balancing. In a typical work-stealing algorithm, each processor owns a concurrent deque (double-ended queue) storing its ready tasks. This deque features three operations. The owner may [push] and [pop] at its end of the deque while the thieves may [steal] at the other end. This talk will present ongoing work on the verification of the Chase-Lev work-stealing deque. This data structure is implemented in the [lockfree] OCaml 5 library and used in the [domainslib] library. We will give an overview of the proof in Iris, taking advantage of ghost state and prophecy variables with memory.</div></div>
+</li>
+<li>12:00-12:30: Jonas Kastberg Hinrichsen (Aarhus University)</a>: Stripping multiple laters, one step at a time. Recovering intuitive specifications with the "step modality".
+<a href="#JonasKastbergHinrichsen" data-bs-toggle="collapse">[abstract]</a>
+<div id="JonasKastbergHinrichsen" class="collapse"><div class="abstract">The later modality is the backbone of reasoning about step-indexing in step-indexed logics such as Iris. The modality yields an intuitive way of specifying the need to take a step for the sake of sound recursion. However, later modalities often bleed through abstraction layers, as the end client needs to know that a step must be taken. As a result the later modality often crop up in even high-level specification patterns presented in papers, imposing some degree of explanation, which may interfere with the expositon of the core contributions of the paper. Even so, the concern of working with laters has largely been discharged with something akin to "dont worry, just take a step", which is mostly accepted at face value. However, intricate proof patterns, such as nested invariants and higher-order ghost theories, incur multiple laters. Recent developments have found various methods for dealing with such multiple laters, e.g. later credits and multi-later-stripping. While these developments yield the necessary expressivity (being able to deal with all incurred laters during a single step), they impose a non-trivial dissemination burden, in regards to why the multiple laters are there, and how one formally resolve them. In this talk, I iterate some of the problems and solutions regarding multiple laters, that has arisen in the recent years of Iris, from the perspective of a higher-order specification pattern---The Actris ghost theory. I propose a means for recovering the original intuition behind the later modality in intricate proof patterns---The step modality. The step modality leverages the expressivity of recent discoveries regarding stripping multiple laters during a single step, while supporting specification patterns that abstract over the number of laters to be stripped at each step. To motivate the step modality, I present a novel specification pattern---The so-called session escrow pattern---which is unspecfiable without the modality.</div></div>
+</li>
+<li>12:30-13:30: <strong>Lunch</strong></li>
+<li>13:30-14:30: <strong>Breakout Session</strong></li>
+<li>14:30-15:30: William Mansky (University of Illinois Chicago)</a>: Integrating Iris into the Verified Software Toolchain (and vice versa?)
+<a href="#WilliamMansky" data-bs-toggle="collapse">[abstract]</a>
+<div id="WilliamMansky" class="collapse"><div class="abstract">The Verified Software Toolchain (VST) is a separation-logic-based system for verifying C programs according to the semantics of CompCert, with a guarantee that properties proved will hold on the compiled code. The logic of VST is tantalizingly close to Iris, but there are foundational and practical obstacles to combining the two systems. In this talk, I will discuss the work we've done to adapt VST to integrate more features of Iris, and preliminary work on re-engineering VST to use Iris itself as a foundation.</div></div>
 </li>
 </ul>
 <h3>Wednesday (24 May)</h3>
 <ul>
 <li>08:30-09:00: <strong>Coffee</strong></li>
-<li>11:30-12:00: Youngju Song (MPI-SWS)</a>: CCR (maybe I can give 2 talks, each for 20 minutes. one: popl paper, another: tentative popl submission on proof mode)
+<li>09:00-10:00: Tej Chajed (Vmware / University of Wisconsin)</a>: TBA
+<a href="#TejChajed" data-bs-toggle="collapse">[abstract]</a>
+<div id="TejChajed" class="collapse"><div class="abstract">TBA</div></div>
+</li>
+<li>10:00-10:30: Yun-Sheng Chang (MIT)</a>: Verifying vMVCC, a high-performance database using multi-version concurrency control
+<a href="#YunShengChang" data-bs-toggle="collapse">[abstract]</a>
+<div id="YunShengChang" class="collapse"><div class="abstract">Multi-version concurrency control (MVCC) is a widely used, sophisticated approach for handling concurrent transactions in a database system.  vMVCC is the first MVCC-based database that comes with a machine-checked proof of correctness, providing clients with a guarantee that it will correctly handle all transactions despite a sophisticated design and implementation that might otherwise be error-prone.  vMVCC is implemented in Go, as a single-node in-memory database, and uses several optimizations, such as RDTSC-based timestamps, to achieve high performance (30--71% the throughput of Silo, a state-of-the-art in-memory database, for YCSB and TPC-C workloads).  Formally specifying and verifying vMVCC required adopting sophisticated proof techniques, such as prophecy variables and logical atomicity, owing to the fact that MVCC transactions can linearize at timestamps prior to transaction execution.</div></div>
+</li>
+<li>11:00-11:30: Amin Timany (Aarhus University)</a>: A Program Logic to Reason About Well-Bracketed Control Flow
+<a href="#AminTimany" data-bs-toggle="collapse">[abstract]</a>
+<div id="AminTimany" class="collapse"><div class="abstract">A program is said to be well-bracketed if every called function must return before its caller can resume execution. This is often the case. Well-bracketedness has been captured semantically as a condition on strategies in fully abstract games models and multiple prior works have studied well-bracketedness by showing correctness/security properties of programs where such properties depend on the well-bracketed nature of control flow. The latter category of prior works have all used an involved logical relations model with explicit state-transition systems capturing the relevant parts of the control flow of the program. In this paper we present the first Hoare-style program logic based on separation logic for reasoning about well-bracketedness and use it to show correctness of well-bracketed programs both directly and through defining unary and binary logical relations models based on this program logic. All results presented in this paper are formalized on top of the Iris framework and mechanized in the Coq proof assistant.</div></div>
+</li>
+<li>11:30-12:00: Youngju Song (MPI-SWS)</a>: Conditional Contextual Refinement
 <a href="#YoungjuSong" data-bs-toggle="collapse">[abstract]</a>
-<div id="YoungjuSong" class="collapse"><div class="abstract">CCR abstract</div></div>
+<div id="YoungjuSong" class="collapse"><div class="abstract">TBA</div></div>
 </li>
 <li>12:00-12:30: Arthur Charguéraud (Inria)</a>: Towards pushing CFML features into Iris
 <a href="#ArthurCharguraud" data-bs-toggle="collapse">[abstract]</a>
 <div id="ArthurCharguraud" class="collapse"><div class="abstract">CFML embeds in Coq a simple Separation Logic for ML-style programs. It is designed for establishing total correctness proofs for sequential programs. CFML leverages two techniques, namely "characteristic formulae" and "lifting", to enable reasoning about ML program values using directly their Coq counterpart. CFML's approach greatly reduces the noise in proofs, especially for programs exploiting algebraic data structures and pattern matching. CFML has been shown in practice to scale up to the verification of nontrivial sequential algorithms and data structures. The purpose of this talk is to advertise the features of CFML that Iris could benefit from, and discuss the technical challenges involved. Details may be found in my habilitation manuscript: https://www.chargueraud.org/research/2023/hdr/chargueraud-hdr.pdf</div></div>
+</li>
+<li>12:30-13:30: <strong>Lunch</strong></li>
+<li>13:30-14:30: <strong>Breakout Session</strong></li>
+<li>14:30-15:00: Hai Dang (BedRock Systems Inc.)</a>: Decomposing end-to-end refinement proofs across multiple semantics within separation logics
+<a href="#HaiDang" data-bs-toggle="collapse">[abstract]</a>
+<div id="HaiDang" class="collapse"><div class="abstract">The BedRock Ultravisor provides client operating systems (guest OSes) with a virtualization layer on a shared physical machine. To show that the Ultravisor enables strong isolation properties, we need to prove a refinement between the virtualization stack (the implementation), running on the physical machine, and the "bare-metal" virtual machine (the specification). This is particularly challenging because both the bare-metal machine and the virtualization stack are composed of multiple (hardware/software) interacting components. Furthermore, the software components are implemented across multiple levels of abstractions (e.g., in both assembly and C++). In this talk, we present an approach to establish an end-to-end refinement theorem that avoids constructing new operational semantics for intermediate abstractions, and instead incrementally constructs those abstractions within separation logics. First, we reflect both the bare-metal virtual machine and the physical machine, both expressed operationally using process calculi, into separation logics. The bare-metal machine is encoded as pure ghost state, and the physical machine is tied into weakest preconditions. Second, we break down the physical machine model into smaller, separate, communicating systems. We then selectively recombine slices of these individual systems to build up increasingly abstract reasoning principles. For example, we demonstrate how to combine low-level resources of a CPU core and some DRAM memory segments, to establish higher-level resources to reason about an "assembly language program" stored in said memory segments. We can also encode convenient protocols for driving I/O devices from code running on the CPU. Third, we orthogonally decompose the specification (the bare-metal virtual machine) into smaller, separate specification models, and modularly show that the components of the implementation refine those models in separation logics, using the reasoning principles from the previous step. We show how our approach supports both horizontal decomposition (roughly characterized by [WP p1 ** WP p2 |-- WP (p1 || p2)]), and vertical decomposition (roughly characterized by [WP src |-- WP target]). Working within separation logic allows us to work with an "open-ended" foundation, where we can use small footprint abstractions and we can under-specify complex behaviors.</div></div>
+</li>
+<li>15:00-15:30: Armaël Guéneau (Inria, LMF)</a>: Melocoton: a program logic for verified interoperability
+<a href="#ArmalGuneau" data-bs-toggle="collapse">[abstract]</a>
+<div id="ArmalGuneau" class="collapse"><div class="abstract">TBA</div></div>
 </li>
 </ul>
