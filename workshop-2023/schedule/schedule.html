@@ -43,11 +43,11 @@ The presence of garbage collection greatly simplifies the life of the
 programmer, eradicating many memory-related bugs. However, the heap
 space usage of garbage-collected programs can be tricky to understand
 and reason about, as there is no explicit program point where space is
-reclaimed.
+reclaimed.<br /><br />
 
 We recently presented an Iris-powered Separation Logic with Space
 Credits to reason about heap space under garbage collection in a
-high-level, yet sequential, language.
+high-level, yet sequential, language.<br /><br />
 
 In this talk, we scale up to a concurrent language. For this purpose,
 we introduce new "pointed-by-thread" assertions, which keep track of
@@ -60,9 +60,9 @@ presence of garbage collection. </div></div>
 </li>
 <li>15:00-15:30: Justus Fasse (KU Leuven)</a>: (WIP) Expressive modular verification of termination for busy-waiting programs
 <a href="#JustusFasse" data-bs-toggle="collapse">[abstract]</a>
-<div id="JustusFasse" class="collapse"><div class="abstract">Busy-waiting is an important, low-level synchronization pattern that is used to implement higher-level abstractions for synchronization. Its termination depends on cooperation by other thread(s) as well as a fair thread scheduler.
+<div id="JustusFasse" class="collapse"><div class="abstract">Busy-waiting is an important, low-level synchronization pattern that is used to implement higher-level abstractions for synchronization. Its termination depends on cooperation by other thread(s) as well as a fair thread scheduler.<br /><br />
 
-We present work in progress on a general approach to verify busy-waiting concurrent programs based on higher-order separation logic. The approach combines the higher-order-programming perspective on verifying concurrent modules presented by Jacobs and Piessens (2011) with the work on "Ghost Signals" (Reinhard and Jacobs, 2021). Based on the latter, we extend the programming language with call permissions, ghost signals, obligations and wait permissions. Call permissions prevent infinite recursion while the other ghost constructs enable the generation of call permissions for busy-waiting. The resulting language has no fair infinite executions. Previously, these ghost extensions were used to verify classical specifications for synchronization constructs where the module creates and discharges obligations. Such specifications, however, fix particular client patterns and would in general require "obligation transfer" to handle more intricate wait dependencies. Our new contribution, inspired by TaDA Live (D'Osualdo, Sutherland, Farzan and Gardner, 2021), is to require the client to create and discharge obligations as necessary to satisfy the module's liveness requirements. However, instead of building these liveness requirements into the logic, we express them by having the module's operations take ghost code as ghost arguments whose job is to generate the call permissions the module needs for its busy-waiting.
+We present work in progress on a general approach to verify busy-waiting concurrent programs based on higher-order separation logic. The approach combines the higher-order-programming perspective on verifying concurrent modules presented by Jacobs and Piessens (2011) with the work on "Ghost Signals" (Reinhard and Jacobs, 2021). Based on the latter, we extend the programming language with call permissions, ghost signals, obligations and wait permissions. Call permissions prevent infinite recursion while the other ghost constructs enable the generation of call permissions for busy-waiting. The resulting language has no fair infinite executions. Previously, these ghost extensions were used to verify classical specifications for synchronization constructs where the module creates and discharges obligations. Such specifications, however, fix particular client patterns and would in general require "obligation transfer" to handle more intricate wait dependencies. Our new contribution, inspired by TaDA Live (D'Osualdo, Sutherland, Farzan and Gardner, 2021), is to require the client to create and discharge obligations as necessary to satisfy the module's liveness requirements. However, instead of building these liveness requirements into the logic, we express them by having the module's operations take ghost code as ghost arguments whose job is to generate the call permissions the module needs for its busy-waiting.<br /><br />
 
 With this parameterized setup we aim to recover or even surpass the expressivity of the first-order approach taken by TaDA Live while being more amenable to mechanization in tools that support higher-order separation logic, including Iris.</div></div>
 </li>
@@ -100,11 +100,12 @@ With this parameterized setup we aim to recover or even surpass the expressivity
 <a href="#WilliamMansky" data-bs-toggle="collapse">[abstract]</a>
 <div id="WilliamMansky" class="collapse"><div class="abstract">The Verified Software Toolchain (VST) is a separation-logic-based system for verifying C programs according to the semantics of CompCert, with a guarantee that properties proved will hold on the compiled code. The logic of VST is tantalizingly close to Iris, but there are foundational and practical obstacles to combining the two systems. In this talk, I will discuss the work we've done to adapt VST to integrate more features of Iris, and preliminary work on re-engineering VST to use Iris itself as a foundation.</div></div>
 </li>
+<li>19:00-20:30: <strong>Banquet</strong></li>
 </ul>
 <h3>Wednesday (24 May)</h3>
 <ul>
 <li>08:30-09:00: <strong>Coffee</strong></li>
-<li>09:00-10:00: Tej Chajed (Vmware / University of Wisconsin)</a>: TBA
+<li>09:00-10:00: Tej Chajed (VMware / University of Wisconsin)</a>: TBA
 <a href="#TejChajed" data-bs-toggle="collapse">[abstract]</a>
 <div id="TejChajed" class="collapse"><div class="abstract">TBA</div></div>
 </li>
