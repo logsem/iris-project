@@ -2,5 +2,4 @@
 .#index.html
 _site
 *~
-Gemfile.lock
 .bundle/

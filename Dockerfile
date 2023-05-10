@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     ruby2.7-dev
 
 RUN mkdir /iris-project
-COPY Gemfile /iris-project/Gemfile
+COPY Gemfile Gemfile.lock /iris-project/
 WORKDIR /iris-project
 RUN gem install bundler:2.4.6
 RUN bundle install
