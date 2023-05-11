@@ -51,7 +51,7 @@ img.card-img-top {
 .grants img {
   display: block;
   margin: 0px auto;
-  height: 75px;
+  max-height: 75px;
 }
 
 .card-subtitle {
