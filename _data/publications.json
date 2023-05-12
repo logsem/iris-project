@@ -37,8 +37,6 @@
           { "name": "Coq development", "url": "" }
       ]
     },
-
-
     {
       "title": "Higher-Order Leak and Deadlock Free Locks",
       "authors": [
