@@ -1,6 +1,21 @@
 {
   "publications": [
     {
+      "title": "Modular Verification of State-Based CRDTs in Separation Logic",
+      "authors": [
+        "Abel Nieto",
+	"Arnaud Daby-Seesaram",
+        "Léon Gondelman",
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In ECOOP 2023: European Conference on Object-Oriented Programming",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "pdfs/2023-ecoop-crdts.pdf" },
+        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7717100" }
+      ]
+    },
+    {
       "title": "VMSL: A Separation Logic for Mechanised Robust Safety of Virtual Machines Communicating over FF-A",
       "authors": [
           "Zongyuan Liu",
