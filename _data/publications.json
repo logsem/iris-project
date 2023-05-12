@@ -30,7 +30,7 @@
       "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2023-pldi-iris-wasm.pdf",
       "other_urls": [
-          { "name": "Coq development", "url": "https://github.com/WasmCert/WasmCert-Coq/tree/iris-wasm-native" }
+          { "name": "Coq development", "url": "https://github.com/WasmCert/WasmCert-Coq/tree/iris-wasm-native" },
           { "name": "Artifact", "url": "https://zenodo.org/record/7808708#.ZF4mLexBxqs" }
       ]
     },
