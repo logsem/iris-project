@@ -14,11 +14,7 @@
       "pdf_url": "pdfs/2023-pldi-hypervisor-vmsl.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://github.com/logsem/VMSL" }
-      ] PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-      "pdf_url": "pdfs/2023-pldi-hypervisor-vmsl.pdf",
-      "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/logsem/VMSL" }
-      ]
+      ] 
     },
     {
       "title": "Iris-Wasm: Robust and Modular Verification of WebAssembly Programs",
