@@ -1,6 +1,45 @@
 {
   "publications": [
     {
+      "title": "VMSL: A Separation Logic for Mechanised Robust Safety of Virtual Machines Communicating over FF-A",
+      "authors": [
+          "Zongyuan Liu",
+          "Sergei Stepanenko",
+          "Jean Pichon-Pharabod",
+          "Amin Timany",
+          "Aslan Askarov",
+          "Lars Birkedal"
+      ],
+      "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2023-pldi-hypervisor-vmsl.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/logsem/VMSL" }
+      ] PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2023-pldi-hypervisor-vmsl.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/logsem/VMSL" }
+      ]
+    },
+    {
+      "title": "Iris-Wasm: Robust and Modular Verification of WebAssembly Programs",
+      "authors": [
+          "Xiaojia Rao",
+          "Aina Linn Georges",
+          "Maxime Legoupil",
+          "Conrad Watt",
+          "Jean Pichon-Pharabod",
+          "Philippa Gardner",
+          "Lars Birkedal"
+      ],
+      "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2023-pldi-iris-was.pdf",
+      "other_urls": [
+          { "name": "Coq development", "url": "" }
+      ]
+    },
+
+
+    {
       "title": "Higher-Order Leak and Deadlock Free Locks",
       "authors": [
         "Jules Jacobs",
