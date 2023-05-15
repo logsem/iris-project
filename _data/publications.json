@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Proof Automation for Linearizability in Separation Logic",
+      "authors": [
+        "Ike Mulder",
+        "Robbert Krebbers",
+      ],
+      "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2023-oopsla-diaframe2-final.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/record/7712620" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" },
+      ]
+    },
+    {
       "title": "Modular Verification of State-Based CRDTs in Separation Logic",
       "authors": [
         "Abel Nieto",
