@@ -29,6 +29,20 @@
       ]
     },
     {
+      "title": "Beyond Backtracking: Connections in Fine-Grained Concurrent Separation Logic",
+      "authors": [
+        "Ike Mulder",
+        "Łukasz Czajka",
+        "Robbert Krebbers",
+      ],
+      "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2023-pldi-diaframe-disj.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.7799173" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" },
+      ] 
+    },
+    {
       "title": "VMSL: A Separation Logic for Mechanised Robust Safety of Virtual Machines Communicating over FF-A",
       "authors": [
           "Zongyuan Liu",
