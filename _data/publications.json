@@ -1241,6 +1241,17 @@
   ],
   "others": [
     {
+      "title": "Verifying a Barrier using Iris",
+      "authors": [
+        "Simcha van Collem"
+      ],
+      "description": "Bachelor’s Thesis Computing Science, Radboud University, March 2023",
+      "pdf_url": "https://www.cs.ru.nl/bachelors-theses/2023/Simcha_van_Collem___1040283___Verifying_a_Barrier_using_Iris.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7749189" }
+      ]
+    },
+    {
       "title": "Mechanized Reasoning about a Capability Machine",
       "authors": [
         "Aina Linn Georges",
