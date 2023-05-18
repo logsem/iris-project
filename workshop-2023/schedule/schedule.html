@@ -108,9 +108,11 @@ With this parameterized setup we aim to recover or even surpass the expressivity
 <h3>Wednesday (24 May)</h3>
 <ul>
 <li>08:30-09:00: <strong>Coffee</strong></li>
-<li>09:00-10:00: Tej Chajed (VMware / University of Wisconsin)</a>: TBA
+<li>09:00-10:00: Tej Chajed (VMware / University of Wisconsin)</a>: Formal verification of a concurrent file system
 <a href="#TejChajed" data-bs-toggle="collapse">[abstract]</a>
-<div id="TejChajed" class="collapse"><div class="abstract">TBA</div></div>
+<div id="TejChajed" class="collapse"><div class="abstract">Bugs in systems software like file systems, databases, and operating systems can have serious consequences, ranging from security vulnerabilities to data loss, and these bugs affect all the applications built on top. Concurrency is essential to most systems software, which makes Iris a perfect fit.
+
+In this talk, I'll present some of our work on developing a verified concurrent file system. The foundation is Perennial, a program logic built on top of Iris that supports reasoning about concurrency and crashes. Using Perennial we verify GoTxn, a transaction system that simplifies persisting data atomically while getting good performance for concurrent operations. Finally, we connect GoTxn to Dafny to implement and verify a server that implements the NFS protocol and gets good performance.</div></div>
 </li>
 <li>10:00-10:30: Yun-Sheng Chang (MIT)</a>: Verifying vMVCC, a high-performance database using multi-version concurrency control
 <a href="#YunShengChang" data-bs-toggle="collapse">[abstract]</a>
