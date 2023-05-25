@@ -1141,6 +1141,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Higher-Order Separation Logic for Distributed Systems and Security",
+      "authors": ["Simon Oddershede Gregersen"],
+      "description": "Aarhus University, March 2023",
+      "pdf_url": "pdfs/2023-phd-gregersen.pdf"
+    },
+    {
       "title": "Proof of Programs with Effect Handlers",
       "authors": ["Paulo Emílio de Vilhena"],
       "description": "Université Paris Cité, December 2022",
