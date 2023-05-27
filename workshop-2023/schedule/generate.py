@@ -34,6 +34,7 @@ affil_col = find_column(header, 'Affiliation')
 title_col = find_column(header, 'title')
 abstract_col = find_column(header, 'abstract')
 time_col = find_column(header, 'talk_time')
+slides_col = find_column(header, 'slides')
 html_col = find_column(header, 'raw_html')
 
 # output variable
@@ -45,6 +46,7 @@ for row in f:
     talk.affil = row[affil_col]
     talk.title = row[title_col]
     talk.abstract = row[abstract_col]
+    talk.slides = row[slides_col]
     talk.html = row[html_col]
     time = row[time_col]
     if time:
@@ -65,6 +67,8 @@ for (day, day_talks) in groupby(talks, lambda talk: talk.day):
             id = mk_id(talk.name)
             print(f"<li>{talk.time}: {talk.name} ({talk.affil})</a>: {talk.title}")
             print(f"<a href=\"#{id}\" data-bs-toggle=\"collapse\">[abstract]</a>")
+            if talk.slides:
+                print(f"<a href=\"slides/{talk.slides}\">[slides]</a>")
             # nested div makes the show/hide animation properly smooth
             print(f"<div id=\"{id}\" class=\"collapse\"><div class=\"abstract\">{talk.abstract}</div></div>")
             print("</li>")
