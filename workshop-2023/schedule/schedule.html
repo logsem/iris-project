@@ -3,10 +3,12 @@
 <li>08:30-09:00: <strong>Coffee</strong></li>
 <li>09:00-10:00: Thibault Dardinier (ETH Zurich)</a>: Viper: A Verification Framework Designed to Automate Separation Logic
 <a href="#ThibaultDardinier" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/dardinier.pdf">[slides]</a>
 <div id="ThibaultDardinier" class="collapse"><div class="abstract">Viper is a framework on which new automatic verification tools and prototypes can be developed simply and quickly. Viper comprises an intermediate verification language (the Viper language) based on separation logic, as well as automatic verifiers for the language. In this talk, I will first give an overview of Viper. I will then discuss how the design of the Viper language enables automatic verification. Finally, I will describe our ongoing work to give a formal foundation for Viper, which includes proving that the successful verification of a Viper program corresponds to a valid proof in separation logic.</div></div>
 </li>
 <li>10:00-10:30: Ike Mulder (Radboud University Nijmegen)</a>: Proof Automation for Disjunctions and Logical Atomicity in Iris
 <a href="#IkeMulder" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/mulder.pdf">[slides]</a>
 <div id="IkeMulder" class="collapse"><div class="abstract">I will present and demonstrate some of the new capabilities of Diaframe, a proof automation library for Iris: support for logically atomic triples, and better support for disjunctions. In this talk, I focus on the latter, and illustrate why automatically proving disjunctions in separation logic is challenging. By finding appropriate _connections_, Diaframe can automatically infer some required case distinctions, and can make an informed choice of disjunct, all without backtracking.</div></div>
 </li>
 <li>10:30-11:00: <strong>Coffee</strong></li>
@@ -40,6 +42,7 @@ In this follow-up work in progress, we are using Iris (specifically, the *Cerise
 <li>13:30-14:30: <strong>Breakout Session</strong></li>
 <li>14:30-15:00: Alexandre Moine (Inria)</a>: Diamonds Are Forever: Reasoning about Heap Space in a Concurrent and Garbage Collected Language
 <a href="#AlexandreMoine" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/moine.pdf">[slides]</a>
 <div id="AlexandreMoine" class="collapse"><div class="abstract">Memory management is notoriously difficult in a concurrent setting.
 The presence of garbage collection greatly simplifies the life of the
 programmer, eradicating many memory-related bugs. However, the heap
@@ -70,6 +73,7 @@ With this parameterized setup we aim to recover or even surpass the expressivity
 </li>
 <li>15:30-16:00: Jules Jacobs (Radboud University)</a>: Dependent Session Protocols in Separation Logic from First Principles
 <a href="#JulesJacobs" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/jacobs.pdf">[slides]</a>
 <div id="JulesJacobs" class="collapse"><div class="abstract">TBA</div></div>
 </li>
 </ul>
@@ -82,6 +86,7 @@ With this parameterized setup we aim to recover or even surpass the expressivity
 </li>
 <li>10:00-10:30: Noam Zilberstein (Cornell University)</a>: Outcome Separation Logic
 <a href="#NoamZilberstein" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/zilberstein.pdf">[slides]</a>
 <div id="NoamZilberstein" class="collapse"><div class="abstract">Outcome Separation Logic is a new program logic for reasoning about both program correctness and incorrectness with computation effects such as nondeterminism and randomization. In this talk, I will outline the challenges of incorrectness reasoning and, in particular, how incorrectness interacts with effects. I will also talk about how some of the ideas behind OSL could be combined with Iris.</div></div>
 </li>
 <li>10:30-11:00: <strong>Coffee</strong></li>
@@ -95,6 +100,7 @@ With this parameterized setup we aim to recover or even surpass the expressivity
 </li>
 <li>12:00-12:30: Jonas Kastberg Hinrichsen (Aarhus University)</a>: Stripping multiple laters, one step at a time. Recovering intuitive specifications with the "step modality" 
 <a href="#JonasKastbergHinrichsen" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/hinrichsen.pdf">[slides]</a>
 <div id="JonasKastbergHinrichsen" class="collapse"><div class="abstract">The later modality is the backbone of reasoning about step-indexing in step-indexed logics such as Iris. The modality yields an intuitive way of specifying the need to take a step for the sake of sound recursion. However, later modalities often bleed through abstraction layers, as the end client needs to know that a step must be taken. As a result the later modality often crop up in even high-level specification patterns presented in papers, imposing some degree of explanation, which may interfere with the expositon of the core contributions of the paper. Even so, the concern of working with laters has largely been discharged with something akin to "dont worry, just take a step", which is mostly accepted at face value. However, intricate proof patterns, such as nested invariants and higher-order ghost theories, incur multiple laters. Recent developments have found various methods for dealing with such multiple laters, e.g. later credits and multi-later-stripping. While these developments yield the necessary expressivity (being able to deal with all incurred laters during a single step), they impose a non-trivial dissemination burden, in regards to why the multiple laters are there, and how one formally resolve them. In this talk, I iterate some of the problems and solutions regarding multiple laters, that has arisen in the recent years of Iris, from the perspective of a higher-order specification pattern---The Actris ghost theory. I propose a means for recovering the original intuition behind the later modality in intricate proof patterns---The step modality. The step modality leverages the expressivity of recent discoveries regarding stripping multiple laters during a single step, while supporting specification patterns that abstract over the number of laters to be stripped at each step. To motivate the step modality, I present a novel specification pattern---The so-called session escrow pattern---which is unspecfiable without the modality.</div></div>
 </li>
 <li>12:30-13:30: <strong>Lunch</strong></li>
@@ -119,11 +125,13 @@ In this talk, I'll present some of our work on developing a verified concurrent 
 </li>
 <li>10:00-10:30: Yun-Sheng Chang (MIT)</a>: Verifying vMVCC, a high-performance database using multi-version concurrency control
 <a href="#YunShengChang" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/chang.pdf">[slides]</a>
 <div id="YunShengChang" class="collapse"><div class="abstract">Multi-version concurrency control (MVCC) is a widely used, sophisticated approach for handling concurrent transactions in a database system.  vMVCC is the first MVCC-based database that comes with a machine-checked proof of correctness, providing clients with a guarantee that it will correctly handle all transactions despite a sophisticated design and implementation that might otherwise be error-prone.  vMVCC is implemented in Go, as a single-node in-memory database, and uses several optimizations, such as RDTSC-based timestamps, to achieve high performance (30--71% the throughput of Silo, a state-of-the-art in-memory database, for YCSB and TPC-C workloads).  Formally specifying and verifying vMVCC required adopting sophisticated proof techniques, such as prophecy variables and logical atomicity, owing to the fact that MVCC transactions can linearize at timestamps prior to transaction execution.</div></div>
 </li>
 <li>10:30-11:00: <strong>Coffee</strong></li>
 <li>11:00-11:30: Amin Timany (Aarhus University)</a>: A Program Logic to Reason About Well-Bracketed Control Flow
 <a href="#AminTimany" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/timany.pdf">[slides]</a>
 <div id="AminTimany" class="collapse"><div class="abstract">A program is said to be well-bracketed if every called function must return before its caller can resume execution. This is often the case. Well-bracketedness has been captured semantically as a condition on strategies in fully abstract games models and multiple prior works have studied well-bracketedness by showing correctness/security properties of programs where such properties depend on the well-bracketed nature of control flow. The latter category of prior works have all used an involved logical relations model with explicit state-transition systems capturing the relevant parts of the control flow of the program. In this paper we present the first Hoare-style program logic based on separation logic for reasoning about well-bracketedness and use it to show correctness of well-bracketed programs both directly and through defining unary and binary logical relations models based on this program logic. All results presented in this paper are formalized on top of the Iris framework and mechanized in the Coq proof assistant.</div></div>
 </li>
 <li>11:30-12:00: Hai Dang (BedRock Systems Inc.)</a>: Decomposing end-to-end refinement proofs across multiple semantics within separation logics
@@ -143,6 +151,7 @@ In this talk, I'll present some of our work on developing a verified concurrent 
 </li>
 <li>15:00-15:30: Armaël Guéneau (Inria, LMF) and Johannes Hostert (Saarland University)</a>: Melocoton: a program logic for verified interoperability
 <a href="#ArmalGuneauInriaLMFandJohannesHostert" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/hostert.pdf">[slides]</a>
 <div id="ArmalGuneauInriaLMFandJohannesHostert" class="collapse"><div class="abstract">In recent years, there has been tremendous progress on developing
 program logics for verifying the correctness of programs in a rich and
 diverse array of languages. Thus far, however, such logics have assumed
