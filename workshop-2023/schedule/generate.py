@@ -68,7 +68,8 @@ for (day, day_talks) in groupby(talks, lambda talk: talk.day):
             print(f"<li>{talk.time}: {talk.name} ({talk.affil})</a>: {talk.title}")
             print(f"<a href=\"#{id}\" data-bs-toggle=\"collapse\">[abstract]</a>")
             if talk.slides:
-                print(f"<a href=\"slides/{talk.slides}\">[slides]</a>")
+                url = talk.slides if talk.slides.startswith("https://") else "slides/"+talk.slides
+                print(f"<a href=\"{url}\">[slides]</a>")
             # nested div makes the show/hide animation properly smooth
             print(f"<div id=\"{id}\" class=\"collapse\"><div class=\"abstract\">{talk.abstract}</div></div>")
             print("</li>")
