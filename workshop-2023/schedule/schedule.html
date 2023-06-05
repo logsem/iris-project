@@ -14,6 +14,7 @@
 <li>10:30-11:00: <strong>Coffee</strong></li>
 <li>11:00-11:30: Thomas Van Strydonck (KU Leuven)</a>: Reasoning about enclaved execution and attestation in Cerise
 <a href="#ThomasVanStrydonck" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/strydonck.pdf">[slides]</a>
 <div id="ThomasVanStrydonck" class="collapse"><div class="abstract">In recent work, we studied the integration of two related but fundamentally different hardware security mechanisms: *capabilities* and *enclaved execution*. *Hardware capabilities* are unforgeable tokens of authority granting rights to system objects. They are a powerful security mechanism for implementing fine-grained access control and for compartmentalizing untrusted or buggy software components. *Enclaved execution* is a security mechanism that supports the run time creation of enclaves, execution environments for software components that are strongly isolated and that can *attest* their identity to other code running either locally on the same platform or remotely on other platforms.<br /> <br />
 
 By integrating both security mechanisms in a system called CHERITrEE, we arrived at an enclaved execution system that naturally supports useful features that have traditionally been hard to support in enclaved execution, like dynamically growing and shrinking enclaves, non-contiguous and nested enclaves, sharing of memory between enclaves etc.<br /> <br />
@@ -22,6 +23,7 @@ In this follow-up work in progress, we are using Iris (specifically, the *Cerise
 </li>
 <li>11:30-12:00: Sander Huyghebaert (Vrije Universiteit Brussel & KU Leuven)</a>: Formalizing, Verifying and Applying ISA Security Guarantees as Universal Contracts
 <a href="#SanderHuyghebaert" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/huyghebaert.pdf">[slides]</a>
 <div id="SanderHuyghebaert" class="collapse"><div class="abstract">Progress has recently been made on specifying instruction set architectures (ISAs) in executable formalisms rather than through prose.
   However, to date, those formal specifications are limited to the functional aspects of the ISA and do not cover its security guarantees.
   We present a novel, general method for formally specifying an ISA's security
@@ -93,6 +95,7 @@ With this parameterized setup we aim to recover or even surpass the expressivity
 <li>10:30-11:00: <strong>Coffee</strong></li>
 <li>11:00-11:30: Alejandro Aguirre (Aarhus University)</a>: Asynchronous Probabilistic Couplings in Higher-Order Separation Logic
 <a href="#AlejandroAguirre" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/aguirre.pdf">[slides]</a>
 <div id="AlejandroAguirre" class="collapse"><div class="abstract">Probabilistic couplings are the foundation for many probabilistic relational program logics and arise when relating random sampling statements across two programs. In relational program logics, this manifests as dedicated coupling rules that, e.g., say we may reason as if two sampling statements return the same value. However, this approach fundamentally requires aligning or “synchronizing” the sampling statements of the two programs which is not always possible. In this paper we develop Clutch, a higher-order probabilistic relational separation logic that addresses this issue by supporting asynchronous probabilistic couplings. We use Clutch to develop a logical step-indexed logical relational to reason about contextual refinement and equivalence of higher-order programs written in a rich language with higher-order local state and impredicative polymorphism. Finally, we demonstrate the usefulness of our approach on a number of case studies. All the results that appear in the paper have been formalized in the Coq proof assistant using the Coquelicot library and the Iris separation logic framework.</div></div>
 </li>
 <li>11:30-12:00: Clément Allain (Inria Paris, Cambium)</a>: Verification of Chase-Lev work-stealing deque
@@ -137,6 +140,7 @@ In this talk, I'll present some of our work on developing a verified concurrent 
 </li>
 <li>11:30-12:00: Hai Dang (BedRock Systems Inc.)</a>: Decomposing end-to-end refinement proofs across multiple semantics within separation logics
 <a href="#HaiDang" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/dang.pdf">[slides]</a>
 <div id="HaiDang" class="collapse"><div class="abstract">The BedRock Ultravisor provides client operating systems (guest OSes) with a virtualization layer on a shared physical machine. To show that the Ultravisor enables strong isolation properties, we need to prove a refinement between the virtualization stack (the implementation), running on the physical machine, and the "bare-metal" virtual machine (the specification). This is particularly challenging because both the bare-metal machine and the virtualization stack are composed of multiple (hardware/software) interacting components. Furthermore, the software components are implemented across multiple levels of abstractions (e.g., in both assembly and C++). In this talk, we present an approach to establish an end-to-end refinement theorem that avoids constructing new operational semantics for intermediate abstractions, and instead incrementally constructs those abstractions within separation logics. First, we reflect both the bare-metal virtual machine and the physical machine, both expressed operationally using process calculi, into separation logics. The bare-metal machine is encoded as pure ghost state, and the physical machine is tied into weakest preconditions. Second, we break down the physical machine model into smaller, separate, communicating systems. We then selectively recombine slices of these individual systems to build up increasingly abstract reasoning principles. For example, we demonstrate how to combine low-level resources of a CPU core and some DRAM memory segments, to establish higher-level resources to reason about an "assembly language program" stored in said memory segments. We can also encode convenient protocols for driving I/O devices from code running on the CPU. Third, we orthogonally decompose the specification (the bare-metal virtual machine) into smaller, separate specification models, and modularly show that the components of the implementation refine those models in separation logics, using the reasoning principles from the previous step. We show how our approach supports both horizontal decomposition (roughly characterized by [WP p1 ** WP p2 |-- WP (p1 || p2)]), and vertical decomposition (roughly characterized by [WP src |-- WP target]). Working within separation logic allows us to work with an "open-ended" foundation, where we can use small footprint abstractions and we can under-specify complex behaviors.</div></div>
 </li>
 <li>12:00-12:30: Arthur Charguéraud (Inria)</a>: Towards pushing CFML features into Iris
@@ -172,6 +176,7 @@ OCaml and C.</div></div>
 </li>
 <li>15:30-16:00: Ralf Jung (ETH Zurich) and Robbert Krebbers (Radboud University)</a>: The State of Iris
 <a href="#RalfJungETHZurichandRobbertKrebbers" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/jung.pdf">[slides]</a>
 <div id="RalfJungETHZurichandRobbertKrebbers" class="collapse"><div class="abstract">What’s new in Iris and what will happen in the near future? Also, ask us anything!</div></div>
 </li>
 </ul>
