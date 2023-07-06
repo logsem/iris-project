@@ -4,13 +4,13 @@
       "title": "Proof Automation for Linearizability in Separation Logic",
       "authors": [
         "Ike Mulder",
-        "Robbert Krebbers",
+        "Robbert Krebbers"
       ],
       "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2023-oopsla-diaframe2-final.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/record/7712620" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
       ]
     },
     {
@@ -29,17 +29,27 @@
       ]
     },
     {
+      "title": "CQS: A Formally-Verified Framework for Fair and Abortable Synchronization",
+      "authors": [
+        "Nikita Koval",
+        "Dmitry Khalanskiy",
+        "Dan Alistarh"
+      ],
+      "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2023-pldi-cqs.pdf"
+    },
+    {
       "title": "Beyond Backtracking: Connections in Fine-Grained Concurrent Separation Logic",
       "authors": [
         "Ike Mulder",
         "Łukasz Czajka",
-        "Robbert Krebbers",
+        "Robbert Krebbers"
       ],
       "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2023-pldi-diaframe-disj.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.7799173" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" },
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
       ] 
     },
     {
@@ -1240,7 +1250,7 @@
         "Lars Birkedal"
       ],
       "description": "Submitted for publication",
-      "pdf_url": "pdfs/2022-submitted-logical-type-soundness.pdf",
+      "pdf_url": "pdfs/2022-submitted-logical-type-soundness.pdf"
     },
     {
       "title": "Trillium: Unifying Refinement and Higher-Order Distributed Separation Logic",
