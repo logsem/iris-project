@@ -29,6 +29,14 @@
       ]
     },
     {
+      "title": "Verifying vMVCC, a high-performance transaction library using multi-version concurrency control",
+      "authors": [
+        "Yun-Sheng Chang", "Ralf Jung", "Upamanyu Sharma", "Joseph Tassarotti", "M. Frans Kaashoek", "Nickolai Zeldovich"
+      ],
+      "where_published": "In OSDI 2023: USENIX Symposium on Operating Systems Design and Implementation",
+      "pdf_url": "pdfs/2023-osdi-vmvcc.pdf"
+    },
+    {
       "title": "CQS: A Formally-Verified Framework for Fair and Abortable Synchronization",
       "authors": [
         "Nikita Koval",
