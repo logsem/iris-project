@@ -429,6 +429,18 @@
       ]
     },
     {
+      "title": "Certifying the synthesis of heap-manipulating programs",
+      "authors": [
+        "Yasunari Watanabe",
+        "Kiran Gopinathan",
+        "George Pîrlea",
+        "Nadia Polikarpova",
+        "Ilya Sergey"
+      ],
+      "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "https://iris-project.org/pdfs/2021-icfp-certisuslik.pdf",
+    },
+    {
       "title": "Formal Verification of a Concurrent Bounded Queue in a Weak Memory Model",
       "authors": [
         "Glen Mével",
