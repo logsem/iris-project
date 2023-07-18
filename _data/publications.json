@@ -37,6 +37,23 @@
       "pdf_url": "pdfs/2023-osdi-vmvcc.pdf"
     },
     {
+      "title": "Fair Operational Semantics",
+      "authors": [
+        "Dongjae Lee",
+        "Minki Cho",
+        "Jinwoo Kim",
+        "Soonwon Moon",
+        "Youngju Song",
+        "Chung-Kil Hur"
+      ],
+      "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "https://sf.snu.ac.kr/publications/fairness.pdf",
+      "other_urls": [
+        { "name": "Website", "url": "https://sf.snu.ac.kr/fairness/" },
+        { "name": "Coq development", "url": "https://github.com/snu-sf/fairness" }
+      ]
+    },
+    {
       "title": "CQS: A Formally-Verified Framework for Fair and Abortable Synchronization",
       "authors": [
         "Nikita Koval",
