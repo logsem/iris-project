@@ -1,6 +1,23 @@
 {
   "publications": [
     {
+      "title": "Verifying Reliable Network Components in a Distributed
+Separation Logic with Dependent Separation Protocols",
+      "authors": [
+        "Léon Gondelman",
+        "Jonas Kastberg Hinrichsen",
+	"Mário Pereira",
+	"Amin Timany",
+	"Lars Birkedal"
+      ],
+      "where_published": "In ICFP 2023: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2023-icfp-relcom.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/record/8121688" },
+        { "name": "Coq development", "url": "https://github.com/logsem/aneris" }
+      ]
+    },
+    {
       "title": "Dependent Session Protocols in Separation Logic from First Principles",
       "authors": [
         "Jules Jacobs",
