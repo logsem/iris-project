@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "Dependent Session Protocols in Separation Logic from First Principles",
+      "authors": [
+        "Jules Jacobs",
+        "Jonas Kastberg Hinrichsen",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In ICFP 2023: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "https://apndx.org/pub/mpy9/miniactris.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://apndx.org/pub/mpy9/" },
+        { "name": "Coq development", "url": "https://github.com/julesjacobs/miniactris" }
+      ]
+    },
+    {
       "title": "Proof Automation for Linearizability in Separation Logic",
       "authors": [
         "Ike Mulder",
