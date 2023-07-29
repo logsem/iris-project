@@ -1,6 +1,18 @@
 {
   "publications": [
     {
+      "title": "Verifying an Effect-Handler-Based Define-By-Run Reverse-Mode AD Library",
+      "authors": [
+        "Paulo Emílio de Vilhena",
+        "François Pottier"
+      ],
+      "where_published": "In LMCS 2023: Logical Methods in Computer Science",
+      "pdf_url": "pdfs/2023-lmcs-rmad.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.inria.fr/cambium/hazel" }
+      ]
+    },
+    {
       "title": "Verifying Reliable Network Components in a Distributed
 Separation Logic with Dependent Separation Protocols",
       "authors": [
