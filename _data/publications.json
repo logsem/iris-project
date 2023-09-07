@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "title": "Spirea: A Mechanized Concurrent Separation Logic for Weak Persistent Memory",
+      "authors": [
+        "Simon Friis Vindum",
+        "Lars Birkedal"
+      ],
+      "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2023-oopsla-spirea.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/logsem/spirea" },
+        { "name": "Artifact", "url": "https://zenodo.org/record/8314888" }
+      ]
+    },
+    {
       "title": "Verifying an Effect-Handler-Based Define-By-Run Reverse-Mode AD Library",
       "authors": [
         "Paulo Emílio de Vilhena",
