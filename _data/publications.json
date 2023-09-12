@@ -1,6 +1,22 @@
 {
   "publications": [
     {
+      "title": "Modular Verification of Safe Memory Reclamation in Concurrent Separation Logic",
+      "authors": [
+        "Jaehwang Jung",
+        "Janggun Lee",
+        "Jaemin Choi",
+        "Jaewoo Kim",
+        "Sunho Park",
+        "Jeehoon Kang",
+      ],
+      "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2023-oopsla-reclamation.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/kaist-cp/smr-verification" },
+      ]
+    },
+    {
       "title": "Spirea: A Mechanized Concurrent Separation Logic for Weak Persistent Memory",
       "authors": [
         "Simon Friis Vindum",
