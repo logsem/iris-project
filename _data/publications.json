@@ -67,7 +67,8 @@
       "pdf_url": "pdfs/2023-icfp-relcom.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/record/8121688" },
-        { "name": "Coq development", "url": "https://github.com/logsem/aneris" }
+        { "name": "Coq development", "url": "https://github.com/logsem/aneris" },
+	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
     {
@@ -96,7 +97,8 @@
       "where_published": "In ECOOP 2023: European Conference on Object-Oriented Programming",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2023-ecoop-crdts.pdf" },
-        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7717100" }
+        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7717100" },
+	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
     {
@@ -271,7 +273,8 @@
       "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-crdts.pdf" },
-        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7055010" }
+        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7055010" },
+	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
     {
@@ -716,7 +719,8 @@
       "pdf_url": "pdfs/2021-popl-ccddb-final.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "pdfs/2021-popl-ccddb-appendix.pdf" },
-        { "name": "Coq formalization", "url": "https://zenodo.org/record/4066608" }
+        { "name": "Coq formalization", "url": "https://zenodo.org/record/4066608" },
+	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
     {
@@ -842,7 +846,8 @@
       "pdf_url": "pdfs/2020-esop-aneris-final.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "pdfs/2020-esop-aneris-final-appendix.pdf" },
-        { "name": "Coq development", "url": "artifacts/2020-esop-aneris.tar.gz" }
+        { "name": "Coq development", "url": "artifacts/2020-esop-aneris.tar.gz" },
+	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
     {
