@@ -1,6 +1,24 @@
 {
   "publications": [
     {
+      "title": "Melocoton: A Program Logic for Verified Interoperability Between OCaml and C",
+      "authors": [
+        "Armaël Guéneau",
+        "Johannes Hostert",
+        "Simon Spies",
+        "Michael Sammler",
+        "Lars Birkedal",
+        "Derek Dreyer",
+      ],
+      "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2023-oopsla-melocoton.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/logsem/melocoton" },
+        { "name": "website", "url": "https://melocoton-project.github.io/" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/8331210" },
+      ]
+    },
+    {
       "title": "Modular Verification of Safe Memory Reclamation in Concurrent Separation Logic",
       "authors": [
         "Jaehwang Jung",
