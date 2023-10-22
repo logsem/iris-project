@@ -42,6 +42,7 @@
       ],
       "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2023-oopsla-spirea.pdf",
+      "awards": [ "OOPSLA 2023 Distinguished Paper Award" ],
       "other_urls": [
         { "name": "Coq development", "url": "https://github.com/logsem/spirea" },
         { "name": "Artifact", "url": "https://zenodo.org/record/8314888" }
