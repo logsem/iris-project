@@ -1403,6 +1403,14 @@
   ],
   "others": [
     {
+      "title": "Logical Foundations Of Language Interoperability Between OCaml and C",
+      "authors": [
+        "Johannes Hostert"
+      ],
+      "description": "Master's thesis at Saarland University supervised by Derek Dreyer, July 2023",
+      "pdf_url": "pdfs/2023-thesis-johannes-hostert.pdf",
+    },
+    {
       "title": "Verifying a Barrier using Iris",
       "authors": [
         "Simcha van Collem"
