@@ -204,6 +204,18 @@
       ]
     },
     {
+      "title": "A Type System for Effect Handlers and Dynamic Labels",
+      "authors": [
+        "Paulo Emílio de Vilhena",
+        "François Pottier"
+      ],
+      "where_published": "In ESOP 2023: European Symposium on Programming",
+      "pdf_url": "pdfs/2023-esop-tes.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://gitlab.inria.fr/cambium/tes" }
+      ]
+    },
+    {
       "title": "Higher-Order Leak and Deadlock Free Locks",
       "authors": [
         "Jules Jacobs",
