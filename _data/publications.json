@@ -55,6 +55,7 @@
         "Robbert Krebbers"
       ],
       "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "awards": [ "OOPSLA 2023 Distinguished Artifact Award" ],
       "pdf_url": "pdfs/2023-oopsla-diaframe2-final.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/record/7712620" },
