@@ -237,7 +237,7 @@
         "François Pottier"
       ],
       "where_published": "In POPL 2023: ACM SIGPLAN Symposium on Principles of Programming Languages",
-      "pdf_url": "http://cambium.inria.fr/~amoine/publications/moine-chargueraud-pottier-23.pdf",
+      "pdf_url": "https://cambium.inria.fr/~amoine/publications/moine-chargueraud-pottier-23.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.inria.fr/amoine/spacelambda" },
         { "name": "Artifact", "url": "https://zenodo.org/record/7129302"}
@@ -778,7 +778,7 @@
       "where_published": "In POPL 2021: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/VilhenaP21.html",
       "other_urls": [
-        { "name": "[preprint] .pdf", "url": "http://cambium.inria.fr/~fpottier/publis/de-vilhena-pottier-sleh.pdf" },
+        { "name": "[preprint] .pdf", "url": "https://cambium.inria.fr/~fpottier/publis/de-vilhena-pottier-sleh.pdf" },
         { "name": "Coq formalization", "url": "https://gitlab.inria.fr/pdevilhe/hazel" }
       ]
     },
@@ -859,7 +859,7 @@
       ],
       "where_published": "In PLDI 2020: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "dblp_url": "https://dblp.uni-trier.de/rec/conf/pldi/KrishnaPSW20.html",
-      "pdf_url": "http://cs.nyu.edu/wies/publ/templates-pldi20.pdf",
+      "pdf_url": "https://cs.nyu.edu/wies/publ/templates-pldi20.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://github.com/nyu-acsys/template-proofs/" }
       ]
@@ -906,7 +906,7 @@
       ],
       "where_published": "In POPL 2020: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/VilhenaPJ20.html",
-      "pdf_url": "http://gallium.inria.fr/~fpottier/publis/de-vilhena-pottier-jourdan-spy-game-2020.pdf",
+      "pdf_url": "https://gallium.inria.fr/~fpottier/publis/de-vilhena-pottier-jourdan-spy-game-2020.pdf",
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.inria.fr/pdevilhe/spy-game" }
       ]
@@ -1000,7 +1000,7 @@
       "other_urls": [
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/c" },
         { "name": "website", "url": "https://cs.ru.nl/~dfrumin/wpc/" },
-        { "name": "slides", "url": "http://cs.ru.nl/~dfrumin/wpc/esop-talk.pdf" }
+        { "name": "slides", "url": "https://cs.ru.nl/~dfrumin/wpc/esop-talk.pdf" }
       ]
     },
     {
@@ -1114,7 +1114,7 @@
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/reloc/" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/dfrumin/logrel-conc" },
-        { "name": "slides", "url": "http://cs.ru.nl/~dfrumin/pdf/t/reloc-lics.pdf" }
+        { "name": "slides", "url": "https://cs.ru.nl/~dfrumin/pdf/t/reloc-lics.pdf" }
       ]
     },
     {
@@ -1168,9 +1168,9 @@
       "awards": [ "OOPSLA 2017 Distinguished Paper Award" ],
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/Swasey0D17.html",
       "other_urls": [
-        { "name": "[preprint] .pdf", "url": "http://www.mpi-sws.org/~dreyer/papers/ocpl/paper.pdf" },
+        { "name": "[preprint] .pdf", "url": "https://www.mpi-sws.org/~dreyer/papers/ocpl/paper.pdf" },
         { "name": "[long version] .pdf", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-oopsla17-long.pdf" },
-        { "name": "Coq development", "url": "http://www.mpi-sws.org/~dreyer/papers/ocpl/ocpl.tgz" },
+        { "name": "Coq development", "url": "https://www.mpi-sws.org/~dreyer/papers/ocpl/ocpl.tgz" },
         { "name": "Coq development (VM)", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-vm-20170705.ova" }
       ]
     },
@@ -1186,9 +1186,9 @@
       "where_published": "In ECOOP 2017: European Conference on Object-Oriented Programming",
       "awards": [ "ECOOP 2017 Distinguished Paper Award" ],
       "dblp_url": "https://dblp.uni-trier.de/rec/conf/ecoop/KaiserDDLV17.html",
-      "pdf_url": "http://drops.dagstuhl.de/opus/volltexte/2017/7275/pdf/LIPIcs-ECOOP-2017-17.pdf",
+      "pdf_url": "https://drops.dagstuhl.de/opus/volltexte/2017/7275/pdf/LIPIcs-ECOOP-2017-17.pdf",
       "other_urls": [
-        { "name": "website", "url": "http://plv.mpi-sws.org/igps" }
+        { "name": "website", "url": "https://plv.mpi-sws.org/igps" }
       ]
     },
     {
@@ -1265,7 +1265,7 @@
       "pdf_url": "pdfs/2016-icfp-iris2-final.pdf",
       "other_urls": [
         { "name": "technical appendix (1/2)", "url": "pdfs/2016-icfp-iris2-final-appendix.pdf" },
-        { "name": "technical appendix (2/2)", "url": "http://plv.mpi-sws.org/iris/appendix-2.0.pdf" },
+        { "name": "technical appendix (2/2)", "url": "https://plv.mpi-sws.org/iris/appendix-2.0.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-2.0" },
         { "name": "talk on youtube", "url": "https://www.youtube.com/watch?v=vUxWU-qvGX0" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-icfp2016.pdf" }
@@ -1287,9 +1287,9 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/conf/popl/JungSSSTBD15.html",
       "pdf_url": "pdfs/2015-popl-iris1-final.pdf",
       "other_urls": [
-        { "name": "technical appendix", "url": "http://plv.mpi-sws.org/iris/appendix.pdf" },
-        { "name": "(historic) Coq formalization", "url": "http://plv.mpi-sws.org/iris/distrib/" },
-        { "name": "publisher's site", "url": "http://dl.acm.org/citation.cfm?doid=2676726.2676980" },
+        { "name": "technical appendix", "url": "https://plv.mpi-sws.org/iris/appendix.pdf" },
+        { "name": "(historic) Coq formalization", "url": "https://plv.mpi-sws.org/iris/distrib/" },
+        { "name": "publisher's site", "url": "https://dl.acm.org/citation.cfm?doid=2676726.2676980" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-popl2015.pdf" }
       ]
     }
