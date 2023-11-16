@@ -1,6 +1,23 @@
 {
   "publications": [
     {
+      "title": "An axiomatic basis for computer programming on the relaxed Arm-A architecture: The AxSL logic",
+      "authors": [
+        "Angus Hammond",
+        "Zongyuan Liu",
+        "Thibaut Pérami",
+        "Peter Sewell",
+        "Lars Birkedal",
+        "Jean Pichon-Pharabod",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-axsl-final.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/logsem/AxSL" },
+        { "name": "Artifact", "url": "https://doi.org/10.17863/CAM.104080" },
+      ]
+    },
+    {
       "title": "Melocoton: A Program Logic for Verified Interoperability Between OCaml and C",
       "authors": [
         "Armaël Guéneau",
