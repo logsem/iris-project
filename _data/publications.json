@@ -12,9 +12,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-clutch.pdf",
           "other_urls": [
-              "other_urls": [
-                  { "name": "Extended version", "url": "https://arxiv.org/abs/2309.03046" },
-              ]
+              { "name": "Extended version", "url": "https://arxiv.org/abs/2309.03046" },
               { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
               { "name": "Artifact", "url": "https://zenodo.org/records/8424490" },
           ]
@@ -32,9 +30,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-trillium.pdf",
           "other_urls": [
-              "other_urls": [
-                  { "name": "Extended version", "url": "https://arxiv.org/pdf/2109.07863" },
-              ]
+              { "name": "Extended version", "url": "https://arxiv.org/pdf/2109.07863" },
               { "name": "Coq development", "url": "https://github.com/logsem/trillium" },
               { "name": "Artifact", "url": "https://zenodo.org/records/10100892" },
           ]
