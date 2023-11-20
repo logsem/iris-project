@@ -1,6 +1,45 @@
 {
   "publications": [
-    {
+      {
+          "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logics",
+          "authors": [
+              "Simon Oddershede Gregersen",
+              "Alejandro Aguirre",
+              "Philipp G. Haselwarter",
+              "Joseph Tassarotti",
+              "Lars Birkedal",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-clutch.pdf",
+          "other_urls": [
+              "other_urls": [
+                  { "name": "Extended version", "url": "https://arxiv.org/abs/2309.03046" },
+              ]
+              { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+              { "name": "Artifact", "url": "https://zenodo.org/records/8424490" },
+          ]
+      },
+      {
+          "title": "Trillium: Higher-Order Concurrent and Distributed Separation Logic for Intensional Refinement",
+          "authors": [
+              "Amin Timany",
+              "Simon Oddershede Gregersen",
+              "Léo Stefanesco",
+              "Léon Gondelman",
+              "Abel Nieto",
+              "Lars Birkedal"
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-trillium.pdf",
+          "other_urls": [
+              "other_urls": [
+                  { "name": "Extended version", "url": "https://arxiv.org/pdf/2109.07863" },
+              ]
+              { "name": "Coq development", "url": "https://github.com/logsem/trillium" },
+              { "name": "Artifact", "url": "https://zenodo.org/records/10100892" },
+          ]
+      },
+      {
       "title": "An axiomatic basis for computer programming on the relaxed Arm-A architecture: The AxSL logic",
       "authors": [
         "Angus Hammond",
@@ -1401,20 +1440,6 @@
   ],
   "draft_papers": [
     {
-      "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logic",
-      "authors": [
-        "Simon Oddershede Gregersen",
-	"Alejandro Aguirre",
-        "Philipp G. Haselwarter",
-        "Joseph Tassarotti",
-        "Lars Birkedal"
-      ],
-      "description": "Submitted for publication",
-      "other_urls": [
-        { "name": "arXiv", "url": "https://arxiv.org/abs/2301.10061" }
-      ]
-    },
-    {
       "title": "A Logical Approach to Type Soundness",
       "authors": [
         "Amin Timany",
@@ -1424,22 +1449,6 @@
       ],
       "description": "Submitted for publication",
       "pdf_url": "pdfs/2022-submitted-logical-type-soundness.pdf"
-    },
-    {
-      "title": "Trillium: Unifying Refinement and Higher-Order Distributed Separation Logic",
-      "authors": [
-        "Amin Timany",
-        "Simon Oddershede Gregersen",
-        "Léo Stefanesco",
-        "Léon Gondelman",
-        "Abel Nieto",
-        "Lars Birkedal"
-      ],
-      "description": "Submitted for publication",
-      "pdf_url": "pdfs/2021-submitted-trillium.pdf",
-      "other_urls": [
-        { "name": "Coq development", "url": "artifacts/2021-submitted-trillium.zip" }
-      ]
     }
   ],
   "others": [
