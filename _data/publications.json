@@ -12,7 +12,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-clutch.pdf",
           "other_urls": [
-              { "name": "Extended version", "url": "https://arxiv.org/abs/2309.03046" },
+              { "name": "Extended version", "url": "https://arxiv.org/abs/2301.10061" },
               { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
               { "name": "Artifact", "url": "https://zenodo.org/records/8424490" },
           ]
