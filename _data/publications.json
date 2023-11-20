@@ -18,6 +18,17 @@
       ]
     },
     {
+      "title": "Grove: a Separation-Logic Library for Verifying Distributed Systems",
+      "authors": [
+        "Upamanyu Sharma", "Ralf Jung", "Joseph Tassarotti", "M. Frans Kaashoek", "Nickolai Zeldovich",
+      ],
+      "where_published": "In SOSP 2023: ACM Symposium on Operating Systems Principles",
+      "pdf_url": "pdfs/2023-sosp-grove.pdf",
+      "other_urls": [
+        { "name": "Extended version", "url": "https://arxiv.org/abs/2309.03046" },
+      ]
+    },
+    {
       "title": "Melocoton: A Program Logic for Verified Interoperability Between OCaml and C",
       "authors": [
         "Armaël Guéneau",
