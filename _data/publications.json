@@ -1,5 +1,19 @@
 {
   "publications": [
+        {
+          "title": "DisLog: A Separation Logic for Disentanglement",
+          "authors": [
+              "Alexandre Moine",
+              "Sam Westrick",
+              "Stephanie Balzer",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-dislog.pdf",
+          "other_urls": [
+              { "name": "Coq development", "url": "https://gitlab.inria.fr/amoine/dislog" },
+              { "name": "Artifact", "url": "https://zenodo.org/records/8414566" },
+          ]
+      },
       {
           "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logic",
           "authors": [
