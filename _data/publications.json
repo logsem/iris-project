@@ -1,6 +1,20 @@
 {
   "publications": [
-        {
+      {
+          "title": "Deadlock-Free Separation Logic: Linearity Yields Progress for Dependent Higher-Order Message Passing",
+          "authors": [
+              "Jules Jacobs",
+              "Jonas Kastberg Hinrichsen",
+              "Robbert Krebbers",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-dlfactris.pdf",
+          "other_urls": [
+              { "name": "Coq development", "url": "https://github.com/julesjacobs/dlf-actris" },
+              { "name": "Artifact", "url": "https://apndx.org/pub/icnp/" },
+          ]
+      },
+      {
           "title": "DisLog: A Separation Logic for Disentanglement",
           "authors": [
               "Alexandre Moine",
