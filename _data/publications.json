@@ -12,6 +12,7 @@
           "other_urls": [
               { "name": "Coq development", "url": "https://github.com/julesjacobs/dlf-actris" },
               { "name": "Artifact", "url": "https://apndx.org/pub/icnp/" },
+	      { "name": "website", "url": "https://iris-project.org/actris" }
           ]
       },
       {
@@ -193,7 +194,8 @@
       "pdf_url": "https://apndx.org/pub/mpy9/miniactris.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://apndx.org/pub/mpy9/" },
-        { "name": "Coq development", "url": "https://github.com/julesjacobs/miniactris" }
+        { "name": "Coq development", "url": "https://github.com/julesjacobs/miniactris" },
+	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
     {
@@ -550,7 +552,8 @@
       "where_published": "In LMCS 2022: Logical Methods in Computer Science",
       "pdf_url": "pdfs/2022-lmcs-actris2-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" },
+	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
     {
@@ -906,7 +909,8 @@
       "pdf_url": "pdfs/2021-cpp-sessions-final.pdf",
       "awards": [ "CPP 2021 Distinguished Paper Award" ],
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" }
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" },
+	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
     {
@@ -1013,7 +1017,8 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/HinrichsenBK20.html",
       "pdf_url": "pdfs/2020-popl-actris-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris/" }
+        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris/" },
+	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
     {
