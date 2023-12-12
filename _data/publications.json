@@ -1,6 +1,19 @@
 {
   "publications": [
       {
+          "title": "An Iris Instance for Verifying CompCert C Programs",
+          "authors": [
+              "William Mansky",
+              "Ke Du",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-vst-on-iris.pdf",
+          "other_urls": [
+              { "name": "Coq development", "url": "https://github.com/PrincetonUniversity/VST/tree/vst_on_iris" },
+              { "name": "Artifact", "url": "https://zenodo.org/records/8423865" }
+          ]
+      },
+      {
           "title": "Deadlock-Free Separation Logic: Linearity Yields Progress for Dependent Higher-Order Message Passing",
           "authors": [
               "Jules Jacobs",
