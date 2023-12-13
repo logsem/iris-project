@@ -1,6 +1,20 @@
 {
   "publications": [
       {
+          "title": "Thunks and Debits in Separation Logic with Time Credits",
+          "authors": [
+              "François Pottier",
+              "Armaël Guéneau",
+              "Jacques-Henri Jourdan",
+              "Glen Mével",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-pottier-gueneau-jourdan-mevel-thunks-debits.pdf",
+          "other_urls": [
+              { "name": "Coq development", "url": "https://gitlab.inria.fr/cambium/iris-time-proofs" },
+              { "name": "Artifact", "url": "https://zenodo.org/records/10023424" }
+          ]
+      },      {
           "title": "An Iris Instance for Verifying CompCert C Programs",
           "authors": [
               "William Mansky",
