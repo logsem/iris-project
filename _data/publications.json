@@ -1,6 +1,18 @@
 {
   "publications": [
       {
+        "title": "Unification for Subformula Linking under Quantifiers",
+        "authors": [
+          "Ike Mulder",
+          "Robbert Krebbers"
+        ],
+        "where_published": "In CPP 2024: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+        "other_urls": [
+          { "name": "[preprint] .pdf", "url": "https://ikemulder.nl/media/papers/cpp24-subformula-linking-preprint.pdf" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10364816" }
+        ]
+      },
+      {
           "title": "Thunks and Debits in Separation Logic with Time Credits",
           "authors": [
               "François Pottier",
