@@ -103,6 +103,9 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-gitrees.pdf",
           "other_urls": [
+              { "name": "Coq development", "url": "https://github.com/logsem/gitrees/" },
+              { "name": "Artifact", "url": "https://zenodo.org/records/10124427" },
+
           ],
           "awards": [ "POPL 2024 Distinguished Paper Award" ],
       },
