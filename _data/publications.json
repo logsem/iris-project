@@ -103,7 +103,8 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-gitrees.pdf",
           "other_urls": [
-          ]
+          ],
+          "awards": [ "POPL 2024 Distinguished Paper Award" ],
       },
       {
           "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logic",
