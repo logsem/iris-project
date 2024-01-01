@@ -69,6 +69,43 @@
           ]
       },
       {
+          "title": "The Logical Essence of Well-Bracketed Control Flow",
+          "authors": [
+              "Amin Timany",
+              "Armaël Gueneau",
+              "Lars Birkedal",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-wbcf.pdf",
+          "other_urls": [
+          ]
+      },
+      {
+          "title": "The Essence of Generalized Algebraic Data Types",
+          "authors": [
+              "Filip Sieczkowski",
+              "Sergei Stepanenko",
+              "Jonathan Sterling",
+              "Lars Birkedal",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-gadt.pdf",
+          "other_urls": [
+          ]
+      },
+      {
+          "title": "Modular Denotational Semantics for Effects with Guarded Interaction Trees",
+          "authors": [
+              "Dan Frumin",
+              "Amin Timany",
+              "Lars Birkedal",
+          ],
+          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2024-popl-gitrees.pdf",
+          "other_urls": [
+          ]
+      },
+      {
           "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logic",
           "authors": [
               "Simon Oddershede Gregersen",
