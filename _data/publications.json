@@ -171,7 +171,8 @@
       ],
       "where_published": "In Journal of the ACM",
       "pdf_url": "pdfs/2023-jacm-cerise.pdf",
-      "other_urls": [
+        "other_urls": [
+          { "name": "Coq development", "url": "https://github.com/logsem/cerise" },
           { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3623510" },
       ]
     },
