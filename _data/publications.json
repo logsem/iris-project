@@ -165,6 +165,17 @@
       ]
     },
     {
+      "title": "Cerise: Program Verification on a Capability Machine in the Presence of Untrusted Code",
+        "authors": [
+            "Aïna Linn Georges", "Armaël Guéneau", "Thomas Van Strydonck", "Amin Timany", "Alix Trieu", "Dominique Devriese", "Lars Birkedal",
+      ],
+      "where_published": "In Journal of the ACM",
+      "pdf_url": "pdfs/2023-jacm-cerise.pdf",
+      "other_urls": [
+          { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3623510" },
+      ]
+    },
+    {
       "title": "Grove: a Separation-Logic Library for Verifying Distributed Systems",
       "authors": [
         "Upamanyu Sharma", "Ralf Jung", "Joseph Tassarotti", "M. Frans Kaashoek", "Nickolai Zeldovich",
