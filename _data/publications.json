@@ -1487,6 +1487,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Separation Logic for Concurrency and Persistency",
+      "authors": ["Simon Friis Vindum"],
+      "description": "Aarhus University, December 2023",
+      "pdf_url": "pdfs/2023-phd-vindum.pdf"
+    },
+    {
       "title": "Syntax and semantics of modal type theory",
       "authors": ["Daniel Gratzer"],
       "description": "Aarhus University, October 2023",
