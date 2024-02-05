@@ -741,6 +741,17 @@
       ]
     },
     {
+      "title": "Verifying Concurrent Multicopy Search Structures",
+      "authors": [
+          "Nisarg Patel",
+          "Siddharth Krishna",
+          "Dennis Shasha",
+          "Thomas Wies"
+      ],
+      "where_published": "In OOPSLA 2021: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "https://cs.nyu.edu/~wies/publ/multicopy-oopsla2021.pdf"
+    },
+    {
       "title": "Certifying the synthesis of heap-manipulating programs",
       "authors": [
         "Yasunari Watanabe",
