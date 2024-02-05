@@ -1190,6 +1190,16 @@
       ]
     },
     {
+      "title": "Specifying I/O using abstract nested hoare triples in separation logic",
+      "authors": [
+          "Willem Penninckx",
+          "Amin Timany",
+          "Bart Jacobs"
+      ],
+      "where_published": "In FTfJP '19: Workshop on Formal Techniques for Java-like Programs",
+      "pdf_url": "https://people.cs.kuleuven.be/~bart.jacobs/ftfjp19.pdf"
+    },
+    {
       "title": "Semi-Automated Reasoning About Non-Determinism in C Expressions",
       "authors": [
         "Dan Frumin",
