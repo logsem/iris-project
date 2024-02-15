@@ -188,6 +188,19 @@
       ]
     },
     {
+      "title": "Leaf: Modularity for Temporary Sharing in Separation Logic",
+      "authors": [
+          "Travis Hance",
+          "Jon Howell",
+          "Oded Padon",
+          "Bryan Parno",
+      ],
+      "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "other_urls": [
+        { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3622798" },
+      ]
+    },
+    {
       "title": "Melocoton: A Program Logic for Verified Interoperability Between OCaml and C",
       "authors": [
         "Armaël Guéneau",
