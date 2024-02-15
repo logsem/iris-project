@@ -198,6 +198,8 @@
       "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "other_urls": [
         { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3622798" },
+        { "name": "Extended version", "url": "https://arxiv.org/abs/2309.04851" },
+        { "name": "Coq development", "url": "https://github.com/secure-foundations/leaf" },
       ]
     },
     {
