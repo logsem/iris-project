@@ -64,12 +64,14 @@ for (day, day_talks) in groupby(talks, lambda talk: talk.day):
         if talk.title:
             id = mk_id(talk.name)
             print(f"<li>{talk.time}: {talk.html} {talk.name} ({talk.affil})</a>: {talk.title}")
-            print(f"<a href=\"#{id}\" data-bs-toggle=\"collapse\">[abstract]</a>")
+            if talk.abstract:
+                print(f"<a href=\"#{id}\" data-bs-toggle=\"collapse\">[abstract]</a>")
             if talk.slides:
                 url = talk.slides if talk.slides.startswith("https://") else "slides/"+talk.slides
                 print(f"<a href=\"{url}\">[slides]</a>")
             # nested div makes the show/hide animation properly smooth
-            print(f"<div id=\"{id}\" class=\"collapse\"><div class=\"abstract\">{talk.abstract}</div></div>")
+            if talk.abstract:
+                print(f"<div id=\"{id}\" class=\"collapse\"><div class=\"abstract\">{talk.abstract}</div></div>")
             print("</li>")
         else:
             print(f"<li>{talk.time}: {talk.html}</li>")
