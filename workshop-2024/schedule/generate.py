@@ -2,7 +2,7 @@
 import sys, csv, string
 from datetime import date
 from itertools import groupby
-# usage: python3 generate.py participants.csv >schedule.html
+# usage: python3 generate.py speakers.csv >schedule.html
 
 def find_column(header, name):
     '''Find the column named `name` and return its index'''
@@ -57,15 +57,13 @@ for row in f:
 
 talks.sort(key = lambda talk: talk.day)
 for (day, day_talks) in groupby(talks, lambda talk: talk.day):
-    print(f"<h3>{day:%A (%d %B)}</h3>")
+    print(f"<h3>{day:%A (%-d %B)}</h3>")
     print("<ul>")
     day_talks = sorted(day_talks, key = lambda talk: talk.time)
     for talk in day_talks:
-        if talk.html:
-            print(f"<li>{talk.time}: {talk.html}</li>")
-        else:
+        if talk.title:
             id = mk_id(talk.name)
-            print(f"<li>{talk.time}: {talk.name} ({talk.affil})</a>: {talk.title}")
+            print(f"<li>{talk.time}: {talk.html} {talk.name} ({talk.affil})</a>: {talk.title}")
             print(f"<a href=\"#{id}\" data-bs-toggle=\"collapse\">[abstract]</a>")
             if talk.slides:
                 url = talk.slides if talk.slides.startswith("https://") else "slides/"+talk.slides
@@ -73,4 +71,6 @@ for (day, day_talks) in groupby(talks, lambda talk: talk.day):
             # nested div makes the show/hide animation properly smooth
             print(f"<div id=\"{id}\" class=\"collapse\"><div class=\"abstract\">{talk.abstract}</div></div>")
             print("</li>")
+        else:
+            print(f"<li>{talk.time}: {talk.html}</li>")
     print("</ul>")
