@@ -1,6 +1,24 @@
 {
   "publications": [
       {
+        "title": "A Proof Recipe for Linearizability in Relaxed Memory Separation Logic",
+        "authors": [
+          "Sunho Park",
+          "Jaewoo Kim",
+          "Ike Mulder",
+          "Jaehwang Jung",
+          "Janggun Lee",
+          "Robbert Krebbers",
+          "Jeehoon Kang"
+        ],
+        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2024-pldi-proof-recipe.pdf",
+        "other_urls": [
+          { "name": "Coq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10933398" }
+        ]
+      },
+      {
         "title": "Unification for Subformula Linking under Quantifiers",
         "authors": [
           "Ike Mulder",
