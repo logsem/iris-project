@@ -1,5 +1,13 @@
 {
   "publications": [
+    {
+      "title": "A Logical Approach to Type Soundness",
+        "authors": [
+            "Amin Timany", "Robbert Krebbers", "Derek Dreyer", "Lars Birkedal"
+      ],
+      "where_published": "To appear in Journal of the ACM (JACM), 2024",
+      "pdf_url": "pdfs/2024-jacm-logical-type-soundness.pdf"
+    },
       {
         "title": "A Proof Recipe for Linearizability in Relaxed Memory Separation Logic",
         "authors": [
@@ -187,7 +195,7 @@
         "authors": [
             "Aïna Linn Georges", "Armaël Guéneau", "Thomas Van Strydonck", "Amin Timany", "Alix Trieu", "Dominique Devriese", "Lars Birkedal",
       ],
-      "where_published": "In Journal of the ACM",
+      "where_published": "In Journal of the ACM (JACM)",
       "pdf_url": "pdfs/2023-jacm-cerise.pdf",
         "other_urls": [
           { "name": "Coq development", "url": "https://github.com/logsem/cerise" },
