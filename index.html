@@ -159,6 +159,13 @@
         </div>
 
         <div>
+          <p>Draft papers:</p>
+          <dl class="ref">
+            {% include publications.html publications=site.data.publications.draft_papers pdf_name="[preprint] .pdf" %}
+          </dl>
+        </div>
+
+        <div>
           <p>Case studies, MSc theses, abstracts, talks:</p>
           <dl class="ref">
             {% include publications.html publications=site.data.publications.others %}
