@@ -158,12 +158,14 @@
           <h2>Other material</h2>
         </div>
 
+        {% if site.data.publications.draft_papers %}
         <div>
           <p>Draft papers:</p>
           <dl class="ref">
             {% include publications.html publications=site.data.publications.draft_papers pdf_name="[preprint] .pdf" %}
           </dl>
         </div>
+        {% endif%}
 
         <div>
           <p>Case studies, MSc theses, abstracts, talks:</p>
