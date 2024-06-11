@@ -9,6 +9,35 @@
       "pdf_url": "pdfs/2024-jacm-logical-type-soundness.pdf"
     },
       {
+        "title": "Quiver: Guided Abductive Inference of Separation Logic Specifications in Coq",
+        "authors": [
+	    "Simon Spies",
+	    "Lennard Gäher",
+	    "Michael Sammler",
+	    "Derek Dreyer"
+        ],
+        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2024-pldi-quiver.pdf",
+        "other_urls": [
+	  { "name": "website", "url": "https://plv.mpi-sws.org/quiver" }
+        ]
+      },
+      {
+        "title": "RefinedRust: A Type System for High-Assurance Verification of Rust Programs",
+        "authors": [
+	    "Lennard Gäher",
+	    "Michael Sammler",
+	    "Ralf Jung",
+	    "Robbert Krebbers",
+	    "Derek Dreyer"
+        ],
+        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2024-pldi-refinedrust.pdf",
+        "other_urls": [
+	  { "name": "website", "url": "https://plv.mpi-sws.org/refinedrust" }
+        ]
+      },
+      {
         "title": "A Proof Recipe for Linearizability in Relaxed Memory Separation Logic",
         "authors": [
           "Sunho Park",
@@ -195,7 +224,7 @@
         "authors": [
             "Aïna Linn Georges", "Armaël Guéneau", "Thomas Van Strydonck", "Amin Timany", "Alix Trieu", "Dominique Devriese", "Lars Birkedal",
       ],
-      "where_published": "In Journal of the ACM (JACM)",
+      "where_published": "Journal of the ACM (JACM), Volume 71, Issue 1, Article No. 3, February 2024",
       "pdf_url": "pdfs/2023-jacm-cerise.pdf",
         "other_urls": [
           { "name": "Coq development", "url": "https://github.com/logsem/cerise" },
@@ -1316,7 +1345,8 @@
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/iris-ground-up/paper.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "https://plv.mpi-sws.org/iris/appendix-3.1.pdf" }
-      ]
+      ],
+      "awards": [ "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation" ]
     },
     {
       "title": "MoSeL: A General, Extensible Modal Framework for Interactive Proofs in Separation Logic",
@@ -1476,7 +1506,8 @@
       "other_urls": [
         { "name": "technical appendix", "url": "https://plv.mpi-sws.org/iris/appendix-3.0.pdf" },
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-3.0.0" }
-      ]
+      ],
+      "awards": [ "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation" ]
     },
     {
       "title": "Interactive Proofs in Higher-Order Concurrent Separation Logic",
@@ -1522,7 +1553,8 @@
         { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-2.0" },
         { "name": "talk on youtube", "url": "https://www.youtube.com/watch?v=vUxWU-qvGX0" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-icfp2016.pdf" }
-      ]
+      ],
+      "awards": [ "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation" ]
     },
     {
       "title": "Iris: Monoids and Invariants as an Orthogonal Basis for Concurrent Reasoning",
@@ -1544,8 +1576,9 @@
         { "name": "(historic) Coq formalization", "url": "https://plv.mpi-sws.org/iris/distrib/" },
         { "name": "publisher's site", "url": "https://dl.acm.org/citation.cfm?doid=2676726.2676980" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-popl2015.pdf" }
-      ]
-    }
+      ],
+      "awards": [ "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation" ]
+    },
   ],
   "phd_dissertations": [
     {
