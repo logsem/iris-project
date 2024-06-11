@@ -30,6 +30,7 @@
 </li>
 <li>16:30-17:00:  Hai Dang (BedRock Systems Inc.)</a>: A Lightweight Framework for Decomposing Logical Atomicity of LTS Composition
 <a href="#HaiDang" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/dang.pdf">[slides]</a>
 <div id="HaiDang" class="collapse"><div class="abstract">Modern computer systems can be naturally modeled as a parallel composition of multiple concurrent processes communicating through events (e.g., as labeled transition systems or LTSes). At BedRock Systems, we prove that our virtualization stack implementation refines such an LTS composition model of a computer system (the specification). When using separation logic to decompose such a refinement proof, we need separation logic analogs of standard process calculi reasoning principles: while the separating conjunction can naturally reflect the parallel composition of states of constituent LTSes, reflecting the communication among those LTSes requires clever uses of invariants and more generally, logical atomicity (atomic updates in Iris). We have developed an Iris library called the refinement framework to provide separation logic decomposition along a parallel composition, process bi-simulation, and communication. We have applied our refinement framework in several large verification efforts including on a virtual machine monitor and virtual network switch.</div></div>
 </li>
 </ul>
@@ -47,6 +48,7 @@
 </li>
 <li>11:30-12:00:  Philipp Haselwarter (Aarhus University)</a>: Compositional Reasoning about Expected Costs for Higher-Order Probabilistic Programs
 <a href="#PhilippHaselwarter" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/haselwarter.pdf">[slides]</a>
 <div id="PhilippHaselwarter" class="collapse"><div class="abstract">I will present Tachis, a higher-order separation logic to reason about   the expected cost of probabilistic programs. Inspired by the uses of time   credits for reasoning about the running time of deterministic programs, we   introduce a novel notion of probabilistic cost credit. Probabilistic cost   credits are a separation logic resource that can be used to pay for the   cost of operations in programs, and that can be distributed across all   possible branches of sampling instructions according to their weight, thus   enabling us to reason about expected cost. The representation of cost   credits as separation logic resources gives Tachis a great deal of   flexibility and expressivity. In particular, it permits reasoning about   amortized expected cost by storing excess credits as potential into data   structures to pay for future operations. Tachis further supports a   range of cost models, including running time and entropy usage. We   showcase the versatility of this approach by applying our techniques to   prove upper bounds on the expected cost of a variety of probabilistic algorithms   and data structures, including randomized quicksort, hash tables, and   meldable heaps.</div></div>
 </li>
 <li>12:00-12:30:  Emanuele D’Osualdo (University of Konstanz)</a>: Bluebell: An Alliance of Relational Lifting and Independence For Probabilistic Reasoning
@@ -66,6 +68,7 @@ This hill right next to the city lies at about 400m elevation above Zurich and p
 <li>09:00-09:30: <strong>Coffee</strong></li>
 <li>09:30-10:30: <strong>Invited talk:</strong> Guido Martínez (Microsoft Research)</a>: The Pulse programming language
 <a href="#GuidoMartnez" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/martinez.pdf">[slides]</a>
 <div id="GuidoMartnez" class="collapse"><div class="abstract">I will present Pulse, a new programming language based on dependent types and separation logic for verified imperative programming. Pulse is built over PulseCore, a fully verified separation logic implemented in F*. While Pulse programs elaborate to PulseCore definitions, working with PulseCore directly is not very convenient. For this reason, Pulse provides a full-fledged frontend with its own syntax, typing rules, and typechecker, all of which are embedded in F*. The typing judgment and typechecker are also verified to preserve the correctness of programs. Pulse programs can be run by extracting into OCaml, C or Rust (with different restrictions). I will also show how to verify some task-parallel programs with Pulse, and some (very) recent work in verified GPU kernel programming.</div></div>
 </li>
 <li>10:30-11:00: <strong>Coffee, Snacks</strong></li>
