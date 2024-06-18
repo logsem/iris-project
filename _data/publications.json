@@ -1627,7 +1627,7 @@
       "title": "Verifying a Concurrent, Crash-Safe File System with Sequential Reasoning",
       "authors": ["Tej Chajed"],
       "description": "Massachusetts Institute of Technology, May 2022",
-      "awards": [ "Honorable Mention for the ACM SIGOPS Dennis M. Ritchie Thesis Award" ],
+      "awards": [ "Honorable Mention for the 2022 ACM SIGOPS Dennis M. Ritchie Thesis Award" ],
       "pdf_url": "https://www.chajed.io/papers/tchajed-thesis.pdf"
     },
     {
