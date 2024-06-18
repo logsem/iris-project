@@ -1582,6 +1582,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Automated and Foundational Verification of Low-Level Programs",
+      "authors": ["Michael Sammler"],
+      "description": "MPI-SWS and Saarland University, December 2023",
+      "pdf_url": "pdfs/2023-phd-sammler.pdf"
+    },
+    {
       "title": "Separation Logic for Concurrency and Persistency",
       "authors": ["Simon Friis Vindum"],
       "description": "Aarhus University, December 2023",
