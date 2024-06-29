@@ -20,7 +20,8 @@
         "pdf_url": "pdfs/2024-pldi-quiver.pdf",
         "other_urls": [
 	  { "name": "website", "url": "https://plv.mpi-sws.org/quiver" }
-        ]
+        ],
+          "awards": [ "PLDI 2024 Distinguished Artifact Award" ]
       },
       {
         "title": "RefinedRust: A Type System for High-Assurance Verification of Rust Programs",
