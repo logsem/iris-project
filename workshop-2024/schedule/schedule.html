@@ -3,6 +3,7 @@
 <li>09:00-09:30: <strong>Coffee</strong></li>
 <li>09:30-10:30: <strong>Invited talk:</strong> Christopher Pulte (University of Cambridge)</a>: CN: Verifying Systems C Code with Separation-Logic Refinement Types
 <a href="#ChristopherPulte" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/pulte.pdf">[slides]</a>
 <div id="ChristopherPulte" class="collapse"><div class="abstract">Despite significant progress in the verification of hypervisors, operating systems, and compilers, and in verification tooling, there exists a wide gap between the approaches used in verification projects and conventional development of systems software. We see two main challenges in bringing these closer together: verification handling the complexity of code and semantics of conventional systems software, and verification usability.  CN is an experiment in verification tool design aimed at addressing some aspects of both: a separation-logic refinement type system for C systems software, aimed at predictable proof automation, based on a realistic semantics of ISO C. CN reduces refinement typing to decidable SMT solving (with some user assistance), uses first-class resource types to support pointer aliasing and pointer arithmetic, and uses a novel syntactic restriction of ghost variables in specifications to guarantee their successful inference. In ongoing work we are applying CN to verifying components of Google's pKVM hypervisor for Android.</div></div>
 </li>
 <li>10:30-11:00: <strong>Coffee, Snacks</strong></li>
@@ -45,6 +46,7 @@
 <li>10:30-11:00: <strong>Coffee, Snacks</strong></li>
 <li>11:00-11:30:  Alejandro Aguirre (Aarhus University)</a>: Error Credits: Resourceful Reasoning about Error Bounds for Higher-Order Probabilistic Programs
 <a href="#AlejandroAguirre" data-bs-toggle="collapse">[abstract]</a>
+<a href="slides/aguirre.pdf">[slides]</a>
 <div id="AlejandroAguirre" class="collapse"><div class="abstract">Probabilistic programs often trade accuracy for efficiency, and are thus only   correct up to some probability. It is important to obtain precise bounds for the probability   of these errors happening, but existing approaches rely on simplifications that   make the error bounds excessively coarse, or only apply to first-order programs.   In this talk I will present Eris, a higher-order separation logic for reasoning about probabilities   of errors in higher-order probabilistic programs.    Our key novelty is the introduction of error credits, a separation logic resource   that tracks a bound on the error probability of a program. By representing error bounds as   a resource, we recover the benefits of separation logic, including compositionality,   modularity, and dependency between errors and program terms, allowing   for more precise specifications. Moreover, we enable novel reasoning principles   such as expectation-preserving error composition, amortized error reasoning, and   induction on the error.</div></div>
 </li>
 <li>11:30-12:00:  Philipp Haselwarter (Aarhus University)</a>: Compositional Reasoning about Expected Costs for Higher-Order Probabilistic Programs
