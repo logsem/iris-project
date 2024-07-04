@@ -1583,6 +1583,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Guarantees by Construction",
+      "authors": ["Jules Jacobs"],
+      "description": "Radboud University Nijmegen, Jule 2024",
+      "pdf_url": "pdfs/2024-phd-jacobs.pdf"
+    },
+    {
       "title": "Automated and Foundational Verification of Low-Level Programs",
       "authors": ["Michael Sammler"],
       "description": "MPI-SWS and Saarland University, December 2023",
