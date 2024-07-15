@@ -9,6 +9,17 @@
       "pdf_url": "pdfs/2024-jacm-logical-type-soundness.pdf"
     },
       {
+        "title": "The Functional Essence of Imperative Binary Search Trees",
+        "authors": [
+	    "Anton Lorenzen",
+	    "Daan Leijen",
+	    "Wouter Swierstra",
+	    "Sam Lindley"
+        ],
+        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2024-pldi-functional-essence.pdf",
+      },
+      {
         "title": "Quiver: Guided Abductive Inference of Separation Logic Specifications in Coq",
         "authors": [
 	    "Simon Spies",
