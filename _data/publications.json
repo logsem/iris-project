@@ -1,5 +1,39 @@
 {
   "publications": [
+      {
+        "title": "Almost-Sure Termination by Guarded Refinement",
+        "authors": [
+            "Simon Oddershede Gregersen",
+            "Alejandro Aguirre",
+            "Phillipp G. Haselwarter",
+            "Joseph Tassarotti",
+            "Lars Birkedal"
+      ],
+      "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2024-icfp-caliper.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/11481248" },
+        { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+      ]
+      },
+      {
+        "title": "Error Credits: Resourceful Reasoning about Error Bounds for Higher-Order Probabilistic Programs",
+        "authors": [
+            "Alejandro Aguirre",
+            "Phillipp G. Haselwarter",
+            "Markus de Medeiros",
+            "Kwing Hei Li",
+            "Simon Oddershede Gregersen",
+            "Joseph Tassarotti",
+            "Lars Birkedal"
+      ],
+      "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2024-icfp-eris.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/11489778" },
+        { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+      ]
+    },
     {
       "title": "A Logical Approach to Type Soundness",
         "authors": [
