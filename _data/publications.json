@@ -1737,12 +1737,23 @@
   ],
   "others": [
     {
+      "title": "Verification of the Blocking and Non-Blocking Michael-Scott Queue Algorithms",
+      "authors": [
+        "Mathias Pedersen"
+      ],
+      "description": "Master's thesis at Aarhus University supervised by Amin Timany, June 2024",
+      "pdf_url": "pdfs/2024-thesis-mathias-pedersen.pdf",
+      "other_urls": [
+        { "name": "Coq development", "url": "https://github.com/MatteP1/thesis" }
+      ]
+    },
+    {
       "title": "Logical Foundations Of Language Interoperability Between OCaml and C",
       "authors": [
         "Johannes Hostert"
       ],
       "description": "Master's thesis at Saarland University supervised by Derek Dreyer, July 2023",
-      "pdf_url": "pdfs/2023-thesis-johannes-hostert.pdf",
+      "pdf_url": "pdfs/2023-thesis-johannes-hostert.pdf"
     },
     {
       "title": "Verifying a Barrier using Iris",
