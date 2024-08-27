@@ -32,7 +32,8 @@
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/records/11489778" },
         { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
-      ]
+      ],
+      "awards": [ "ICFP 2024 Distinguished Paper Award" ],
     },
     {
       "title": "A Logical Approach to Type Soundness",
