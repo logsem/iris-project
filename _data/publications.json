@@ -1,6 +1,23 @@
 {
   "publications": [
       {
+        "title": "Snapshottable stores",
+        "authors": [
+          "Clément Allain",
+          "Basile Clément",
+          "Alexandre Moine",
+          "Gabriel Scherer"
+        ],
+        "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
+        "pdf_url": "pdfs/2024-icfp-snapshottable-stores.pdf",
+        "other_urls": [
+          { "name": "Coq development", "url": "https://github.com/clef-men/zoo/blob/icfp2024/theories/persistent/pstore_2.v" }
+        ],
+        "awards": [
+          "ICFP 2024 Distinguished Paper Award"
+        ]
+      },
+      {
         "title": "Almost-Sure Termination by Guarded Refinement",
         "authors": [
             "Simon Oddershede Gregersen",
