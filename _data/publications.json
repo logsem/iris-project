@@ -1,6 +1,24 @@
 {
   "publications": [
       {
+        "title": "Tachis: Higher-Order Separation Logic with Credits for Expected Costs",
+        "authors": [
+            "Philipp G. Haselwarter",
+            "Kwing Hei Li",
+            "Markus de Medeiros",
+            "Simon Oddershede Gregersen",
+            "Alejandro Aguirre",
+            "Joseph Tassarotti",
+            "Lars Birkedal"
+      ],
+      "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2024-oopsla-tachis.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/12659527" },
+        { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+      ]
+      },
+      {
         "title": "Snapshottable Stores",
         "authors": [
           "Clément Allain",
