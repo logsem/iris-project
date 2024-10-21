@@ -1688,10 +1688,16 @@
       "pdf_url": "pdfs/2023-phd-gratzer.pdf"
     },
     {
+        "title": "Conflict-free Replicated Data Types have Abstract Data Types",
+      "authors": ["Abel Nieto"],
+      "description": "Aarhus University, June 2023",
+        "pdf_url": "pdfs/2023-phd-nieto.pdf"
+    },
+    {
       "title": "Designing and Proving Robust Safety of Efficient Capability Machine Programs",
       "authors": ["Aina Linn Georges"],
       "description": "Aarhus University, June 2023",
-      "pdf_url": "pdfs/2023-phd-georges.pdf"
+        "pdf_url": "pdfs/2023-phd-georges.pdf"
     },
     {
       "title": "Higher-Order Separation Logic for Distributed Systems and Security",
