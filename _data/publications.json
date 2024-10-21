@@ -1,6 +1,20 @@
 {
   "publications": [
       {
+        "title": "Multris: Functional Verification of Multiparty Message
+Passing in Separation Logic",
+        "authors": [
+            "Jonas Kastberg Hinrichsen",
+            "Jules Jacobs",
+            "Robbert Krebbers"
+      ],
+      "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2024-oopsla-multris.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/13380561" },
+      ]
+      },
+      {
         "title": "Tachis: Higher-Order Separation Logic with Credits for Expected Costs",
         "authors": [
             "Philipp G. Haselwarter",
