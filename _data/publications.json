@@ -1,8 +1,19 @@
 {
   "publications": [
       {
-        "title": "Multris: Functional Verification of Multiparty Message
-Passing in Separation Logic",
+        "title": "Verified Lock-Free Session Channels with Linking",
+        "authors": [
+            "Thomas Somers",
+            "Robbert Krebbers"
+      ],
+      "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2024-oopsla-linking-actris.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/13599952" },
+      ]
+      },
+      {
+        "title": "Multris: Functional Verification of Multiparty Message Passing in Separation Logic",
         "authors": [
             "Jonas Kastberg Hinrichsen",
             "Jules Jacobs",
