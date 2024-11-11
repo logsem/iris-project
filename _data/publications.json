@@ -1,5 +1,16 @@
 {
   "publications": [
+    {
+      "title": "A Logical Approach to Type Soundness",
+        "authors": [
+            "Amin Timany", "Robbert Krebbers", "Derek Dreyer", "Lars Birkedal"
+      ],
+      "where_published": "Journal of the ACM (JACM), Volume 71, Issue 6, Article No. 40, November 2024",
+      "pdf_url": "pdfs/2024-jacm-logical-type-soundness-final.pdf",
+      "other_urls": [
+        { "name": "JACM webpage", "url": "https://dl.acm.org/doi/10.1145/3676954" },
+      ]
+    },
       {
         "title": "Verified Lock-Free Session Channels with Linking",
         "authors": [
@@ -94,14 +105,6 @@
         { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
       ],
       "awards": [ "ICFP 2024 Distinguished Paper Award" ],
-    },
-    {
-      "title": "A Logical Approach to Type Soundness",
-        "authors": [
-            "Amin Timany", "Robbert Krebbers", "Derek Dreyer", "Lars Birkedal"
-      ],
-      "where_published": "To appear in Journal of the ACM (JACM), 2024",
-      "pdf_url": "pdfs/2024-jacm-logical-type-soundness.pdf"
     },
       {
         "title": "The Functional Essence of Imperative Binary Search Trees",
