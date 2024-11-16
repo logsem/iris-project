@@ -12,6 +12,21 @@
       ]
     },
       {
+        "title": "Iris-MSWasm: Elucidating and Mechanising the Security Invariants of Memory-Safe WebAssembly",
+          "authors": [
+              "Maxime Legoupil",
+              "June Rousseau",
+              "Aina Linn Georges",
+              "Jean Pichon-Pharabod",
+              "Lars Birkedal"
+      ],
+      "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2024-oopsla-iris-mswasm..pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": " https://doi.org/10.5281/zenodo.13383121" },
+      ]
+      },
+      {
         "title": "Verified Lock-Free Session Channels with Linking",
         "authors": [
             "Thomas Somers",
