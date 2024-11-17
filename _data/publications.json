@@ -1707,6 +1707,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Verification of Concurrent Search Structures",
+      "authors": ["Nisarg Patel"],
+      "description": "New York University, September 2024",
+      "pdf_url": "pdfs/2024-phd-patel.pdf"
+    },
+    {
       "title": "Guarantees by Construction",
       "authors": ["Jules Jacobs"],
       "description": "Radboud University Nijmegen, June 2024",
