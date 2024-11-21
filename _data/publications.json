@@ -1,5 +1,17 @@
 {
   "publications": [
+      {
+          "title": "Affect: An Affine Type and Effect System",
+          "authors": [
+              "Orpheas van Rooij",
+              "Robbert Krebbers",
+          ],
+          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2025-popl-affect.pdf",
+          "other_urls": [
+              { "name": "Artifact", "url": "https://zenodo.org/records/13907548" }
+          ]
+      },
     {
       "title": "A Logical Approach to Type Soundness",
         "authors": [
@@ -206,7 +218,8 @@
               { "name": "Coq development", "url": "https://gitlab.inria.fr/cambium/iris-time-proofs" },
               { "name": "Artifact", "url": "https://zenodo.org/records/10023424" }
           ]
-      },      {
+      },
+      {
           "title": "An Iris Instance for Verifying CompCert C Programs",
           "authors": [
               "William Mansky",
