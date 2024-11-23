@@ -1,6 +1,25 @@
 {
   "publications": [
       {
+          "title": "Data Race Freedom à la Mode",
+          "authors": [
+	      "Aïna Linn Georges",
+	      "Benjamin Peters",
+	      "Laila Elbeheiry",
+	      "Leo White",
+	      "Stephen Dolan",
+	      "Richard A. Eisenberg",
+	      "Chris Casinghino",
+	      "François Pottier",
+	      "Derek Dreyer"
+          ],
+          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2025-popl-drfcaml.pdf",
+          "other_urls": [
+              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.13933463" }
+          ]
+      },
+      {
           "title": "Affect: An Affine Type and Effect System",
           "authors": [
               "Orpheas van Rooij",
