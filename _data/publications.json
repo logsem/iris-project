@@ -1,6 +1,22 @@
 {
   "publications": [
       {
+          "title": "Approximate Relational Reasoning for Higher-Order Probabilistic Programs",
+          "authors": [
+              "Philipp G. Haselwarter",
+              "Kwing Hei Li",
+              "Alejandro Aguirre",
+              "Simon Oddershede Gregersen",
+              "Joseph Tassarotti",
+              "Lars Birkedal"
+          ],
+          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "pdfs/2025-popl-approxis.pdf",
+          "other_urls": [
+              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.13939302" }
+          ]
+      },
+      {
           "title": "Data Race Freedom à la Mode",
           "authors": [
 	      "Aïna Linn Georges",
