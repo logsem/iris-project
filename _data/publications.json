@@ -1,5 +1,21 @@
 {
-  "publications": [
+    "publications": [
+      {
+          "title": "The Nextgen Modality: A Modality for Non-Frame-Preserving Updates in Separation Logic",
+          "authors": [
+	      "Simon Friis Vindum",
+              "Aïna Linn Georges",              
+              "Lars Birkedal"
+          ],
+          "where_published": "In CPP 2025: ACM SIGPLAN Conference on Certified Programs and Proofs",
+          "pdf_url": "pdfs/2025-cpp-nextgen.pdf",
+          "other_urls": [
+              { "name": "Artifact", "url": "https://github.com/logsem/iris-nextgen" }
+          ],
+                "awards": [
+          "CPP 2025 Distinguished Paper Award"
+        ]
+      },
       {
           "title": "Approximate Relational Reasoning for Higher-Order Probabilistic Programs",
           "authors": [
