@@ -49,7 +49,10 @@
           "pdf_url": "pdfs/2025-popl-drfcaml.pdf",
           "other_urls": [
               { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.13933463" }
-          ]
+          ],
+          "awards": [
+          "POPL 2025 Distinguished Paper Award"
+    ]
       },
       {
           "title": "Affect: An Affine Type and Effect System",
