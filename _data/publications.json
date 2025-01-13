@@ -64,7 +64,10 @@
           "pdf_url": "pdfs/2025-popl-affect.pdf",
           "other_urls": [
               { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.14198790" }
-          ]
+          ],
+          "awards": [
+          "POPL 2025 Distinguished Paper Award"
+    ]
       },
     {
       "title": "A Logical Approach to Type Soundness",
