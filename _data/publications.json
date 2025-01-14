@@ -105,6 +105,7 @@
       "pdf_url": "pdfs/2024-oopsla-linking-actris.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/records/13599952" },
+        { "name": "website", "url": "https://iris-project.org/actris" },
       ]
       },
       {
@@ -118,6 +119,7 @@
       "pdf_url": "pdfs/2024-oopsla-multris.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/records/13380561" },
+        { "name": "website", "url": "https://iris-project.org/actris" },
       ]
       },
       {
