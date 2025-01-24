@@ -1,6 +1,16 @@
 {
     "publications": [
       {
+          "title": "Context-Dependent Effects in Guarded Interaction Trees",
+          "authors": ["Sergei Stepanenko", "Emma Nardino", "Dan Frumin", "Amin Timany", "Lars Birkedal"],
+          "where_published": "In ESOP 2025: 34rd European Symposium on Programming",
+          "pdf_url": "pdfs/2025-esop-gitrees.pdf"
+          "other_urls": [
+              { "name": "Coq development", "url": "https://github.com/logsem/gitreees" },
+              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.14623649" }
+          ]
+      },
+      {
           "title": "The Nextgen Modality: A Modality for Non-Frame-Preserving Updates in Separation Logic",
           "authors": [
 	      "Simon Friis Vindum",
