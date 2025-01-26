@@ -1784,7 +1784,9 @@
         { "name": "publisher's site", "url": "https://dl.acm.org/citation.cfm?doid=2676726.2676980" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-popl2015.pdf" }
       ],
-      "awards": [ "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation" ]
+      "awards": [ "2025 Most Influential POPL Paper Award",
+		  "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation",
+		   ]
     },
   ],
   "phd_dissertations": [
