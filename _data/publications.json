@@ -14,7 +14,7 @@
           "title": "The Nextgen Modality: A Modality for Non-Frame-Preserving Updates in Separation Logic",
           "authors": [
 	      "Simon Friis Vindum",
-              "Aïna Linn Georges",              
+              "Aïna Linn Georges",
               "Lars Birkedal"
           ],
           "where_published": "In CPP 2025: ACM SIGPLAN Conference on Certified Programs and Proofs",
@@ -1790,6 +1790,12 @@
     },
   ],
   "phd_dissertations": [
+    {
+      "title": "Formal Verification of Heap Space Bounds under Garbage Collection",
+      "authors": ["Alexandre Moine"],
+      "description": "Inria and Université Paris Cité, September 2024",
+      "pdf_url": "pdfs/2024-phd-moine.pdf"
+    },
     {
       "title": "Scaling Up Relaxed Memory Verification with Separation Logics",
       "authors": ["Hoang-Hai Dang"],
