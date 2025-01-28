@@ -27,6 +27,17 @@
         ]
       },
       {
+          "title": "Program Logics à la Carte",
+          "authors": [
+              "Max Vistrup", "Michael Sammler", "Ralf Jung"
+          ],
+          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+          "pdf_url": "https://research.ralfj.de/papers/2025-popl-itree-program-logic.pdf",
+          "other_urls": [
+              { "name": "website", "url": "https://plf.inf.ethz.ch/research/popl25-itree-program-logic.html" }
+          ]
+      },
+      {
           "title": "Approximate Relational Reasoning for Higher-Order Probabilistic Programs",
           "authors": [
               "Philipp G. Haselwarter",
