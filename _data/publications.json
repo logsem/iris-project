@@ -25,20 +25,6 @@
                 "awards": [
           "CPP 2025 Distinguished Paper Award"
         ]
-      {
-          "title": "Tail Modulo Cons, OCaml, and Relational Separation Logic",
-          "authors": [
-            "Clément Allain",
-            "Frédéric Bour",
-            "Basile Clément",
-            "François Pottier",
-            "Gabriel Scherer"
-          ],
-          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2025-popl-tmc.pdf",
-          "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/clef-men/camlcert/tree/popl2025" }
-          ]
       },
       {
           "title": "Program Logics à la Carte",
