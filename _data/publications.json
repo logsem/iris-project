@@ -1,6 +1,15 @@
 {
     "publications": [
       {
+          "title": "Will it Fit? Verifying Heap Space Bounds of Concurrent Programs under Garbage Collection",
+          "authors":  [ "Alexandre Moine", "Arthur Charguéraud", "François Pottier" ],
+          "where_published": "In TOPLAS: ACM Transactions on Programming Languages and Systems",
+          "pdf_url": "pdfs/2025-toplas-willitfit.pdf",
+          "other_urls": [
+              { "name": "Coq development", "url": "https://github.com/nobrakal/irisfit" }
+          ]
+      },
+      {
           "title": "Context-Dependent Effects in Guarded Interaction Trees",
           "authors": ["Sergei Stepanenko", "Emma Nardino", "Dan Frumin", "Amin Timany", "Lars Birkedal"],
           "where_published": "In ESOP 2025: 34rd European Symposium on Programming",
