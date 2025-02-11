@@ -1826,6 +1826,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Proof Automation for Fine-Grained Concurrent Separation Logic",
+      "authors": ["Ike Mulder"],
+      "description": "Radboud University Nijmegen, February 2025",
+      "pdf_url": "pdfs/2025-phd-mulder.pdf"
+    },
+    {
       "title": "Formal Verification of Heap Space Bounds under Garbage Collection",
       "authors": ["Alexandre Moine"],
       "description": "Inria and Université Paris Cité, September 2024",
