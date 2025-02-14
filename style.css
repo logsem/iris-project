@@ -1,7 +1,7 @@
 dl.ref {
   counter-reset: pub-counter-1;
   padding-left: 10px;
-  padding-top: 0px;
+  padding-top: 7px;
   width: 100%;
   display: grid;
   grid-template-columns: min-content 1fr;
