@@ -6,7 +6,7 @@
           "where_published": "In TOPLAS: ACM Transactions on Programming Languages and Systems",
           "pdf_url": "pdfs/2025-toplas-willitfit.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/nobrakal/irisfit" }
+              { "name": "Rocq development", "url": "https://github.com/nobrakal/irisfit" }
           ]
       },
       {
@@ -15,7 +15,7 @@
           "where_published": "In ESOP 2025: 34rd European Symposium on Programming",
           "pdf_url": "pdfs/2025-esop-gitrees.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/logsem/gitrees" },
+              { "name": "Rocq development", "url": "https://github.com/logsem/gitrees" },
               { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.14623649" }
           ]
       },
@@ -47,7 +47,7 @@
           "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2025-popl-tmc.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/clef-men/camlcert/tree/popl2025" }
+              { "name": "Rocq development", "url": "https://github.com/clef-men/camlcert/tree/popl2025" }
           ]
       },
       {
@@ -182,7 +182,7 @@
       "pdf_url": "pdfs/2024-oopsla-tachis.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/records/12659527" },
-        { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
       ]
       },
       {
@@ -196,7 +196,7 @@
         "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
         "pdf_url": "pdfs/2024-icfp-snapshottable-stores.pdf",
         "other_urls": [
-          { "name": "Coq development", "url": "https://github.com/clef-men/zoo/blob/icfp2024/theories/persistent/pstore_2.v" }
+          { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/blob/icfp2024/theories/persistent/pstore_2.v" }
         ],
         "awards": [
           "ICFP 2024 Distinguished Paper Award"
@@ -215,7 +215,7 @@
       "pdf_url": "pdfs/2024-icfp-caliper.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/records/11481248" },
-        { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
       ]
       },
       {
@@ -233,7 +233,7 @@
       "pdf_url": "pdfs/2024-icfp-eris.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/records/11489778" },
-        { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
       ],
       "awards": [ "ICFP 2024 Distinguished Paper Award" ],
     },
@@ -292,7 +292,7 @@
         "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
         "pdf_url": "pdfs/2024-pldi-proof-recipe.pdf",
         "other_urls": [
-          { "name": "Coq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic" },
+          { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic" },
           { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10933398" }
         ]
       },
@@ -319,7 +319,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-pottier-gueneau-jourdan-mevel-thunks-debits.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://gitlab.inria.fr/cambium/iris-time-proofs" },
+              { "name": "Rocq development", "url": "https://gitlab.inria.fr/cambium/iris-time-proofs" },
               { "name": "Artifact", "url": "https://zenodo.org/records/10023424" }
           ]
       },
@@ -332,7 +332,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-vst-on-iris.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/PrincetonUniversity/VST/tree/vst_on_iris" },
+              { "name": "Rocq development", "url": "https://github.com/PrincetonUniversity/VST/tree/vst_on_iris" },
               { "name": "Artifact", "url": "https://zenodo.org/records/8423865" }
           ]
       },
@@ -346,7 +346,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-dlfactris.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/julesjacobs/dlf-actris" },
+              { "name": "Rocq development", "url": "https://github.com/julesjacobs/dlf-actris" },
               { "name": "Artifact", "url": "https://apndx.org/pub/icnp/" },
 	      { "name": "website", "url": "https://iris-project.org/actris" }
           ]
@@ -361,7 +361,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-dislog.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://gitlab.inria.fr/amoine/dislog" },
+              { "name": "Rocq development", "url": "https://gitlab.inria.fr/amoine/dislog" },
               { "name": "Artifact", "url": "https://zenodo.org/records/8414566" },
           ]
       },
@@ -375,7 +375,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-wbcf.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/logsem/well-bracketed-logic" },
+              { "name": "Rocq development", "url": "https://github.com/logsem/well-bracketed-logic" },
           ]
       },
       {
@@ -402,7 +402,7 @@
           "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
           "pdf_url": "pdfs/2024-popl-gitrees.pdf",
           "other_urls": [
-              { "name": "Coq development", "url": "https://github.com/logsem/gitrees/" },
+              { "name": "Rocq development", "url": "https://github.com/logsem/gitrees/" },
               { "name": "Artifact", "url": "https://zenodo.org/records/10124427" },
 
           ],
@@ -421,7 +421,7 @@
           "pdf_url": "pdfs/2024-popl-clutch.pdf",
           "other_urls": [
               { "name": "Extended version", "url": "https://arxiv.org/abs/2301.10061" },
-              { "name": "Coq development", "url": "https://github.com/logsem/clutch" },
+              { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
               { "name": "Artifact", "url": "https://zenodo.org/records/8424490" },
           ]
       },
@@ -440,7 +440,7 @@
           "pdf_url": "pdfs/2024-popl-trillium.pdf",
           "other_urls": [
               { "name": "Extended version", "url": "https://arxiv.org/pdf/2109.07863" },
-              { "name": "Coq development", "url": "https://github.com/logsem/trillium" },
+              { "name": "Rocq development", "url": "https://github.com/logsem/trillium" },
               { "name": "Artifact", "url": "https://zenodo.org/records/10100892" },
           ]
       },
@@ -457,7 +457,7 @@
       "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "pdfs/2024-popl-axsl-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/logsem/AxSL" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/AxSL" },
         { "name": "Artifact", "url": "https://doi.org/10.17863/CAM.104080" },
       ]
     },
@@ -469,7 +469,7 @@
       "where_published": "Journal of the ACM (JACM), Volume 71, Issue 1, Article No. 3, February 2024",
       "pdf_url": "pdfs/2023-jacm-cerise.pdf",
         "other_urls": [
-          { "name": "Coq development", "url": "https://github.com/logsem/cerise" },
+          { "name": "Rocq development", "url": "https://github.com/logsem/cerise" },
           { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3623510" },
       ]
     },
@@ -496,7 +496,7 @@
       "other_urls": [
         { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3622798" },
         { "name": "Extended version", "url": "https://arxiv.org/abs/2309.04851" },
-        { "name": "Coq development", "url": "https://github.com/secure-foundations/leaf" },
+        { "name": "Rocq development", "url": "https://github.com/secure-foundations/leaf" },
       ]
     },
     {
@@ -512,7 +512,7 @@
       "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2023-oopsla-melocoton.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/logsem/melocoton" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/melocoton" },
         { "name": "website", "url": "https://melocoton-project.github.io/" },
         { "name": "Artifact", "url": "https://zenodo.org/records/8331210" },
       ]
@@ -530,7 +530,7 @@
       "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2023-oopsla-reclamation.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/kaist-cp/smr-verification" },
+        { "name": "Rocq development", "url": "https://github.com/kaist-cp/smr-verification" },
       ]
     },
     {
@@ -543,7 +543,7 @@
       "pdf_url": "pdfs/2023-oopsla-spirea.pdf",
       "awards": [ "OOPSLA 2023 Distinguished Paper Award" ],
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/logsem/spirea" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/spirea" },
         { "name": "Artifact", "url": "https://zenodo.org/record/8314888" }
       ]
     },
@@ -558,7 +558,7 @@
       "pdf_url": "pdfs/2023-oopsla-diaframe2-final.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/record/7712620" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
       ]
     },
     {
@@ -570,7 +570,7 @@
       "where_published": "In LMCS 2023: Logical Methods in Computer Science",
       "pdf_url": "pdfs/2023-lmcs-rmad.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.inria.fr/cambium/hazel" }
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/cambium/hazel" }
       ]
     },
     {
@@ -586,7 +586,7 @@
       "pdf_url": "pdfs/2023-icfp-relcom.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://zenodo.org/record/8121688" },
-        { "name": "Coq development", "url": "https://github.com/logsem/aneris" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/aneris" },
 	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
@@ -601,7 +601,7 @@
       "pdf_url": "https://apndx.org/pub/mpy9/miniactris.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://apndx.org/pub/mpy9/" },
-        { "name": "Coq development", "url": "https://github.com/julesjacobs/miniactris" },
+        { "name": "Rocq development", "url": "https://github.com/julesjacobs/miniactris" },
 	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
@@ -617,7 +617,7 @@
       "where_published": "In ECOOP 2023: European Conference on Object-Oriented Programming",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2023-ecoop-crdts.pdf" },
-        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7717100" },
+        { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.7717100" },
 	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
@@ -643,7 +643,7 @@
       "pdf_url": "https://sf.snu.ac.kr/publications/fairness.pdf",
       "other_urls": [
         { "name": "Website", "url": "https://sf.snu.ac.kr/fairness/" },
-        { "name": "Coq development", "url": "https://github.com/snu-sf/fairness" }
+        { "name": "Rocq development", "url": "https://github.com/snu-sf/fairness" }
       ]
     },
     {
@@ -667,7 +667,7 @@
       "pdf_url": "pdfs/2023-pldi-diaframe-disj.pdf",
       "other_urls": [
         { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.7799173" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
       ]
     },
     {
@@ -683,7 +683,7 @@
       "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2023-pldi-hypervisor-vmsl.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/logsem/VMSL" }
+        { "name": "Rocq development", "url": "https://github.com/logsem/VMSL" }
       ]
     },
     {
@@ -700,7 +700,7 @@
       "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2023-pldi-iris-wasm.pdf",
       "other_urls": [
-          { "name": "Coq development", "url": "https://github.com/WasmCert/WasmCert-Coq/tree/iris-wasm-native" },
+          { "name": "Rocq development", "url": "https://github.com/WasmCert/WasmCert-Coq/tree/iris-wasm-native" },
           { "name": "Artifact", "url": "https://zenodo.org/record/7808708#.ZF4mLexBxqs" }
       ]
     },
@@ -713,7 +713,7 @@
       "where_published": "In ESOP 2023: European Symposium on Programming",
       "pdf_url": "pdfs/2023-esop-tes.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.inria.fr/cambium/tes" }
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/cambium/tes" }
       ]
     },
     {
@@ -726,7 +726,7 @@
       "pdf_url": "https://julesjacobs.com/pdf/locks.pdf",
       "awards": [ "POPL 2023 Distinguished Paper Award" ],
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/julesjacobs/cgraphs" }
+        { "name": "Rocq development", "url": "https://github.com/julesjacobs/cgraphs" }
       ]
     },
     {
@@ -739,7 +739,7 @@
       "where_published": "In POPL 2023: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://cambium.inria.fr/~amoine/publications/moine-chargueraud-pottier-23.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.inria.fr/amoine/spacelambda" },
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/amoine/spacelambda" },
         { "name": "Artifact", "url": "https://zenodo.org/record/7129302"}
       ]
     },
@@ -759,7 +759,7 @@
       "awards": [ "POPL 2023 Distinguished Paper Award" ],
       "other_urls": [
         { "name": "Website", "url": "https://plv.mpi-sws.org/dimsum/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/dimsum" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/dimsum" },
         { "name": "Artifact", "url": "https://zenodo.org/record/7306313"}
       ]
     },
@@ -774,7 +774,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/JacobsDT22.html",
       "pdf_url": "pdfs/2022-oopsla-purity-of-ST.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://zenodo.org/record/6329773#.ZA7x2y-B08Y" }
+        { "name": "Rocq development", "url": "https://zenodo.org/record/6329773#.ZA7x2y-B08Y" }
       ]
     },
     {
@@ -805,7 +805,7 @@
       "where_published": "In OOPSLA 2022: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-crdts.pdf" },
-        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7055010" },
+        { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.7055010" },
 	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
@@ -820,7 +820,7 @@
       "awards": [ "OOPSLA 2022 Distinguished Paper Award" ],
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2022-oopsla-directed-capabilities-final.pdf" },
-        { "name": "Coq development", "url": "https://github.com/logsem/cerise-stack-monotone" }
+        { "name": "Rocq development", "url": "https://github.com/logsem/cerise-stack-monotone" }
       ]
     },
     {
@@ -835,7 +835,7 @@
       "pdf_url": "pdfs/2022-icfp-symbexec-final.pdf",
       "other_urls": [
         { "name": "Website", "url": "https://katamaran-project.github.io/" },
-        { "name": "Coq development", "url": "https://github.com/katamaran-project/katamaran" },
+        { "name": "Rocq development", "url": "https://github.com/katamaran-project/katamaran" },
         { "name": "Artifact", "url": "https://dl.acm.org/do/10.5281/zenodo.6865817/full/" }
       ]
     },
@@ -867,7 +867,7 @@
       "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "https://plv.mpi-sws.org/later-credits/paper-later-credits.pdf",
       "other_urls": [
-	      { "name": "Website (with Coq development)", "url": "https://plv.mpi-sws.org/later-credits/" },
+	      { "name": "Website (with Rocq development)", "url": "https://plv.mpi-sws.org/later-credits/" },
         { "name": "Artifact and appendix", "url": "https://zenodo.org/record/6702804#.Ytqb1h1BzB9" }
       ]
     },
@@ -885,7 +885,7 @@
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/compass/paper.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/gpfsl/-/tree/ci/compass" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/gpfsl/-/tree/ci/compass" },
 	{ "name": "website", "url": "https://plv.mpi-sws.org/compass" }
       ]
     },
@@ -901,7 +901,7 @@
       "awards": [ "PLDI 2022 Distinguished Paper Award" ],
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/rusthornbelt/paper.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/lambda-rust/-/tree/masters/rusthornbelt" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/lambda-rust/-/tree/masters/rusthornbelt" },
 	{ "name": "Creusot development", "url": "https://github.com/xldenis/rhb-specs" },
 	{ "name": "artifact", "url": "https://doi.org/10.5281/zenodo.6426048" },
 	{ "name": "errata", "url": "https://people.mpi-sws.org/~dreyer/papers/rusthornbelt/errata.txt" }
@@ -917,7 +917,7 @@
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2022-pldi-diaframe-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/diaframe" }
       ]
     },
     {
@@ -935,7 +935,7 @@
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/islaris/paper.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/rems-project/islaris" }
+        { "name": "Rocq development", "url": "https://github.com/rems-project/islaris" }
       ]
     },
     {
@@ -946,7 +946,7 @@
       "where_published": "In ECOOP 2022: European Conference on Object-Oriented Programming",
       "pdf_url": "https://julesjacobs.com/pdf/lambdabar.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/julesjacobs/cgraphs" }
+        { "name": "Rocq development", "url": "https://github.com/julesjacobs/cgraphs" }
       ]
     },
     {
@@ -959,7 +959,7 @@
       "where_published": "In LMCS 2022: Logical Methods in Computer Science",
       "pdf_url": "pdfs/2022-lmcs-actris2-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/actris" },
 	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
@@ -985,7 +985,7 @@
       "where_published": "In CPP 2022: ACM SIGPLAN International Conference on Certified Programs and Proofs",
       "pdf_url": "pdfs/2022-cpp-folly-queue.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc/-/tree/master/theories/examples/folly_queue" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/reloc/-/tree/master/theories/examples/folly_queue" }
       ]
     },
     {
@@ -1004,7 +1004,7 @@
       "awards": [ "POPL 2022 Distinguished Paper Award" ],
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-simuliris.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/simuliris/" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/simuliris/" },
         { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.5667545" }
       ]
     },
@@ -1018,7 +1018,7 @@
       "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-connectivity-graphs.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/julesjacobs/cgraphs" }
+        { "name": "Rocq development", "url": "https://github.com/julesjacobs/cgraphs" }
       ]
     },
     {
@@ -1034,7 +1034,7 @@
       "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://iris-project.org/pdfs/2022-popl-vip.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
         { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.5662349" },
         { "name": "Video", "url": "https://youtu.be/jrMxY8TnAoc" }
       ]
@@ -1048,7 +1048,7 @@
       "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://cambium.inria.fr/~fpottier/publis/madiot-pottier-diamonds-2022.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.inria.fr/fpottier/diamonds" },
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/fpottier/diamonds" },
         { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.5549765" }
       ]
     },
@@ -1084,7 +1084,7 @@
       "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "https://iris-project.org/pdfs/2021-icfp-cosmo-queue-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.inria.fr/gmevel/cosmo" }
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/gmevel/cosmo" }
       ]
     },
     {
@@ -1098,7 +1098,7 @@
       "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "https://plv.mpi-sws.org/rustbelt/ghostcell/paper.pdf",
       "other_urls": [
-        { "name": "website with Rust and Coq development", "url": "https://plv.mpi-sws.org/rustbelt/ghostcell/" }
+        { "name": "website with Rust and Rocq development", "url": "https://plv.mpi-sws.org/rustbelt/ghostcell/" }
       ]
     },
     {
@@ -1115,7 +1115,7 @@
         "awards": [ "ICFP 2021 Distinguished Paper Award" ],
       "pdf_url": "https://iris-project.org/pdfs/2021-icfp-intensional-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/logsem/free-theorems-sl" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/free-theorems-sl" },
         { "name": "video", "url": "https://www.youtube.com/watch?v=8lv6UYX9toM" }
       ]
     },
@@ -1130,7 +1130,7 @@
       "pdf_url": "pdfs/2021-lmcs-reloc-reloaded-final.pdf",
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/reloc/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/reloc" }
       ]
     },
     {
@@ -1147,7 +1147,7 @@
       "pdf_url": "https://www.chajed.io/papers/gojournal:osdi2021.pdf",
       "other_urls": [
         { "name": "code", "url": "https://github.com/mit-pdos/go-journal" },
-        { "name": "Coq development", "url": "https://github.com/mit-pdos/perennial" }
+        { "name": "Rocq development", "url": "https://github.com/mit-pdos/perennial" }
       ]
     },
     {
@@ -1165,7 +1165,7 @@
       "pdf_url": "https://plv.mpi-sws.org/refinedc/paper.pdf",
       "other_urls": [
         { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
 	  { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.4646747" }
       ]
     },
@@ -1184,7 +1184,7 @@
       "pdf_url": "https://iris-project.org/pdfs/2021-pldi-transfinite-iris-final.pdf",
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/transfinite-iris/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/transfinite" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/transfinite" }
       ]
     },
     {
@@ -1197,7 +1197,7 @@
       "where_published": "In S&P 2021: IEEE Symposium on Security and Privacy",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2020-seloc-submission.pdf" },
-        { "name": "Coq development", "url": "https://github.com/co-dan/SeLoC" }
+        { "name": "Rocq development", "url": "https://github.com/co-dan/SeLoC" }
       ]
     },
     {
@@ -1230,7 +1230,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/GeorgesGSTTHDB21.html",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "pdfs/2021-popl-ucaps-final.pdf" },
-        { "name": "Coq formalization", "url": "https://github.com/logsem/cerise-stack" }
+        { "name": "Rocq development", "url": "https://github.com/logsem/cerise-stack" }
       ]
     },
     {
@@ -1246,7 +1246,7 @@
       "pdf_url": "pdfs/2021-popl-tiniris-final.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "pdfs/2021-popl-tiniris-appendix.pdf" },
-        { "name": "Coq formalization", "url": "https://github.com/logsem/iris-tini" }
+        { "name": "Rocq development", "url": "https://github.com/logsem/iris-tini" }
       ]
     },
     {
@@ -1263,7 +1263,7 @@
       "pdf_url": "pdfs/2021-popl-ccddb-final.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "pdfs/2021-popl-ccddb-appendix.pdf" },
-        { "name": "Coq formalization", "url": "https://zenodo.org/record/4066608" },
+        { "name": "Rocq development", "url": "https://zenodo.org/record/4066608" },
 	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
@@ -1278,7 +1278,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/JacobsTD21.html",
       "pdf_url": "pdfs/2021-popl-fae-gradual-final.pdf",
       "other_urls": [
-        { "name": "Coq formalization", "url": "https://github.com/scaup/fae-gtlc-mu" }
+        { "name": "Rocq development", "url": "https://github.com/scaup/fae-gtlc-mu" }
       ]
     },
     {
@@ -1291,7 +1291,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/VilhenaP21.html",
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "https://cambium.inria.fr/~fpottier/publis/de-vilhena-pottier-sleh.pdf" },
-        { "name": "Coq formalization", "url": "https://gitlab.inria.fr/pdevilhe/hazel" }
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/pdevilhe/hazel" }
       ]
     },
     {
@@ -1312,7 +1312,7 @@
       "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
       "other_urls": [
 	  { "name": "[amended after publication] .pdf", "url": "pdfs/2021-CPP-monotone-final.pdf" },
-        { "name": "Coq development", "url": "https://github.com/amintimany/monotone" }
+        { "name": "Rocq development", "url": "https://github.com/amintimany/monotone" }
       ]
     },
     {
@@ -1327,7 +1327,7 @@
       "pdf_url": "pdfs/2021-cpp-sessions-final.pdf",
       "awards": [ "CPP 2021 Distinguished Paper Award" ],
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/actris" },
 	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
@@ -1358,7 +1358,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/GiarrussoSTBK20.html",
       "pdf_url": "pdfs/2020-icfp-dot-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/Blaisorblade/dot-iris" },
+        { "name": "Rocq development", "url": "https://github.com/Blaisorblade/dot-iris" },
         { "name": "website", "url": "https://dot-iris.github.io/" }
       ]
     },
@@ -1374,7 +1374,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/conf/pldi/KrishnaPSW20.html",
       "pdf_url": "https://cs.nyu.edu/wies/publ/templates-pldi20.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/nyu-acsys/template-proofs/" }
+        { "name": "Rocq development", "url": "https://github.com/nyu-acsys/template-proofs/" }
       ]
     },
     {
@@ -1391,7 +1391,7 @@
       "pdf_url": "pdfs/2020-esop-aneris-final.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "pdfs/2020-esop-aneris-final-appendix.pdf" },
-        { "name": "Coq development", "url": "artifacts/2020-esop-aneris.tar.gz" },
+        { "name": "Rocq development", "url": "artifacts/2020-esop-aneris.tar.gz" },
 	{ "name": "website", "url": "https://iris-project.org/aneris" }
       ]
     },
@@ -1421,7 +1421,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/VilhenaPJ20.html",
       "pdf_url": "https://gallium.inria.fr/~fpottier/publis/de-vilhena-pottier-jourdan-spy-game-2020.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.inria.fr/pdevilhe/spy-game" }
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/pdevilhe/spy-game" }
       ]
     },
     {
@@ -1435,7 +1435,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/HinrichsenBK20.html",
       "pdf_url": "pdfs/2020-popl-actris-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/actris/" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/actris/" },
 	{ "name": "website", "url": "https://iris-project.org/actris" }
       ]
     },
@@ -1470,7 +1470,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/SammlerGDL20.html",
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/sandboxing/paper.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FCS/lang-sandbox-coq" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/FCS/lang-sandbox-coq" }
       ]
     },
     {
@@ -1485,7 +1485,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/conf/sosp/ChajedTKZ19.html",
       "pdf_url": "pdfs/2019-sosp-perennial-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/mit-pdos/perennial" }
+        { "name": "Rocq development", "url": "https://github.com/mit-pdos/perennial" }
       ]
     },
     {
@@ -1498,7 +1498,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/TimanyB19.html",
       "pdf_url": "pdfs/2019-icfp-logrelcc-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "artifacts/2019-icfp-logrelcc.tar.gz" }
+        { "name": "Rocq development", "url": "artifacts/2019-icfp-logrelcc.tar.gz" }
       ]
     },
     {
@@ -1522,7 +1522,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/conf/esop/FruminGK19.html",
       "pdf_url": "pdfs/2019-esop-c.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/c" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/c" },
         { "name": "website", "url": "https://cs.ru.nl/~dfrumin/wpc/" },
         { "name": "slides", "url": "https://cs.ru.nl/~dfrumin/wpc/esop-talk.pdf" }
       ]
@@ -1538,7 +1538,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/conf/esop/MevelJP19.html",
       "pdf_url": "pdfs/2019-esop-time.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.inria.fr/gmevel/iris-time-proofs" }
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/gmevel/iris-time-proofs" }
       ]
     },
     {
@@ -1553,7 +1553,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/BizjakGKB19.html",
       "pdf_url": "pdfs/2019-popl-iron-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iron" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/iron" },
         { "name": "website", "url": "iron/" }
       ]
     },
@@ -1567,7 +1567,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/TassarottiH19.html",
       "pdf_url": "pdfs/2019-popl-polaris-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/jtassarotti/polaris" }
+        { "name": "Rocq development", "url": "https://github.com/jtassarotti/polaris" }
       ]
     },
     {
@@ -1638,7 +1638,7 @@
       "pdf_url": "pdfs/2018-lics-reloc-final.pdf",
       "other_urls": [
         { "name": "website", "url": "https://iris-project.org/reloc/" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/dfrumin/logrel-conc" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/dfrumin/logrel-conc" },
         { "name": "slides", "url": "https://cs.ru.nl/~dfrumin/pdf/t/reloc-lics.pdf" }
       ]
     },
@@ -1669,7 +1669,7 @@
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/pacmpl/TimanySKB18.html",
       "pdf_url": "pdfs/2018-popl-runST-final.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "artifacts/2018-popl-runst.tar.gz" }
+        { "name": "Rocq development", "url": "artifacts/2018-popl-runst.tar.gz" }
       ]
     },
     {
@@ -1695,8 +1695,8 @@
       "other_urls": [
         { "name": "[preprint] .pdf", "url": "https://www.mpi-sws.org/~dreyer/papers/ocpl/paper.pdf" },
         { "name": "[long version] .pdf", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-oopsla17-long.pdf" },
-        { "name": "Coq development", "url": "https://www.mpi-sws.org/~dreyer/papers/ocpl/ocpl.tgz" },
-        { "name": "Coq development (VM)", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-vm-20170705.ova" }
+        { "name": "Rocq development", "url": "https://www.mpi-sws.org/~dreyer/papers/ocpl/ocpl.tgz" },
+        { "name": "Rocq development (VM)", "url": "https://people.mpi-sws.org/~swasey/papers/ocpl/ocpl-vm-20170705.ova" }
       ]
     },
     {
@@ -1747,7 +1747,7 @@
       "pdf_url": "pdfs/2017-esop-iris3-final.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "https://plv.mpi-sws.org/iris/appendix-3.0.pdf" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-3.0.0" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-3.0.0" }
       ],
       "awards": [ "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation" ]
     },
@@ -1792,7 +1792,7 @@
       "other_urls": [
         { "name": "technical appendix (1/2)", "url": "pdfs/2016-icfp-iris2-final-appendix.pdf" },
         { "name": "technical appendix (2/2)", "url": "https://plv.mpi-sws.org/iris/appendix-2.0.pdf" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-2.0" },
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/iris/tree/iris-2.0" },
         { "name": "talk on youtube", "url": "https://www.youtube.com/watch?v=vUxWU-qvGX0" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-icfp2016.pdf" }
       ],
@@ -1815,7 +1815,7 @@
       "pdf_url": "pdfs/2015-popl-iris1-final.pdf",
       "other_urls": [
         { "name": "technical appendix", "url": "https://plv.mpi-sws.org/iris/appendix.pdf" },
-        { "name": "(historic) Coq formalization", "url": "https://plv.mpi-sws.org/iris/distrib/" },
+        { "name": "(historic) Rocq formalization", "url": "https://plv.mpi-sws.org/iris/distrib/" },
         { "name": "publisher's site", "url": "https://dl.acm.org/citation.cfm?doid=2676726.2676980" },
         { "name": "slides", "url": "https://people.mpi-sws.org/~jung/iris/talk-popl2015.pdf" }
       ],
@@ -1973,7 +1973,7 @@
       "description": "Master's thesis at Aarhus University supervised by Amin Timany, June 2024",
       "pdf_url": "pdfs/2024-thesis-mathias-pedersen.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://github.com/MatteP1/thesis" }
+        { "name": "Rocq development", "url": "https://github.com/MatteP1/thesis" }
       ]
     },
     {
@@ -1992,7 +1992,7 @@
       "description": "Bachelor's thesis at Radboud University Nijmegen supervised by Robbert Krebbers, March 2023",
       "pdf_url": "https://www.cs.ru.nl/bachelors-theses/2023/Simcha_van_Collem___1040283___Verifying_a_Barrier_using_Iris.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://doi.org/10.5281/zenodo.7749189" }
+        { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.7749189" }
       ]
     },
     {
@@ -2014,7 +2014,7 @@
       ],
       "pdf_url": "pdfs/2017-case-study-verifying-dartino-framework.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "artifacts/2017-case-study-verifying-dartino-framework.zip" }
+        { "name": "Rocq development", "url": "artifacts/2017-case-study-verifying-dartino-framework.zip" }
       ]
     },
     {
@@ -2027,7 +2027,7 @@
       ],
       "pdf_url": "pdfs/2017-case-study-concurrent-stacks-with-helping.pdf",
       "other_urls": [
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/FP/iris-examples/tree/master/theories/concurrent_stacks" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/FP/iris-examples/tree/master/theories/concurrent_stacks" }
       ]
     },
     {
@@ -2048,7 +2048,7 @@
       "description": "At CoqPL 2017: The Third International Workshop on Coq for Programming Languages, Paris, France",
       "other_urls": [
         { "name": "abstract", "url": "https://lirias.kuleuven.be/bitstream/123456789/555709/1/CoqPL.pdf" },
-        { "name": "Coq development", "url": "https://gitlab.mpi-sws.org/iris/examples/tree/master/theories/logrel" }
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/examples/tree/master/theories/logrel" }
       ]
     },
     {
