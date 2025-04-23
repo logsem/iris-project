@@ -1,6 +1,22 @@
 {
     "publications": [
       {
+        "title": "Lilo: A Higher-Order, Relational Concurrent Separation Logic for Liveness",
+        "authors": [
+            "Dongjae Lee", 
+            "Janggun Lee", 
+            "Taeyoung Yoon", 
+            "Minki Cho", 
+            "Jeehoon Kang", 
+            "Chung-Kil Hur"
+        ],
+        "where_published": "In OOPSLA 2025: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+        "pdf_url": "pdfs/2025-oopsla-lilo.pdf",
+        "other_urls": [
+          { "name": "Artifact", "url": "https://zenodo.org/records/14927742" }
+        ]
+      },
+      {
           "title": "Will it Fit? Verifying Heap Space Bounds of Concurrent Programs under Garbage Collection",
           "authors":  [ "Alexandre Moine", "Arthur Charguéraud", "François Pottier" ],
           "where_published": "In TOPLAS: ACM Transactions on Programming Languages and Systems",
@@ -184,6 +200,18 @@
         { "name": "Artifact", "url": "https://zenodo.org/records/12659527" },
         { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
       ]
+      },
+      {
+        "title": "Refinement Composition Logic",
+        "authors": [
+            "Youngju Song",
+            "Dongjae Lee"
+        ],
+        "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
+        "pdf_url": "pdfs/2024-icfp-rcl.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/CCR-project/RCL" }
+        ]
       },
       {
         "title": "Snapshottable Stores",
