@@ -26,7 +26,7 @@ class Talk:
     time = None
     html = None
 
-f = csv.reader(open(sys.argv[1], newline=''))
+f = csv.reader(open(sys.argv[1], newline=''), delimiter=';')
 header = next(f)
 
 name_col = find_column(header, 'Name Tag')
