@@ -26,7 +26,9 @@ class Talk:
     time = None
     html = None
 
-f = csv.reader(open(sys.argv[1], newline=''), delimiter=';')
+# encoding='utf-8-sig' is required if the CSV file has a BOM prefix U+FEFF
+# encoding='utf-8' can be used otherwise
+f = csv.reader(open(sys.argv[1], newline='', encoding='utf-8-sig'), delimiter=';')
 header = next(f)
 
 name_col = find_column(header, 'Name Tag')
