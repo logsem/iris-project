@@ -1,6 +1,18 @@
 {
     "publications": [
       {
+        "title": "Solving Guarded Domain Equations in Presheaves Over Ordinals and Mechanizing It",
+        "authors": [
+            "Sergei Stepanenko", 
+            "Amin Timany"
+        ],
+        "where_published": "In the 10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)",
+        "pdf_url": "pdfs/2025-fscd-guarded-dom.pdf",
+        "other_urls": [
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15406039" }
+        ]
+      },
+      {
         "title": "Lilo: A Higher-Order, Relational Concurrent Separation Logic for Liveness",
         "authors": [
             "Dongjae Lee", 
