@@ -1,6 +1,55 @@
 {
     "publications": [
       {
+        "title": "Destabilizing Iris",
+        "authors": [
+            "Simon Spies",
+	    "Niklas Mück",
+	    "Haoyi Zeng",
+	    "Michael Sammler",
+	    "Andrea Lattuada",
+	    "Peter Müller",
+	    "Derek Dreyer"
+        ],
+        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2025-pldi-daenerys.pdf",
+        "other_urls": [
+          { "name": "website", "url": "https://plv.mpi-sws.org/iris-daenerys/" }
+        ]
+      },
+      {
+        "title": "Tree Borrows",
+        "authors": [
+	    "Neven Villani",
+	    "Johannes Hostert",
+	    "Derek Dreyer",
+	    "Ralf Jung"
+        ],
+        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2025-pldi-treeborrows.pdf",
+        "other_urls": [
+          { "name": "website", "url": "https://plf.inf.ethz.ch/research/pldi25-tree-borrows.html" }
+        ]
+      },
+      {
+        "title": "RefinedProsa: Connecting Response-Time Analysis with C
+Verification for Interrupt-Free Schedulers",
+        "authors": [
+	    "Kimaya Bedarkar",
+	    "Laila Elbeheiry",
+	    "Michael Sammler",
+	    "Lennard Gäher",
+	    "Björn Brandenburg",
+	    "Derek Dreyer",
+	    "Deepak Garg"
+        ],
+        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2025-pldi-refinedprosa.pdf",
+        "other_urls": [
+          { "name": "website", "url": "https://plv.mpi-sws.org/refinedprosa/" }
+        ]
+      },
+      {
         "title": "Solving Guarded Domain Equations in Presheaves Over Ordinals and Mechanizing It",
         "authors": [
             "Sergei Stepanenko", 
