@@ -32,8 +32,7 @@
         ]
       },
       {
-        "title": "RefinedProsa: Connecting Response-Time Analysis with C
-Verification for Interrupt-Free Schedulers",
+        "title": "RefinedProsa: Connecting Response-Time Analysis with C Verification for Interrupt-Free Schedulers",
         "authors": [
 	    "Kimaya Bedarkar",
 	    "Laila Elbeheiry",
@@ -55,7 +54,7 @@ Verification for Interrupt-Free Schedulers",
             "Sergei Stepanenko", 
             "Amin Timany"
         ],
-        "where_published": "In the 10th International Conference on Formal Structures for Computation and Deduction (FSCD 2025)",
+        "where_published": "In FSCD 2025: International Conference on Formal Structures for Computation and Deduction",
         "pdf_url": "pdfs/2025-fscd-guarded-dom.pdf",
         "other_urls": [
           { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15406039" }
@@ -80,7 +79,7 @@ Verification for Interrupt-Free Schedulers",
       {
           "title": "Will it Fit? Verifying Heap Space Bounds of Concurrent Programs under Garbage Collection",
           "authors":  [ "Alexandre Moine", "Arthur Charguéraud", "François Pottier" ],
-          "where_published": "In TOPLAS: ACM Transactions on Programming Languages and Systems",
+          "where_published": "In TOPLAS 2025: ACM Transactions on Programming Languages and Systems",
           "pdf_url": "pdfs/2025-toplas-willitfit.pdf",
           "other_urls": [
               { "name": "Rocq development", "url": "https://github.com/nobrakal/irisfit" }
@@ -89,7 +88,7 @@ Verification for Interrupt-Free Schedulers",
       {
           "title": "Context-Dependent Effects in Guarded Interaction Trees",
           "authors": ["Sergei Stepanenko", "Emma Nardino", "Dan Frumin", "Amin Timany", "Lars Birkedal"],
-          "where_published": "In ESOP 2025: 34rd European Symposium on Programming",
+          "where_published": "In ESOP 2025: European Symposium on Programming",
           "pdf_url": "pdfs/2025-esop-gitrees.pdf",
           "other_urls": [
               { "name": "Rocq development", "url": "https://github.com/logsem/gitrees" },
@@ -196,7 +195,7 @@ Verification for Interrupt-Free Schedulers",
         "authors": [
             "Amin Timany", "Robbert Krebbers", "Derek Dreyer", "Lars Birkedal"
       ],
-      "where_published": "Journal of the ACM (JACM), Volume 71, Issue 6, Article No. 40, November 2024",
+      "where_published": "In JACM 2024: Journal of the ACM, Volume 71, Issue 6, Article No. 40, November 2024",
       "pdf_url": "pdfs/2024-jacm-logical-type-soundness-final.pdf",
       "other_urls": [
         { "name": "JACM webpage", "url": "https://dl.acm.org/doi/10.1145/3676954" },
@@ -555,7 +554,7 @@ Verification for Interrupt-Free Schedulers",
         "authors": [
             "Aïna Linn Georges", "Armaël Guéneau", "Thomas Van Strydonck", "Amin Timany", "Alix Trieu", "Dominique Devriese", "Lars Birkedal",
       ],
-      "where_published": "Journal of the ACM (JACM), Volume 71, Issue 1, Article No. 3, February 2024",
+      "where_published": "In JACM 2023: Journal of the ACM, Volume 71, Issue 1, Article No. 3, February 2024",
       "pdf_url": "pdfs/2023-jacm-cerise.pdf",
         "other_urls": [
           { "name": "Rocq development", "url": "https://github.com/logsem/cerise" },
@@ -1670,7 +1669,7 @@ Verification for Interrupt-Free Schedulers",
         "Lars Birkedal",
         "Derek Dreyer"
       ],
-      "where_published": "Journal of Functional Programming (JFP), Volume 28, e20, November 2018",
+      "where_published": "In JFP 2023: Journal of Functional Programming, Volume 28, e20, November 2018",
       "description": "This is a significantly revised and expanded synthesis of the Iris 2.0 and 3.0 papers.",
       "dblp_url": "https://dblp.uni-trier.de/rec/journals/jfp/JungKJBBD18.html",
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/iris-ground-up/paper.pdf",
