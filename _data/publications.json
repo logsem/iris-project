@@ -15,6 +15,9 @@
         "pdf_url": "pdfs/2025-pldi-daenerys.pdf",
         "other_urls": [
           { "name": "website", "url": "https://plv.mpi-sws.org/iris-daenerys/" }
+        ],
+                "awards": [
+          "PLDI 2025 Distinguished Paper Award"
         ]
       },
       {
@@ -29,6 +32,9 @@
         "pdf_url": "pdfs/2025-pldi-treeborrows.pdf",
         "other_urls": [
           { "name": "website", "url": "https://plf.inf.ethz.ch/research/pldi25-tree-borrows.html" }
+        ],
+                "awards": [
+          "PLDI 2025 Distinguished Paper Award"
         ]
       },
       {
