@@ -1,6 +1,23 @@
 {
     "publications": [
       {
+        "title": "Modular, Full-System Verification",
+        "authors": [
+          "Gregory Malecha",
+          "Hoang-Hai Dang",
+          "Paolo G. Giarrusso",
+          "Simon Hudon",
+          "Jan-Oliver Kaiser",
+          "David Swasey"
+        ],
+        "where_published": "In HOTOS 2025: ACM SIGOPS Workshop in Hot Topics in Operating Systems",
+        "pdf_url": "https://sigops.org/s/conferences/hotos/2025/papers/hotos25-206.pdf",
+        "other_urls": [
+          { "name": "Publisher's site", "url": "https://doi.org/10.1145/3713082.3730387" },
+          { "name": "Artifact", "url": "https://github.com/bluerock-io/fm-releases/tree/main/nova_interface.2024-04-16" }
+        ]
+      },
+      {
         "title": "Destabilizing Iris",
         "authors": [
             "Simon Spies",
