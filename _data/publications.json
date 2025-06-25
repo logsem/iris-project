@@ -18,6 +18,55 @@
         ]
       },
       {
+        "title": "Leveraging Immutability to Validate Hazard Pointers for Optimistic Traversals",
+        "authors": [
+          "Janggun Lee",
+          "Jeonghyeon Kim",
+          "Jeehoon Kang"
+        ],
+        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2025-pldi-hp-revisited.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/kaist-cp/smr-verification" },
+          { "name": "Rust development", "url": "https://github.com/kaist-cp/smr-benchmark" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15183251" }
+        ]
+      },
+      {
+        "title": "Verifying General-Purpose RCU for Reclamation in Relaxed Memory Separation Logic",
+        "authors": [
+          "Jaehwang Jung",
+          "Sunho Park",
+          "Janggun Lee",
+          "Jeho Yeon",
+          "Jeehoon Kang"
+        ],
+        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2025-pldi-weak-smr.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic/tree/pldi25" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15167032" }
+        ],
+        "awards": [
+          "PLDI 2025 Distinguished Paper Award"
+        ]
+      },
+      {
+        "title": "Verifying Lock-Free Traversals in Relaxed Memory Separation Logic",
+        "authors": [
+          "Sunho Park",
+          "Jaehwang Jung",
+          "Janggun Lee",
+          "Jeehoon Kang"
+        ],
+        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2025-pldi-weak-reachability.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic/tree/pldi25" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15004020" }
+        ]
+      },
+      {
         "title": "Destabilizing Iris",
         "authors": [
             "Simon Spies",
