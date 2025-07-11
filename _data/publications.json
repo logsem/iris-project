@@ -12,6 +12,7 @@
         "other_urls": [
           { "name": "Rocq and OCaml development", "url": "https://github.com/jtassarotti/veri-auth" },
           { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15551944" }
+        ]
       },
       {
         "title": "Reasoning about Weak Isolation Levels in Separation Logic",
