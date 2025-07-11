@@ -1,6 +1,18 @@
 {
     "publications": [
       {
+        "title": "Reasoning about Weak Isolation Levels in Separation Logic",
+        "authors": [
+          "Anders Alnor Mathiasen",
+          "Léon Gondelman",
+          "Léon Ducruet",
+          "Amin Timany",
+          "Lars Birkedal"
+        ],
+        "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
+        "pdf_url": "pdfs/2025-icfp-weak-isolations.pdf"
+      },
+      {
         "title": "Modular, Full-System Verification",
         "authors": [
           "Gregory Malecha",
