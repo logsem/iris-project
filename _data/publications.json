@@ -8,7 +8,7 @@
           "Joseph Tassarotti"
         ],
         "where_published": "In CCS 2025: ACM SIGSAC Conference on Computer and Communications Security",
-        "pdf_url": "pdfs/2025-veriauth.pdf"
+        "pdf_url": "pdfs/2025-ccs-veriauth.pdf"
       },
       {
         "title": "Reasoning about Weak Isolation Levels in Separation Logic",
