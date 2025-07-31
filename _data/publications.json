@@ -15,6 +15,19 @@
         ]
       },
       {
+        "title": "Modular Reasoning about Error Bounds for Concurrent Probabilistic Programs",
+        "authors": [
+          "Kwing Hei Li",
+          "Alejandro Aguirre",
+          "Simon Oddershede Gregersen",
+          "Philipp G. Haselwarter",
+          "Joseph Tassarotti",
+          "Lars Birkedal"
+        ],
+        "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
+        "pdf_url": "pdfs/2025-icfp-coneris.pdf"
+      },
+      {
         "title": "Reasoning about Weak Isolation Levels in Separation Logic",
         "authors": [
           "Anders Alnor Mathiasen",
