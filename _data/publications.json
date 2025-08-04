@@ -1,6 +1,19 @@
 {
     "publications": [
       {
+        "title": " Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
+        "authors": [
+          "Robbert Krebbers",
+          "Luko van der Maas",
+          "Enrico Tassi"
+        ],
+        "where_published": "In ITP 2025: International Conference on Interactive Theorem Proving",
+        "pdf_url": "pdfs/2025-itp-inductive.pdf",
+        "other_urls": [
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15727403d" }
+        ]
+      },
+      {
         "title": "Logical Relations for Formally Verified Authenticated Data Structures",
         "authors": [
           "Simon Oddershede Gregersen",
