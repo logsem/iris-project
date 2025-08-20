@@ -50,7 +50,10 @@
           "Lars Birkedal"
         ],
         "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
-        "pdf_url": "pdfs/2025-icfp-weak-isolations.pdf"
+        "pdf_url": "pdfs/2025-icfp-weak-isolations.pdf",
+        "other_urls": [
+          { "name": "Artifact", "url": "https://zenodo.org/records/15626657" }
+        ]
       },
       {
         "title": "Modular, Full-System Verification",
