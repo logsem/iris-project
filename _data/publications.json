@@ -28,6 +28,21 @@
         ]
       },
       {
+	"title": "Formal Semantics and Program Logics for a Fragment of OCaml",
+        "authors": [
+	  "Remy Seassau",
+	  "Irene Yoon",
+	  "Jean-Marie Madiot",
+	  "François Pottier"
+        ],
+        "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
+	"pdf_url": "pdfs/2025-icfp-osiris.pdf",
+	"other_urls": [
+	    { "name": "Rocq development", "url": "https://gitlab.inria.fr/fpottier/osiris" },
+	    { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.16327523" }
+	]
+      },
+      {
         "title": "Modular Reasoning about Error Bounds for Concurrent Probabilistic Programs",
         "authors": [
           "Kwing Hei Li",
@@ -178,7 +193,7 @@
       {
         "title": "Solving Guarded Domain Equations in Presheaves Over Ordinals and Mechanizing It",
         "authors": [
-            "Sergei Stepanenko", 
+            "Sergei Stepanenko",
             "Amin Timany"
         ],
         "where_published": "In FSCD 2025: International Conference on Formal Structures for Computation and Deduction",
@@ -190,11 +205,11 @@
       {
         "title": "Lilo: A Higher-Order, Relational Concurrent Separation Logic for Liveness",
         "authors": [
-            "Dongjae Lee", 
-            "Janggun Lee", 
-            "Taeyoung Yoon", 
-            "Minki Cho", 
-            "Jeehoon Kang", 
+            "Dongjae Lee",
+            "Janggun Lee",
+            "Taeyoung Yoon",
+            "Minki Cho",
+            "Jeehoon Kang",
             "Chung-Kil Hur"
         ],
         "where_published": "In OOPSLA 2025: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
