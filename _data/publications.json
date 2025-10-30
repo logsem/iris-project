@@ -2056,6 +2056,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Shaking Up the Foundations of Modern Separation Logic",
+      "authors": ["Simon Spies"],
+      "description": "MPI-SWS and Saarland University, May 2025",
+      "pdf_url": "pdfs/2025-phd-spies.pdf"
+    },
+    {
       "title": "Proof Automation for Fine-Grained Concurrent Separation Logic",
       "authors": ["Ike Mulder"],
       "description": "Radboud University Nijmegen, February 2025",
