@@ -219,6 +219,15 @@
         ]
       },
       {
+        "title": "Modal Abstractions for Virtualizing Memory Addresses",
+        "authors": [
+            "Ismail Kuru",
+            "Colin S. Gordon"
+        ],
+        "where_published": "In OOPSLA 2025: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+        "pdf_url": "https://csgordon.github.io//publications/oopsla25/oopsla25.pdf"
+      },
+      {
           "title": "Will it Fit? Verifying Heap Space Bounds of Concurrent Programs under Garbage Collection",
           "authors":  [ "Alexandre Moine", "Arthur Charguéraud", "François Pottier" ],
           "where_published": "In TOPLAS 2025: ACM Transactions on Programming Languages and Systems",
