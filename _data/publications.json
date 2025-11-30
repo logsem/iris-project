@@ -1,7 +1,21 @@
 {
     "publications": [
       {
-        "title": " Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
+        "title": "A Relational Separation Logic for Effect Handlers",
+        "authors": [
+          "Paulo Emílio de Vilhena",
+          "Simcha van Collem",
+          "Ines Wright",
+          "Robbert Krebbers"
+        ],
+        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+        "pdf_url": "pdfs/2026-popl-blaze.pdf",
+        "other_urls": [
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17308673" }
+        ]
+      },
+      {
+        "title": "Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
         "authors": [
           "Robbert Krebbers",
           "Luko van der Maas",
