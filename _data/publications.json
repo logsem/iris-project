@@ -1,6 +1,35 @@
 {
     "publications": [
       {
+        "title": "All for One and One for All: Program Logics for Exploiting Internal Determinism in Parallel Programs",
+        "authors": [
+          "Alexandre Moine",
+          "Sam Westrick",
+          "Joseph Tassarotti"
+        ],
+        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+        "pdf_url": "pdfs/2026-popl-intdet.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/nobrakal/intdet" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17259375" }
+        ]
+      },
+      {
+        "title": "TypeDis: A Type System for Disentanglement",
+        "authors": [
+          "Alexandre Moine",
+          "Stephanie Balzer",
+          "Alex Xu",
+          "Sam Westrick"
+        ],
+        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+        "pdf_url": "pdfs/2026-popl-typedis.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/nobrakal/typedis" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17336384" }
+        ]
+      },
+      {
         "title": "A Relational Separation Logic for Effect Handlers",
         "authors": [
           "Paulo Emílio de Vilhena",
@@ -990,7 +1019,7 @@
         "François Pottier"
       ],
       "where_published": "In POPL 2023: ACM SIGPLAN Symposium on Principles of Programming Languages",
-      "pdf_url": "https://cambium.inria.fr/~amoine/publications/moine-chargueraud-pottier-23.pdf",
+      "pdf_url": "pdfs/2023-popl-diamonds.pdf",
       "other_urls": [
         { "name": "Rocq development", "url": "https://gitlab.inria.fr/amoine/spacelambda" },
         { "name": "Artifact", "url": "https://zenodo.org/record/7129302"}
