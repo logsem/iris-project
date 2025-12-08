@@ -1,6 +1,20 @@
 {
     "publications": [
       {
+          "title": "Building Blocks for Step-Indexed Program Logics",
+          "authors": [
+	           "Thomas Somers",
+	           "Jonas Kastberg Hinrichsen",
+	           "Lennard Gäher",
+	           "Robbert Krebbers"
+          ],
+          "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
+          "pdf_url": "pdfs/2026-cpp-step-modality.pdf",
+          "other_urls": [
+             { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17809073" }
+          ],
+      },
+      {
         "title": "All for One and One for All: Program Logics for Exploiting Internal Determinism in Parallel Programs",
         "authors": [
           "Alexandre Moine",
