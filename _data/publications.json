@@ -1,18 +1,20 @@
 {
     "publications": [
       {
-          "title": "Building Blocks for Step-Indexed Program Logics",
-          "authors": [
-	           "Thomas Somers",
-	           "Jonas Kastberg Hinrichsen",
-	           "Lennard Gäher",
-	           "Robbert Krebbers"
-          ],
-          "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
-          "pdf_url": "pdfs/2026-cpp-step-modality.pdf",
-          "other_urls": [
-             { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17809073" }
-          ],
+        "title": "Endangered by the Language But Saved by the Compiler: Robust Safety via Semantic Back-Translation",
+        "authors": [
+          "Niklas Mück",
+          "Aïna Linn Georges",
+          "Derek Dreyer",
+          "Deepak Garg",
+          "Michael Sammler"
+        ],
+        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+        "pdf_url": "pdfs/2026-popl-robustdimsum.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/FP/robustdimsum/-/tree/POPL26" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17285727" }
+        ]
       },
       {
         "title": "All for One and One for All: Program Logics for Exploiting Internal Determinism in Parallel Programs",
@@ -56,6 +58,35 @@
         "other_urls": [
           { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17308673" }
         ]
+      },
+      {
+          "title": "Building Blocks for Step-Indexed Program Logics",
+          "authors": [
+	           "Thomas Somers",
+	           "Jonas Kastberg Hinrichsen",
+	           "Lennard Gäher",
+	           "Robbert Krebbers"
+          ],
+          "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
+          "pdf_url": "pdfs/2026-cpp-step-modality.pdf",
+          "other_urls": [
+             { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17809073" }
+          ],
+      },
+      {
+          "title": "A Recipe for Modular Verification of Generic Tree Traversals",
+          "authors": [
+	           "Laila Elbeheiry",
+	           "Michael Sammler",
+	           "Robbert Krebbers",
+	           "Derek Dreyer",
+	           "Deepak Garg",
+          ],
+          "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
+          "pdf_url": "pdfs/2026-cpp-tree-traversals.pdf",
+          "other_urls": [
+             { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17799204" }
+          ],
       },
       {
         "title": "Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
