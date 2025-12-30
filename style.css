@@ -1,5 +1,5 @@
 dl.ref {
-  counter-reset: pub-counter-1;
+  counter-reset: reversed(pub-counter-1);
   padding-left: 50px;
   padding-top: 15px;
   width: 100%;
@@ -14,7 +14,7 @@ dl.ref {
   & dt:before {
     grid-column: 1;
     content: "[" counter(pub-counter-1) "] ";
-    counter-increment: pub-counter-1;
+    counter-increment: pub-counter-1 -1;
     margin-right: 0.5em;
   }
   & dd {
