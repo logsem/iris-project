@@ -137,9 +137,7 @@
         </div>
 
         <div>
-          <dl class="ref">
-            {% include publications.html publications=site.data.publications.publications %}
-          </dl>
+          {% include publications.html publications=site.data.publications.publications %}
         </div>
 
         <div>
@@ -148,9 +146,7 @@
         </div>
 
         <div>
-          <dl class="ref">
-            {% include publications.html publications=site.data.publications.phd_dissertations %}
-          </dl>
+          {% include publications.html publications=site.data.publications.phd_dissertations %}
         </div>
 
         <div>
@@ -161,17 +157,13 @@
         {% if site.data.publications.draft_papers.length > 0 %}
         <div>
           <p>Draft papers:</p>
-          <dl class="ref">
-            {% include publications.html publications=site.data.publications.draft_papers pdf_name="[preprint] .pdf" %}
-          </dl>
+          {% include publications.html publications=site.data.publications.draft_papers pdf_name="[preprint] .pdf" %}
         </div>
         {% endif%}
 
         <div>
           <p>Case studies, MSc theses, abstracts, talks:</p>
-          <dl class="ref">
-            {% include publications.html publications=site.data.publications.others %}
-          </dl>
+          {% include publications.html publications=site.data.publications.others %}
         </div>
       </div>
 

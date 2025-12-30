@@ -1,5 +1,5 @@
 dl.ref {
-  counter-reset: pub-counter-1;
+  counter-reset: pub-counter-1 var(--num-items);
   padding-left: 50px;
   padding-top: 15px;
   width: 100%;
@@ -11,10 +11,14 @@ dl.ref {
     grid-template-columns: subgrid;
     grid-column: 1 /3;
   }
+  & dt::after {
+      /* post decrement because we want to land at 1, not 0 */
+      counter-increment: pub-counter-1 -1;
+      content: ""; /* required for the decrement to take effect */
+  }
   & dt:before {
     grid-column: 1;
     content: "[" counter(pub-counter-1) "] ";
-    counter-increment: pub-counter-1;
     margin-right: 0.5em;
   }
   & dd {

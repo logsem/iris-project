@@ -1,25 +1,27 @@
-{% for doc in include.publications %}
-<dt>{{ doc.title }}{% if doc.dubbed_title %} (&quot;{{ doc.dubbed_title }}&quot;){% endif %}</dt>
-<dd>
-  <div class="entry">
-    {{ doc.authors | join: ", " }}
-    {% if doc.where_published %}
-    <br/><small class="text-muted">{{ doc.where_published }}</small>
-    {% endif %}
-    {% if doc.description %}
-    <br/><small class="text-muted">{{ doc.description }}</small>
-    {% endif %}
-    {% for a in doc.awards %}
-    <br/><small style="color: red">Recipient of <strong>{{ a }}</strong></small>
-    {% endfor %}
-    <div class="buttons">
-      {% if doc.pdf_url %}
-      <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">{{ include.pdf_name | default: ".pdf" }}</a>
+<dl class="ref" style="--num-items: {{ include.publications.size }};">
+  {% for doc in include.publications %}
+  <dt>{{ doc.title }}{% if doc.dubbed_title %} (&quot;{{ doc.dubbed_title }}&quot;){% endif %}</dt>
+  <dd>
+    <div class="entry">
+      {{ doc.authors | join: ", " }}
+      {% if doc.where_published %}
+      <br/><small class="text-muted">{{ doc.where_published }}</small>
       {% endif %}
-      {% for e in doc.other_urls %}
-      <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
+      {% if doc.description %}
+      <br/><small class="text-muted">{{ doc.description }}</small>
+      {% endif %}
+      {% for a in doc.awards %}
+      <br/><small style="color: red">Recipient of <strong>{{ a }}</strong></small>
       {% endfor %}
+      <div class="buttons">
+        {% if doc.pdf_url %}
+        <a href="{{ doc.pdf_url }}" class="btn btn-outline-primary btn-sm">{{ include.pdf_name | default: ".pdf" }}</a>
+        {% endif %}
+        {% for e in doc.other_urls %}
+        <a href="{{ e.url }}" class="btn btn-outline-primary btn-sm">{{ e.name }}</a>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</dd>
-{% endfor %}
+  </dd>
+  {% endfor %}
+</dl>
