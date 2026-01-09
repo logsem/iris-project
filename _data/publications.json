@@ -1,19 +1,5 @@
 {
     "publications": [
-      { "title": "Specifications and Implementations of Random Samplers in Higher-Order Separation Logic",
-	"authors": [
-	   "Virgil Marionneau",
-	   "Félix Sassus Bourda",
-	   "Alejandro Aguirre",
-	   "Lars Birkedal"
-	],
-        "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
-	"pdf_url": "pdfs/2026-cpp-distributions",
-	"other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/logsem/clutch/tree/cpp26-distributions" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17800602" }
-        ]
-      },
       {
         "title": "Endangered by the Language But Saved by the Compiler: Robust Safety via Semantic Back-Translation",
         "authors": [
@@ -74,6 +60,20 @@
         "pdf_url": "pdfs/2026-popl-blaze.pdf",
         "other_urls": [
           { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17308673" }
+        ]
+      },
+      { "title": "Specifications and Implementations of Random Samplers in Higher-Order Separation Logic",
+	"authors": [
+	   "Virgil Marionneau",
+	   "Félix Sassus Bourda",
+	   "Alejandro Aguirre",
+	   "Lars Birkedal"
+	],
+        "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
+	"pdf_url": "pdfs/2026-cpp-distributions.pdf",
+	"other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/logsem/clutch/tree/cpp26-distributions" },
+          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17800602" }
         ]
       },
       {
