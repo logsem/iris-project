@@ -2170,6 +2170,13 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Modal Abstractions for Operating System Kernels",
+      "authors": ["Ismail Kuru"],
+        "description": "Drexel University, Aug 2025",
+      "pdf_url": "pdfs/2025-phd-kuru.pdf"
+    },
+
+    {
       "title": "Shaking Up the Foundations of Modern Separation Logic",
       "authors": ["Simon Spies"],
       "description": "MPI-SWS and Saarland University, May 2025",
