@@ -1,6 +1,20 @@
 {
     "publications": [
       {
+        "title": "Cryptis: Cryptographic Reasoning in Separation Logic",
+        "authors": [
+          "Arthur Azevedo de Amorim",
+          "Amal Ahmed",
+          "Marco Gaboardi"
+        ],
+        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3776730",
+        "other_urls": [
+          { "name": "Artifact", "url": "https://github.com/arthuraa/cryptis/tree/popl-2026-artifact" },
+          { "name": "Rocq development", "url": "https://github.com/arthuraa/cryptis" }
+        ]
+      },
+      {
         "title": "Endangered by the Language But Saved by the Compiler: Robust Safety via Semantic Back-Translation",
         "authors": [
           "Niklas Mück",
