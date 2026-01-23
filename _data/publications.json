@@ -127,7 +127,10 @@
           "Lars Birkedal"
         ],
           "where_published": "In FoSSaCs 2025: Foundations of Software Science and Computation Structures",
-        "pdf_url": "pdfs/2025-fossacs-idempotent-resources.pdf"
+          "pdf_url": "pdfs/2025-fossacs-idempotent-resources.pdf",
+          "other_urls": [
+        ]
+
       },
       {
         "title": "Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
