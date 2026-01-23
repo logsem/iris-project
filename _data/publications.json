@@ -120,6 +120,16 @@
           ],
       },
       {
+        "title": "Idempotent Resources in Separation Logic (The Heart of core in Iris)",
+        "authors": [
+          "Daniel Gratzer",
+          "Mathias A. M{\o}ller",
+          "Lars Birkedal"
+        ],
+          "where_published": "In FoSSaCs 2025: Foundations of Software Science and Computation Structures",
+        "pdf_url": "pdfs/2025-fossacs-idempotent-resources.pdf"
+      },
+      {
         "title": "Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
         "authors": [
           "Robbert Krebbers",
