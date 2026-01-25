@@ -1,6 +1,18 @@
 {
     "publications": [
       {
+        "title": "Zoo: A Framework for the Verification of Concurrent OCaml 5 Programs using Separation Logic",
+        "authors": [
+          "Clément Allain",
+          "Gabriel Scherer"
+        ],
+        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+        "pdf_url": "pdfs/2026-popl-zoo.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/tree/popl26" }
+        ]
+      },
+      {
         "title": "Cryptis: Cryptographic Reasoning in Separation Logic",
         "authors": [
           "Arthur Azevedo de Amorim",
