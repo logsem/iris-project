@@ -1,6 +1,19 @@
 {
     "publications": [
       {
+        "title": "Verified Persistent Catenable Deques",
+        "authors": [
+          "Juliette Ponsonnet",
+          "François Pottier"
+        ],
+        "where_published": "In JFLA 2026: Journées Francophones des Langages Applicatifs",
+        "pdf_url": "pdfs/2026-jfla-kot.pdf",
+        "other_urls": [
+            { "name": "OCaml code", "url": "https://github.com/fpottier/kot/" },
+            { "name": "Iris/Rocq proofs", "url": "https://github.com/HiiGHoVuTi/kot-proof/" },
+        ]
+      },
+      {
         "title": "Zoo: A Framework for the Verification of Concurrent OCaml 5 Programs using Separation Logic",
         "authors": [
           "Clément Allain",
