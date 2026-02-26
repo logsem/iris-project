@@ -1,6 +1,19 @@
 {
     "publications": [
       {
+        "title": "A Formal Interface for Concurrent Search Structure Templates",
+        "authors": [
+          "Duc-Than Nguyen",
+          "William Mansky"
+        ],
+        "where_published": "In ESOP 2026: European Symposium on Programming",
+        "pdf_url": "pdfs/2026-esop-templates.pdf",
+        "other_urls": [
+            { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18319035" },
+            { "name": "Rocq development", "url": "https://github.com/UIC-verif-group/concurrency-templates" }
+        ]
+      },
+      {
         "title": "Verified Persistent Catenable Deques",
         "authors": [
           "Juliette Ponsonnet",
