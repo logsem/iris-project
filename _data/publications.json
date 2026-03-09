@@ -1,5 +1,20 @@
 {
     "publications": [
+	{
+        "title": "Lawyer: Modular Obligations-Based Liveness Reasoning in Higher-Order Impredicative Concurrent Separation Logic",
+        "authors": [
+          "Egor Namakonov",
+          "Justus Fasse",
+	  "Bart Jacobs",
+	  "Lars Birkedal",
+	  "Amin Timany"
+        ],
+        "where_published": "In OOPSLA 2026: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+        "pdf_url": "pdfs/2026-oopsla-lawyer.pdf",
+        "other_urls": [
+            { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18457697" }
+        ]
+      },
       {
         "title": "A Formal Interface for Concurrent Search Structure Templates",
         "authors": [
