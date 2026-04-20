@@ -1,6 +1,24 @@
 {
     "publications": [
       {
+        "title": "Modular Verification of Differential Privacy in Probabilistic Higher-Order Separation Logic",
+        "authors": [
+            "Philipp G. Haselwarter",
+	        "Alejandro Aguirre",
+            "Simon Oddershede Gregersen",
+	        "Kwing Hei Li",
+	        "Joseph Tassarotti",
+	        "Lars Birkedal"
+        ],
+        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2026-pldi-clutch-dp.pdf",
+        "other_urls": [
+              { "name": "Extended version", "url": "https://arxiv.org/abs/2604.12713" },
+              { "name": "Rocq development", "url": "https://github.com/logsem/clutch/tree/pldi26-clutch-dp" },
+              { "name": "Rocq artifact", "url": "https://zenodo.org/records/19089094" },
+        ]
+      },
+      {
         "title": "Contextual Refinement of Higher-Order Concurrent Probabilistic Programs",
         "authors": [
 	    "Kwing Hei Li",
