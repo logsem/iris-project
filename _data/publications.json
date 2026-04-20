@@ -1,7 +1,7 @@
 {
     "publications": [
       {
-        "title": "Contextual Refinement for Higher-Order Concurrent Probabilistic Programs",
+        "title": "Contextual Refinement of Higher-Order Concurrent Probabilistic Programs",
         "authors": [
 	    "Kwing Hei Li",
 	    "Alejandro Aguirre",
