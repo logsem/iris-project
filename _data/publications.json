@@ -1,6 +1,20 @@
 {
     "publications": [
       {
+        "title": "Contextual Refinement of Higher-Order Concurrent Probabilistic Programs",
+        "authors": [
+	    "Kwing Hei Li",
+	    "Alejandro Aguirre",
+	    "Joseph Tassarotti",
+	    "Lars Birkedal"
+        ],
+        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2026-pldi-foxtrot.pdf",
+        "other_urls": [
+          { "name": "Rocq artifact", "url": "https://zenodo.org/records/18924289" }
+        ]
+      },
+      {
         "title": "VerusBelt: A Semantic Foundation for Verus’s Proof-Oriented Extensions to the Rust Type System",
         "authors": [
 	    "Travis Hance",
