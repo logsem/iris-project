@@ -2295,12 +2295,17 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Verification of Fine-Grained Concurrent OCaml 5 Algorithms using Separation Logic",
+      "authors": ["Clément Allain"],
+      "description": "INRIA and Université Paris Cité, December 2025",
+      "pdf_url": "pdfs/2025-phd-allain.pdf"
+    },
+    {
       "title": "Modal Abstractions for Operating System Kernels",
       "authors": ["Ismail Kuru"],
         "description": "Drexel University, Aug 2025",
       "pdf_url": "pdfs/2025-phd-kuru.pdf"
     },
-
     {
       "title": "Shaking Up the Foundations of Modern Separation Logic",
       "authors": ["Simon Spies"],
