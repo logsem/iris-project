@@ -1,6 +1,18 @@
 {
     "publications": [
       {
+        "title": "A Verified Parallel Scheduler for OCaml 5",
+        "authors": [
+          "Clément Allain",
+          "Gabriel Scherer"
+        ],
+        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2026-pldi-parabs.pdf",
+        "other_urls": [
+          { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/tree/pldi26-artifact" }
+        ]
+      },
+      {
         "title": "Modular Verification of Differential Privacy in Probabilistic Higher-Order Separation Logic",
         "authors": [
             "Philipp G. Haselwarter",
