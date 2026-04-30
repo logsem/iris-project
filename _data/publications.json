@@ -2465,6 +2465,14 @@
   ],
   "others": [
     {
+      "title": "Adequacy with Later Credits in the Iris Logic",
+      "authors": [
+        "Freja Marott Crawford"
+      ],
+      "description": "Master's project at Aarhus University supervised by Amin Timany, Jan 2026",
+      "pdf_url": "pdfs/2026-msc-project-crawford.pdf"
+    },
+    {
       "title": "Verification of the Blocking and Non-Blocking Michael-Scott Queue Algorithms",
       "authors": [
         "Mathias Pedersen"
