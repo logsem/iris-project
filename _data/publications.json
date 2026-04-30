@@ -2470,7 +2470,10 @@
         "Freja Marott Crawford"
       ],
       "description": "Master's project at Aarhus University supervised by Amin Timany, Jan 2026",
-      "pdf_url": "pdfs/2026-msc-project-crawford.pdf"
+      "pdf_url": "pdfs/2026-msc-project-crawford.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/freja-mc/iris-project" }
+      ]
     },
     {
       "title": "Verification of the Blocking and Non-Blocking Michael-Scott Queue Algorithms",
