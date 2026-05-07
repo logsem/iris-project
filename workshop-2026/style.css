@@ -77,9 +77,25 @@
   text-decoration-color: currentColor;
 }
 
+.workshop-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.container div[style*="margin-bottom"] {
+  clear: both;
+}
+
 @media (max-width: 575.98px) {
   .display-1 {
     font-size: 3rem;
+  }
+
+  body > .container h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
   }
 
   .container img[style*="float: right"] {
