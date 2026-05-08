@@ -98,7 +98,7 @@ for (day, day_talks) in groupby(talks, lambda talk: talk.day):
             if is_invited:
                 print(' <span class="schedule-kind">(invited talk)</span>', end='')
             if talk.abstract:
-                print(f"<a href=\"#{id}\" data-bs-toggle=\"collapse\">[abstract]</a>")
+                print(f" <a href=\"#{id}\" data-bs-toggle=\"collapse\">[abstract]</a>")
             if talk.slides:
                 url = talk.slides if talk.slides.startswith("https://") else "slides/"+talk.slides
                 print(f"<a href=\"{url}\">[slides]</a>")
