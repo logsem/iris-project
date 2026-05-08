@@ -19,6 +19,24 @@ def mk_id(name):
         filter(lambda x: x in string.ascii_letters, name)
     )
 
+link_re = re.compile(r'\[([^\]\n]+)\]\((https?://[^)\s]+)\)')
+
+def render_name(name):
+    '''Render Markdown-style homepage links in a speaker name.'''
+    html_parts = []
+    text_parts = []
+    pos = 0
+    for match in link_re.finditer(name):
+        label, url = match.group(1), match.group(2)
+        html_parts.append(escape(name[pos:match.start()]))
+        html_parts.append(f'<a href="{escape(url, quote=True)}">{escape(label)}</a>')
+        text_parts.append(name[pos:match.start()])
+        text_parts.append(label)
+        pos = match.end()
+    html_parts.append(escape(name[pos:]))
+    text_parts.append(name[pos:])
+    return ''.join(html_parts), ''.join(text_parts)
+
 def display_time(time):
     return time.split('-', 1)[0].split(' ', 1)[0]
 
@@ -79,8 +97,8 @@ for (day, day_talks) in groupby(talks, lambda talk: talk.day):
             is_invited = label_text(talk.html) == "Invited talk"
             if is_invited:
                 classes.append("schedule-invited")
-            id = mk_id(talk.name)
-            speaker = escape(talk.name)
+            speaker, speaker_text = render_name(talk.name)
+            id = mk_id(speaker_text)
             if talk.affil:
                 speaker += f" ({escape(talk.affil)})"
             title_class = "schedule-title"
