@@ -7,8 +7,13 @@
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Shuttle bus from <a href="https://maps.app.goo.gl/HgHe2ZJghXRSFc5X9">Schwedenplatz in Vienna</a> to <a href="https://maps.app.goo.gl/qduiSjRLyFXzmt399">Moonstone Building</a></div></td>
 </tr>
-<tr class="schedule-row schedule-talk schedule-invited">
+<tr class="schedule-row schedule-event-row">
 <th scope="row" class="schedule-time">09:00</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail"><div class="schedule-event">Welcome and coffee</div></td>
+</tr>
+<tr class="schedule-row schedule-talk schedule-invited">
+<th scope="row" class="schedule-time">10:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -17,12 +22,12 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">10:00</th>
+<th scope="row" class="schedule-time">11:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Morning coffee break</div></td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">10:30</th>
+<th scope="row" class="schedule-time">11:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -31,7 +36,7 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">11:00</th>
+<th scope="row" class="schedule-time">12:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -40,7 +45,7 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">11:30</th>
+<th scope="row" class="schedule-time">12:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -49,12 +54,12 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">12:00</th>
+<th scope="row" class="schedule-time">13:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Lunch</div></td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">14:00</th>
+<th scope="row" class="schedule-time">14:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -63,16 +68,27 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">14:30</th>
+<th scope="row" class="schedule-time">15:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
 <span class="schedule-speaker">Egor Namakonov</span>: 
-<span class="schedule-title">Verifying wait-freedom for concurrent higher-order programs</span></div>
+<span class="schedule-title">Verifying Wait-Freedom for Concurrent Higher-Order Programs</span><a href="#EgorNamakonov" data-bs-toggle="collapse">[abstract]</a>
+</div>
+<div id="EgorNamakonov" class="collapse"><div class="abstract"> Wait-freedom is the strongest non-blocking progress guarantee for concurrent data structures, ensuring that every operation completes in a finite number of steps regardless of interference from other threads. While verification of wait-freedom has been studied for first-order languages, verifying it for higher-order languages with general references remains an open challenge. In such languages, operations may be used by arbitrary, unverified higher-order clients, making it unclear how to even define wait-freedom formally in terms of program semantics, let alone prove it. In this paper, we present the first framework for verifying wait-freedom of concurrent programs written in a higher-order language with general references. Our approach is based on the Lawyer concurrent separation logic which has been recently introduced for termination verification. We identify a specification pattern in the Lawyer logic that captures wait-freedom. To establish this connection formally, we prove a novel adequacy theorem for Lawyer which states that programs which are proven correct in the Lawyer logic against a specification in the aforementioned specification pattern are wait-free. As a part of proving the adequacy theorem above, we need to prove that the behavior of the client of the data structure is safe in the sense that it does not break the internal invariants of the data structure. To this end, we develop a logical relations model that establishes safety for all clients once and for all. We demonstrate the effectiveness of our approach by proving wait-freedom for several representative examples, including a higher-order list map function, and a memory-efficient single-producer, single-consumer queue. For the latter, wait-freedom is conditional in that, as the name suggests, there can be at most one enqueuer thread and one dequeuer thread. To capture this formally, we introduce the notion of restricted wait-freedom as a variant of wait-freedom that restricts the number of concurrent threads, and show how our approach can support reasoning about restricted wait-freedom. All our results have been mechanized with Rocq and Iris.</div></div>
+</td>
+</tr>
+<tr class="schedule-row schedule-talk">
+<th scope="row" class="schedule-time">15:30</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail">
+<div class="schedule-line">
+<span class="schedule-speaker">Jonas Kastberg Hinrichsen</span>: 
+<span class="schedule-title">Non-Iris Proofmode for Temporal Logic </span></div>
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">15:00</th>
+<th scope="row" class="schedule-time">16:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Informal discussions with coffee</div></td>
 </tr>
@@ -92,8 +108,13 @@
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Shuttle bus from <a href="https://maps.app.goo.gl/HgHe2ZJghXRSFc5X9">Schwedenplatz in Vienna</a> to <a href="https://maps.app.goo.gl/qduiSjRLyFXzmt399">Moonstone Building</a></div></td>
 </tr>
-<tr class="schedule-row schedule-talk schedule-invited">
+<tr class="schedule-row schedule-event-row">
 <th scope="row" class="schedule-time">09:00</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail"><div class="schedule-event">Welcome and coffee</div></td>
+</tr>
+<tr class="schedule-row schedule-talk schedule-invited">
+<th scope="row" class="schedule-time">10:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -102,12 +123,12 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">10:00</th>
+<th scope="row" class="schedule-time">11:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Morning coffee break</div></td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">10:30</th>
+<th scope="row" class="schedule-time">11:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -116,7 +137,7 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">11:00</th>
+<th scope="row" class="schedule-time">12:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -125,7 +146,7 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">11:30</th>
+<th scope="row" class="schedule-time">12:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -134,12 +155,21 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">12:00</th>
+<th scope="row" class="schedule-time">13:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Lunch</div></td>
 </tr>
+<tr class="schedule-row schedule-talk">
+<th scope="row" class="schedule-time">14:30</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail">
+<div class="schedule-line">
+<span class="schedule-speaker">Eugène Flesselle</span>: 
+<span class="schedule-title">Effectful Program Transformations </span></div>
+</td>
+</tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">14:00</th>
+<th scope="row" class="schedule-time">15:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Excursion and workshop dinner</div></td>
 </tr>
@@ -154,8 +184,13 @@
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Shuttle bus from <a href="https://maps.app.goo.gl/HgHe2ZJghXRSFc5X9">Schwedenplatz in Vienna</a> to <a href="https://maps.app.goo.gl/qduiSjRLyFXzmt399">Moonstone Building</a></div></td>
 </tr>
-<tr class="schedule-row schedule-talk schedule-invited">
+<tr class="schedule-row schedule-event-row">
 <th scope="row" class="schedule-time">09:00</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail"><div class="schedule-event">Welcome and coffee</div></td>
+</tr>
+<tr class="schedule-row schedule-talk schedule-invited">
+<th scope="row" class="schedule-time">10:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -164,21 +199,23 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">10:00</th>
+<th scope="row" class="schedule-time">11:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Morning coffee break</div></td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">10:30</th>
+<th scope="row" class="schedule-time">11:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
-<span class="schedule-speaker">Arnaud Daby-Seesaram</span>: 
-<span class="schedule-title">SIrIS: Mechanised Verification of a Key-Value Store Library satisfying Snapshot Isolation</span></div>
+<span class="schedule-speaker">Max Kurze</span>: 
+<span class="schedule-title">Wiris - Put your Iris down to wires </span><a href="#MaxKurze" data-bs-toggle="collapse">[abstract]</a>
+</div>
+<div id="MaxKurze" class="collapse"><div class="abstract">End-to-end full-stack verification requires a powerful reasoning framework to tackle concurrency and prove higher-order properties about hardware such as processors, networks-on-chip and AI accelerators. This reasoning needs to connect smoothly to the software running atop to finally form an end-to-end proof. In our current project, we build a system that runs a unikernel operating system on top of a RISC-V processor. To reason at the hardware level, we instantiate Iris with Kôika, a high-level hardware description language in Rocq with a formally-verified compiler to SystemVerilog. In this talk, we introduce our current instantiation, present a first use case and show our vision of connecting software and hardware via this Iris instance.</div></div>
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">11:00</th>
+<th scope="row" class="schedule-time">12:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -187,7 +224,7 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">11:30</th>
+<th scope="row" class="schedule-time">12:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -196,12 +233,12 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">12:00</th>
+<th scope="row" class="schedule-time">13:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Lunch</div></td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">14:00</th>
+<th scope="row" class="schedule-time">14:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -210,7 +247,18 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-talk">
-<th scope="row" class="schedule-time">14:30</th>
+<th scope="row" class="schedule-time">15:00</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail">
+<div class="schedule-line">
+<span class="schedule-speaker">Arnaud Daby-Seesaram</span>: 
+<span class="schedule-title">SIrIS: Mechanised Verification of a Key-Value Store Library satisfying Snapshot Isolation</span><a href="#ArnaudDabySeesaram" data-bs-toggle="collapse">[abstract]</a>
+</div>
+<div id="ArnaudDabySeesaram" class="collapse"><div class="abstract">Isolation Levels in the database jargon define how much transactions can observe and how much they can interfere with one another.  Among them, Snapshot Isolation is particularly popular because it allows concurrent transactions to take place while providing strong enough guarantees for most use cases (e.g., it precludes write-write conflicts between concurrent transactions and ensures causal consistency).  Previous work has shown how to efficiently implement this isolation level using multi-version concurrency control.  Other previous work provides Separation Logic specifications for Snapshot Isolation. However, currently verified implementations are inefficient and only use coarse-grained concurrency control.  In this talk, I will introduce SIrIS, a library providing single-node in-memory databases satisfying Snapshot Isolation.  It uses fine-grained concurrency control and provides a GC to limit its memory usage.  I will first show our specification and how to use it on a small client example.  Second, I will discuss implementation of the library and its performance.  Our results are formalised in the Rocq Prover using the Iris framework.  This is joint work with Léon Ducruet, Amin Timany and Lars Birkedal. </div></div>
+</td>
+</tr>
+<tr class="schedule-row schedule-talk">
+<th scope="row" class="schedule-time">15:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -219,7 +267,7 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">15:30</th>
+<th scope="row" class="schedule-time">16:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Informal discussions with coffee</div></td>
 </tr>
