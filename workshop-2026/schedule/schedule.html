@@ -155,7 +155,9 @@
 <td class="schedule-detail">
 <div class="schedule-line">
 <span class="schedule-speaker"><a href="https://people.mpi-sws.org/~jlohse/">Janine Lohse</a></span>: 
-<span class="schedule-title">Probabilistic Resource Algebras</span></div>
+<span class="schedule-title">First Steps Towards Probabilistic Iris: Harmonizing Independence, Conditioning, and Dynamic Heap Allocation</span> <a href="#JanineLohse" data-bs-toggle="collapse">[abstract]</a>
+</div>
+<div id="JanineLohse" class="collapse"><div class="abstract">There has recently been exciting progress in the realm of probabilistic separation logics. An important subclass of these—including PSL, Lilac, Bluebell, and pcOL—are general-purpose probabilistic logics (or GPLs, for short), meaning that they provide primitive Hoare-style assertions about probability distributions on the program state, along with powerful modularity principles like independence and conditioning. However, none of these logics support reasoning about dynamically allocated memory (i.e., pointers into a heap), let alone the more sophisticated resource algebra-based ghost state of modern separation logics like Iris. We argue that this is due to a fundamental obstacle: since the shape of memory (and identity of memory locations) may differ under different random outcomes, it is unclear how pointer ownership can be harmonized with probabilistic independence and conditioning.  In this talk, I will describe our substantial first steps towards a marriage of GPLs and modern separation logics like Iris, in the form of Amaryllis. Amaryllis is the first GPL to support independence and conditional reasoning while also handling dynamic memory allocation. To overcome the aforementioned obstacle, we developed a new indexed valuation-style model of probabilistic assertions, whereby ownership of a standard Iris-style resource (e.g., heaps) can be promoted to ownership at the level of distributions in a generic fashion.</div></div>
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
