@@ -1,7 +1,7 @@
 talk_time;raw_html;Name Tag;Affiliation;slides;title;abstract
 2026-06-08 08:30;Shuttle bus from <a href="https://maps.app.goo.gl/HgHe2ZJghXRSFc5X9">Schwedenplatz in Vienna</a> to <a href="https://maps.app.goo.gl/qduiSjRLyFXzmt399">Moonstone Building</a>;;;;;
 2026-06-08 09:00-10:00;Welcome and coffee;;;;;
-2026-06-08 10:00-11:00;Invited talk;[Zongyuan Liu](https://cs.au.dk/~zyliu/) and [Michael Sammler](https://pub.ista.ac.at/~msammler/);;;Iris Lean;
+2026-06-08 10:00-11:00;Invited talk;[Zongyuan Liu](https://cs.au.dk/~zyliu/) and [Michael Sammler](https://pub.ista.ac.at/~msammler/);;;Iris Lean;This talk presents the community effort to port Iris to the Lean theorem prover. We will give an overview of the past, the present and the future of Iris Lean port. Concretely, the talk will present a description of the advantages that the Lean version of Iris has to offer (paired with a list of challenges faced during the port), what the current status of the port is, how we maintain the connection of Iris Lean to Iris in Rocq and some insight into the projects that are already being built on top of Iris Lean.
 2026-06-08 11:00-11:30;Morning coffee break;;;;;
 2026-06-08 11:30-12:00;;[Thibaut Perami](https://www.cl.cam.ac.uk/~tp496/);;;ArchSem: Formalising concurrent CPU architectures to support verification in Rocq;
 2026-06-08 12:00-12:30;;[Clément Allain](https://clef-men.github.io/);;;A Verified Parallel Scheduler for OCaml 5;
