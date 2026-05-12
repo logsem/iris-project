@@ -58,6 +58,19 @@
           { "name": "Rocq artifact", "url": "https://zenodo.org/records/19613067" }
         ]
       },
+      {
+        "title": "Mixtris: Mechanised Higher-Order Separation Logic for Mixed Choice Multiparty Message Passing",
+        "authors": [
+          "Jonas Kastberg Hinrichsen",
+          "Iwan Quémerais",
+	  "Lars Birkedal",
+        ],
+        "where_published": "In OOPSLA 2026: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+        "pdf_url": "pdfs/2026-oopsla-mixtris.pdf",
+        "other_urls": [
+            { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18749895" }
+        ]
+      },
 	{
         "title": "Lawyer: Modular Obligations-Based Liveness Reasoning in Higher-Order Impredicative Concurrent Separation Logic",
         "authors": [
