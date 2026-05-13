@@ -90,7 +90,9 @@
 <td class="schedule-detail">
 <div class="schedule-line">
 <span class="schedule-speaker"><a href="https://jihgfee.github.io/">Jonas Kastberg Hinrichsen</a></span>: 
-<span class="schedule-title">Non-Iris Proofmode for Temporal Logic</span></div>
+<span class="schedule-title">Non-Iris Proofmode for Temporal Logic (WIP)</span> <a href="#JonasKastbergHinrichsen" data-bs-toggle="collapse">[abstract]</a>
+</div>
+<div id="JonasKastbergHinrichsen" class="collapse"><div class="abstract">Temporal Logic is suitable for verifying temporal properties, such as liveness: that something good eventually happens. For a multitude of temporal logics, the metatheory has been mechanised in a theorem prover, but none seem to focus on verifying actual examples, resulting in impractical verbosity primarily stemming from having to manually manage proof context. The lack of focus seems to be a consequence of temporal logics mostly being used in external automated tools, rather than mechanised proofs. As a result, mechanised proofs that rely on temporal properties (e.g. Trillium of the Iris ecosystem) must either (1) devise their own proof from scratch, or (2) be left with unsatisfactory holes in their proofs, relying on unmechanised translations to external tools. To address this concern, we propose the development of a proofmode specifically tailored towards temporal logic for verifying temporal properties or concrete examples. In this work (in progress), we use the Iris Proofmode (IPM) infrastructure to obtain a "non-Iris" proofmode (without resources or step indexing) for Linear Temporal Logic (LTL). The key insight is that LTL (and many other temporal logics) are based on modalities that bear resemblance to those already supported by the IPM. As a result, we can reuse patterns, for example, to eliminate modalities while keeping the proof context consistent. This is work in progress, and so the presentation will focus on the ongoing insights, challenges, and future directions, and happily receive feedback on those matters.</div></div>
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
