@@ -84,8 +84,13 @@
 <div id="EgorNamakonov" class="collapse"><div class="abstract">Wait-freedom is the strongest non-blocking progress guarantee for concurrent data structures, ensuring that every operation completes in a finite number of steps regardless of interference from other threads. While verification of wait-freedom has been studied for first-order languages, verifying it for higher-order languages with general references remains an open challenge. In such languages, operations may be used by arbitrary, unverified higher-order clients, making it unclear how to even define wait-freedom formally in terms of program semantics, let alone prove it. In this paper, we present the first framework for verifying wait-freedom of concurrent programs written in a higher-order language with general references. Our approach is based on the Lawyer concurrent separation logic which has been recently introduced for termination verification. We identify a specification pattern in the Lawyer logic that captures wait-freedom. To establish this connection formally, we prove a novel adequacy theorem for Lawyer which states that programs which are proven correct in the Lawyer logic against a specification in the aforementioned specification pattern are wait-free. As a part of proving the adequacy theorem above, we need to prove that the behavior of the client of the data structure is safe in the sense that it does not break the internal invariants of the data structure. To this end, we develop a logical relations model that establishes safety for all clients once and for all. We demonstrate the effectiveness of our approach by proving wait-freedom for several representative examples, including a higher-order list map function, and a memory-efficient single-producer, single-consumer queue. For the latter, wait-freedom is conditional in that, as the name suggests, there can be at most one enqueuer thread and one dequeuer thread. To capture this formally, we introduce the notion of restricted wait-freedom as a variant of wait-freedom that restricts the number of concurrent threads, and show how our approach can support reasoning about restricted wait-freedom. All our results have been mechanized with Rocq and Iris.</div></div>
 </td>
 </tr>
-<tr class="schedule-row schedule-talk">
+<tr class="schedule-row schedule-event-row">
 <th scope="row" class="schedule-time">15:30</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail"><div class="schedule-event">Afternoon coffee break</div></td>
+</tr>
+<tr class="schedule-row schedule-talk">
+<th scope="row" class="schedule-time">16:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -95,13 +100,17 @@
 <div id="JonasKastbergHinrichsen" class="collapse"><div class="abstract">Temporal Logic is suitable for verifying temporal properties, such as liveness: that something good eventually happens. For a multitude of temporal logics, the metatheory has been mechanised in a theorem prover, but none seem to focus on verifying actual examples, resulting in impractical verbosity primarily stemming from having to manually manage proof context. The lack of focus seems to be a consequence of temporal logics mostly being used in external automated tools, rather than mechanised proofs. As a result, mechanised proofs that rely on temporal properties (e.g. Trillium of the Iris ecosystem) must either (1) devise their own proof from scratch, or (2) be left with unsatisfactory holes in their proofs, relying on unmechanised translations to external tools. To address this concern, we propose the development of a proofmode specifically tailored towards temporal logic for verifying temporal properties or concrete examples. In this work (in progress), we use the Iris Proofmode (IPM) infrastructure to obtain a "non-Iris" proofmode (without resources or step indexing) for Linear Temporal Logic (LTL). The key insight is that LTL (and many other temporal logics) are based on modalities that bear resemblance to those already supported by the IPM. As a result, we can reuse patterns, for example, to eliminate modalities while keeping the proof context consistent. This is work in progress, and so the presentation will focus on the ongoing insights, challenges, and future directions, and happily receive feedback on those matters.</div></div>
 </td>
 </tr>
-<tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">16:00</th>
+<tr class="schedule-row schedule-talk">
+<th scope="row" class="schedule-time">16:30</th>
 <td class="schedule-rule"><span></span></td>
-<td class="schedule-detail"><div class="schedule-event">Informal discussions with coffee</div></td>
+<td class="schedule-detail">
+<div class="schedule-line">
+<span class="schedule-speaker">Aaron Bies</span>: 
+<span class="schedule-title">Extending Verus with Logical Atomicity</span></div>
+</td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">17:00</th>
+<th scope="row" class="schedule-time">17:15</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Shuttle bus from <a href="https://maps.app.goo.gl/qduiSjRLyFXzmt399">Moonstone Building</a> to <a href="https://maps.app.goo.gl/HgHe2ZJghXRSFc5X9">Schwedenplatz in Vienna</a></div></td>
 </tr>
