@@ -2477,6 +2477,14 @@
   "draft_papers": [
   ],
   "others": [
+	{
+      "title": "Semantic Completeness of Higher-Order Probabilistic Separation Logics",
+      "authors": [
+        "Puming Liu"
+      ],
+      "description": "Extended Abstract for ACM Student Research Competition 2026",
+      "pdf_url": "pdfs/2026-src-abstract-puming.pdf"
+    },
     {
       "title": "Adequacy with Later Credits in the Iris Logic",
       "authors": [
