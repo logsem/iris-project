@@ -1,6 +1,19 @@
 {
     "publications": [
       {
+        "title": "Backwards-Compatible Row-Based Exceptions in ML",
+        "authors": [
+          "Simcha van Collem",
+          "Paulo Emílio de Vilhena",
+          "Robbert Krebbers"
+        ],
+        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2026-pldi-exceptional.pdf",
+        "other_urls": [
+            { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.18982614" }
+        ]
+      },
+      {
         "title": "A Verified Parallel Scheduler for OCaml 5",
         "authors": [
           "Clément Allain",
