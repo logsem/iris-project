@@ -12,15 +12,20 @@
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Welcome and coffee</div></td>
 </tr>
+<tr class="schedule-row schedule-event-row">
+<th scope="row" class="schedule-time">09:45</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail"><div class="schedule-event">Opening remarks</div></td>
+</tr>
 <tr class="schedule-row schedule-talk schedule-invited">
 <th scope="row" class="schedule-time">10:00</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
-<span class="schedule-speaker"><a href="https://cs.au.dk/~zyliu/">Zongyuan Liu</a> and <a href="https://pub.ista.ac.at/~msammler/">Michael Sammler</a></span>: 
-<span class="schedule-title">Iris Lean</span> <span class="schedule-kind">(invited talk)</span> <a href="#ZongyuanLiuandMichaelSammler" data-bs-toggle="collapse">[abstract]</a>
+<span class="schedule-speaker"><a href="https://rinibanerjee.com/">Rini Banerjee</a></span>: 
+<span class="schedule-title">Gradual Assurance for Systems Software: A Separation-Logic Approach</span> <span class="schedule-kind">(invited talk)</span> <a href="#RiniBanerjee" data-bs-toggle="collapse">[abstract]</a>
 </div>
-<div id="ZongyuanLiuandMichaelSammler" class="collapse"><div class="abstract">This talk presents the community effort to port Iris to the Lean theorem prover. We will give an overview of the past, the present and the future of Iris Lean port. Concretely, the talk will present a description of the advantages that the Lean version of Iris has to offer (paired with a list of challenges faced during the port), what the current status of the port is, how we maintain the connection of Iris Lean to Iris in Rocq and some insight into the projects that are already being built on top of Iris Lean.</div></div>
+<div id="RiniBanerjee" class="collapse"><div class="abstract">The conventional code-test-debug cycle is the de-facto methodology for building software systems, and while successful to an extent, it manifestly fails to make these systems reliable enough. Various approaches have been explored over the past few decades that aim to ameliorate this, from push-button static and dynamic analysis tools to traditional formal verification via rich, explicit specifications. These specifications are costly to produce and maintain, especially at scale. Testing specifications concretely at runtime — as they are being written — can alleviate this, making it possible to check and debug in-progress, partial specifications in a lightweight manner, providing more gradual assurance. Unfortunately, the testing and proof communities have historically been largely disjoint, and much of the existing work in these areas focuses on a single approach and tool. We propose a more flexible use of rich specifications, written in a single assertion language, that can be refined as they are written using feedback from testing and property-based testing, and can eventually be used for proof, if desired. In this talk, I will describe our specification-testing-centred workflow, first abstractly and then instantiated to the systems software setting, using the CN separation-logic testing and verification toolchain <a href="https://rinibanerjee.com/assets/papers/el2-testing-paper-pldi-26.pdf">[1]</a>. I will explain how the component parts of the CN toolchain — runtime specification testing via Fulminate <a href="https://www.cl.cam.ac.uk/~pes20/cn-testing-popl2025.pdf">[2]</a>, property-based testing via Darcy <a href="https://rinibanerjee.com/assets/papers/el2-testing-paper-pldi-26.pdf">[1]</a> and Bennet <a href="https://zain-k-aamer.com/papers/bennet.pdf">[3]</a>, and proof via CN <a href="https://www.cl.cam.ac.uk/~pes20/cn-draft.pdf">[4]</a> — work. I will discuss our experience in leveraging CN to apply our workflow to a fragment of Google's pKVM hypervisor, and describe our work in running the Fulminate-instrumented fragment baremetal at the hypervisor privilege level, as part of pKVM.</div></div>
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
@@ -135,10 +140,10 @@
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
-<span class="schedule-speaker"><a href="https://rinibanerjee.com/">Rini Banerjee</a></span>: 
-<span class="schedule-title">Gradual Assurance for Systems Software: A Separation-Logic Approach</span> <span class="schedule-kind">(invited talk)</span> <a href="#RiniBanerjee" data-bs-toggle="collapse">[abstract]</a>
+<span class="schedule-speaker"><a href="https://cs.au.dk/~zyliu/">Zongyuan Liu</a> and <a href="https://pub.ista.ac.at/~msammler/">Michael Sammler</a></span>: 
+<span class="schedule-title">Iris Lean</span> <span class="schedule-kind">(invited talk)</span> <a href="#ZongyuanLiuandMichaelSammler" data-bs-toggle="collapse">[abstract]</a>
 </div>
-<div id="RiniBanerjee" class="collapse"><div class="abstract">The conventional code-test-debug cycle is the de-facto methodology for building software systems, and while successful to an extent, it manifestly fails to make these systems reliable enough. Various approaches have been explored over the past few decades that aim to ameliorate this, from push-button static and dynamic analysis tools to traditional formal verification via rich, explicit specifications. These specifications are costly to produce and maintain, especially at scale. Testing specifications concretely at runtime — as they are being written — can alleviate this, making it possible to check and debug in-progress, partial specifications in a lightweight manner, providing more gradual assurance. Unfortunately, the testing and proof communities have historically been largely disjoint, and much of the existing work in these areas focuses on a single approach and tool. We propose a more flexible use of rich specifications, written in a single assertion language, that can be refined as they are written using feedback from testing and property-based testing, and can eventually be used for proof, if desired. In this talk, I will describe our specification-testing-centred workflow, first abstractly and then instantiated to the systems software setting, using the CN separation-logic testing and verification toolchain <a href="https://rinibanerjee.com/assets/papers/el2-testing-paper-pldi-26.pdf">[1]</a>. I will explain how the component parts of the CN toolchain — runtime specification testing via Fulminate <a href="https://www.cl.cam.ac.uk/~pes20/cn-testing-popl2025.pdf">[2]</a>, property-based testing via Darcy <a href="https://rinibanerjee.com/assets/papers/el2-testing-paper-pldi-26.pdf">[1]</a> and Bennet <a href="https://zain-k-aamer.com/papers/bennet.pdf">[3]</a>, and proof via CN <a href="https://www.cl.cam.ac.uk/~pes20/cn-draft.pdf">[4]</a> — work. I will discuss our experience in leveraging CN to apply our workflow to a fragment of Google's pKVM hypervisor, and describe our work in running the Fulminate-instrumented fragment baremetal at the hypervisor privilege level, as part of pKVM.</div></div>
+<div id="ZongyuanLiuandMichaelSammler" class="collapse"><div class="abstract">This talk presents the community effort to port Iris to the Lean theorem prover. We will give an overview of the past, the present and the future of Iris Lean port. Concretely, the talk will present a description of the advantages that the Lean version of Iris has to offer (paired with a list of challenges faced during the port), what the current status of the port is, how we maintain the connection of Iris Lean to Iris in Rocq and some insight into the projects that are already being built on top of Iris Lean.</div></div>
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
@@ -284,8 +289,24 @@
 <div id="ArnaudDabySeesaram" class="collapse"><div class="abstract">Isolation Levels in the database jargon define how much transactions can observe and how much they can interfere with one another.  Among them, Snapshot Isolation is particularly popular because it allows concurrent transactions to take place while providing strong enough guarantees for most use cases (e.g., it precludes write-write conflicts between concurrent transactions and ensures causal consistency).  Previous work has shown how to efficiently implement this isolation level using multi-version concurrency control.  Other previous work provides Separation Logic specifications for Snapshot Isolation. However, currently verified implementations are inefficient and only use coarse-grained concurrency control.  In this talk, I will introduce SIrIS, a library providing single-node in-memory databases satisfying Snapshot Isolation.  It uses fine-grained concurrency control and provides a GC to limit its memory usage.  I will first show our specification and how to use it on a small client example.  Second, I will discuss implementation of the library and its performance.  Our results are formalised in the Rocq Prover using the Iris framework.  This is joint work with Léon Ducruet, Amin Timany and Lars Birkedal.</div></div>
 </td>
 </tr>
-<tr class="schedule-row schedule-talk">
+<tr class="schedule-row schedule-event-row">
 <th scope="row" class="schedule-time">15:30</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail"><div class="schedule-event">Afternoon coffee break</div></td>
+</tr>
+<tr class="schedule-row schedule-talk">
+<th scope="row" class="schedule-time">16:00</th>
+<td class="schedule-rule"><span></span></td>
+<td class="schedule-detail">
+<div class="schedule-line">
+<span class="schedule-speaker">João Mota</span>: 
+<span class="schedule-title">A Separation Logic Framework for Asynchronous Programming</span> <a href="#JooMota" data-bs-toggle="collapse">[abstract]</a>
+</div>
+<div id="JooMota" class="collapse"><div class="abstract">This talk presents a separation logic framework, heavily inspired by Iris, for concurrent programs, that allows reasoning about both affine and linear resources, as well as affine and linear invariants. Moreover, the logic supports thread-local and thread-shared invariants, allowing thread-local ones to be opened for more than one step of computation, before reaching a yield-point (such as the "await" keyword), through an extended version of the fancy update modality. We devised a weakest precondition to reason about asynchronous programs (with threads and asynchronous tasks in each thread), proved its adequacy, and showed leak freedom with respect to linear resources. All results are fully mechanized in Rocq.</div></div>
+</td>
+</tr>
+<tr class="schedule-row schedule-talk">
+<th scope="row" class="schedule-time">16:30</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail">
 <div class="schedule-line">
@@ -294,12 +315,7 @@
 </td>
 </tr>
 <tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">16:00</th>
-<td class="schedule-rule"><span></span></td>
-<td class="schedule-detail"><div class="schedule-event">Informal discussions with coffee</div></td>
-</tr>
-<tr class="schedule-row schedule-event-row">
-<th scope="row" class="schedule-time">17:00</th>
+<th scope="row" class="schedule-time">17:15</th>
 <td class="schedule-rule"><span></span></td>
 <td class="schedule-detail"><div class="schedule-event">Shuttle bus from <a href="https://maps.app.goo.gl/qduiSjRLyFXzmt399">Moonstone Building</a> to <a href="https://maps.app.goo.gl/HgHe2ZJghXRSFc5X9">Schwedenplatz in Vienna</a></div></td>
 </tr>
