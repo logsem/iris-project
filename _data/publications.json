@@ -1,6 +1,22 @@
 {
     "publications": [
       {
+          "title": "Cerisier: A Program Logic for Attestation in a Capability Machine",
+        "authors": [
+            "June Rousseau",
+            "Denis Carnier",
+            "Thomas Van Strydonck",
+            "Steven Keuchel",
+            "Dominique Devriese",
+            "Lars Birkedal"
+        ],
+        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+          "pdf_url": "https://arxiv.org/pdf/2604.13638",
+        "other_urls": [
+            { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.19062990" }
+        ]
+      },
+      {
         "title": "Backwards-Compatible Row-Based Exceptions in ML",
         "authors": [
           "Simcha van Collem",
