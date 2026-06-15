@@ -1,6 +1,19 @@
 {
     "publications": [
       {
+        "title": "Verifying Wait-Freedom for Concurrent Higher-Order Programs",
+        "authors": [
+          "Egor Namakonov",
+	  "Lars Birkedal",
+	  "Amin Timany"
+        ],
+        "where_published": "In ECOOP 2026: European Conference on Object-Oriented Programming",
+          "pdf_url": "pdfs/2026-ecoop-wfree.pdf",
+        "other_urls": [
+            { "name": "Rocq artifact", "url": "https://zenodo.org/records/19607892" }
+        ]
+      },
+      {
           "title": "Cerisier: A Program Logic for Attestation in a Capability Machine",
         "authors": [
             "June Rousseau",
