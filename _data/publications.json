@@ -1,665 +1,665 @@
 {
-    "publications": [
-      {
-        "title": "Verifying Wait-Freedom for Concurrent Higher-Order Programs",
-        "authors": [
-          "Egor Namakonov",
-          "Lars Birkedal",
-          "Amin Timany"
-        ],
-        "where_published": "In ECOOP 2026: European Conference on Object-Oriented Programming",
-        "pdf_url": "pdfs/2026-ecoop-wfree.pdf",
-        "other_urls": [
-            { "name": "Rocq artifact", "url": "https://zenodo.org/records/19607892" }
-        ]
-      },
-      {
-          "title": "Cerisier: A Program Logic for Attestation in a Capability Machine",
-        "authors": [
-            "June Rousseau",
-            "Denis Carnier",
-            "Thomas Van Strydonck",
-            "Steven Keuchel",
-            "Dominique Devriese",
-            "Lars Birkedal"
-        ],
-        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-          "pdf_url": "https://arxiv.org/pdf/2604.13638",
-        "other_urls": [
-            { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.19062990" }
-        ]
-      },
-      {
-        "title": "Backwards-Compatible Row-Based Exceptions in ML",
-        "authors": [
-          "Simcha van Collem",
-          "Paulo Emílio de Vilhena",
-          "Robbert Krebbers"
-        ],
-        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2026-pldi-exceptional.pdf",
-        "other_urls": [
-            { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.18982614" }
-        ]
-      },
-      {
-        "title": "A Verified Parallel Scheduler for OCaml 5",
-        "authors": [
-          "Clément Allain",
-          "Gabriel Scherer"
-        ],
-        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2026-pldi-parabs.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/tree/pldi26-artifact" }
-        ]
-      },
-      {
-        "title": "Modular Verification of Differential Privacy in Probabilistic Higher-Order Separation Logic",
-        "authors": [
-            "Philipp G. Haselwarter",
-	        "Alejandro Aguirre",
-            "Simon Oddershede Gregersen",
-	        "Kwing Hei Li",
-	        "Joseph Tassarotti",
-	        "Lars Birkedal"
-        ],
-        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2026-pldi-clutch-dp.pdf",
-        "other_urls": [
-              { "name": "Extended version", "url": "https://arxiv.org/abs/2604.12713" },
-              { "name": "Rocq development", "url": "https://github.com/logsem/clutch/tree/pldi26-clutch-dp" },
-              { "name": "Rocq artifact", "url": "https://zenodo.org/records/19089094" },
-        ]
-      },
-      {
-        "title": "Contextual Refinement of Higher-Order Concurrent Probabilistic Programs",
-        "authors": [
-	    "Kwing Hei Li",
-	    "Alejandro Aguirre",
-	    "Joseph Tassarotti",
-	    "Lars Birkedal"
-        ],
-        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2026-pldi-foxtrot.pdf",
-        "other_urls": [
-          { "name": "Rocq artifact", "url": "https://zenodo.org/records/18924289" }
-        ]
-      },
-	{
-            "title": "Iris-WasmFX: Modular Reasoning for Wasm Stack Switching",
-        "authors": [
-	    "Maxime Legoupil",
-	    "Mathias Pedersen",
-	    "Lars Birkedal",
-	    "Sam Lindley",
-	    "Jean Pichon-Pharabod"
-        ],
-        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2026-pldi-iriswasmfx.pdf",
-        "other_urls": [
-            { "name": "Rocq artifact", "url": "https://zenodo.org/records/19912157" } 
-        ]
-      },
-      {
-        "title": "VerusBelt: A Semantic Foundation for Verus’s Proof-Oriented Extensions to the Rust Type System",
-        "authors": [
-	    "Travis Hance",
-	    "Laila Elbeheiry",
-	    "Yusuke Matsushita",
-	    "Derek Dreyer"
-        ],
-        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2026-pldi-verusbelt.pdf",
-        "other_urls": [
-          { "name": "Rocq artifact", "url": "https://zenodo.org/records/19613067" }
-        ],
-        "awards": [
-          "PLDI 2026 Distinguished Paper Award", "PLDI 2026 Distinguished Artifact Award" 
-        ]
-      },
-      {
-        "title": "Mixtris: Mechanised Higher-Order Separation Logic for Mixed Choice Multiparty Message Passing",
-        "authors": [
-          "Jonas Kastberg Hinrichsen",
-          "Iwan Quémerais",
-	  "Lars Birkedal",
-        ],
-        "where_published": "In OOPSLA 2026: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
-        "pdf_url": "pdfs/2026-oopsla-mixtris.pdf",
-        "other_urls": [
-            { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18749895" }
-        ]
-      },
-	{
-        "title": "Lawyer: Modular Obligations-Based Liveness Reasoning in Higher-Order Impredicative Concurrent Separation Logic",
-        "authors": [
-          "Egor Namakonov",
-          "Justus Fasse",
-	  "Bart Jacobs",
-	  "Lars Birkedal",
-	  "Amin Timany"
-        ],
-        "where_published": "In OOPSLA 2026: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
-        "pdf_url": "pdfs/2026-oopsla-lawyer.pdf",
-        "other_urls": [
-            { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18457697" }
-        ]
-      },
-      {
-        "title": "A Formal Interface for Concurrent Search Structure Templates",
-        "authors": [
-          "Duc-Than Nguyen",
-          "William Mansky"
-        ],
-        "where_published": "In ESOP 2026: European Symposium on Programming",
-        "pdf_url": "pdfs/2026-esop-templates.pdf",
-        "other_urls": [
-            { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18319035" },
-            { "name": "Rocq development", "url": "https://github.com/UIC-verif-group/concurrency-templates" }
-        ]
-      },
-      {
-        "title": "Verified Persistent Catenable Deques",
-        "authors": [
-          "Juliette Ponsonnet",
-          "François Pottier"
-        ],
-        "where_published": "In JFLA 2026: Journées Francophones des Langages Applicatifs",
-        "pdf_url": "pdfs/2026-jfla-kot.pdf",
-        "other_urls": [
-            { "name": "OCaml code", "url": "https://github.com/fpottier/kot/" },
-            { "name": "Iris/Rocq proofs", "url": "https://github.com/HiiGHoVuTi/kot-proof/" },
-        ]
-      },
-      {
-        "title": "Zoo: A Framework for the Verification of Concurrent OCaml 5 Programs using Separation Logic",
-        "authors": [
-          "Clément Allain",
-          "Gabriel Scherer"
-        ],
-        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
-        "pdf_url": "pdfs/2026-popl-zoo.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/tree/popl26" }
-        ]
-      },
-      {
-        "title": "Cryptis: Cryptographic Reasoning in Separation Logic",
-        "authors": [
-          "Arthur Azevedo de Amorim",
-          "Amal Ahmed",
-          "Marco Gaboardi"
-        ],
-        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
-        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3776730",
-        "other_urls": [
-          { "name": "Artifact", "url": "https://github.com/arthuraa/cryptis/tree/popl-2026-artifact" },
-          { "name": "Rocq development", "url": "https://github.com/arthuraa/cryptis" }
-        ]
-      },
-      {
-        "title": "Endangered by the Language But Saved by the Compiler: Robust Safety via Semantic Back-Translation",
-        "authors": [
-          "Niklas Mück",
-          "Aïna Linn Georges",
-          "Derek Dreyer",
-          "Deepak Garg",
-          "Michael Sammler"
-        ],
-        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
-        "pdf_url": "pdfs/2026-popl-robustdimsum.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/FP/robustdimsum/-/tree/POPL26" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17285727" }
-        ]
-      },
-      {
-        "title": "All for One and One for All: Program Logics for Exploiting Internal Determinism in Parallel Programs",
-        "authors": [
-          "Alexandre Moine",
-          "Sam Westrick",
-          "Joseph Tassarotti"
-        ],
-        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
-        "pdf_url": "pdfs/2026-popl-intdet.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/nobrakal/intdet" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17259375" }
-        ],
-        "awards": [
-          "POPL 2026 Distinguished Paper Award"
-        ]
-      },
-      {
-        "title": "TypeDis: A Type System for Disentanglement",
-        "authors": [
-          "Alexandre Moine",
-          "Stephanie Balzer",
-          "Alex Xu",
-          "Sam Westrick"
-        ],
-        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
-        "pdf_url": "pdfs/2026-popl-typedis.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/nobrakal/typedis" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17336384" }
-        ]
-      },
-      {
-        "title": "A Relational Separation Logic for Effect Handlers",
-        "authors": [
-          "Paulo Emílio de Vilhena",
-          "Simcha van Collem",
-          "Ines Wright",
-          "Robbert Krebbers"
-        ],
-        "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
-        "pdf_url": "pdfs/2026-popl-blaze.pdf",
-        "other_urls": [
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17308673" }
-        ]
-      },
-      { "title": "Specifications and Implementations of Random Samplers in Higher-Order Separation Logic",
-	"authors": [
-	   "Virgil Marionneau",
-	   "Félix Sassus Bourda",
-	   "Alejandro Aguirre",
-	   "Lars Birkedal"
-	],
-        "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
-	"pdf_url": "pdfs/2026-cpp-distributions.pdf",
-	"other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/logsem/clutch/tree/cpp26-distributions" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17800602" }
-        ]
-      },
-      {
-          "title": "Building Blocks for Step-Indexed Program Logics",
-          "authors": [
-	           "Thomas Somers",
-	           "Jonas Kastberg Hinrichsen",
-	           "Lennard Gäher",
-	           "Robbert Krebbers"
-          ],
-          "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
-          "pdf_url": "pdfs/2026-cpp-step-modality.pdf",
-          "other_urls": [
-             { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17809073" }
-          ],
-      },
-      {
-          "title": "A Recipe for Modular Verification of Generic Tree Traversals",
-          "authors": [
-	           "Laila Elbeheiry",
-	           "Michael Sammler",
-	           "Robbert Krebbers",
-	           "Derek Dreyer",
-	           "Deepak Garg",
-          ],
-          "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
-          "pdf_url": "pdfs/2026-cpp-tree-traversals.pdf",
-          "other_urls": [
-             { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17799204" }
-          ],
-      },
-      {
-        "title": "Idempotent Resources in Separation Logic (The Heart of core in Iris)",
-        "authors": [
-          "Daniel Gratzer",
-          "Mathias A. Moeller",
-          "Lars Birkedal"
-        ],
-          "where_published": "In FoSSaCs 2025: Foundations of Software Science and Computation Structures",
-          "pdf_url": "pdfs/2025-fossacs-idempotent-resources.pdf",
-          "other_urls": [
-        ]
-      },
-      {
-        "title": "Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
-        "authors": [
-          "Robbert Krebbers",
-          "Luko van der Maas",
-          "Enrico Tassi"
-        ],
-        "where_published": "In ITP 2025: International Conference on Interactive Theorem Proving",
-        "pdf_url": "pdfs/2025-itp-inductive.pdf",
-        "other_urls": [
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15727403" }
-        ]
-      },
-      {
-        "title": "Logical Relations for Formally Verified Authenticated Data Structures",
-        "authors": [
-          "Simon Oddershede Gregersen",
-          "Chaitanya Agarwal",
-          "Joseph Tassarotti"
-        ],
-        "where_published": "In CCS 2025: ACM SIGSAC Conference on Computer and Communications Security",
-        "pdf_url": "pdfs/2025-ccs-veriauth.pdf",
-        "other_urls": [
-          { "name": "Rocq and OCaml development", "url": "https://github.com/jtassarotti/veri-auth" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15551944" }
-        ]
-      },
-      {
-	"title": "Formal Semantics and Program Logics for a Fragment of OCaml",
-        "authors": [
-	  "Remy Seassau",
-	  "Irene Yoon",
-	  "Jean-Marie Madiot",
-	  "François Pottier"
-        ],
-        "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
-	"pdf_url": "pdfs/2025-icfp-osiris.pdf",
-	"other_urls": [
-	    { "name": "Rocq development", "url": "https://gitlab.inria.fr/fpottier/osiris" },
-	    { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.16327523" }
-	]
-      },
-      {
-        "title": "Modular Reasoning about Error Bounds for Concurrent Probabilistic Programs",
-        "authors": [
-          "Kwing Hei Li",
-          "Alejandro Aguirre",
-          "Simon Oddershede Gregersen",
-          "Philipp G. Haselwarter",
-          "Joseph Tassarotti",
-          "Lars Birkedal"
-        ],
-        "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
-        "pdf_url": "pdfs/2025-icfp-coneris.pdf"
-      },
-      {
-        "title": "Reasoning about Weak Isolation Levels in Separation Logic",
-        "authors": [
-          "Anders Alnor Mathiasen",
-          "Léon Gondelman",
-          "Léon Ducruet",
-          "Amin Timany",
-          "Lars Birkedal"
-        ],
-        "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
-        "pdf_url": "pdfs/2025-icfp-weak-isolations.pdf",
-        "other_urls": [
-          { "name": "Artifact", "url": "https://zenodo.org/records/15626657" }
-        ]
-      },
-      {
-        "title": "Modular, Full-System Verification",
-        "authors": [
-          "Gregory Malecha",
-          "Hoang-Hai Dang",
-          "Paolo G. Giarrusso",
-          "Simon Hudon",
-          "Jan-Oliver Kaiser",
-          "David Swasey"
-        ],
-        "where_published": "In HotOS 2025: ACM SIGOPS Workshop in Hot Topics in Operating Systems",
-        "pdf_url": "https://sigops.org/s/conferences/hotos/2025/papers/hotos25-206.pdf",
-        "other_urls": [
-          { "name": "Publisher's site", "url": "https://doi.org/10.1145/3713082.3730387" },
-          { "name": "Artifact", "url": "https://github.com/bluerock-io/fm-releases/tree/main/nova_interface.2024-04-16" }
-        ]
-      },
-      {
-        "title": "Leveraging Immutability to Validate Hazard Pointers for Optimistic Traversals",
-        "authors": [
-          "Janggun Lee",
-          "Jeonghyeon Kim",
-          "Jeehoon Kang"
-        ],
-        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2025-pldi-hp-revisited.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/kaist-cp/smr-verification" },
-          { "name": "Rust development", "url": "https://github.com/kaist-cp/smr-benchmark" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15183251" }
-        ]
-      },
-      {
-        "title": "Verifying General-Purpose RCU for Reclamation in Relaxed Memory Separation Logic",
-        "authors": [
-          "Jaehwang Jung",
-          "Sunho Park",
-          "Janggun Lee",
-          "Jeho Yeon",
-          "Jeehoon Kang"
-        ],
-        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2025-pldi-weak-smr.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic/tree/pldi25" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15167032" }
-        ],
-        "awards": [
-          "PLDI 2025 Distinguished Paper Award"
-        ]
-      },
-      {
-        "title": "Verifying Lock-Free Traversals in Relaxed Memory Separation Logic",
-        "authors": [
-          "Sunho Park",
-          "Jaehwang Jung",
-          "Janggun Lee",
-          "Jeehoon Kang"
-        ],
-        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2025-pldi-weak-reachability.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic/tree/pldi25" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15004020" }
-        ]
-      },
-      {
-        "title": "Destabilizing Iris",
-        "authors": [
-            "Simon Spies",
-	    "Niklas Mück",
-	    "Haoyi Zeng",
-	    "Michael Sammler",
-	    "Andrea Lattuada",
-	    "Peter Müller",
-	    "Derek Dreyer"
-        ],
-        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2025-pldi-daenerys.pdf",
-        "other_urls": [
-          { "name": "website", "url": "https://plv.mpi-sws.org/iris-daenerys/" }
-        ],
-                "awards": [
-          "PLDI 2025 Distinguished Paper Award"
-        ]
-      },
-      {
-        "title": "Tree Borrows",
-        "authors": [
-	    "Neven Villani",
-	    "Johannes Hostert",
-	    "Derek Dreyer",
-	    "Ralf Jung"
-        ],
-        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2025-pldi-treeborrows.pdf",
-        "other_urls": [
-          { "name": "website", "url": "https://plf.inf.ethz.ch/research/pldi25-tree-borrows.html" }
-        ],
-                "awards": [
-          "PLDI 2025 Distinguished Paper Award"
-        ]
-      },
-      {
-        "title": "RefinedProsa: Connecting Response-Time Analysis with C Verification for Interrupt-Free Schedulers",
-        "authors": [
-	    "Kimaya Bedarkar",
-	    "Laila Elbeheiry",
-	    "Michael Sammler",
-	    "Lennard Gäher",
-	    "Björn Brandenburg",
-	    "Derek Dreyer",
-	    "Deepak Garg"
-        ],
-        "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2025-pldi-refinedprosa.pdf",
-        "other_urls": [
-          { "name": "website", "url": "https://plv.mpi-sws.org/refinedprosa/" }
-        ]
-      },
-      {
-        "title": "Solving Guarded Domain Equations in Presheaves Over Ordinals and Mechanizing It",
-        "authors": [
-            "Sergei Stepanenko",
-            "Amin Timany"
-        ],
-        "where_published": "In FSCD 2025: International Conference on Formal Structures for Computation and Deduction",
-        "pdf_url": "pdfs/2025-fscd-guarded-dom.pdf",
-        "other_urls": [
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15406039" }
-        ]
-      },
-      {
-        "title": "Lilo: A Higher-Order, Relational Concurrent Separation Logic for Liveness",
-        "authors": [
-            "Dongjae Lee",
-            "Janggun Lee",
-            "Taeyoung Yoon",
-            "Minki Cho",
-            "Jeehoon Kang",
-            "Chung-Kil Hur"
-        ],
-        "where_published": "In OOPSLA 2025: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
-        "pdf_url": "pdfs/2025-oopsla-lilo.pdf",
-        "other_urls": [
-          { "name": "Artifact", "url": "https://zenodo.org/records/14927742" }
-        ]
-      },
-      {
-        "title": "Modal Abstractions for Virtualizing Memory Addresses",
-        "authors": [
-            "Ismail Kuru",
-            "Colin S. Gordon"
-        ],
-        "where_published": "In OOPSLA 2025: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
-        "pdf_url": "https://csgordon.github.io//publications/oopsla25/oopsla25.pdf"
-      },
-      {
-          "title": "Will it Fit? Verifying Heap Space Bounds of Concurrent Programs under Garbage Collection",
-          "authors":  [ "Alexandre Moine", "Arthur Charguéraud", "François Pottier" ],
-          "where_published": "In TOPLAS 2025: ACM Transactions on Programming Languages and Systems",
-          "pdf_url": "pdfs/2025-toplas-willitfit.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://github.com/nobrakal/irisfit" }
-          ]
-      },
-      {
-          "title": "Context-Dependent Effects in Guarded Interaction Trees",
-          "authors": ["Sergei Stepanenko", "Emma Nardino", "Dan Frumin", "Amin Timany", "Lars Birkedal"],
-          "where_published": "In ESOP 2025: European Symposium on Programming",
-          "pdf_url": "pdfs/2025-esop-gitrees.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://github.com/logsem/gitrees" },
-              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.14623649" }
-          ]
-      },
-      {
-          "title": "The Nextgen Modality: A Modality for Non-Frame-Preserving Updates in Separation Logic",
-          "authors": [
-	      "Simon Friis Vindum",
-              "Aïna Linn Georges",
-              "Lars Birkedal"
-          ],
-          "where_published": "In CPP 2025: ACM SIGPLAN Conference on Certified Programs and Proofs",
-          "pdf_url": "pdfs/2025-cpp-nextgen.pdf",
-          "other_urls": [
-              { "name": "Artifact", "url": "https://github.com/logsem/iris-nextgen" }
-          ],
-                "awards": [
-          "CPP 2025 Distinguished Paper Award"
-        ]
-      },
-      {
-          "title": "Tail Modulo Cons, OCaml, and Relational Separation Logic",
-          "authors": [
-            "Clément Allain",
-            "Frédéric Bour",
-            "Basile Clément",
-            "François Pottier",
-            "Gabriel Scherer"
-          ],
-          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2025-popl-tmc.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://github.com/clef-men/camlcert/tree/popl2025" }
-          ]
-      },
-      {
-          "title": "Program Logics à la Carte",
-          "authors": [
-              "Max Vistrup", "Michael Sammler", "Ralf Jung"
-          ],
-          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "https://research.ralfj.de/papers/2025-popl-itree-program-logic.pdf",
-          "other_urls": [
-              { "name": "website", "url": "https://plf.inf.ethz.ch/research/popl25-itree-program-logic.html" }
-          ]
-      },
-      {
-          "title": "Approximate Relational Reasoning for Higher-Order Probabilistic Programs",
-          "authors": [
-              "Philipp G. Haselwarter",
-              "Kwing Hei Li",
-              "Alejandro Aguirre",
-              "Simon Oddershede Gregersen",
-              "Joseph Tassarotti",
-              "Lars Birkedal"
-          ],
-          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2025-popl-approxis.pdf",
-          "other_urls": [
-              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.13939302" }
-          ]
-      },
-      {
-          "title": "Data Race Freedom à la Mode",
-          "authors": [
-	      "Aïna Linn Georges",
-	      "Benjamin Peters",
-	      "Laila Elbeheiry",
-	      "Leo White",
-	      "Stephen Dolan",
-	      "Richard A. Eisenberg",
-	      "Chris Casinghino",
-	      "François Pottier",
-	      "Derek Dreyer"
-          ],
-          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2025-popl-drfcaml.pdf",
-          "other_urls": [
-              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.13933463" }
-          ],
-          "awards": [
-          "POPL 2025 Distinguished Paper Award"
-    ]
-      },
-      {
-          "title": "Affect: An Affine Type and Effect System",
-          "authors": [
-              "Orpheas van Rooij",
-              "Robbert Krebbers",
-          ],
-          "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2025-popl-affect.pdf",
-          "other_urls": [
-              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.14198790" }
-          ],
-          "awards": [
-          "POPL 2025 Distinguished Paper Award"
-    ]
-      },
+  "publications": [
+    {
+      "title": "Verifying Wait-Freedom for Concurrent Higher-Order Programs",
+      "authors": [
+        "Egor Namakonov",
+        "Lars Birkedal",
+        "Amin Timany"
+      ],
+      "where_published": "In ECOOP 2026: European Conference on Object-Oriented Programming",
+      "pdf_url": "pdfs/2026-ecoop-wfree.pdf",
+      "other_urls": [
+        { "name": "Rocq artifact", "url": "https://zenodo.org/records/19607892" }
+      ]
+    },
+    {
+      "title": "Cerisier: A Program Logic for Attestation in a Capability Machine",
+      "authors": [
+        "June Rousseau",
+        "Denis Carnier",
+        "Thomas Van Strydonck",
+        "Steven Keuchel",
+        "Dominique Devriese",
+        "Lars Birkedal"
+      ],
+      "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "https://arxiv.org/pdf/2604.13638",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.19062990" }
+      ]
+    },
+    {
+      "title": "Backwards-Compatible Row-Based Exceptions in ML",
+      "authors": [
+        "Simcha van Collem",
+        "Paulo Emílio de Vilhena",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2026-pldi-exceptional.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://doi.org/10.5281/zenodo.18982614" }
+      ]
+    },
+    {
+      "title": "A Verified Parallel Scheduler for OCaml 5",
+      "authors": [
+        "Clément Allain",
+        "Gabriel Scherer"
+      ],
+      "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2026-pldi-parabs.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/tree/pldi26-artifact" }
+      ]
+    },
+    {
+      "title": "Modular Verification of Differential Privacy in Probabilistic Higher-Order Separation Logic",
+      "authors": [
+        "Philipp G. Haselwarter",
+	"Alejandro Aguirre",
+        "Simon Oddershede Gregersen",
+	"Kwing Hei Li",
+	"Joseph Tassarotti",
+	"Lars Birkedal"
+      ],
+      "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2026-pldi-clutch-dp.pdf",
+      "other_urls": [
+        { "name": "Extended version", "url": "https://arxiv.org/abs/2604.12713" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/clutch/tree/pldi26-clutch-dp" },
+        { "name": "Rocq artifact", "url": "https://zenodo.org/records/19089094" },
+      ]
+    },
+    {
+      "title": "Contextual Refinement of Higher-Order Concurrent Probabilistic Programs",
+      "authors": [
+	"Kwing Hei Li",
+	"Alejandro Aguirre",
+	"Joseph Tassarotti",
+	"Lars Birkedal"
+      ],
+      "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2026-pldi-foxtrot.pdf",
+      "other_urls": [
+        { "name": "Rocq artifact", "url": "https://zenodo.org/records/18924289" }
+      ]
+    },
+    {
+      "title": "Iris-WasmFX: Modular Reasoning for Wasm Stack Switching",
+      "authors": [
+	"Maxime Legoupil",
+	"Mathias Pedersen",
+	"Lars Birkedal",
+	"Sam Lindley",
+	"Jean Pichon-Pharabod"
+      ],
+      "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2026-pldi-iriswasmfx.pdf",
+      "other_urls": [
+        { "name": "Rocq artifact", "url": "https://zenodo.org/records/19912157" } 
+      ]
+    },
+    {
+      "title": "VerusBelt: A Semantic Foundation for Verus’s Proof-Oriented Extensions to the Rust Type System",
+      "authors": [
+	"Travis Hance",
+	"Laila Elbeheiry",
+	"Yusuke Matsushita",
+	"Derek Dreyer"
+      ],
+      "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2026-pldi-verusbelt.pdf",
+      "other_urls": [
+        { "name": "Rocq artifact", "url": "https://zenodo.org/records/19613067" }
+      ],
+      "awards": [
+        "PLDI 2026 Distinguished Paper Award", "PLDI 2026 Distinguished Artifact Award" 
+      ]
+    },
+    {
+      "title": "Mixtris: Mechanised Higher-Order Separation Logic for Mixed Choice Multiparty Message Passing",
+      "authors": [
+        "Jonas Kastberg Hinrichsen",
+        "Iwan Quémerais",
+	"Lars Birkedal",
+      ],
+      "where_published": "In OOPSLA 2026: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2026-oopsla-mixtris.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18749895" }
+      ]
+    },
+    {
+      "title": "Lawyer: Modular Obligations-Based Liveness Reasoning in Higher-Order Impredicative Concurrent Separation Logic",
+      "authors": [
+        "Egor Namakonov",
+        "Justus Fasse",
+	"Bart Jacobs",
+	"Lars Birkedal",
+	"Amin Timany"
+      ],
+      "where_published": "In OOPSLA 2026: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2026-oopsla-lawyer.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18457697" }
+      ]
+    },
+    {
+      "title": "A Formal Interface for Concurrent Search Structure Templates",
+      "authors": [
+        "Duc-Than Nguyen",
+        "William Mansky"
+      ],
+      "where_published": "In ESOP 2026: European Symposium on Programming",
+      "pdf_url": "pdfs/2026-esop-templates.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.18319035" },
+        { "name": "Rocq development", "url": "https://github.com/UIC-verif-group/concurrency-templates" }
+      ]
+    },
+    {
+      "title": "Verified Persistent Catenable Deques",
+      "authors": [
+        "Juliette Ponsonnet",
+        "François Pottier"
+      ],
+      "where_published": "In JFLA 2026: Journées Francophones des Langages Applicatifs",
+      "pdf_url": "pdfs/2026-jfla-kot.pdf",
+      "other_urls": [
+        { "name": "OCaml code", "url": "https://github.com/fpottier/kot/" },
+        { "name": "Iris/Rocq proofs", "url": "https://github.com/HiiGHoVuTi/kot-proof/" },
+      ]
+    },
+    {
+      "title": "Zoo: A Framework for the Verification of Concurrent OCaml 5 Programs using Separation Logic",
+      "authors": [
+        "Clément Allain",
+        "Gabriel Scherer"
+      ],
+      "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2026-popl-zoo.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/tree/popl26" }
+      ]
+    },
+    {
+      "title": "Cryptis: Cryptographic Reasoning in Separation Logic",
+      "authors": [
+        "Arthur Azevedo de Amorim",
+        "Amal Ahmed",
+        "Marco Gaboardi"
+      ],
+      "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3776730",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://github.com/arthuraa/cryptis/tree/popl-2026-artifact" },
+        { "name": "Rocq development", "url": "https://github.com/arthuraa/cryptis" }
+      ]
+    },
+    {
+      "title": "Endangered by the Language But Saved by the Compiler: Robust Safety via Semantic Back-Translation",
+      "authors": [
+        "Niklas Mück",
+        "Aïna Linn Georges",
+        "Derek Dreyer",
+        "Deepak Garg",
+        "Michael Sammler"
+      ],
+      "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2026-popl-robustdimsum.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/FP/robustdimsum/-/tree/POPL26" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17285727" }
+      ]
+    },
+    {
+      "title": "All for One and One for All: Program Logics for Exploiting Internal Determinism in Parallel Programs",
+      "authors": [
+        "Alexandre Moine",
+        "Sam Westrick",
+        "Joseph Tassarotti"
+      ],
+      "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2026-popl-intdet.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/nobrakal/intdet" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17259375" }
+      ],
+      "awards": [
+        "POPL 2026 Distinguished Paper Award"
+      ]
+    },
+    {
+      "title": "TypeDis: A Type System for Disentanglement",
+      "authors": [
+        "Alexandre Moine",
+        "Stephanie Balzer",
+        "Alex Xu",
+        "Sam Westrick"
+      ],
+      "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2026-popl-typedis.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/nobrakal/typedis" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17336384" }
+      ]
+    },
+    {
+      "title": "A Relational Separation Logic for Effect Handlers",
+      "authors": [
+        "Paulo Emílio de Vilhena",
+        "Simcha van Collem",
+        "Ines Wright",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In POPL 2026: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2026-popl-blaze.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17308673" }
+      ]
+    },
+    { "title": "Specifications and Implementations of Random Samplers in Higher-Order Separation Logic",
+      "authors": [
+	"Virgil Marionneau",
+	"Félix Sassus Bourda",
+	"Alejandro Aguirre",
+	"Lars Birkedal"
+      ],
+      "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
+      "pdf_url": "pdfs/2026-cpp-distributions.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/logsem/clutch/tree/cpp26-distributions" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17800602" }
+      ]
+    },
+    {
+      "title": "Building Blocks for Step-Indexed Program Logics",
+      "authors": [
+	"Thomas Somers",
+	"Jonas Kastberg Hinrichsen",
+	"Lennard Gäher",
+	"Robbert Krebbers"
+      ],
+      "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
+      "pdf_url": "pdfs/2026-cpp-step-modality.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17809073" }
+      ],
+    },
+    {
+      "title": "A Recipe for Modular Verification of Generic Tree Traversals",
+      "authors": [
+	"Laila Elbeheiry",
+	"Michael Sammler",
+	"Robbert Krebbers",
+	"Derek Dreyer",
+	"Deepak Garg",
+      ],
+      "where_published": "In CPP 2026: ACM SIGPLAN Conference on Certified Programs and Proofs",
+      "pdf_url": "pdfs/2026-cpp-tree-traversals.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.17799204" }
+      ],
+    },
+    {
+      "title": "Idempotent Resources in Separation Logic (The Heart of core in Iris)",
+      "authors": [
+        "Daniel Gratzer",
+        "Mathias A. Moeller",
+        "Lars Birkedal"
+      ],
+      "where_published": "In FoSSaCs 2025: Foundations of Software Science and Computation Structures",
+      "pdf_url": "pdfs/2025-fossacs-idempotent-resources.pdf",
+      "other_urls": [
+      ]
+    },
+    {
+      "title": "Inductive Predicates via Least Fixpoints in Higher-Order Separation Logic",
+      "authors": [
+        "Robbert Krebbers",
+        "Luko van der Maas",
+        "Enrico Tassi"
+      ],
+      "where_published": "In ITP 2025: International Conference on Interactive Theorem Proving",
+      "pdf_url": "pdfs/2025-itp-inductive.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15727403" }
+      ]
+    },
+    {
+      "title": "Logical Relations for Formally Verified Authenticated Data Structures",
+      "authors": [
+        "Simon Oddershede Gregersen",
+        "Chaitanya Agarwal",
+        "Joseph Tassarotti"
+      ],
+      "where_published": "In CCS 2025: ACM SIGSAC Conference on Computer and Communications Security",
+      "pdf_url": "pdfs/2025-ccs-veriauth.pdf",
+      "other_urls": [
+        { "name": "Rocq and OCaml development", "url": "https://github.com/jtassarotti/veri-auth" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15551944" }
+      ]
+    },
+    {
+      "title": "Formal Semantics and Program Logics for a Fragment of OCaml",
+      "authors": [
+	"Remy Seassau",
+	"Irene Yoon",
+	"Jean-Marie Madiot",
+	"François Pottier"
+      ],
+      "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2025-icfp-osiris.pdf",
+      "other_urls": [
+	{ "name": "Rocq development", "url": "https://gitlab.inria.fr/fpottier/osiris" },
+	{ "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.16327523" }
+      ]
+    },
+    {
+      "title": "Modular Reasoning about Error Bounds for Concurrent Probabilistic Programs",
+      "authors": [
+        "Kwing Hei Li",
+        "Alejandro Aguirre",
+        "Simon Oddershede Gregersen",
+        "Philipp G. Haselwarter",
+        "Joseph Tassarotti",
+        "Lars Birkedal"
+      ],
+      "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2025-icfp-coneris.pdf"
+    },
+    {
+      "title": "Reasoning about Weak Isolation Levels in Separation Logic",
+      "authors": [
+        "Anders Alnor Mathiasen",
+        "Léon Gondelman",
+        "Léon Ducruet",
+        "Amin Timany",
+        "Lars Birkedal"
+      ],
+      "where_published": "In ICFP 2025: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2025-icfp-weak-isolations.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/15626657" }
+      ]
+    },
+    {
+      "title": "Modular, Full-System Verification",
+      "authors": [
+        "Gregory Malecha",
+        "Hoang-Hai Dang",
+        "Paolo G. Giarrusso",
+        "Simon Hudon",
+        "Jan-Oliver Kaiser",
+        "David Swasey"
+      ],
+      "where_published": "In HotOS 2025: ACM SIGOPS Workshop in Hot Topics in Operating Systems",
+      "pdf_url": "https://sigops.org/s/conferences/hotos/2025/papers/hotos25-206.pdf",
+      "other_urls": [
+        { "name": "Publisher's site", "url": "https://doi.org/10.1145/3713082.3730387" },
+        { "name": "Artifact", "url": "https://github.com/bluerock-io/fm-releases/tree/main/nova_interface.2024-04-16" }
+      ]
+    },
+    {
+      "title": "Leveraging Immutability to Validate Hazard Pointers for Optimistic Traversals",
+      "authors": [
+        "Janggun Lee",
+        "Jeonghyeon Kim",
+        "Jeehoon Kang"
+      ],
+      "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2025-pldi-hp-revisited.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/kaist-cp/smr-verification" },
+        { "name": "Rust development", "url": "https://github.com/kaist-cp/smr-benchmark" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15183251" }
+      ]
+    },
+    {
+      "title": "Verifying General-Purpose RCU for Reclamation in Relaxed Memory Separation Logic",
+      "authors": [
+        "Jaehwang Jung",
+        "Sunho Park",
+        "Janggun Lee",
+        "Jeho Yeon",
+        "Jeehoon Kang"
+      ],
+      "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2025-pldi-weak-smr.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic/tree/pldi25" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15167032" }
+      ],
+      "awards": [
+        "PLDI 2025 Distinguished Paper Award"
+      ]
+    },
+    {
+      "title": "Verifying Lock-Free Traversals in Relaxed Memory Separation Logic",
+      "authors": [
+        "Sunho Park",
+        "Jaehwang Jung",
+        "Janggun Lee",
+        "Jeehoon Kang"
+      ],
+      "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2025-pldi-weak-reachability.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic/tree/pldi25" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15004020" }
+      ]
+    },
+    {
+      "title": "Destabilizing Iris",
+      "authors": [
+        "Simon Spies",
+	"Niklas Mück",
+	"Haoyi Zeng",
+	"Michael Sammler",
+	"Andrea Lattuada",
+	"Peter Müller",
+	"Derek Dreyer"
+      ],
+      "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2025-pldi-daenerys.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plv.mpi-sws.org/iris-daenerys/" }
+      ],
+      "awards": [
+        "PLDI 2025 Distinguished Paper Award"
+      ]
+    },
+    {
+      "title": "Tree Borrows",
+      "authors": [
+	"Neven Villani",
+	"Johannes Hostert",
+	"Derek Dreyer",
+	"Ralf Jung"
+      ],
+      "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2025-pldi-treeborrows.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plf.inf.ethz.ch/research/pldi25-tree-borrows.html" }
+      ],
+      "awards": [
+        "PLDI 2025 Distinguished Paper Award"
+      ]
+    },
+    {
+      "title": "RefinedProsa: Connecting Response-Time Analysis with C Verification for Interrupt-Free Schedulers",
+      "authors": [
+	"Kimaya Bedarkar",
+	"Laila Elbeheiry",
+	"Michael Sammler",
+	"Lennard Gäher",
+	"Björn Brandenburg",
+	"Derek Dreyer",
+	"Deepak Garg"
+      ],
+      "where_published": "In PLDI 2025: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2025-pldi-refinedprosa.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plv.mpi-sws.org/refinedprosa/" }
+      ]
+    },
+    {
+      "title": "Solving Guarded Domain Equations in Presheaves Over Ordinals and Mechanizing It",
+      "authors": [
+        "Sergei Stepanenko",
+        "Amin Timany"
+      ],
+      "where_published": "In FSCD 2025: International Conference on Formal Structures for Computation and Deduction",
+      "pdf_url": "pdfs/2025-fscd-guarded-dom.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.15406039" }
+      ]
+    },
+    {
+      "title": "Lilo: A Higher-Order, Relational Concurrent Separation Logic for Liveness",
+      "authors": [
+        "Dongjae Lee",
+        "Janggun Lee",
+        "Taeyoung Yoon",
+        "Minki Cho",
+        "Jeehoon Kang",
+        "Chung-Kil Hur"
+      ],
+      "where_published": "In OOPSLA 2025: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2025-oopsla-lilo.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/14927742" }
+      ]
+    },
+    {
+      "title": "Modal Abstractions for Virtualizing Memory Addresses",
+      "authors": [
+        "Ismail Kuru",
+        "Colin S. Gordon"
+      ],
+      "where_published": "In OOPSLA 2025: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "https://csgordon.github.io//publications/oopsla25/oopsla25.pdf"
+    },
+    {
+      "title": "Will it Fit? Verifying Heap Space Bounds of Concurrent Programs under Garbage Collection",
+      "authors":  [ "Alexandre Moine", "Arthur Charguéraud", "François Pottier" ],
+      "where_published": "In TOPLAS 2025: ACM Transactions on Programming Languages and Systems",
+      "pdf_url": "pdfs/2025-toplas-willitfit.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/nobrakal/irisfit" }
+      ]
+    },
+    {
+      "title": "Context-Dependent Effects in Guarded Interaction Trees",
+      "authors": ["Sergei Stepanenko", "Emma Nardino", "Dan Frumin", "Amin Timany", "Lars Birkedal"],
+      "where_published": "In ESOP 2025: European Symposium on Programming",
+      "pdf_url": "pdfs/2025-esop-gitrees.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/logsem/gitrees" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.14623649" }
+      ]
+    },
+    {
+      "title": "The Nextgen Modality: A Modality for Non-Frame-Preserving Updates in Separation Logic",
+      "authors": [
+	"Simon Friis Vindum",
+        "Aïna Linn Georges",
+        "Lars Birkedal"
+      ],
+      "where_published": "In CPP 2025: ACM SIGPLAN Conference on Certified Programs and Proofs",
+      "pdf_url": "pdfs/2025-cpp-nextgen.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://github.com/logsem/iris-nextgen" }
+      ],
+      "awards": [
+        "CPP 2025 Distinguished Paper Award"
+      ]
+    },
+    {
+      "title": "Tail Modulo Cons, OCaml, and Relational Separation Logic",
+      "authors": [
+        "Clément Allain",
+        "Frédéric Bour",
+        "Basile Clément",
+        "François Pottier",
+        "Gabriel Scherer"
+      ],
+      "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2025-popl-tmc.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/clef-men/camlcert/tree/popl2025" }
+      ]
+    },
+    {
+      "title": "Program Logics à la Carte",
+      "authors": [
+        "Max Vistrup", "Michael Sammler", "Ralf Jung"
+      ],
+      "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "https://research.ralfj.de/papers/2025-popl-itree-program-logic.pdf",
+      "other_urls": [
+        { "name": "website", "url": "https://plf.inf.ethz.ch/research/popl25-itree-program-logic.html" }
+      ]
+    },
+    {
+      "title": "Approximate Relational Reasoning for Higher-Order Probabilistic Programs",
+      "authors": [
+        "Philipp G. Haselwarter",
+        "Kwing Hei Li",
+        "Alejandro Aguirre",
+        "Simon Oddershede Gregersen",
+        "Joseph Tassarotti",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2025-popl-approxis.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.13939302" }
+      ]
+    },
+    {
+      "title": "Data Race Freedom à la Mode",
+      "authors": [
+	"Aïna Linn Georges",
+	"Benjamin Peters",
+	"Laila Elbeheiry",
+	"Leo White",
+	"Stephen Dolan",
+	"Richard A. Eisenberg",
+	"Chris Casinghino",
+	"François Pottier",
+	"Derek Dreyer"
+      ],
+      "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2025-popl-drfcaml.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.13933463" }
+      ],
+      "awards": [
+        "POPL 2025 Distinguished Paper Award"
+      ]
+    },
+    {
+      "title": "Affect: An Affine Type and Effect System",
+      "authors": [
+        "Orpheas van Rooij",
+        "Robbert Krebbers",
+      ],
+      "where_published": "In POPL 2025: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2025-popl-affect.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.14198790" }
+      ],
+      "awards": [
+        "POPL 2025 Distinguished Paper Award"
+      ]
+    },
     {
       "title": "A Logical Approach to Type Soundness",
-        "authors": [
-            "Amin Timany", "Robbert Krebbers", "Derek Dreyer", "Lars Birkedal"
+      "authors": [
+        "Amin Timany", "Robbert Krebbers", "Derek Dreyer", "Lars Birkedal"
       ],
       "where_published": "In JACM 2024: Journal of the ACM, Volume 71, Issue 6, Article No. 40, November 2024",
       "pdf_url": "pdfs/2024-jacm-logical-type-soundness-final.pdf",
@@ -667,26 +667,26 @@
         { "name": "JACM webpage", "url": "https://dl.acm.org/doi/10.1145/3676954" },
       ]
     },
-      {
-        "title": "Iris-MSWasm: Elucidating and Mechanising the Security Invariants of Memory-Safe WebAssembly",
-          "authors": [
-              "Maxime Legoupil",
-              "June Rousseau",
-              "Aina Linn Georges",
-              "Jean Pichon-Pharabod",
-              "Lars Birkedal"
+    {
+      "title": "Iris-MSWasm: Elucidating and Mechanising the Security Invariants of Memory-Safe WebAssembly",
+      "authors": [
+        "Maxime Legoupil",
+        "June Rousseau",
+        "Aina Linn Georges",
+        "Jean Pichon-Pharabod",
+        "Lars Birkedal"
       ],
       "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2024-oopsla-iris-mswasm.pdf",
       "other_urls": [
         { "name": "Artifact", "url": " https://doi.org/10.5281/zenodo.13383121" },
       ]
-      },
-      {
-        "title": "Verified Lock-Free Session Channels with Linking",
-        "authors": [
-            "Thomas Somers",
-            "Robbert Krebbers"
+    },
+    {
+      "title": "Verified Lock-Free Session Channels with Linking",
+      "authors": [
+        "Thomas Somers",
+        "Robbert Krebbers"
       ],
       "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2024-oopsla-linking-actris.pdf",
@@ -694,13 +694,13 @@
         { "name": "Artifact", "url": "https://zenodo.org/records/13599952" },
         { "name": "website", "url": "https://iris-project.org/actris" },
       ]
-      },
-      {
-        "title": "Multris: Functional Verification of Multiparty Message Passing in Separation Logic",
-        "authors": [
-            "Jonas Kastberg Hinrichsen",
-            "Jules Jacobs",
-            "Robbert Krebbers"
+    },
+    {
+      "title": "Multris: Functional Verification of Multiparty Message Passing in Separation Logic",
+      "authors": [
+        "Jonas Kastberg Hinrichsen",
+        "Jules Jacobs",
+        "Robbert Krebbers"
       ],
       "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2024-oopsla-multris.pdf",
@@ -708,17 +708,17 @@
         { "name": "Artifact", "url": "https://zenodo.org/records/13380561" },
         { "name": "website", "url": "https://iris-project.org/actris" },
       ]
-      },
-      {
-        "title": "Tachis: Higher-Order Separation Logic with Credits for Expected Costs",
-        "authors": [
-            "Philipp G. Haselwarter",
-            "Kwing Hei Li",
-            "Markus de Medeiros",
-            "Simon Oddershede Gregersen",
-            "Alejandro Aguirre",
-            "Joseph Tassarotti",
-            "Lars Birkedal"
+    },
+    {
+      "title": "Tachis: Higher-Order Separation Logic with Credits for Expected Costs",
+      "authors": [
+        "Philipp G. Haselwarter",
+        "Kwing Hei Li",
+        "Markus de Medeiros",
+        "Simon Oddershede Gregersen",
+        "Alejandro Aguirre",
+        "Joseph Tassarotti",
+        "Lars Birkedal"
       ],
       "where_published": "In OOPSLA 2024: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "pdfs/2024-oopsla-tachis.pdf",
@@ -726,44 +726,44 @@
         { "name": "Artifact", "url": "https://zenodo.org/records/12659527" },
         { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
       ]
-      },
-      {
-        "title": "Refinement Composition Logic",
-        "authors": [
-            "Youngju Song",
-            "Dongjae Lee"
-        ],
-        "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
-        "pdf_url": "pdfs/2024-icfp-rcl.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/CCR-project/RCL" }
-        ]
-      },
-      {
-        "title": "Snapshottable Stores",
-        "authors": [
-          "Clément Allain",
-          "Basile Clément",
-          "Alexandre Moine",
-          "Gabriel Scherer"
-        ],
-        "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
-        "pdf_url": "pdfs/2024-icfp-snapshottable-stores.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/blob/icfp2024/theories/persistent/pstore_2.v" }
-        ],
-        "awards": [
-          "ICFP 2024 Distinguished Paper Award"
-        ]
-      },
-      {
-        "title": "Almost-Sure Termination by Guarded Refinement",
-        "authors": [
-            "Simon Oddershede Gregersen",
-            "Alejandro Aguirre",
-            "Philipp G. Haselwarter",
-            "Joseph Tassarotti",
-            "Lars Birkedal"
+    },
+    {
+      "title": "Refinement Composition Logic",
+      "authors": [
+        "Youngju Song",
+        "Dongjae Lee"
+      ],
+      "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2024-icfp-rcl.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/CCR-project/RCL" }
+      ]
+    },
+    {
+      "title": "Snapshottable Stores",
+      "authors": [
+        "Clément Allain",
+        "Basile Clément",
+        "Alexandre Moine",
+        "Gabriel Scherer"
+      ],
+      "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2024-icfp-snapshottable-stores.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/clef-men/zoo/blob/icfp2024/theories/persistent/pstore_2.v" }
+      ],
+      "awards": [
+        "ICFP 2024 Distinguished Paper Award"
+      ]
+    },
+    {
+      "title": "Almost-Sure Termination by Guarded Refinement",
+      "authors": [
+        "Simon Oddershede Gregersen",
+        "Alejandro Aguirre",
+        "Philipp G. Haselwarter",
+        "Joseph Tassarotti",
+        "Lars Birkedal"
       ],
       "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "pdfs/2024-icfp-caliper.pdf",
@@ -771,17 +771,17 @@
         { "name": "Artifact", "url": "https://zenodo.org/records/11481248" },
         { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
       ]
-      },
-      {
-        "title": "Error Credits: Resourceful Reasoning about Error Bounds for Higher-Order Probabilistic Programs",
-        "authors": [
-            "Alejandro Aguirre",
-            "Philipp G. Haselwarter",
-            "Markus de Medeiros",
-            "Kwing Hei Li",
-            "Simon Oddershede Gregersen",
-            "Joseph Tassarotti",
-            "Lars Birkedal"
+    },
+    {
+      "title": "Error Credits: Resourceful Reasoning about Error Bounds for Higher-Order Probabilistic Programs",
+      "authors": [
+        "Alejandro Aguirre",
+        "Philipp G. Haselwarter",
+        "Markus de Medeiros",
+        "Kwing Hei Li",
+        "Simon Oddershede Gregersen",
+        "Joseph Tassarotti",
+        "Lars Birkedal"
       ],
       "where_published": "In ICFP 2024: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "pdfs/2024-icfp-eris.pdf",
@@ -791,214 +791,214 @@
       ],
       "awards": [ "ICFP 2024 Distinguished Paper Award" ],
     },
-      {
-        "title": "The Functional Essence of Imperative Binary Search Trees",
-        "authors": [
-	    "Anton Lorenzen",
-	    "Daan Leijen",
-	    "Wouter Swierstra",
-	    "Sam Lindley"
-        ],
-        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2024-pldi-functional-essence.pdf",
-      },
-      {
-        "title": "Quiver: Guided Abductive Inference of Separation Logic Specifications in Coq",
-        "authors": [
-	    "Simon Spies",
-	    "Lennard Gäher",
-	    "Michael Sammler",
-	    "Derek Dreyer"
-        ],
-        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2024-pldi-quiver.pdf",
-        "other_urls": [
-	  { "name": "website", "url": "https://plv.mpi-sws.org/quiver" }
-        ],
-          "awards": [ "PLDI 2024 Distinguished Artifact Award" ]
-      },
-      {
-        "title": "RefinedRust: A Type System for High-Assurance Verification of Rust Programs",
-        "authors": [
-	    "Lennard Gäher",
-	    "Michael Sammler",
-	    "Ralf Jung",
-	    "Robbert Krebbers",
-	    "Derek Dreyer"
-        ],
-        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2024-pldi-refinedrust.pdf",
-        "other_urls": [
-	  { "name": "website", "url": "https://plv.mpi-sws.org/refinedrust" }
-        ]
-      },
-      {
-        "title": "A Proof Recipe for Linearizability in Relaxed Memory Separation Logic",
-        "authors": [
-          "Sunho Park",
-          "Jaewoo Kim",
-          "Ike Mulder",
-          "Jaehwang Jung",
-          "Janggun Lee",
-          "Robbert Krebbers",
-          "Jeehoon Kang"
-        ],
-        "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
-        "pdf_url": "pdfs/2024-pldi-proof-recipe.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10933398" }
-        ]
-      },
-      {
-        "title": "Unification for Subformula Linking under Quantifiers",
-        "authors": [
-          "Ike Mulder",
-          "Robbert Krebbers"
-        ],
-        "where_published": "In CPP 2024: ACM SIGPLAN International Conference on Certified Programs and Proofs",
-        "other_urls": [
-          { "name": "[preprint] .pdf", "url": "https://ikemulder.nl/media/papers/cpp24-subformula-linking-preprint.pdf" },
-          { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10364816" }
-        ]
-      },
-      {
-          "title": "Thunks and Debits in Separation Logic with Time Credits",
-          "authors": [
-              "François Pottier",
-              "Armaël Guéneau",
-              "Jacques-Henri Jourdan",
-              "Glen Mével",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-pottier-gueneau-jourdan-mevel-thunks-debits.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://gitlab.inria.fr/cambium/iris-time-proofs" },
-              { "name": "Artifact", "url": "https://zenodo.org/records/10023424" }
-          ]
-      },
-      {
-          "title": "An Iris Instance for Verifying CompCert C Programs",
-          "authors": [
-              "William Mansky",
-              "Ke Du",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-vst-on-iris.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://github.com/PrincetonUniversity/VST/tree/vst_on_iris" },
-              { "name": "Artifact", "url": "https://zenodo.org/records/8423865" }
-          ]
-      },
-      {
-          "title": "Deadlock-Free Separation Logic: Linearity Yields Progress for Dependent Higher-Order Message Passing",
-          "authors": [
-              "Jules Jacobs",
-              "Jonas Kastberg Hinrichsen",
-              "Robbert Krebbers",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-dlfactris.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://github.com/julesjacobs/dlf-actris" },
-              { "name": "Artifact", "url": "https://apndx.org/pub/icnp/" },
-	      { "name": "website", "url": "https://iris-project.org/actris" }
-          ]
-      },
-      {
-          "title": "DisLog: A Separation Logic for Disentanglement",
-          "authors": [
-              "Alexandre Moine",
-              "Sam Westrick",
-              "Stephanie Balzer",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-dislog.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://gitlab.inria.fr/amoine/dislog" },
-              { "name": "Artifact", "url": "https://zenodo.org/records/8414566" },
-          ]
-      },
-      {
-          "title": "The Logical Essence of Well-Bracketed Control Flow",
-          "authors": [
-              "Amin Timany",
-              "Armaël Gueneau",
-              "Lars Birkedal",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-wbcf.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://github.com/logsem/well-bracketed-logic" },
-          ]
-      },
-      {
-          "title": "The Essence of Generalized Algebraic Data Types",
-          "authors": [
-              "Filip Sieczkowski",
-              "Sergei Stepanenko",
-              "Jonathan Sterling",
-              "Lars Birkedal",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-gadt.pdf",
-          "other_urls": [
-              { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10040534" },
-          ]
-      },
-      {
-          "title": "Modular Denotational Semantics for Effects with Guarded Interaction Trees",
-          "authors": [
-              "Dan Frumin",
-              "Amin Timany",
-              "Lars Birkedal",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-gitrees.pdf",
-          "other_urls": [
-              { "name": "Rocq development", "url": "https://github.com/logsem/gitrees/" },
-              { "name": "Artifact", "url": "https://zenodo.org/records/10124427" },
+    {
+      "title": "The Functional Essence of Imperative Binary Search Trees",
+      "authors": [
+	"Anton Lorenzen",
+	"Daan Leijen",
+	"Wouter Swierstra",
+	"Sam Lindley"
+      ],
+      "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2024-pldi-functional-essence.pdf",
+    },
+    {
+      "title": "Quiver: Guided Abductive Inference of Separation Logic Specifications in Coq",
+      "authors": [
+	"Simon Spies",
+	"Lennard Gäher",
+	"Michael Sammler",
+	"Derek Dreyer"
+      ],
+      "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2024-pldi-quiver.pdf",
+      "other_urls": [
+	{ "name": "website", "url": "https://plv.mpi-sws.org/quiver" }
+      ],
+      "awards": [ "PLDI 2024 Distinguished Artifact Award" ]
+    },
+    {
+      "title": "RefinedRust: A Type System for High-Assurance Verification of Rust Programs",
+      "authors": [
+	"Lennard Gäher",
+	"Michael Sammler",
+	"Ralf Jung",
+	"Robbert Krebbers",
+	"Derek Dreyer"
+      ],
+      "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2024-pldi-refinedrust.pdf",
+      "other_urls": [
+	{ "name": "website", "url": "https://plv.mpi-sws.org/refinedrust" }
+      ]
+    },
+    {
+      "title": "A Proof Recipe for Linearizability in Relaxed Memory Separation Logic",
+      "authors": [
+        "Sunho Park",
+        "Jaewoo Kim",
+        "Ike Mulder",
+        "Jaehwang Jung",
+        "Janggun Lee",
+        "Robbert Krebbers",
+        "Jeehoon Kang"
+      ],
+      "where_published": "In PLDI 2024: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+      "pdf_url": "pdfs/2024-pldi-proof-recipe.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/kaist-cp/relaxed-memory-separation-logic" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10933398" }
+      ]
+    },
+    {
+      "title": "Unification for Subformula Linking under Quantifiers",
+      "authors": [
+        "Ike Mulder",
+        "Robbert Krebbers"
+      ],
+      "where_published": "In CPP 2024: ACM SIGPLAN International Conference on Certified Programs and Proofs",
+      "other_urls": [
+        { "name": "[preprint] .pdf", "url": "https://ikemulder.nl/media/papers/cpp24-subformula-linking-preprint.pdf" },
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10364816" }
+      ]
+    },
+    {
+      "title": "Thunks and Debits in Separation Logic with Time Credits",
+      "authors": [
+        "François Pottier",
+        "Armaël Guéneau",
+        "Jacques-Henri Jourdan",
+        "Glen Mével",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-pottier-gueneau-jourdan-mevel-thunks-debits.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/cambium/iris-time-proofs" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/10023424" }
+      ]
+    },
+    {
+      "title": "An Iris Instance for Verifying CompCert C Programs",
+      "authors": [
+        "William Mansky",
+        "Ke Du",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-vst-on-iris.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/PrincetonUniversity/VST/tree/vst_on_iris" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/8423865" }
+      ]
+    },
+    {
+      "title": "Deadlock-Free Separation Logic: Linearity Yields Progress for Dependent Higher-Order Message Passing",
+      "authors": [
+        "Jules Jacobs",
+        "Jonas Kastberg Hinrichsen",
+        "Robbert Krebbers",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-dlfactris.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/julesjacobs/dlf-actris" },
+        { "name": "Artifact", "url": "https://apndx.org/pub/icnp/" },
+	{ "name": "website", "url": "https://iris-project.org/actris" }
+      ]
+    },
+    {
+      "title": "DisLog: A Separation Logic for Disentanglement",
+      "authors": [
+        "Alexandre Moine",
+        "Sam Westrick",
+        "Stephanie Balzer",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-dislog.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://gitlab.inria.fr/amoine/dislog" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/8414566" },
+      ]
+    },
+    {
+      "title": "The Logical Essence of Well-Bracketed Control Flow",
+      "authors": [
+        "Amin Timany",
+        "Armaël Gueneau",
+        "Lars Birkedal",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-wbcf.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/logsem/well-bracketed-logic" },
+      ]
+    },
+    {
+      "title": "The Essence of Generalized Algebraic Data Types",
+      "authors": [
+        "Filip Sieczkowski",
+        "Sergei Stepanenko",
+        "Jonathan Sterling",
+        "Lars Birkedal",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-gadt.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.10040534" },
+      ]
+    },
+    {
+      "title": "Modular Denotational Semantics for Effects with Guarded Interaction Trees",
+      "authors": [
+        "Dan Frumin",
+        "Amin Timany",
+        "Lars Birkedal",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-gitrees.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/logsem/gitrees/" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/10124427" },
 
-          ],
-          "awards": [ "POPL 2024 Distinguished Paper Award" ],
-      },
-      {
-          "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logic",
-          "authors": [
-              "Simon Oddershede Gregersen",
-              "Alejandro Aguirre",
-              "Philipp G. Haselwarter",
-              "Joseph Tassarotti",
-              "Lars Birkedal",
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-clutch.pdf",
-          "other_urls": [
-              { "name": "Extended version", "url": "https://arxiv.org/abs/2301.10061" },
-              { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
-              { "name": "Artifact", "url": "https://zenodo.org/records/8424490" },
-          ]
-      },
-      {
-          "title": "Trillium: Higher-Order Concurrent and Distributed Separation Logic for Intensional Refinement",
-          "authors": [
-              "Amin Timany",
-              "Simon Oddershede Gregersen",
-              "Léo Stefanesco",
-	      "Jonas Kastberg Hinrichsen",
-              "Léon Gondelman",
-              "Abel Nieto",
-              "Lars Birkedal"
-          ],
-          "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
-          "pdf_url": "pdfs/2024-popl-trillium.pdf",
-          "other_urls": [
-              { "name": "Extended version", "url": "https://arxiv.org/pdf/2109.07863" },
-              { "name": "Rocq development", "url": "https://github.com/logsem/trillium" },
-              { "name": "Artifact", "url": "https://zenodo.org/records/10100892" },
-          ]
-      },
-      {
+      ],
+      "awards": [ "POPL 2024 Distinguished Paper Award" ],
+    },
+    {
+      "title": "Asynchronous Probabilistic Couplings in Higher-Order Separation Logic",
+      "authors": [
+        "Simon Oddershede Gregersen",
+        "Alejandro Aguirre",
+        "Philipp G. Haselwarter",
+        "Joseph Tassarotti",
+        "Lars Birkedal",
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-clutch.pdf",
+      "other_urls": [
+        { "name": "Extended version", "url": "https://arxiv.org/abs/2301.10061" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/8424490" },
+      ]
+    },
+    {
+      "title": "Trillium: Higher-Order Concurrent and Distributed Separation Logic for Intensional Refinement",
+      "authors": [
+        "Amin Timany",
+        "Simon Oddershede Gregersen",
+        "Léo Stefanesco",
+	"Jonas Kastberg Hinrichsen",
+        "Léon Gondelman",
+        "Abel Nieto",
+        "Lars Birkedal"
+      ],
+      "where_published": "In POPL 2024: ACM SIGPLAN Symposium on Principles of Programming Languages",
+      "pdf_url": "pdfs/2024-popl-trillium.pdf",
+      "other_urls": [
+        { "name": "Extended version", "url": "https://arxiv.org/pdf/2109.07863" },
+        { "name": "Rocq development", "url": "https://github.com/logsem/trillium" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/10100892" },
+      ]
+    },
+    {
       "title": "An axiomatic basis for computer programming on the relaxed Arm-A architecture: The AxSL logic",
       "authors": [
         "Angus Hammond",
@@ -1017,14 +1017,14 @@
     },
     {
       "title": "Cerise: Program Verification on a Capability Machine in the Presence of Untrusted Code",
-        "authors": [
-            "Aïna Linn Georges", "Armaël Guéneau", "Thomas Van Strydonck", "Amin Timany", "Alix Trieu", "Dominique Devriese", "Lars Birkedal",
+      "authors": [
+        "Aïna Linn Georges", "Armaël Guéneau", "Thomas Van Strydonck", "Amin Timany", "Alix Trieu", "Dominique Devriese", "Lars Birkedal",
       ],
       "where_published": "In JACM 2023: Journal of the ACM, Volume 71, Issue 1, Article No. 3, February 2024",
       "pdf_url": "pdfs/2023-jacm-cerise.pdf",
-        "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/logsem/cerise" },
-          { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3623510" },
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/logsem/cerise" },
+        { "name": "publisher's site", "url": "https://dl.acm.org/doi/10.1145/3623510" },
       ]
     },
     {
@@ -1041,10 +1041,10 @@
     {
       "title": "Leaf: Modularity for Temporary Sharing in Separation Logic",
       "authors": [
-          "Travis Hance",
-          "Jon Howell",
-          "Oded Padon",
-          "Bryan Parno",
+        "Travis Hance",
+        "Jon Howell",
+        "Oded Padon",
+        "Bryan Parno",
       ],
       "where_published": "In OOPSLA 2023: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "other_urls": [
@@ -1227,12 +1227,12 @@
     {
       "title": "VMSL: A Separation Logic for Mechanised Robust Safety of Virtual Machines Communicating over FF-A",
       "authors": [
-          "Zongyuan Liu",
-          "Sergei Stepanenko",
-          "Jean Pichon-Pharabod",
-          "Amin Timany",
-          "Aslan Askarov",
-          "Lars Birkedal"
+        "Zongyuan Liu",
+        "Sergei Stepanenko",
+        "Jean Pichon-Pharabod",
+        "Amin Timany",
+        "Aslan Askarov",
+        "Lars Birkedal"
       ],
       "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2023-pldi-hypervisor-vmsl.pdf",
@@ -1243,19 +1243,19 @@
     {
       "title": "Iris-Wasm: Robust and Modular Verification of WebAssembly Programs",
       "authors": [
-          "Xiaojia Rao",
-          "Aina Linn Georges",
-          "Maxime Legoupil",
-          "Conrad Watt",
-          "Jean Pichon-Pharabod",
-          "Philippa Gardner",
-          "Lars Birkedal"
+        "Xiaojia Rao",
+        "Aina Linn Georges",
+        "Maxime Legoupil",
+        "Conrad Watt",
+        "Jean Pichon-Pharabod",
+        "Philippa Gardner",
+        "Lars Birkedal"
       ],
       "where_published": "In PLDI 2023: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2023-pldi-iris-wasm.pdf",
       "other_urls": [
-          { "name": "Rocq development", "url": "https://github.com/WasmCert/WasmCert-Coq/tree/iris-wasm-native" },
-          { "name": "Artifact", "url": "https://zenodo.org/record/7808708#.ZF4mLexBxqs" }
+        { "name": "Rocq development", "url": "https://github.com/WasmCert/WasmCert-Coq/tree/iris-wasm-native" },
+        { "name": "Artifact", "url": "https://zenodo.org/record/7808708#.ZF4mLexBxqs" }
       ]
     },
     {
@@ -1421,20 +1421,20 @@
       "where_published": "In ICFP 2022: ACM SIGPLAN International Conference on Functional Programming",
       "pdf_url": "https://plv.mpi-sws.org/later-credits/paper-later-credits.pdf",
       "other_urls": [
-	      { "name": "Website (with Rocq development)", "url": "https://plv.mpi-sws.org/later-credits/" },
+	{ "name": "Website (with Rocq development)", "url": "https://plv.mpi-sws.org/later-credits/" },
         { "name": "Artifact and appendix", "url": "https://zenodo.org/record/6702804#.Ytqb1h1BzB9" }
       ]
     },
     {
       "title": "Compass: Strong and Compositional Library Specifications in Relaxed Memory Separation Logic",
       "authors": [
-	  "Hoang-Hai Dang",
-	  "Jaehwang Jung",
-	  "Jaemin Choi",
-	  "Duc-Than Nguyen",
-	  "William Mansky",
-	  "Jeehoon Kang",
-	  "Derek Dreyer"
+	"Hoang-Hai Dang",
+	"Jaehwang Jung",
+	"Jaemin Choi",
+	"Duc-Than Nguyen",
+	"William Mansky",
+	"Jeehoon Kang",
+	"Derek Dreyer"
       ],
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/compass/paper.pdf",
@@ -1446,10 +1446,10 @@
     {
       "title": "RustHornBelt: A Semantic Foundation for Functional Verification of Rust Programs with Unsafe Code",
       "authors": [
-	  "Yusuke Matsushita",
-	  "Xavier Denis",
-	  "Jacques-Henri Jourdan",
-	  "Derek Dreyer"
+	"Yusuke Matsushita",
+	"Xavier Denis",
+	"Jacques-Henri Jourdan",
+	"Derek Dreyer"
       ],
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "awards": [ "PLDI 2022 Distinguished Paper Award" ],
@@ -1477,14 +1477,14 @@
     {
       "title": "Islaris: Verification of Machine Code Against Authoritative ISA Semantics",
       "authors": [
-	  "Michael Sammler",
-	  "Angus Hammond",
-	  "Rodolphe Lepigre",
-	  "Brian Campbell",
-	  "Jean Pichon-Pharabod",
-	  "Derek Dreyer",
-	  "Deepak Garg",
-	  "Peter Sewell"
+	"Michael Sammler",
+	"Angus Hammond",
+	"Rodolphe Lepigre",
+	"Brian Campbell",
+	"Jean Pichon-Pharabod",
+	"Derek Dreyer",
+	"Deepak Garg",
+	"Peter Sewell"
       ],
       "where_published": "In PLDI 2022: ACM SIGPLAN Conference on Programming Language Design and Implementation",
       "pdf_url": "https://www.mpi-sws.org/~dreyer/papers/islaris/paper.pdf",
@@ -1596,8 +1596,8 @@
     {
       "title": "A Separation Logic for Heap Space under Garbage Collection",
       "authors": [
-	  "Jean-Marie Madiot",
-	  "François Pottier"
+	"Jean-Marie Madiot",
+	"François Pottier"
       ],
       "where_published": "In POPL 2022: ACM SIGPLAN Symposium on Principles of Programming Languages",
       "pdf_url": "https://cambium.inria.fr/~fpottier/publis/madiot-pottier-diamonds-2022.pdf",
@@ -1609,10 +1609,10 @@
     {
       "title": "Verifying Concurrent Multicopy Search Structures",
       "authors": [
-          "Nisarg Patel",
-          "Siddharth Krishna",
-          "Dennis Shasha",
-          "Thomas Wies"
+        "Nisarg Patel",
+        "Siddharth Krishna",
+        "Dennis Shasha",
+        "Thomas Wies"
       ],
       "where_published": "In OOPSLA 2021: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
       "pdf_url": "https://cs.nyu.edu/~wies/publ/multicopy-oopsla2021.pdf"
@@ -1665,8 +1665,8 @@
         "Kasper Svendsen",
         "Nikos Tzevelekos"
       ],
-        "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
-        "awards": [ "ICFP 2021 Distinguished Paper Award" ],
+      "where_published": "In ICFP 2021: ACM SIGPLAN International Conference on Functional Programming",
+      "awards": [ "ICFP 2021 Distinguished Paper Award" ],
       "pdf_url": "https://iris-project.org/pdfs/2021-icfp-intensional-final.pdf",
       "other_urls": [
         { "name": "Rocq development", "url": "https://github.com/logsem/free-theorems-sl" },
@@ -1720,7 +1720,7 @@
       "other_urls": [
         { "name": "website", "url": "https://plv.mpi-sws.org/refinedc/" },
         { "name": "Rocq development", "url": "https://gitlab.mpi-sws.org/iris/refinedc" },
-	  { "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.4646747" }
+	{ "name": "Artifact and appendix", "url": "https://doi.org/10.5281/zenodo.4646747" }
       ]
     },
     {
@@ -1865,7 +1865,7 @@
       ],
       "where_published": "In CPP 2021: ACM SIGPLAN International Conference on Certified Programs and Proofs",
       "other_urls": [
-	  { "name": "[amended after publication] .pdf", "url": "pdfs/2021-CPP-monotone-final.pdf" },
+	{ "name": "[amended after publication] .pdf", "url": "pdfs/2021-CPP-monotone-final.pdf" },
         { "name": "Rocq development", "url": "https://github.com/amintimany/monotone" }
       ]
     },
@@ -2058,9 +2058,9 @@
     {
       "title": "Specifying I/O using abstract nested hoare triples in separation logic",
       "authors": [
-          "Willem Penninckx",
-          "Amin Timany",
-          "Bart Jacobs"
+        "Willem Penninckx",
+        "Amin Timany",
+        "Bart Jacobs"
       ],
       "where_published": "In FTfJP '19: Workshop on Formal Techniques for Java-like Programs",
       "pdf_url": "https://people.cs.kuleuven.be/~bart.jacobs/ftfjp19.pdf"
@@ -2375,7 +2375,7 @@
       ],
       "awards": [ "2025 Most Influential POPL Paper Award",
 		  "2023 Alonzo Church Award for Outstanding Contributions to Logic and Computation",
-		   ]
+		]
     },
   ],
   "phd_dissertations": [
@@ -2388,7 +2388,7 @@
     {
       "title": "Modal Abstractions for Operating System Kernels",
       "authors": ["Ismail Kuru"],
-        "description": "Drexel University, Aug 2025",
+      "description": "Drexel University, Aug 2025",
       "pdf_url": "pdfs/2025-phd-kuru.pdf"
     },
     {
@@ -2448,16 +2448,16 @@
       "pdf_url": "pdfs/2023-phd-gratzer.pdf"
     },
     {
-        "title": "Conflict-free Replicated Data Types have Abstract Data Types",
+      "title": "Conflict-free Replicated Data Types have Abstract Data Types",
       "authors": ["Abel Nieto"],
       "description": "Aarhus University, June 2023",
-        "pdf_url": "pdfs/2023-phd-nieto.pdf"
+      "pdf_url": "pdfs/2023-phd-nieto.pdf"
     },
     {
       "title": "Designing and Proving Robust Safety of Efficient Capability Machine Programs",
       "authors": ["Aina Linn Georges"],
       "description": "Aarhus University, June 2023",
-        "pdf_url": "pdfs/2023-phd-georges.pdf"
+      "pdf_url": "pdfs/2023-phd-georges.pdf"
     },
     {
       "title": "Higher-Order Separation Logic for Distributed Systems and Security",
@@ -2538,7 +2538,7 @@
   "draft_papers": [
   ],
   "others": [
-	{
+    {
       "title": "Semantic Completeness of Higher-Order Probabilistic Separation Logics",
       "authors": [
         "Puming Liu"
