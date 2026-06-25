@@ -86,6 +86,21 @@
           { "name": "Rocq artifact", "url": "https://zenodo.org/records/18924289" }
         ]
       },
+	{
+            "title": "Iris-WasmFX: Modular Reasoning for Wasm Stack Switching",
+        "authors": [
+	    "Maxime Legoupil",
+	    "Mathias Pedersen",
+	    "Lars Birkedal",
+	    "Sam Lindley",
+	    "Jean Pichon-Pharabod"
+        ],
+        "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
+        "pdf_url": "pdfs/2026-pldi-iriswasmfx.pdf",
+        "other_urls": [
+            { "name": "Rocq artifact", "url": "https://zenodo.org/records/19912157" } 
+        ]
+      },
       {
         "title": "VerusBelt: A Semantic Foundation for Verus’s Proof-Oriented Extensions to the Rust Type System",
         "authors": [
