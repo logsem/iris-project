@@ -2539,6 +2539,17 @@
   ],
   "others": [
     {
+      "title": "Verifying a Single-Enqueuer Single-Dequeuer Wait-Free Queue in Iris",
+      "authors": [
+        "Freja Marott Crawford"
+      ],
+      "description": "Master's thesis at Aarhus University supervised by Amin Timany, Jun 2026",
+      "pdf_url": "pdfs/2026-msc-thesis-crawford.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/freja-mc/queue/" }
+      ]
+    },
+    {
       "title": "Semantic Completeness of Higher-Order Probabilistic Separation Logics",
       "authors": [
         "Puming Liu"
