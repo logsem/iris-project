@@ -11,6 +11,9 @@
       "pdf_url": "pdfs/2026-ecoop-wfree.pdf",
       "other_urls": [
         { "name": "Rocq artifact", "url": "https://zenodo.org/records/19607892" }
+      ],
+      "awards": [
+        "ECOOP 2026 Distinguished Artifact Award"
       ]
     },
     {
