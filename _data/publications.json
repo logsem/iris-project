@@ -1,6 +1,20 @@
 {
   "publications": [
     {
+      "title": "A Separation Logic for Parallel Time Complexity with Work and Span Credits",
+      "authors": [
+        "Alexandre Moine",
+        "Sam Westrick",
+        "Joseph Tassarotti"
+      ],
+      "where_published": "In ICFP 2026: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2026-icfp-parcas.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/nobrakal/parcas" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/20432258" }
+      ]
+    },
+    {
       "title": "Verifying Wait-Freedom for Concurrent Higher-Order Programs",
       "authors": [
         "Egor Namakonov",
@@ -101,7 +115,7 @@
       "where_published": "In PLDI 2026: ACM SIGPLAN International Conference on Programming Language Design and Implementation",
       "pdf_url": "pdfs/2026-pldi-iriswasmfx.pdf",
       "other_urls": [
-        { "name": "Rocq artifact", "url": "https://zenodo.org/records/19912157" } 
+        { "name": "Rocq artifact", "url": "https://zenodo.org/records/19912157" }
       ]
     },
     {
@@ -118,7 +132,7 @@
         { "name": "Rocq artifact", "url": "https://zenodo.org/records/19613067" }
       ],
       "awards": [
-        "PLDI 2026 Distinguished Paper Award", "PLDI 2026 Distinguished Artifact Award" 
+        "PLDI 2026 Distinguished Paper Award", "PLDI 2026 Distinguished Artifact Award"
       ]
     },
     {
