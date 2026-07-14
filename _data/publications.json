@@ -1,6 +1,23 @@
 {
   "publications": [
     {
+      "title": "Completeness of Iris-Based Program Logics",
+      "authors": [
+        "Johannes Hostert",
+        "Zichen Zhang",
+        "Puming Liu",
+        "Simon Oddershede Gregersen",
+        "Ralf Jung",
+        "Joseph Tassarotti"
+      ],
+      "where_published": "In ICFP 2026: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2026-icfp-completeness.pdf",
+      "other_urls": [
+        { "name": "Rocq development", "url": "https://github.com/nobrakal/parcas" },
+        { "name": "Artifact", "url": "https://zenodo.org/records/20432258" }
+      ]
+    },
+    {
       "title": "A Separation Logic for Parallel Time Complexity with Work and Span Credits",
       "authors": [
         "Alexandre Moine",
