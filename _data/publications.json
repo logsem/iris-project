@@ -1,6 +1,23 @@
 {
   "publications": [
     {
+      "title": "Mode Crossing",
+      "authors": [
+        "Benjamin Peters",
+        "Jules Jacobs",
+        "Diana Kalinichenko",
+        "Liam Stevenson",
+        "Aspen Smith",
+        "Derek Dreyer",
+        "Richard A. Eisenberg"
+      ],
+      "where_published": "In ICFP 2026: ACM SIGPLAN International Conference on Functional Programming",
+      "pdf_url": "pdfs/2026-icfp-modecrossing.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://zenodo.org/records/21129587" }
+      ]
+    },
+    {
       "title": "Completeness of Iris-Based Program Logics",
       "authors": [
         "Johannes Hostert",
