@@ -842,6 +842,16 @@
       "awards": [ "ICFP 2024 Distinguished Paper Award" ],
     },
     {
+      "title": "Verifying Lock-Free Search Structure Templates",
+      "authors": [
+        "Nisarg Patel",
+        "Dennis Shasha",
+        "Thomas Wies",
+      ],
+      "where_published": "In ECOOP 2024: European Conference on Object-Oriented Programming",
+      "pdf_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol313-ecoop2024/LIPIcs.ECOOP.2024.30/LIPIcs.ECOOP.2024.30.pdf",
+    },
+    {
       "title": "The Functional Essence of Imperative Binary Search Trees",
       "authors": [
 	"Anton Lorenzen",
