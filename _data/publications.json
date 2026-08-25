@@ -65,6 +65,22 @@
       ]
     },
     {
+      "title": "Verifying Exact Samplers for Continuous Distributions with a Discrete Program Logic",
+      "authors": [
+        "Markus de Medeiros",
+        "Puming Liu",
+        "Kwing Hei Li",
+        "Alejandro Aguirre",
+        "Lars Birkedal",
+        "Joseph Tassarotti"
+      ],
+      "where_published": "In LICS 2026: ACM/IEEE Symposium on Logic in Computer Science",
+      "pdf_url": "pdfs/2026-lics-cont-eris.pdf",
+      "other_urls": [
+        { "name": "Rocq artifact", "url": "https://zenodo.org/records/20190669" }
+      ]
+    },
+    {
       "title": "Verifying Wait-Freedom for Concurrent Higher-Order Programs",
       "authors": [
         "Egor Namakonov",
@@ -857,6 +873,16 @@
         { "name": "Rocq development", "url": "https://github.com/logsem/clutch" },
       ],
       "awards": [ "ICFP 2024 Distinguished Paper Award" ],
+    },
+    {
+      "title": "Verifying Lock-Free Search Structure Templates",
+      "authors": [
+        "Nisarg Patel",
+        "Dennis Shasha",
+        "Thomas Wies",
+      ],
+      "where_published": "In ECOOP 2024: European Conference on Object-Oriented Programming",
+      "pdf_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol313-ecoop2024/LIPIcs.ECOOP.2024.30/LIPIcs.ECOOP.2024.30.pdf",
     },
     {
       "title": "The Functional Essence of Imperative Binary Search Trees",
