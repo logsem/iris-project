@@ -1,6 +1,23 @@
 {
   "publications": [
     {
+      "title": "Bringing Foundational Verification to Real-World Rust Code",
+      "authors": [
+	  "Lennard Gäher",
+	  "Vincent Lafeychine",
+	  "Sascha Kehrli",
+	  "Avraham Shinnar",
+	  "Wojciech Ozga",
+	  "Guerney Hunt",
+	  "Derek Dreyer"
+      ],
+      "where_published": "In OOPSLA 2026: ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications",
+      "pdf_url": "pdfs/2026-oopsla-refinedrust2.pdf",
+      "other_urls": [
+        { "name": "Artifact", "url": "https://doi.org/10.5281/zenodo.21636474" }
+      ]
+    },
+    {
       "title": "Mode Crossing",
       "authors": [
         "Benjamin Peters",
