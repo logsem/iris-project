@@ -2474,6 +2474,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Strong Program Logics for Weak Memory and Even Stronger Types for Tactic Programming",
+      "authors": ["Jan-Oliver Kaiser"],
+      "description": "MPI-SWS and Saarland University, 2026",
+      "pdf_url": "pdfs/2026-phd-kaiser.pdf"
+    },
+    {
       "title": "Verification of Fine-Grained Concurrent OCaml 5 Algorithms using Separation Logic",
       "authors": ["Clément Allain"],
       "description": "INRIA and Université Paris Cité, December 2025",
