@@ -2474,6 +2474,12 @@
   ],
   "phd_dissertations": [
     {
+      "title": "Modular verification of liveness properties in higher-order concurrent languages",
+      "authors": ["Egor Namakonov"],
+      "description": "Aarhus University, October 2026",
+      "pdf_url": "pdfs/2026-phd-namakonov.pdf"
+    },
+    {
       "title": "Strong Program Logics for Weak Memory and Even Stronger Types for Tactic Programming",
       "authors": ["Jan-Oliver Kaiser"],
       "description": "MPI-SWS and Saarland University, 2026",
